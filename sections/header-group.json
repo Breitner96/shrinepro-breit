@@ -29,7 +29,7 @@
         "text_Y6zmcK": {
           "type": "text",
           "settings": {
-            "title": "🔒 Compra 100% segura"
+            "title": "🔒 Compra 100% segura 🔒"
           }
         }
       },
@@ -38,6 +38,7 @@
         "text_XThYNM",
         "text_Y6zmcK"
       ],
+      "disabled": true,
       "settings": {
         "visibility": "always-display",
         "speed": 2,
@@ -55,6 +56,67 @@
         "mobile_padding_bottom": 12,
         "desktop_padding_top": 0,
         "desktop_padding_bottom": 0
+      }
+    },
+    "announcement_bar_UXQ39z": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_cTiwpt": {
+          "type": "announcement",
+          "settings": {
+            "text": "COMPRA 100% SEGURA",
+            "text_alignment": "center",
+            "mobile_text_size": 16,
+            "desktop_text_size": 20,
+            "icon": "",
+            "filled_icon": false,
+            "mobile_icon_size": 20,
+            "desktop_icon_size": 26,
+            "desktop_layout": "horizontal",
+            "mobile_layout": "horizontal",
+            "hidden_products": "",
+            "enable_specific_display": false,
+            "displayed_products": ""
+          }
+        },
+        "announcement_WDTntB": {
+          "type": "announcement",
+          "settings": {
+            "text": "PAGO CONTRAENTREGA",
+            "text_alignment": "center",
+            "mobile_text_size": 16,
+            "desktop_text_size": 20,
+            "icon": "",
+            "filled_icon": false,
+            "mobile_icon_size": 20,
+            "desktop_icon_size": 26,
+            "desktop_layout": "horizontal",
+            "mobile_layout": "horizontal",
+            "hidden_products": "",
+            "enable_specific_display": false,
+            "displayed_products": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_cTiwpt",
+        "announcement_WDTntB"
+      ],
+      "name": "t:sections.announcement-bar.name",
+      "settings": {
+        "columns_desktop": 1,
+        "columns_mobile": 2,
+        "desktop_spacing": 28,
+        "mobile_spacing": 16,
+        "show_separator": false,
+        "color_scheme": "accent-1",
+        "slider_mobile": true,
+        "slider_desktop": false,
+        "type": "loop",
+        "autoplay": false,
+        "autoplay_speed": 3,
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     },
     "header": {
@@ -84,6 +146,7 @@
   },
   "order": [
     "2c2ec774-3430-481f-b927-e9c035b9d24e",
+    "announcement_bar_UXQ39z",
     "header"
   ]
 }
