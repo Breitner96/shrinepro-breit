@@ -40,7 +40,7 @@
       ],
       "settings": {
         "visibility": "always-display",
-        "speed": 3,
+        "speed": 2,
         "mobile_spacing": 40,
         "desktop_spacing": 100,
         "color_scheme": "accent-1",
