@@ -207,6 +207,37 @@
             "margin_bottom": 15
           }
         },
+        "text_PMGJyD": {
+          "type": "text",
+          "settings": {
+            "mobile_text_size": 15,
+            "desktop_text_size": 16,
+            "alignment": "center",
+            "text_color": "#d4181a",
+            "text_1": "<strong>¡Compra ahora y desbloquea el máximo rendimiento con 40% de descuento! ¡No dejes pasar esta oferta exclusiva!</strong>",
+            "text_2": "",
+            "text_3": "",
+            "icon_scale": 120,
+            "icon_color": "#121212",
+            "icon_1": "",
+            "filled_icon_1": false,
+            "icon_2": "check_circle",
+            "filled_icon_2": false,
+            "icon_3": "check_circle",
+            "filled_icon_3": false,
+            "width": "100%",
+            "direction": "horizontal",
+            "column_gap": 3,
+            "enable_bg": false,
+            "bg_color": "#f3f3f3",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#b7b7b7",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
         "urgency_FyMPHb": {
           "type": "urgency",
           "settings": {
@@ -264,6 +295,7 @@
         "description",
         "image_J3KChb",
         "image_XpTWKp",
+        "text_PMGJyD",
         "urgency_FyMPHb",
         "shipping_checkpoints_3VXKN3"
       ],
