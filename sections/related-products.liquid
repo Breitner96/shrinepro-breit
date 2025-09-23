@@ -34,18 +34,13 @@
         role="list"
       >
         {% for recommendation in recommendations.products %}
-          {% assign lazy_load = true %}
-          {%- if forloop.index == 1 -%}
-            {%- assign lazy_load = false -%}
-          {%- endif -%}
           <li class="grid__item animate-item animate-item--child" style="--index:{{ forloop.index0 }};">
             {% render 'card-product',
               card_product: recommendation,
               media_aspect_ratio: section.settings.image_ratio,
               show_secondary_image: section.settings.show_secondary_image,
               show_vendor: section.settings.show_vendor,
-              show_rating: section.settings.show_rating,
-              lazy_load: lazy_load
+              show_rating: section.settings.show_rating
             %}
           </li>
         {% endfor %}
