@@ -195,6 +195,18 @@
             "margin_bottom": 0
           }
         },
+        "image_XpTWKp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/GIF_ASPIRACIONAL_014d9c11-b5e2-4b4e-9006-849fbf7eebf2.gif",
+            "width": 70,
+            "Full_mobile_width": false,
+            "alignment": "center",
+            "border_radius": 10,
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
         "urgency_FyMPHb": {
           "type": "urgency",
           "settings": {
@@ -251,6 +263,7 @@
         "c43b9f54-e00a-4f9e-b42c-2914dde008a8",
         "description",
         "image_J3KChb",
+        "image_XpTWKp",
         "urgency_FyMPHb",
         "shipping_checkpoints_3VXKN3"
       ],
