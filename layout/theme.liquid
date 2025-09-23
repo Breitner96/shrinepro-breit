@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://d3e54v103j8qbb.cloudfront.net" crossorigin>
     <link rel="preconnect" href="https://cdn.a2rev.com" crossorigin>
     
@@ -58,6 +59,19 @@
     {% endif %}
 
     {% render 'meta-tags' %}
+    {%- if template.name == 'product' and request.page_type == 'product' -%}
+      {%- liquid
+        assign hero_media = nil
+        if product and product.selected_or_first_available_variant and product.selected_or_first_available_variant.featured_media
+          assign hero_media = product.selected_or_first_available_variant.featured_media
+        elsif product and product.featured_media
+          assign hero_media = product.featured_media
+        endif
+      -%}
+      {%- if hero_media -%}
+        <link rel="preload" as="image" href="{{ hero_media | image_url: width: 1200 }}" imagesrcset="{{ hero_media | image_url: width: 800 }} 800w, {{ hero_media | image_url: width: 1200 }} 1200w, {{ hero_media | image_url: width: 1600 }} 1600w" imagesizes="(min-width: 990px) 50vw, 100vw" fetchpriority="high">
+      {%- endif -%}
+    {%- endif -%}
     <script src="{{ 'shrine.null.js' | asset_url }}" defer="defer" data-defer="true" data-country-list-function="{{ settings.country_list_function }}" data-country-list="{{ settings.country_list }}" data-country-list-error="{{ settings.country_invalid_error_msg }}" data-animations-type="{{ settings.animations_type }}"></script>
     <script src="{{ 'secondary.js' | asset_url }}" defer="defer" data-defer="true"></script>
     {{ content_for_header }}

@@ -207,9 +207,9 @@
               <div class="loading-overlay gradient"></div>
               <ul class="grid product-grid  grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop" role="list">
                 {%- for item in search.results -%}
-                  {% assign lazy_load = false %}
-                  {%- if forloop.index > 2 -%}
-                    {%- assign lazy_load = true -%}
+                  {% assign lazy_load = true %}
+                  {%- if forloop.index == 1 -%}
+                    {%- assign lazy_load = false -%}
                   {%- endif -%}
 
                   <li class="grid__item">
