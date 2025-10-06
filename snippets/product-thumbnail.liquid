@@ -27,7 +27,11 @@
 
 {%- liquid
   unless lazy_load == false
-    assign lazy = 'lazy'
+    assign loading_attr = 'lazy'
+    assign fetchpriority_attr = 'low'
+  else
+    assign loading_attr = 'eager'
+    assign fetchpriority_attr = 'high'
   endunless
 
   assign desktop_columns = 1
@@ -58,7 +62,9 @@
       <span class="product__media-icon motion-reduce quick-add-hidden">{% render 'icon-play' %}</span>
       <div class="product__media media">
         {{ media.preview_image | image_url: width: 1946 | image_tag:
-          loading: lazy,
+          loading: loading_attr,
+          fetchpriority: fetchpriority_attr,
+          decoding: 'async',
           sizes: sizes,
           widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
         }}
@@ -104,7 +110,9 @@
     <div class="product__media media media--transparent">
       {{ media.preview_image | image_url: width: 1946 | image_tag:
         class: image_class,
-        loading: lazy,
+        loading: loading_attr,
+        fetchpriority: fetchpriority_attr,
+        decoding: 'async',
         sizes: sizes,
         widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
       }}
@@ -133,7 +141,9 @@
         {%- endif -%}
       </span>
       {{ media.preview_image | image_url: width: 1946 | image_tag:
-        loading: lazy,
+        loading: loading_attr,
+        fetchpriority: fetchpriority_attr,
+        decoding: 'async',
         sizes: sizes,
         widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
       }}

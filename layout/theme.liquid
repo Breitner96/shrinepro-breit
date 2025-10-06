@@ -7,6 +7,12 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://loox.io" crossorigin>
+    <link rel="dns-prefetch" href="https://loox.io">
+    <link rel="preconnect" href="https://static.loox.io" crossorigin>
+    <link rel="dns-prefetch" href="https://static.loox.io">
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -33,7 +39,24 @@
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
      <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
-     <script src="{{ 'kit-fontawesome.js' | asset_url }}" defer="defer"></script>
+     <script>
+      (function(){
+        var loadFA = function(){
+          var s = document.createElement('script');
+          s.src = '{{ 'kit-fontawesome.js' | asset_url }}';
+          s.defer = true;
+          document.head.appendChild(s);
+        };
+        if (window.requestIdleCallback) {
+          requestIdleCallback(loadFA, {timeout: 3000});
+        } else {
+          window.addEventListener('load', loadFA);
+        }
+      })();
+     </script>
+    {% if template.name == 'product' and product and product.selected_or_first_available_variant and product.selected_or_first_available_variant.featured_media %}
+      <link rel="preload" as="image" imagesrcset="{{ product.selected_or_first_available_variant.featured_media.preview_image | image_url: width: 1100 }} 1100w, {{ product.selected_or_first_available_variant.featured_media.preview_image | image_url: width: 1500 }} 1500w" imagesizes="(min-width: 750px) 50vw, 100vw" href="{{ product.selected_or_first_available_variant.featured_media.preview_image | image_url: width: 1100 }}" fetchpriority="high">
+    {% endif %}
     {{ content_for_header }}
 
     {%- liquid
@@ -43,6 +66,12 @@
     %}
 
     {% style %}
+      /* critical hero + typography (small and safe) */
+      .banner{position:relative}
+      .banner__content{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+      .banner__heading{font-weight:700;margin:0}
+      .content-container{max-width:var(--page-width);margin:0 auto}
+      .button{display:inline-flex;align-items:center;justify-content:center}
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
@@ -223,8 +252,16 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
     {{ 'custom.css' | asset_url | stylesheet_tag }}
-    {{ 'custom2.css' | asset_url | stylesheet_tag }}
-  {{ 'a2reviews-custom.css' | asset_url | stylesheet_tag }}
+    <link rel="preload" as="style" href="{{ 'custom2.css' | asset_url }}">
+    {% if template.name == 'product' %}
+    <link rel="preload" as="style" href="{{ 'a2reviews-custom.css' | asset_url }}">
+    {% endif %}
+    <link rel="stylesheet" href="{{ 'custom2.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{{ 'custom2.css' | asset_url }}"></noscript>
+    {% if template.name == 'product' %}
+    <link rel="stylesheet" href="{{ 'a2reviews-custom.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{{ 'a2reviews-custom.css' | asset_url }}"></noscript>
+    {% endif %}
   
 
 
@@ -236,7 +273,9 @@
     {%- endunless -%}
 
     {%- if settings.predictive_search_enabled -%}
+      <link rel="preload" as="style" href="{{ 'component-predictive-search.css' | asset_url }}">
       <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
+      <noscript><link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}"></noscript>
     {%- endif -%}
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -250,7 +289,7 @@
   
 	{{ shop.metafields.loox["global_html_head"] }}
 
- <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=d7658bce"></script>
+ 
 
 </head>
 
@@ -325,6 +364,29 @@
 
 
   
-	{{ shop.metafields.loox["global_html_body"] }}
+    <script>
+      (function(){
+        var looxBodyHtml = {{ shop.metafields.loox["global_html_body"] | json }};
+        var inject = function(){
+          if (!looxBodyHtml) return;
+          var c = document.createElement('div');
+          c.innerHTML = looxBodyHtml;
+          while (c.firstChild) { document.body.appendChild(c.firstChild); }
+        };
+        if (window.requestIdleCallback) { requestIdleCallback(inject, {timeout: 3000}); }
+        else { window.addEventListener('load', inject); }
+      })();
+    </script>
+    <script>
+      (function(){
+        var loadLucky = function(){
+          var s = document.createElement('script');
+          s.src = 'https://tools.luckyorange.com/core/lo.js?site-id=d7658bce';
+          s.async = true; s.defer = true; document.body.appendChild(s);
+        };
+        if (window.requestIdleCallback) { requestIdleCallback(loadLucky, {timeout: 5000}); }
+        else { window.addEventListener('load', loadLucky); }
+      })();
+    </script>
 </body>
 </html>
