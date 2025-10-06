@@ -364,6 +364,7 @@
 
 
   
+    {% if template.name == 'product' %}
     <script>
       (function(){
         var looxBodyHtml = {{ shop.metafields.loox["global_html_body"] | json }};
@@ -377,15 +378,33 @@
         else { window.addEventListener('load', inject); }
       })();
     </script>
+    {% endif %}
     <script>
       (function(){
-        var loadLucky = function(){
+        var shouldLoad = true;
+        try {
+          var host = location.hostname;
+          // Evitar en dominios de desarrollo comunes
+          if (/localhost|\.test$|\.local$/.test(host)) shouldLoad = false;
+        } catch(e) {}
+        var schedule = function(){
+          if (!shouldLoad) return;
           var s = document.createElement('script');
           s.src = 'https://tools.luckyorange.com/core/lo.js?site-id=d7658bce';
           s.async = true; s.defer = true; document.body.appendChild(s);
         };
-        if (window.requestIdleCallback) { requestIdleCallback(loadLucky, {timeout: 5000}); }
-        else { window.addEventListener('load', loadLucky); }
+        var loadLucky = function(){
+          if (window._luckyLoaded) return; window._luckyLoaded = true; schedule();
+        };
+        var onFirstInteraction = function(){
+          window.removeEventListener('scroll', onFirstInteraction, {passive:true});
+          window.removeEventListener('pointerdown', onFirstInteraction, {passive:true});
+          loadLucky();
+        };
+        if (window.requestIdleCallback) { requestIdleCallback(loadLucky, {timeout: 10000}); }
+        else { setTimeout(loadLucky, 10000); }
+        window.addEventListener('scroll', onFirstInteraction, {passive:true});
+        window.addEventListener('pointerdown', onFirstInteraction, {passive:true});
       })();
     </script>
 </body>
