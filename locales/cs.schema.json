@@ -425,6 +425,18 @@
         "options__4": {
           "label": "Extra velká"
         }
+      },
+      "animation": {
+        "content": "Animace",
+        "image_behavior": {
+          "options__1": {
+            "label": "Žádné"
+          },
+          "options__2": {
+            "label": "Krouživý pohyb"
+          },
+          "label": "Chování obrázku"
+        }
       }
     },
     "announcement-bar": {
@@ -890,6 +902,9 @@
           },
           "options__2": {
             "label": "Mega nabídka"
+          },
+          "options__3": {
+            "label": "Výsuvný panel"
           }
         },
         "mobile_layout": {
@@ -903,9 +918,6 @@
           "options__2": {
             "label": "Vlevo"
           }
-        },
-        "logo_header": {
-          "content": "Logo"
         },
         "logo_help": {
           "content": "Logo upravíte v [nastavení motivu](/editor?context=theme&category=logo)."
@@ -924,6 +936,24 @@
           "options__4": {
             "label": "Vždy, zmenšit logo"
           }
+        },
+        "header__3": {
+          "content": "Selektor země/oblasti"
+        },
+        "header__4": {
+          "info": "Pokud chcete přidat zemi nebo oblast, přejděte na [nastavení trhu.](/admin/settings/markets)"
+        },
+        "enable_country_selector": {
+          "label": "Povolit selektor země/oblasti"
+        },
+        "header__5": {
+          "content": "Selektor jazyka"
+        },
+        "header__6": {
+          "info": "Pokud chcete přidat jazyk, přejděte na [jazykové nastavení.](/admin/settings/languages)"
+        },
+        "enable_language_selector": {
+          "label": "Povolit selektor jazyka"
         }
       }
     },
@@ -951,9 +981,6 @@
         },
         "image_overlay_opacity": {
           "label": "Neprůhlednost překryvu obrázku"
-        },
-        "header": {
-          "content": "Mobilní rozvržení"
         },
         "show_text_below": {
           "label": "Zobrazit kontejner na mobilním zařízení"
@@ -1027,6 +1054,9 @@
             "label": "Doprava"
           },
           "label": "Zarovnání obsahu v mobilním prostředí"
+        },
+        "mobile": {
+          "content": "Mobilní rozvržení"
         }
       },
       "blocks": {
@@ -1584,6 +1614,10 @@
             "show_dynamic_checkout": {
               "label": "Zobrazit dynamická tlačítka pokladny",
               "info": "V rámci platebních metod dostupných v obchodě uvidí zákazníci tu, kterou nejvíce preferují, jako například PayPal nebo Apple Pay. [Zjistit více](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+            },
+            "show_gift_card_recipient": {
+              "label": "Zobrazit formulář s informacemi o příjemci u produktů dárkových karet",
+              "info": "Produkty dárkových karet je možné volitelně posílat přímo příslušnému příjemci společně s osobní zprávou."
             }
           }
         },
@@ -2343,8 +2377,7 @@
         },
         "video_url": {
           "label": "URL",
-          "placeholder": "Zadejte adresu URL na YouTube nebo Vimeo",
-          "info": "Video se přehrává na stránce."
+          "info": "Zadejte adresu URL z YouTube nebo Vimea"
         },
         "description": {
           "label": "Alternativní text videa",
@@ -2356,6 +2389,24 @@
         },
         "full_width": {
           "label": "Nastavit plnou šířku sekce"
+        },
+        "video": {
+          "label": "Video"
+        },
+        "enable_video_looping": {
+          "label": "Přehrát video jako smyčku"
+        },
+        "header__1": {
+          "content": "Video hostované Shopify"
+        },
+        "header__2": {
+          "content": "Nebo vložte video přes URL"
+        },
+        "header__3": {
+          "content": "Styl"
+        },
+        "paragraph": {
+          "content": "Zobrazí se v případě, že není vybráno žádné video hostované Shopify."
         }
       },
       "presets": {
@@ -2414,6 +2465,10 @@
             "show_dynamic_checkout": {
               "label": "Zobrazit dynamická tlačítka pokladny",
               "info": "V rámci platebních metod dostupných v obchodě uvidí zákazníci tu, kterou nejvíce preferují, jako například PayPal nebo Apple Pay. [Zjistit více](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+            },
+            "show_gift_card_recipient": {
+              "label": "Zobrazit formulář pro příjemce u produktů dárkových karet",
+              "info": "Pokud možnost povolíte, bude možné produkty dárkových karet volitelně posílat příslušnému příjemci společně s osobní zprávou."
             }
           }
         },

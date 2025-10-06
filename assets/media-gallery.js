@@ -8,8 +8,6 @@ if (!customElements.get('media-gallery')) {
         thumbnails: this.querySelector('[id^="GalleryThumbnails"]')
       }
       this.mql = window.matchMedia('(min-width: 750px)');
-      this.productInfo = document.getElementById(`ProductInfo-${this.dataset.section}`);
-      if (this.productInfo && Shopify.postLinksRetry) this.productInfo.initShareLinks();
       if (!this.elements.thumbnails) return;
 
       this.elements.viewer.addEventListener('slideChanged', debounce(this.onSlideChanged.bind(this), 500));

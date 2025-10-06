@@ -12,7 +12,7 @@
 {% endcomment %}
 <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
 
-<share-button id="Share-{{ section.id }}" class="share-button quick-add-hidden" {{ block.shopify_attributes }} style="--margin-top: {{ block.settings.margin_top | divided_by: 10.0 }}rem;--margin-bottom: {{ block.settings.margin_bottom | divided_by: 10.0 }}rem;">
+<share-button id="Share-{{ section.id }}" class="share-button quick-add-hidden" {{ block.shopify_attributes }}>
   <button class="share-button__button hidden">
     {% render 'icon-share' %}
     {{ block.settings.share_label | escape }}

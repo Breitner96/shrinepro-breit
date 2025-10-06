@@ -1,3 +1,8 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
+{{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
+{{ 'section-email-signup-banner.css' | asset_url | stylesheet_tag }}
+
 {%- style -%}
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
@@ -23,14 +28,8 @@
 
 <div
   id="Banner-{{ section.id }}"
-  class="email-signup-banner animate-section animate--hidden banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.image_height == 'adapt-image' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} content-for-grouping {{ section.settings.visibility }}"
+  class="email-signup-banner banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.image_height == 'adapt-image' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}"
 >
-  {% if section.settings.display_id %}
-    <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
-    </copy-button>
-  {% endif %}
   {%- if section.settings.show_background_image -%}
     <div class="banner__media{% if section.settings.image != blank %} media{% endif %}">
       {%- if section.settings.image != blank -%}
@@ -64,15 +63,15 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="email-signup-banner__heading animate-item animate-item--child {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style="--index:{{ forloop.index }};">
+            <h2 class="email-signup-banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
               {{ block.settings.heading | escape }}
             </h2>
           {%- when 'paragraph' -%}
-            <div class="newsletter__subheading rte animate-item animate-item--child {{ block.settings.text_style }}" {{ block.shopify_attributes }}style="--index:{{ forloop.index }};">
+            <div class="newsletter__subheading rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               {{ block.settings.text }}
             </div>
           {%- when 'email_form' -%}
-            <div class='animate-item animate-item--child' {{ block.shopify_attributes }} style="--index:{{ forloop.index }};">
+            <div {{ block.shopify_attributes }}>
               {% form 'customer', class: 'newsletter-form' %}
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div class="newsletter-form__field-wrapper">
@@ -143,37 +142,6 @@
   "tag": "section",
   "class": "section",
   "settings": [
-    {
-      "type": "checkbox",
-      "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
-      "default": false
-    },
-    {
-      "type": "select",
-      "id": "visibility",
-      "options": [
-        {
-          "value": "desktop-hidden",
-          "label": "Mobile only"
-        },
-        {
-          "value": "mobile-hidden",
-          "label": "Desktop only"
-        },
-        {
-          "value": "always-display",
-          "label": "All devices"
-        }
-      ],
-      "label": "Display on",
-      "default": "always-display"
-    },
-    {
-      "type": "header",
-      "content": "General"
-    },
     {
       "type": "paragraph",
       "content": "t:sections.email-signup-banner.settings.paragraph.content"

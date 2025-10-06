@@ -425,6 +425,18 @@
         "options__4": {
           "label": "Extra groß"
         }
+      },
+      "animation": {
+        "content": "Animationen",
+        "image_behavior": {
+          "options__1": {
+            "label": "Keine(r)"
+          },
+          "options__2": {
+            "label": "Atmosphärische Bewegung"
+          },
+          "label": "Bildverhalten"
+        }
       }
     },
     "announcement-bar": {
@@ -890,6 +902,9 @@
           },
           "options__2": {
             "label": "Mega-Menü"
+          },
+          "options__3": {
+            "label": "Einschub"
           }
         },
         "mobile_layout": {
@@ -903,9 +918,6 @@
           "options__2": {
             "label": "Links"
           }
-        },
-        "logo_header": {
-          "content": "Logo"
         },
         "logo_help": {
           "content": "Bearbeite dein Logo in den [theme settings](/editor?context=theme&category=logo)."
@@ -924,6 +936,24 @@
           "options__4": {
             "label": "Immer, Größe des Logos reduzieren"
           }
+        },
+        "header__3": {
+          "content": "Auswahl für Land/Region"
+        },
+        "header__4": {
+          "info": "Gehe zu den [Markteinstellungen](/admin/settings/markets), um ein Land / eine Region hinzuzufügen."
+        },
+        "enable_country_selector": {
+          "label": "Auswahl für Land/Region aktivieren"
+        },
+        "header__5": {
+          "content": "Sprachauswahl"
+        },
+        "header__6": {
+          "info": "Gehe zu den [Spracheinstellungen](/admin/settings/languages), um eine Sprache hinzuzufügen."
+        },
+        "enable_language_selector": {
+          "label": "Sprachauswahl aktivieren"
         }
       }
     },
@@ -951,9 +981,6 @@
         },
         "image_overlay_opacity": {
           "label": "Deckkraft der Bildüberlagerung"
-        },
-        "header": {
-          "content": "Mobiles Layout"
         },
         "show_text_below": {
           "label": "Container auf Mobilgerät anzeigen"
@@ -1027,6 +1054,9 @@
             "label": "Rechts"
           },
           "label": "Mobile Inhaltsausrichtung"
+        },
+        "mobile": {
+          "content": "Mobiles Layout"
         }
       },
       "blocks": {
@@ -1583,6 +1613,10 @@
             "show_dynamic_checkout": {
               "label": "Dynamischer Checkout-Button anzeigen",
               "info": "Wenn sie die Zahlungsmethoden verwenden, die in deinem Shop verfügbar sind, sehen Kunden ihre bevorzugte Option, z. B. PayPal oder Apple Pay. [Mehr Informationen](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+            },
+            "show_gift_card_recipient": {
+              "label": "Formular für Empfängerinformationen für Geschenkgutscheinprodukte anzeigen",
+              "info": "Geschenkgutscheinprodukte können optional mit einer persönlichen Nachricht an einen Empfänger gesendet werden."
             }
           }
         },
@@ -2343,8 +2377,7 @@
         },
         "video_url": {
           "label": "URL",
-          "placeholder": "YouTube- oder Vimeo-URL verwenden",
-          "info": "Video wird auf der Seite abgespielt."
+          "info": "YouTube- oder Vimeo-URL verwenden"
         },
         "description": {
           "label": "Video-Alt-Text",
@@ -2356,6 +2389,24 @@
         },
         "full_width": {
           "label": "Abschnitt über die gesamte Breite"
+        },
+        "video": {
+          "label": "Video"
+        },
+        "enable_video_looping": {
+          "label": "Videoschleife abspielen"
+        },
+        "header__1": {
+          "content": "Von Shopify gehostetes Video"
+        },
+        "header__2": {
+          "content": "Oder Video von URL einbetten"
+        },
+        "header__3": {
+          "content": "Stil"
+        },
+        "paragraph": {
+          "content": "Wird angezeigt, wenn kein von Shopify gehostetes Video ausgewählt wurde."
         }
       },
       "presets": {
@@ -2414,6 +2465,10 @@
             "show_dynamic_checkout": {
               "label": "Dynamischen Checkout-Button anzeigen",
               "info": "Wenn sie die Zahlungsmethoden verwenden, die in deinem Shop verfügbar sind, sehen Kunden ihre bevorzugte Option, z. B. PayPal oder Apple Pay. [Mehr Informationen](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+            },
+            "show_gift_card_recipient": {
+              "label": "Empfängerformular für Geschenkgutscheinprodukte anzeigen",
+              "info": "Wenn dies aktiviert ist, können Geschenkgutscheinprodukte optional mit einer persönlichen Nachricht an einen Empfänger gesendet werden."
             }
           }
         },

@@ -1,3 +1,6 @@
+{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
+{{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -12,26 +15,20 @@
   }
 {%- endstyle -%}
 
-<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
-  {% if section.settings.display_id %}
-    <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
-    </copy-button>
-  {% endif %}
+<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
           {% render block %}
         {%- when 'heading' -%}
-          <h2 class="{{ block.settings.heading_size }} animate-item animate-item--child" {{ block.shopify_attributes }} style="--index:{{ forloop.index }};">
-            {{ block.settings.heading | escape }}
+          <h2 class="inline-richtext {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+            {{ block.settings.heading }}
           </h2>
         {%- when 'paragraph' -%}
-          <div class="newsletter__subheading rte animate-item animate-item--child" {{ block.shopify_attributes }} style="--index:{{ forloop.index }};">{{ block.settings.text }}</div>
+          <div class="newsletter__subheading rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'email_form' -%}
-          <div class='animate-item animate-item--child' {{ block.shopify_attributes }} style="--index:{{ forloop.index }};">
+          <div {{ block.shopify_attributes }}>
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div class="newsletter-form__field-wrapper">
@@ -59,29 +56,16 @@
                   <label class="field__label" for="NewsletterForm--{{ section.id }}">
                     {{ 'newsletter.label' | t }}
                   </label>
-                  {% if section.settings.button_type == 'arrow' %}
-                    <button
-                      type="submit"
-                      class="newsletter-form__button field__button"
-                      name="commit"
-                      id="Subscribe"
-                      aria-label="{{ 'newsletter.button_label' | t }}"
-                    >
-                      {% render 'icon-arrow' %}
-                    </button>
-                  {% endif %}
-                </div>
-                {% if section.settings.button_type == 'solid' %}
                   <button
                     type="submit"
-                    class="button newsletter__solid-btn button--full-width{% if section.settings.button_style_secondary %} button--secondary{% endif %}"
+                    class="newsletter-form__button field__button"
                     name="commit"
                     id="Subscribe"
                     aria-label="{{ 'newsletter.button_label' | t }}"
                   >
-                    {{ section.settings.button_label }}
+                    {% render 'icon-arrow' %}
                   </button>
-                {% endif %}
+                </div>
                 {%- if form.errors -%}
                   <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
                     {%- render 'icon-error' -%}
@@ -117,65 +101,6 @@
     "groups": ["header"]
   },
   "settings": [
-    {
-      "type": "checkbox",
-      "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
-      "default": false
-    },
-    {
-      "type": "select",
-      "id": "visibility",
-      "options": [
-        {
-          "value": "desktop-hidden",
-          "label": "Mobile only"
-        },
-        {
-          "value": "mobile-hidden",
-          "label": "Desktop only"
-        },
-        {
-          "value": "always-display",
-          "label": "All devices"
-        }
-      ],
-      "label": "Display on",
-      "default": "always-display"
-    },
-    {
-      "type": "header",
-      "content": "General"
-    },
-    {
-      "type": "select",
-      "id": "button_type",
-      "options": [
-        {
-          "value": "arrow",
-          "label": "Arrow button"
-        },
-        {
-          "value": "solid",
-          "label": "Solid button"
-        }
-      ],
-      "default": "solid",
-      "label": "Submit button type"
-    },
-    {
-      "type": "text",
-      "id": "button_label",
-      "label": "Solid button label",
-      "default": "Sign up"
-    },
-    {
-      "type": "checkbox",
-      "id": "button_style_secondary",
-      "label": "t:sections.slideshow.blocks.slide.settings.secondary_style.label",
-      "default": false
-    },
     {
       "type": "select",
       "id": "color_scheme",
@@ -246,7 +171,7 @@
       "limit": 1,
       "settings": [
         {
-          "type": "text",
+          "type": "inline_richtext",
           "id": "heading",
           "default": "Subscribe to our emails",
           "label": "t:sections.newsletter.blocks.heading.settings.heading.label"

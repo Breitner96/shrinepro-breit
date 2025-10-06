@@ -6,37 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
-
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://d3e54v103j8qbb.cloudfront.net" crossorigin>
-    <link rel="preconnect" href="https://cdn.a2rev.com" crossorigin>
-    
-    <script>
-      // Lazy-load Microsoft Clarity after 3 seconds of inactivity
-      let clarityTimeout;
-      function loadClarity() {
-        if (window.clarity) return;
-        const script = document.createElement('script');
-        script.src = 'https://www.clarity.ms/tag/your-clarity-id'; // Replace with actual ID
-        script.async = true;
-        script.defer = true;
-        document.head.appendChild(script);
-      }
-      
-      function resetClarityTimer() {
-        clearTimeout(clarityTimeout);
-        clarityTimeout = setTimeout(loadClarity, 3000);
-      }
-      
-      // Load Clarity after 3s of inactivity
-      document.addEventListener('DOMContentLoaded', resetClarityTimer);
-      document.addEventListener('scroll', resetClarityTimer);
-      document.addEventListener('click', resetClarityTimer);
-    </script>
-
-    
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -58,8 +28,12 @@
     {% endif %}
 
     {% render 'meta-tags' %}
-    <script src="{{ 'shrine.null.js' | asset_url }}" defer="defer" data-defer="true" data-country-list-function="{{ settings.country_list_function }}" data-country-list="{{ settings.country_list }}" data-country-list-error="{{ settings.country_invalid_error_msg }}" data-animations-type="{{ settings.animations_type }}"></script>
-    <script src="{{ 'secondary.js' | asset_url }}" defer="defer" data-defer="true"></script>
+
+    <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+     <script src="{{ 'kit-fontawesome.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
 
     {%- liquid
@@ -194,21 +168,6 @@
         --buttons-shadow-blur-radius: {{ settings.buttons_shadow_blur }}px;
         --buttons-border-offset: {% if settings.buttons_radius > 0 or settings.buttons_shadow_opacity > 0 %}0.3{% else %}0{% endif %}px;
 
-        --pickers-overlay-opacity: {{ settings.pickers_overlay_opacity | divided_by: 100.0 }};
-        --pickers-radius: {{ settings.pickers_radius }}px;
-        --pickers-small-radius: {{ settings.pickers_radius | times: 0.4 }}px;
-        --pickers-border-width: {{ settings.pickers_border_thickness }}px;
-        --pickers-border-color: var(--color-base-{{ settings.pickers_border_color }});
-        --pickers-border-opacity: {{ settings.pickers_border_opacity | divided_by: 100.0 }};
-        --pickers-shadow-opacity: {{ settings.pickers_shadow_opacity | divided_by: 100.0 }};
-        --pickers-shadow-horizontal-offset: {{ settings.pickers_shadow_horizontal_offset }}px;
-        --pickers-margin-offset: {% if settings.pickers_shadow_vertical_offset != 0 and settings.pickers_shadow_opacity > 0 %}{{ settings.pickers_shadow_vertical_offset | abs }}{% else %}0{% endif %}px;
-        --pickers-shadow-vertical-offset: {{ settings.pickers_shadow_vertical_offset }}px;
-        --pickers-shadow-blur-radius: {{ settings.pickers_shadow_blur }}px;
-        --pickers-radius-outset: {% if settings.pickers_radius > 0 %}{{ settings.pickers_radius | plus: settings.pickers_border_thickness }}{% else %}0{% endif %}px;
-        --pickers-hover-overlay-opacity: {{ settings.pickers_hover_overlay_opacity | divided_by: 100.0 }};
-        --pickers-hover-border-opacity: {{ settings.pickers_hover_border_opacity | divided_by: 100.0 }};
-
         --inputs-radius: {{ settings.inputs_radius }}px;
         --inputs-border-width: {{ settings.inputs_border_thickness }}px;
         --inputs-border-opacity: {{ settings.inputs_border_opacity | divided_by: 100.0 }};
@@ -218,8 +177,7 @@
         --inputs-shadow-vertical-offset: {{ settings.inputs_shadow_vertical_offset }}px;
         --inputs-shadow-blur-radius: {{ settings.inputs_shadow_blur }}px;
         --inputs-radius-outset: {% if settings.inputs_radius > 0 %}{{ settings.inputs_radius | plus: settings.inputs_border_thickness }}{% else %}0{% endif %}px;
-        --inputs-hover-border-opacity: 1;
-        
+
         --variant-pills-radius: {{ settings.variant_pills_radius }}px;
         --variant-pills-border-width: {{ settings.variant_pills_border_thickness }}px;
         --variant-pills-border-opacity: {{ settings.variant_pills_border_opacity | divided_by: 100.0 }};
@@ -253,108 +211,22 @@
         font-family: var(--font-body-family);
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
-        {% if settings.custom_cursor != blank %}
-          cursor: url({{ settings.custom_cursor | image_url: width: 32 }}), auto;
-        {% endif %}
       }
-
-      {% if settings.enable_load_animations %}
-        .animate-section {
-          --animation-duration: {{ settings.animation_duration }}ms;
-          --init-delay: {{ settings.animation_init_delay }}ms;
-          --child-delay: {{ settings.animation_children_delay }}ms;
-        }
-        .animate-section.animate--hidden .animate-item {
-          opacity: 0;
-          filter: blur(1px);
-          transform: translate({{ settings.animation_start_x }}%, {{ settings.animation_start_y }}%) scale({{ settings.animation_start_zoom }}%);
-        }
-        .animate-section.animate--shown .animate-item {
-          opacity: 1;
-          filter: blur(0);
-          transform: none;
-          transition: opacity var(--animation-duration) var(--init-delay),
-            filter var(--animation-duration) var(--init-delay),transform var(--animation-duration) var(--init-delay);
-        }
-        .animate-section.animate--shown .animate-item.animate-item--child {
-          transition-delay: calc(
-            var(--init-delay) + (var(--child-delay) * var(--index))
-          );
-        }
-      {% endif %}
 
       @media screen and (min-width: 750px) {
         body {
           font-size: 1.6rem;
         }
       }
-
-      /* fallback */
-      @font-face {
-        font-family: 'Material Symbols Outlined';
-        src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v141/kJF4BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzBwG-RpA6RzaxHMPdY40KH8nGzv3fzfVJU22ZZLsYEpzC_1qmr5Y0.woff2) format('woff2');
-        font-style: normal;
-        font-weight: 300;
-        font-display: swap;
-      }
-
-      .material-symbols-outlined {
-        font-family: 'Material Symbols Outlined';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 24px;
-        line-height: 1;
-        letter-spacing: normal;
-        text-transform: none;
-        display: inline-block;
-        white-space: nowrap;
-        word-wrap: normal;
-        direction: ltr;
-        -webkit-font-feature-settings: 'liga';
-        -webkit-font-smoothing: antialiased;
-      }
-      .material-symbols-outlined {
-        font-variation-settings:
-        'FILL' 0,
-        'wght' 300,
-        'GRAD' 0,
-        'opsz' 48;
-        vertical-align: bottom;
-      }
-      .material-symbols-outlined.filled {
-        font-variation-settings:
-        'FILL' 1
-      }
-      {% if settings.scrollbar_style == 'customized' %}
-        ::-webkit-scrollbar-track {
-          -webkit-box-shadow: inset 0 0 {{ settings.scrollbar_width | divided_by: 4.0 }}px rgba(0,0,0,0.1);
-          background-color: {{ settings.scrollbar_track_color }};
-        }
-
-        ::-webkit-scrollbar {
-          width: {{ settings.scrollbar_width }}px;
-          background-color: #F5F5F5;
-        }
-
-        ::-webkit-scrollbar-thumb {
-          border-radius: 10px;
-          -webkit-box-shadow: inset 0 0 {{ settings.scrollbar_width | divided_by: 3.0 }}px rgba(0,0,0,.3);
-          background-color: {{ settings.scrollbar_thumb_color }};
-        }
-      {% endif %}
     {% endstyle %}
 
-    <noscript>
-      <style>
-        .animate-section.animate--hidden .animate-item {
-          opacity: 1;
-          filter: blur(0);
-          transform: none;
-        }
-      </style>
-    </noscript>
+    {{ 'base.css' | asset_url | stylesheet_tag }}
 
-    {{ 'base.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
+    {{ 'custom2.css' | asset_url | stylesheet_tag }}
+  {{ 'a2reviews-custom.css' | asset_url | stylesheet_tag }}
+  
+
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -364,54 +236,44 @@
     {%- endunless -%}
 
     {%- if settings.predictive_search_enabled -%}
-      <link
-        rel="stylesheet"
-        href="{{ 'component-predictive-search.css' | asset_url }}"
-        media="print"
-        onload="this.media='all'"
-      >
+      <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
     {%- endif -%}
 
-    <script>
-      {% if settings.block_spy_tools %}
-        var blockReferrer = ['adspy.com', '0refer.com', 'spybadao.com', 'spypro.io', 'pipiads.com', 'shophunter.io', 'shophunter.com', 'dropship.io'];
-        var cName = "__clfref"; function setCookie(e,o,t=2147483647){var n=new Date;n.setTime(n.getTime()+t);var r="expires="+n.toUTCString();document.cookie=e+"="+o+";"+r+";path=/"}function getCookie(e){for(var o=e+"=",t=decodeURIComponent(document.cookie).split(";"),n=0;n<t.length;n++){for(var r=t[n];" "==r.charAt(0);)r=r.substring(1);if(0==r.indexOf(o))return r.substring(o.length,r.length)}return""}function delete_cookie(e){document.cookie=e+"=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;"}document.addEventListener('DOMContentLoaded', function(){var e=window.location.hostname;-1!=document.referrer.indexOf(e+"/admin")&&delete_cookie(cName),""!=getCookie(cName)?window.location.href="http://google.com/not-found":document.referrer&&""!=document.referrer&&blockReferrer.some(function(e){if(-1!==document.referrer.indexOf(e))return setCookie(cName,1),window.location.href="https://www.google.com/not-found",!0})});
-        var spyTools = ["Ali Hunter", "PPSPY", "Commerce Inspector"];
-        var userAgent = window.navigator.userAgent;
-        for (var i = 0; i < spyTools.length; i++) {
-          if (userAgent.indexOf(spyTools[i]) !== -1) {
-            window.location.href = "https://www.example.com/blocked.html"; // Replace with the URL you want to redirect the spy tools to
-          }
-        }
-      {% endif %}
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-      if (Shopify.designMode) {
-        document.documentElement.classList.add('shopify-design-mode');
-      }
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    if (Shopify.designMode) {
+      document.documentElement.classList.add('shopify-design-mode');
+    }
     </script>
-    {% include 'bucks-cc' %}
+
+
+
   
-{{ 'a2reviews-custom.css' | asset_url | stylesheet_tag }}
+	{{ shop.metafields.loox["global_html_head"] }}
+
+ <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=d7658bce"></script>
+
 </head>
 
-  <body class="gradient link-btns--{{ settings.link_btn_hover }} action-btns--{{ settings.action_btn_hover }}">
+  <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
-      {{ 'accessibility.skip_to_text' | t }}
+      {{ "accessibility.skip_to_text" | t }}
     </a>
 
-    {% sections 'header-group' %}
-    
     {%- if settings.cart_type == 'drawer' -%}
-      {%- section 'cart-drawer' -%}
+      {%- render 'cart-drawer' -%}
     {%- endif -%}
+
+   {% section 'announcement-bar' %}
+
+    {% section 'new-announcement-bar' %}
+
+    {% section 'header' %}
+
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 
-    {% section 'promo-popup' %}
-    {% section 'scroll-to-top-btn' %}
-    {% section 'global-music-player' %}
     {% sections 'footer-group' %}
 
     <ul hidden>
@@ -425,7 +287,6 @@
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',
         cart_update_url: '{{ routes.cart_update_url }}',
-        cart_clear_url: '{{ routes.cart_clear_url }}',
         cart_url: '{{ routes.cart_url }}',
         predictive_search_url: '{{ routes.predictive_search_url }}'
       };
@@ -450,85 +311,20 @@
       }
     </script>
 
-    <script>
-      const productForm = document.querySelector('.main-product-form');
-      if (productForm) {
-        document.querySelectorAll('[id^="SectionAtcBtn-"]').forEach(btn => {
-          btn.addEventListener('click', (e) => {
-            productForm.handleSubmit(e);
-          })
-        })
-      }
+    {%- if settings.predictive_search_enabled -%}
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
 
-      {% if settings.enable_load_animations %}
-        const stickyAtc = document.querySelector('.sticky-atc');
-        let bottomMargin = 50;
-        if (stickyAtc) bottomMargin += stickyAtc.clientHeight;
-        const observer = new IntersectionObserver(elements => {
-          elements.forEach(element => {
-            if (element.isIntersecting) {
-              element.target.classList.add('animate--shown');
-            } 
-            {% if settings.repeat_section_animations %}
-              else {
-                element.target.classList.remove('animate--shown');
-              }
-            {% endif %}
-          })
-        },  { rootMargin: `0px 0px -${bottomMargin}px 0px` })
 
-        function initAnimations(rootElement = document, isThemeEditorEvent = false) {
-          const elementsToAnimate = rootElement.querySelectorAll('.animate-section');
-          if (elementsToAnimate.length == 0) return;
 
-          
-          elementsToAnimate.forEach(element => {
-            if (isThemeEditorEvent) {
-              element.classList.add('animate--shown');
-              return;
-            } 
-            observer.observe(element);
-          })
-        }
 
-        window.addEventListener('DOMContentLoaded', () => initAnimations());
-        if (Shopify.designMode) {
-          document.addEventListener('shopify:section:load', (event) => initAnimations(event.target, true));
-          document.addEventListener('shopify:section:reorder', () => initAnimations(document, true));
-        }
-      {% endif %}
-    </script>
+    {%- if settings.disable_browserrightclick -%}
+ {% render 'disablecopy' %}
+{%- endif -%}
 
-    {% if settings.disable_inspect %}
-      <script>
-        window.addEventListener("contextmenu", (e) => {
-          e.preventDefault();
-        });
-        document.addEventListener("selectstart", (e) => {
-          e.preventDefault();
-        });
-        document.addEventListener('DOMContentLoaded', function() {
-          document.querySelectorAll('img').forEach(img => {
-            img.addEventListener('dragstart', function(e) {
-              e.preventDefault();
-            })
-          })
-        })
-        function ctrlShiftKey(e, keyCode) {
-          return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-        }
-        document.addEventListener('keydown', function(e) {
-          if (
-            event.keyCode === 123 ||
-            ctrlShiftKey(e, 'I') ||
-            ctrlShiftKey(e, 'J') ||
-            ctrlShiftKey(e, 'C') ||
-            (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-          ) {
-            e.preventDefault();
-          }
-        })
-      </script>
-    {% endif %}
-  </body>
+
+
+  
+	{{ shop.metafields.loox["global_html_body"] }}
+</body>
 </html>

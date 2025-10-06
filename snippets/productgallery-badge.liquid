@@ -1,0 +1,58 @@
+<div class="badges">
+             
+              
+              <div class="product-badge-best-seller">
+        {{ section.settings.productgalleryimage }}
+
+              </div>
+              
+              
+              
+             
+              
+
+            
+          </div>
+
+
+<style>
+.badges {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    top: 5px;
+    left: 5px;
+    width: max-content;
+}
+
+.product-badge-best-seller {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: {{ section.settings.badge_text }};
+    width: max-content;
+    z-index: 1;
+    margin-right: 5px;
+    padding: 3px 10px 1px;
+    border-radius: 4px;
+    border: 1px solid black;
+    background: {{ section.settings.badge_background }};
+    color: {{ section.settings.textbadge_background }};
+}
+
+.product-badge-extra-comfy {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: max-content;
+    z-index: 1;
+    padding: 3px 5px 1px;
+    border-radius: 4px;
+    border: 1px solid black;
+    background: black;
+    color: {{ section.settings.badge_background }};
+}
+
+
+
+
+</style>

@@ -1,0 +1,292 @@
+<variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+    {%- for option in product.options_with_values -%}
+    <fieldset class="js product-form__input-new  qty_swatch">
+      <legend class="form__label">{{ option.name }}</legend>
+      {%- for value in option.values -%}
+        <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+        name="{{ option.name }}"
+        value="{{ value | escape }}"
+        form="{{ product_form_id }}"
+        {% if option.selected_value == value %}checked{% endif %}>
+        <label class="element" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+            <div class="sn_ys">
+            <span class="swatch_title">{{ value }}</span>
+            {%- unless forloop.first -%}
+            <span class="free-ship-text">Envio Gratis</span>
+            {%- endunless -%}
+
+<!--Change number to show most popular badge-->
+
+            {% if forloop.index == 2 %}
+            <span class="popular_text">
+   
+
+
+
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 493.16 272.27">
+	<title>Most Popular-svg</title>
+	<defs>
+<style>.cls-1{fill:#6e57b2;}.cls-2{fill:url(#linear-gradient);}.cls-3{fill:#fff;}</style>
+
+		<linearGradient id="g1" x1="0" y1="132.1" x2="493.1" y2="132.1" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="{{ section.settings.mostpopularcolor }}"/>
+			<stop offset="1" stop-color="#ffffff"/>
+		</linearGradient>
+		<linearGradient id="g2" x1="0" y1="132.1" x2="493.1" y2="132.1" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="{{ section.settings.mostpopularcolor }}"/>
+			<stop offset=".8" stop-color="{{ section.settings.mostpopularcolor }}"/>
+			<stop offset="1" stop-color="{{ section.settings.mostpopularcolor }}"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: {{ section.settings.mostpopularcolor }} } 
+		.s1 { fill: url(#g1) } 
+		.s2 { fill: url(#g2) } 
+		.s3 { fill: #ffffff } 
+	</style>
+	<path id="Layer" class="s0" d="m492.7 168.2c-8.2 71.3-124.7 116.5-260.8 101-136.1-15.5-239.5-85.7-231.4-157 8.1-71.4 124.7-116.5 260.7-101.1 136.1 15.5 239.6 85.7 231.5 157.1z"/>
+	<path id="Layer" class="s1" d="m492.7 160.1c-8.2 71.3-124.7 116.5-260.8 101-136.1-15.5-239.5-85.7-231.4-157 8.1-71.4 124.7-116.6 260.7-101.1 136.1 15.5 239.6 85.7 231.5 157.1z"/>
+	<path id="Layer" class="s2" d="m492.7 160.1c-8.2 71.3-124.7 116.5-260.8 101-136.1-15.5-239.5-85.7-231.4-157 8.1-71.4 124.7-116.6 260.7-101.1 136.1 15.5 239.6 85.7 231.5 157.1z"/>
+	<path id="Layer" class="s3" d="m137 94.2c-0.1 5.2 0.6 9 2.7 15l-14.3-2.5q0.8-1.6 1.4-3.3 0.6-1.7 1-3.5 0.4-1.7 0.6-3.5 0.2-1.8 0.2-3.6l0.7-37.1-19.3 48.4-5.2-0.9-18-55.2-0.7 37.4q-0.1 2 0 3.9 0.2 1.9 0.5 3.7 0.3 1.9 0.8 3.8 0.6 1.8 1.3 3.6l-9.4-1.6q0.7-1.7 1.3-3.4 0.6-1.7 1-3.4 0.4-1.8 0.6-3.6 0.2-1.8 0.2-3.6l0.7-36.9c0.1-4.8-0.3-8-2.6-12.1l16.8 2.9q-0.3 0.5-0.5 1.1-0.3 0.6-0.4 1.2-0.2 0.5-0.2 1.2-0.1 0.6 0 1.2 0 1.2 0.1 2.5 0.1 1.3 0.3 2.5 0.2 1.3 0.5 2.5 0.3 1.3 0.7 2.5l12.4 40.1 13.6-35.7q0.4-1.1 0.8-2.3 0.3-1.2 0.6-2.4 0.2-1.2 0.4-2.4 0.1-1.2 0.2-2.4 0-0.6 0-1.3-0.1-0.6-0.2-1.2-0.1-0.6-0.3-1.2-0.2-0.6-0.5-1.2l16.1 2.8c-2.7 3.2-3.1 6.2-3.2 11.1z"/>
+	<path id="Layer" fill-rule="evenodd" class="s3" d="m148.6 86.3c0.3-15.1 9.1-23.6 21.6-21.5 13.4 2.4 20.2 15 20 28.9-0.3 15-9 23.7-21.6 21.5-13.5-2.3-20.2-15.2-20-28.9zm31.6 7.8c0.2-12.7-2.9-25-11.3-26.5-6.4-1-10.2 5-10.5 18.4-0.2 12.7 3 25 11.3 26.4 6.1 1 10.3-4.6 10.5-18.3z"/>
+	<path id="Layer" class="s3" d="m205.4 80.9c-0.1 5 3.3 7.9 9.4 11.7l6.8 4.4c4.4 2.8 9.9 6.8 9.7 14.4-0.2 9.5-8.9 13-17.2 11.6q-3-0.5-5.8-1.8-2.8-1.3-5.2-3.2-2.4-1.9-4.3-4.4-1.8-2.5-3-5.3l8.5-3.7c2 8.6 6.8 14.1 13.3 15.2 4.2 0.8 7.8-0.9 7.9-5.6 0.1-4.2-3.1-7.5-7.8-10.5l-9-5.5c-3.4-2.1-10.5-7-10.4-14.2 0.2-7.7 6.7-13 20.9-10.6q1.4 0.2 2.8 0.6 1.4 0.3 2.7 0.8 1.4 0.4 2.7 1 1.3 0.5 2.6 1.2l-2 12.4c-4-7.9-8.5-12-14.9-13.1-4.6-0.8-7.7 0.9-7.7 4.6z"/>
+	<path id="Layer" class="s3" d="m262.4 121.4c0 4.5-4.8 9.1-12.1 7.9-6.8-1.2-9.4-6.6-9.2-14.6l0.6-33.8-5.7-1 0.4-2.7 5.4 0.9q0-1.1 0-2.2-0.1-1.2-0.1-2.3-0.1-1.1-0.2-2.2-0.1-1.2-0.2-2.3 1.2-0.2 2.4-0.4 1.2-0.3 2.4-0.6 1.2-0.3 2.3-0.7 1.2-0.3 2.3-0.7l-0.2 13 12.5 2.1-0.6 2.7-11.9-2-0.7 32.7c0 1.7-0.1 6.8 5.3 7.8 2.2 0.3 4.1-0.2 7.3-1.6z"/>
+	<path id="Layer" fill-rule="evenodd" class="s3" d="m142.6 157.1l-0.1 6.3q-0.1 2 0.1 4.1 0.1 2 0.4 4 0.3 2.1 0.8 4.1 0.5 2 1.2 3.9l-18.5-3.2q0.7-1.8 1.3-3.6 0.6-1.9 1-3.8 0.3-1.9 0.5-3.9 0.2-1.9 0.2-3.9l0.5-29.7q0.1-2 0-4.1-0.1-2-0.4-4-0.3-2.1-0.8-4.1-0.5-2-1.2-3.9l21.4 3.7c8.3 1.4 22.9 5.5 22.6 21.8-0.3 14.3-12.7 19-27.1 16.6zm1-35.4c-0.3 4-0.5 8.2-0.5 12l-0.4 19.9 2.1 0.3c8.1 1.4 12.8-3.3 13-14 0.2-11.3-4.8-16.5-13-18z"/>
+	<path id="Layer" fill-rule="evenodd" class="s3" d="m176.3 161.5c0.3-15.3 9.5-23.4 22.7-21.1 12.3 2.1 21.1 13.3 20.8 28.3-0.3 15.2-9.5 23.2-22.7 21-12.4-2.2-21.1-13.5-20.8-28.2zm29.7 8.7c0.2-12.3-2.4-24.8-8.5-25.8-5.1-0.9-7.2 5.1-7.4 15.5-0.2 12.3 2.3 24.7 8.5 25.8 5 0.8 7.2-4.9 7.4-15.5z"/>
+	<path id="Layer" fill-rule="evenodd" class="s3" d="m269.3 173.6c-0.3 18.2-10.1 26.2-22.1 24.2q-1-0.2-2-0.5-1-0.3-2-0.8-0.9-0.4-1.8-1-0.8-0.6-1.6-1.4l-0.1 6.3c-0.1 5.1 0 8.8 2.2 14.6l-17.6-3c2.2-5 2.5-8.7 2.6-13.7l0.6-32.2c0.1-6.3 0.1-10.4-2.1-15.8 4.4-0.9 8.8-1.9 13-3q0.4 0.9 0.8 1.9 0.3 1 0.6 2 0.2 1 0.4 2.1 0.1 1 0.2 2c3-4.5 8.2-6 13.6-5.1 9 1.5 15.6 9 15.3 23.4zm-13.6 2.6c0.3-13.5-3-18.7-8.4-19.7q-0.9-0.1-1.8-0.1-0.9 0-1.8 0.2-0.8 0.2-1.7 0.6-0.8 0.4-1.5 0.9l-0.5 26.5q-0.1 1.5 0.4 3 0.5 1.5 1.5 2.8 1 1.2 2.3 2 1.3 0.9 2.9 1.2c4.1 0.7 8.3-2.4 8.6-17.4z"/>
+	<path id="Layer" class="s3" d="m304.4 207q-0.3-0.9-0.7-1.8-0.3-1-0.5-1.9-0.3-0.9-0.4-1.9-0.2-1-0.3-1.9-1.2 1.6-2.8 2.9-1.6 1.2-3.5 2-1.9 0.7-4 0.9-2 0.1-4-0.3c-7.4-1.3-11.5-6.4-11.3-15.2l0.3-16.6c0.1-4.8 0.1-8.8-2.1-14.2q1.9-0.3 3.8-0.6 2-0.2 3.9-0.6 1.9-0.3 3.8-0.7 1.9-0.4 3.8-0.8l-0.7 33.9c0 3.7 0.7 7.5 5.8 8.4q0.9 0.1 1.9 0.1 0.9 0 1.8-0.3 0.9-0.2 1.8-0.7 0.8-0.4 1.5-1.1l0.3-19.1c0.1-4.7 0.1-9.8-1.6-14.1q1.9-0.2 3.8-0.5 1.8-0.3 3.7-0.6 1.8-0.4 3.7-0.8 1.8-0.4 3.6-0.9l-0.6 33.8q-0.1 1.9-0.1 3.8 0.1 1.9 0.4 3.7 0.3 1.9 0.7 3.7 0.5 1.8 1.1 3.6z"/>
+	<path id="Layer" class="s3" d="m325.6 196.8l0.6-33.6c0.1-5.3 0.1-10-2-14.7q1.9-0.2 3.9-0.4 1.9-0.2 3.8-0.6 1.9-0.3 3.8-0.7 1.8-0.5 3.7-1l-1 53.2c-0.1 5.3 0 8.8 2.1 14.2l-17.6-3c2.3-4.7 2.6-8.1 2.7-13.4z"/>
+	<path id="Layer" fill-rule="evenodd" class="s3" d="m374.2 219q-0.4-0.8-0.8-1.6-0.3-0.9-0.5-1.7-0.3-0.8-0.4-1.7-0.1-0.9-0.2-1.8-1.4 1.5-3.1 2.6-1.8 1-3.7 1.7-2 0.6-4 0.7-2.1 0.1-4.1-0.4c-7-1.2-11.6-6-11.5-12 0.2-7.8 8.8-9.3 16-10.7 8.1-1.7 10.7-2.7 10.7-4.5l0.1-3.5c0.1-5.9-0.9-11.9-6.9-13-3.5-0.6-5.6 1.2-5.7 5q0 1.2 0.2 2.4 0.1 1.1 0.4 2.3 0.3 1.1 0.6 2.3 0.4 1.1 0.9 2.1l-13.7-2.9 0.1-2.6c0.1-8.1 6.4-14.3 19.6-12.1 14 2.5 17.6 11.3 17.4 21.7l-0.3 13.9c-0.1 6.9 0.1 10.5 2.5 16.1zm-1.9-9l0.2-9.9c0-2-0.5-2.4-3.2-2.9-7.7-1.3-10.1 0.4-10.2 5.2-0.1 4.1 2.2 7.4 6.9 8.2q0.8 0.1 1.6 0.1 0.8 0.1 1.6 0 0.8-0.1 1.6-0.3 0.7-0.2 1.5-0.4z"/>
+	<path id="Layer" class="s3" d="m425.5 180l-2.5 16.1c-4.3-6.8-7.2-8.9-9.5-9.3-3.8-0.6-4.6 3.7-4.8 11.7l-0.2 12.2c-0.1 5 0.1 8.7 2.2 14.6l-17.6-3c2.2-5.1 2.5-8.7 2.6-13.8l0.3-13.4q0.1-2.1-0.1-4.1-0.1-2-0.6-4-0.4-2-1.1-3.9-0.6-2-1.6-3.8c4.6-1 8.8-2 13-3.3 1.5 2.3 2.7 7.3 3.1 10.5 2.5-7.6 6.5-8.6 12.4-7.6q0.6 0.1 1.1 0.2 0.6 0.1 1.1 0.2 0.6 0.2 1.1 0.4 0.5 0.1 1.1 0.3z"/>
+	<path id="Layer" class="s3" d="m388.9 121.8c0-12.2-5.4-20.5-16.7-20.5 11.3 0 16.7-8.4 16.7-20.6 0 12.2 6.7 20.6 16.7 20.6-10 0-16.7 8.3-16.7 20.5z"/>
+	<path id="Layer" class="s3" d="m163.2 45.8c0-7.2-3.2-12.2-9.9-12.2 6.7 0 9.9-4.9 9.9-12.1 0 7.2 4 12.1 9.9 12.1-6 0-9.9 5-9.9 12.2z"/>
+	<path id="Layer" class="s3" d="m83 177.8c0-7-3.1-11.7-9.6-11.7 6.5 0 9.6-4.8 9.6-11.7 0 7 3.8 11.7 9.5 11.7-5.7 0-9.5 4.7-9.5 11.7z"/>
+	<path id="Layer" class="s3" d="m276.1 248.3c0-9.6-4.3-16.2-13.3-16.2 9 0 13.3-6.6 13.3-16.3 0 9.7 5.3 16.3 13.2 16.3-7.9 0-13.2 6.6-13.2 16.2z"/>
+</svg>         
+
+</span>
+            {% endif %}
+            <div class="swtch_you_save">Ahorras {{product.variants[forloop.index0].compare_at_price | minus:product.variants[forloop.index0].price | money_without_trailing_zeros | remove: ' ' }} </div>
+            </div>
+            <div class="prie_grp">
+            <span class="var_price 1">{{product.variants[forloop.index0].price | money_without_trailing_zeros }}</span>
+            <span class="var_prce">
+                <s class="var_com_price">{{product.variants[forloop.index0].compare_at_price | money_without_trailing_zeros }}</s>
+            </span>
+            </div>
+        </label>
+      {% endfor %}
+    </fieldset>
+    {%endfor%}
+    <script type="application/json">
+        {{ product.variants | json }}
+      </script>
+  </variant-radios>
+
+
+
+
+
+
+<style>
+.color-background_light_gray {
+    background: #fafafa;
+}
+
+.qty_swatch span.hide.free-ship-text {
+    display: none;
+}
+
+.swtch_you_save {
+    width: 100%;
+}
+
+span.popular_text {
+    /*     margin-left: 10px;
+      font-size: 10px;
+      color: {{settings.colors_accent_1}}5c;
+      border: 1px solid {{settings.colors_accent_1}}5c;
+      font-weight: 700;
+      padding: 5px 9px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center; */
+    position: absolute;
+    right: -30px;
+    top: -8px;
+}
+
+span.popular_text svg {
+    width: 90px;
+}
+
+.qty_swatch span.free-ship-text {
+    /*     position: absolute;        */
+    font-size: 10px;
+    color: {{settings.colors_accent_1}}5c;
+    border: 1px solid {{settings.colors_accent_1}}5c;
+    font-weight: 700;
+    padding: 5px 9px;
+    border-radius: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.qty_swatch label:hover span.free-ship-text,
+.qty_swatch input:checked+label span.free-ship-text {
+    color: {{settings.colors_accent_1}};
+    border: 1px solid {{settings.colors_accent_1}};
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+.ques-desc {
+    display: none;
+}
+
+.qty_swatch legend.form__label {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 15px !important;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.qty_swatch legend.form__label:before {
+    content: "";
+    position: absolute;
+    background-color: {{settings.colors_accent_1}}5c;
+    height: 2px;
+    width: 29%;
+    left: 0;
+    top: 43%;
+}
+
+.qty_swatch legend.form__label:after {
+    content: "";
+    position: absolute;
+    background-color: {{settings.colors_accent_1}}5c;
+    height: 2px;
+    width: 29%;
+    right: 0;
+    top: 43%;
+}
+
+fieldset.product-form__input-new .form__label {
+    margin-bottom: 0.2rem;
+    width: 100%;
+    display: block;
+}
+
+.qty_swatch label {
+    width: 100%;
+    font-size: 16px !important;
+    text-transform: inherit;
+    margin-bottom: 10px !important;
+    display: flex !important;
+    padding: 15px 60px !important;
+    position: relative;
+    border: 2px solid {{settings.colors_accent_1}}5c;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.qty_swatch .sn_ys {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.qty_swatch .prie_grp {
+    width: 30%;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.qty_swatch span.var_price {
+    width: 100%;
+    color: {{settings.colors_accent_1}};
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.qty_swatch span.var_prce {
+    width: 100%;
+}
+
+.qty_swatch label:before {
+    content: "" !important;
+    position: absolute !important;
+    width: 20px;
+    height: 20px;
+    border: 1px solid {{settings.colors_accent_1}};
+    border-radius: 50px !important;
+    left: 20px !important;
+    top: 25px !important;
+    z-index: 1 !important;
+}
+
+.qty_swatch input:checked+label:before {
+    background: {{settings.colors_accent_1}} !important;
+    border: 2px solid #fff !important;
+}
+
+.qty_swatch label:hover {
+    background-color: {{settings.colors_accent_1}}5c;
+    border: 2px solid {{settings.colors_accent_1}} !important;
+    border-radius: 10px !important;
+}
+
+.qty_swatch input:checked+label {
+    width: 100%;
+    color: #000;
+    border: 2px solid {{settings.colors_accent_1}};
+    border-radius: 10px;
+    background-color: {{settings.colors_accent_1}}5c;
+}
+
+.product-form__input-new {
+    max-width: 100% !important;
+
+}
+
+.qty_swatch span.swatch_title {
+    color: #4d4d4d;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.template-product .qty_swatch .swtch_you_save {
+    font-weight: 400;
+    color: #4d4d4d;
+    font-size: 16px;
+}
+
+.template-product .prie_grp span {
+    width: 100%;
+    color: {{settings.colors_accent_1}};
+    font-size: 18px;
+}
+
+.qty_swatch .var_prce .var_com_price {
+    color: #4d4d4d;
+}
+
+
+</style>

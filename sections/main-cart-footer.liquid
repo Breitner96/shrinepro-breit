@@ -1,3 +1,8 @@
+{{ 'component-cart.css' | asset_url | stylesheet_tag }}
+{{ 'component-totals.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>
     <div class="cart__footer">
@@ -39,9 +44,25 @@
                     </ul>
                   {%- endif -%}
                 </div>
+
+                <small class="tax-note caption-large rte">
+                  {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+                    {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                  {%- elsif cart.taxes_included -%}
+                    {{ 'sections.cart.taxes_included_but_shipping_at_checkout' | t }}
+                  {%- elsif shop.shipping_policy.body != blank -%}
+                    {{ 'sections.cart.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
+                  {%- else -%}
+                    {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
+                  {%- endif -%}
+                </small>
+
+
+               <center  style="margin-top:10px;margin-bottom:10px;"> <span> {{ settings.title_freeshipping }} </span></center> 
+
+
+
               </div>
-            {% when 'discount_field' %}
-              {% render 'cart-discount-field', block: block %}
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <noscript>
@@ -60,15 +81,17 @@
                   {% endif %}
                   form="cart"
                 >
+
+<svg style="width: 13px;margin-right: 6px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lock" class="svg-inline--fa fa-lock fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#fff" d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"></path></svg>
+
+
+                  
+
                   {{ 'sections.cart.checkout' | t }}
                 </button>
               </div>
 
-              {%- if additional_checkout_buttons -%}
-                <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
-                  {{ content_for_additional_checkout_buttons }}
-                </div>
-              {%- endif -%}
+          
           {%- endcase -%}
         {% endfor %}
 
@@ -104,32 +127,6 @@
   "name": "t:sections.main-cart-footer.name",
   "class": "cart__footer-wrapper",
   "blocks": [
-    {
-      "type": "discount_field",
-      "name": "Discount field",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "placeholder",
-          "label": "Input placeholder",
-          "default": "Enter discount code"
-        },
-        {
-          "type": "text",
-          "id": "btn_label",
-          "label": "Button label",
-          "default": "ADD"
-        },
-        {
-          "type": "text",
-          "id": "error_msg",
-          "label": "Error message",
-          "default": "Please enter a discount code!",
-          "info": "Displayed if add button is clicked while the input is empty."
-        }
-      ]
-    },
     {
       "type": "subtotal",
       "name": "t:sections.main-cart-footer.blocks.subtotal.name",

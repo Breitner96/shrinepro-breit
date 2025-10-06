@@ -1,6 +1,8 @@
-<link rel="stylesheet" href="{{ 'collage.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-modal-video.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'collage.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-modal-video.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -16,20 +18,13 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient isolate content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
-  {% if section.settings.display_id %}
-    <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
-    </copy-button>
-  {% endif %}
+<div class="color-{{ section.settings.color_scheme }} gradient isolate">
   <div class="page-width{% if section.settings.heading == blank %} no-heading{% endif %} section-{{ section.id }}-padding">
-    <h2 class="collage-wrapper-title {{ section.settings.heading_size }} animate-item animate-item--child index-0">{{ section.settings.heading | escape }}</h2>
+    <h2 class="collage-wrapper-title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
     <div class="collage{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
       {%- for block in section.blocks -%}
         <div
-          class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }} animate-item animate-item--child"
-          style="--index:{{ forloop.index }};"
+          class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }}"
           {{ block.shopify_attributes }}
         >
           {%- case block.type -%}
@@ -212,34 +207,7 @@
   },
   "settings": [
     {
-      "type": "checkbox",
-      "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
-      "default": false
-    },
-    {
-      "type": "select",
-      "id": "visibility",
-      "options": [
-        {
-          "value": "desktop-hidden",
-          "label": "Mobile only"
-        },
-        {
-          "value": "mobile-hidden",
-          "label": "Desktop only"
-        },
-        {
-          "value": "always-display",
-          "label": "All devices"
-        }
-      ],
-      "label": "Display on",
-      "default": "always-display"
-    },
-    {
-      "type": "text",
+      "type": "inline_richtext",
       "id": "heading",
       "default": "Multimedia collage",
       "label": "t:sections.collage.settings.heading.label"

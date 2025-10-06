@@ -1,0 +1,95 @@
+               
+ {% if section.settings.enable_custombar %}
+
+       <div style="background-color:{{ section.settings.custombarcolor }}!important;" class="announcement_bottom_blocks">   
+
+  
+   <div class="icon-text-wrap"> 
+    <div class="icon">
+      <!--?xml version="1.0" encoding="UTF-8" standalone="no"?--> <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Delivery Truck</title>
+<path d="M507.219,275.177,466.234,185.01A42.749,42.749,0,0,0,427.4,160H352V128a32.035,32.035,0,0,0-32-32H53.333a32.035,32.035,0,0,0-32,32V256a10.667,10.667,0,1,0,21.333,0V128a10.679,10.679,0,0,1,10.667-10.667H320A10.679,10.679,0,0,1,330.667,128V298.667A10.681,10.681,0,0,1,320,309.333H192a10.667,10.667,0,0,0,0,21.333H320a32.035,32.035,0,0,0,32-32V181.333h75.4a21.381,21.381,0,0,1,19.422,12.505l4.013,8.828h-45.5A21.356,21.356,0,0,0,384,224v42.667A21.354,21.354,0,0,0,405.333,288h83.94a31.775,31.775,0,0,1,1.393,9.24v44.094A10.681,10.681,0,0,1,480,352H446.924a53.336,53.336,0,0,0-104.516,0H169.591a53.336,53.336,0,0,0-104.516,0H53.333a10.681,10.681,0,0,1-10.667-10.667V330.667a10.667,10.667,0,0,0,0-21.333h-32a10.667,10.667,0,0,0,0,21.333H21.333v10.667a32.035,32.035,0,0,0,32,32H65.076a53.336,53.336,0,0,0,104.516,0H342.409a53.336,53.336,0,0,0,104.516,0H480a32.035,32.035,0,0,0,32-32V297.24A52.9,52.9,0,0,0,507.219,275.177ZM117.333,394.667a32,32,0,1,1,32-32A32.035,32.035,0,0,1,117.333,394.667Zm277.333,0a32,32,0,1,1,32-32A32.035,32.035,0,0,1,394.667,394.667ZM405.333,224h55.194l19.393,42.667H405.333Z"></path><path d="M10.667,298.667H64a10.667,10.667,0,0,0,0-21.333H10.667a10.667,10.667,0,0,0,0,21.333Z"></path></svg>
+    </div>
+    <div class="text">
+      
+      <p>{{ section.settings.custom_top_bar1 }}</p>
+      
+    </div>
+   </div>
+
+  
+  
+   <div class="icon-text-wrap"> 
+    <div class="icon">
+      <!--?xml version="1.0" encoding="iso-8859-1"?-->
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+<g id="Layer_1">
+	<path d="M45.281,25.915c4.949-5.004,4.949-13.146,0-18.15C42.881,5.337,39.688,4,36.292,4c-0.001,0-0.001,0-0.001,0
+		c-3.396,0-6.59,1.337-8.991,3.765L25,10.09l-2.3-2.325C20.299,5.337,17.106,4,13.709,4c-3.396,0-6.589,1.337-8.99,3.765
+		c-4.949,5.004-4.949,13.146,0,18.15L25,46.422L45.281,25.915z M6.141,9.171C8.163,7.126,10.852,6,13.709,6
+		c2.858,0,5.547,1.126,7.569,3.171L25,12.935l3.722-3.764C30.744,7.126,33.433,6,36.291,6c2.858,0,5.546,1.126,7.568,3.171
+		c4.183,4.229,4.183,11.109,0,15.338L25,43.578L6.141,24.509C1.958,20.28,1.958,13.399,6.141,9.171z"></path>
+</g>
+<g>
+</g>
+</svg>
+    </div>
+    <div class="text">
+      
+      <p>{{ section.settings.custom_top_bar2 }}</p>
+      
+    </div>
+   </div>
+
+  
+  </div>
+</div>
+ {% endif %}
+
+
+{% schema %}
+  {
+    "name": "Custom Announcement Bar",
+    "settings": [
+
+{
+        "type": "checkbox",
+        "id": "enable_custombar",
+        "label": "Enable Custom Announcement Bar",
+        "default": true
+      },
+
+ {
+                  "type": "text",
+                  "id": "custom_top_bar1",
+                  "label": "Text"
+  },
+
+
+ {
+                  "type": "text",
+                  "id": "custom_top_bar2",
+                  "label": "Text"
+  },
+
+  {
+        "type": "color",
+        "id": "custombarcolor",
+        "label": "Bar Color",
+        "default": "#C19A7C"
+      }
+
+
+
+
+
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+

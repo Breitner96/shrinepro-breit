@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="{{ 'component-article-card.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'section-main-blog.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -17,7 +17,7 @@
 {%- endstyle -%}
 
 {%- paginate blog.articles by 6 -%}
-  <div class="main-blog page-width section-{{ section.id }}-padding content-for-grouping {{ section.settings.visibility }}">
+  <div class="main-blog page-width section-{{ section.id }}-padding">
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
 
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
@@ -48,26 +48,6 @@
   "tag": "section",
   "class": "section",
   "settings": [
-    {
-      "type": "select",
-      "id": "visibility",
-      "options": [
-        {
-          "value": "desktop-hidden",
-          "label": "Mobile only"
-        },
-        {
-          "value": "mobile-hidden",
-          "label": "Desktop only"
-        },
-        {
-          "value": "always-display",
-          "label": "All devices"
-        }
-      ],
-      "label": "Display on",
-      "default": "always-display"
-    },
     {
       "type": "header",
       "content": "t:sections.main-blog.settings.header.content"

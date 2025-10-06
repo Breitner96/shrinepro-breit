@@ -425,6 +425,18 @@
         "options__4": {
           "label": "特大"
         }
+      },
+      "animation": {
+        "content": "アニメーション",
+        "image_behavior": {
+          "options__1": {
+            "label": "なし"
+          },
+          "options__2": {
+            "label": "周囲の挙動"
+          },
+          "label": "画像の挙動"
+        }
       }
     },
     "announcement-bar": {
@@ -890,6 +902,9 @@
           },
           "options__2": {
             "label": "メガメニュー"
+          },
+          "options__3": {
+            "label": "ドロワー"
           }
         },
         "mobile_layout": {
@@ -903,9 +918,6 @@
           "options__2": {
             "label": "左"
           }
-        },
-        "logo_header": {
-          "content": "ロゴ"
         },
         "logo_help": {
           "content": "[テーマ設定]](/editor?context=theme&category=logo) でロゴを編集する"
@@ -924,6 +936,24 @@
           "options__4": {
             "label": "常にロゴのサイズを小さくする"
           }
+        },
+        "header__3": {
+          "content": "国/地域セレクター"
+        },
+        "header__4": {
+          "info": "国/地域を追加するには、[マーケット設定](/admin/settings/markets) に移動します"
+        },
+        "enable_country_selector": {
+          "label": "国/地域セレクターを有効にする"
+        },
+        "header__5": {
+          "content": "言語セレクター"
+        },
+        "header__6": {
+          "info": "言語を追加するには、[言語設定](/admin/settings/languages) に移動します"
+        },
+        "enable_language_selector": {
+          "label": "言語セレクターを有効にする"
         }
       }
     },
@@ -951,9 +981,6 @@
         },
         "image_overlay_opacity": {
           "label": "画像のオーバーレイ不透明率"
-        },
-        "header": {
-          "content": "モバイルのレイアウト"
         },
         "show_text_below": {
           "label": "モバイル上にコンテナを表示"
@@ -1027,6 +1054,9 @@
             "label": "右"
           },
           "label": "モバイルのコンテンツアライメント"
+        },
+        "mobile": {
+          "content": "モバイルのレイアウト"
         }
       },
       "blocks": {
@@ -1574,6 +1604,10 @@
             "show_dynamic_checkout": {
               "label": "動的チェックアウトボタンを表示する",
               "info": "ストアで利用可能な決済方法を使用すると、お客様にはPayPalやApple Payなど、希望のオプションが表示されます。[もっと詳しく](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+            },
+            "show_gift_card_recipient": {
+              "label": "ギフトカード商品の受取人情報フォームを表示する",
+              "info": "ギフトカード商品は、オプションで、個人的なメッセージとともに受取人に直接送信できます。"
             }
           },
           "name": "購入ボタン"
@@ -2343,8 +2377,7 @@
         },
         "video_url": {
           "label": "URL",
-          "placeholder": "YouTubeやVimeoのURLを使う",
-          "info": "ページ内で動画を再生します。"
+          "info": "YouTubeやVimeoのURLを使う"
         },
         "description": {
           "label": "動画の代替テキスト",
@@ -2356,6 +2389,24 @@
         },
         "full_width": {
           "label": "セクションを全幅にする"
+        },
+        "video": {
+          "label": "ビデオ"
+        },
+        "enable_video_looping": {
+          "label": "ビデオをループ再生する"
+        },
+        "header__1": {
+          "content": "Shopifyがホストするビデオ"
+        },
+        "header__2": {
+          "content": "または、URLからビデオを埋め込む"
+        },
+        "header__3": {
+          "content": "スタイル"
+        },
+        "paragraph": {
+          "content": "Shopifyがホストするビデオが選択されていない場合に表示されます。"
         }
       },
       "presets": {
@@ -2414,6 +2465,10 @@
             "show_dynamic_checkout": {
               "label": "動的チェックアウトボタンを表示",
               "info": "ストアで利用可能な決済方法を使用すると、お客様にはPayPalやApple Payなど、希望のオプションが表示されます。[詳しくはこちら](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+            },
+            "show_gift_card_recipient": {
+              "label": "ギフトカード商品の受取人フォームを表示する",
+              "info": "有効にすると、オプションで、ギフトカード商品を個人的なメッセージとともに受取人に送信できます。"
             }
           }
         },

@@ -1,0 +1,53 @@
+<div class="pro-iwt-wrap">
+    <div class="innr">
+        <div class="inner-icon">
+            <img
+                src="{{block.settings.image1 | img_url: 'master'}}">
+        </div>
+        <p>{{block.settings.title1}}</p>
+    </div>
+    <div class="innr">
+        <div class="inner-icon">
+            <img src="{{block.settings.image2 | img_url: 'master'}}">
+        </div>
+        <p>{{block.settings.title2}}</p>
+    </div>
+    {% if block.settings.image3 != blank %}
+    <div class="innr">
+        <div class="inner-icon">
+            <img
+                src="{{block.settings.image3 | img_url: 'master'}}">
+        </div>
+        <p>{{block.settings.title3}}</p>
+    </div>
+  {% endif %}
+</div>
+
+
+
+<style>
+
+.pro-iwt-wrap{
+    justify-content: space-evenly;
+        margin-top: 30px!important;
+    margin-bottom: 0 !important;
+}
+
+
+.pro-iwt-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.pro-iwt-wrap .innr {
+    width: 33.33%;
+    text-align: center;
+}.pro-iwt-wrap .inner-icon img {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+}
+
+
+</style>

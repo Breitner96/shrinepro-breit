@@ -1,3 +1,5 @@
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -40,48 +42,22 @@
   endunless
 -%}
 
-<div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
-  {% if section.settings.display_id %}
-    <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
-    </copy-button>
-  {% endif %}
+<div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
   <div class="multirow__inner page-width">
     {%- for block in section.blocks -%}
       <div
-        class="image-with-text isolate{{ borders_class }}{{ corners_class }}{{ padding_class }} animate-item animate-item--child"
-        style="--index:{{ forloop.index }};"
+        class="image-with-text isolate{{ borders_class }}{{ corners_class }}{{ padding_class }}"
         {{ block.shopify_attributes }}
       >
         <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.image_layout contains 'alternate' %}{% cycle odd_class, even_class %}{% else %}{{ odd_class }}{% endif %}">
           <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
             <div
-              class="image-with-text__media image-with-text__media--{{ section.settings.image_height }} gradient color-{{ section.settings.row_color_scheme }} global-media-settings{% if block.settings.image != blank or block.settings.video != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}"
-              {% if section.settings.height == 'adapt' and block.settings.video != blank %}
-                style="padding-bottom: {{ 1 | divided_by: block.settings.video.aspect_ratio | times: 100 }}%;"
-              {% elsif section.settings.image_height == 'adapt' and block.settings.image != blank %}
+              class="image-with-text__media image-with-text__media--{{ section.settings.image_height }} gradient color-{{ section.settings.row_color_scheme }} global-media-settings{% if block.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}"
+              {% if section.settings.image_height == 'adapt' and block.settings.image != blank %}
                 style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"
               {% endif %}
             >
-              {%- if block.settings.video != blank -%}
-                <internal-video data-autoplay='true'>
-                  <video 
-                    width="100%" 
-                    height="auto" 
-                    preload='metadata'
-                    poster="{{ block.settings.video.preview_image | image_url }}"
-                    loop muted playsinline autoplay disablepictureinpicture
-                  >
-                    {% for source in block.settings.video.sources %}
-                      <source 
-                        data-src="{{ source.url }}" 
-                        type="{{ source.mime_type }}"
-                      >
-                    {% endfor %}
-                  </video>
-                </internal-video>
-              {%- elsif block.settings.image != blank -%}
+              {%- if block.settings.image != blank -%}
                 {%- capture sizes -%}
                   (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
                   (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
@@ -123,41 +99,6 @@
                   {{ block.settings.button_label | escape }}
                 </a>
               {%- endif -%}
-              {%- if block.settings.atc_button_label != blank -%}
-                {% if block.settings.atc_product == blank %}
-                  <button
-                    id="SectionAtcBtn-{{ section.id }}-{{ forloop.index }}"
-                    type="button"
-                    class="button main-product-atc button--has-spinner"
-                    {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
-                      disabled
-                    {% endif %}
-                  >
-                    {{ block.settings.atc_button_label }}
-                    <div class="loading-overlay__spinner">
-                      <svg
-                        aria-hidden="true"
-                        focusable="false"
-                        class="spinner"
-                        viewBox="0 0 66 66"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                      </svg>
-                    </div>
-                  </button>
-                {% else %}
-                  {% assign product_form_id = 'section-product-form-'
-                    | append: section.id
-                    | append: block.id
-                  %}
-                  {% render 'separate-atc-btn',
-                    product: block.settings.atc_product,
-                    product_form_id: product_form_id,
-                    label: block.settings.atc_button_label
-                  %}
-                {% endif %}
-              {%- endif -%}
             </div>
           </div>
         </div>
@@ -174,33 +115,6 @@
     "groups": ["header", "footer"]
   },
   "settings": [
-    {
-      "type": "checkbox",
-      "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
-      "default": false
-    },
-    {
-      "type": "select",
-      "id": "visibility",
-      "options": [
-        {
-          "value": "desktop-hidden",
-          "label": "Mobile only"
-        },
-        {
-          "value": "mobile-hidden",
-          "label": "Desktop only"
-        },
-        {
-          "value": "always-display",
-          "label": "All devices"
-        }
-      ],
-      "label": "Display on",
-      "default": "always-display"
-    },
     {
       "type": "select",
       "id": "image_height",
@@ -480,16 +394,6 @@
           "label": "t:sections.multirow.blocks.row.settings.image.label"
         },
         {
-          "type": "header",
-          "content": "Or"
-        },
-        {
-          "type": "video",
-          "id": "video",
-          "label": "Video",
-          "info": "Use autoplay mp4 instead of GIFs & animated WEBPs."
-        },
-        {
           "type": "text",
           "id": "caption",
           "default": "Caption",
@@ -517,18 +421,6 @@
           "type": "url",
           "id": "button_link",
           "label": "t:sections.multirow.blocks.row.settings.button_link.label"
-        },
-        {
-          "type": "text",
-          "id": "atc_button_label",
-          "label": "Add to Cart button label",
-          "info": "Leave the label blank to hide the Add to Cart button."
-        },
-        {
-          "type": "product",
-          "id": "atc_product",
-          "label": "ATC Custom product",
-          "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
         }
       ]
     }

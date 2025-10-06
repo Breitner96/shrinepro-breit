@@ -1,3 +1,5 @@
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -10,35 +12,21 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-  {% if section.settings.content_alignment == 'center' %}
-    .section-{{ section.id }}-padding .rating-stars-and-text {
-      justify-content: center;
-    }
-  {% elsif section.settings.content_alignment == 'right' %}
-    .section-{{ section.id }}-padding .rating-stars-and-text {
-      justify-content: flex-end;
-    }
-  {% endif %}
 {%- endstyle -%}
 
-<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
-  {% if section.settings.display_id %}
-    <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
-    </copy-button>
-  {% endif %}
+<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
   <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
     <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
-      <div class="rich-text__blocks {{ section.settings.content_alignment }} animate-item">
+      <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
-              <h2 class="rich-text__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-                {{ block.settings.heading | replace: 'p>', 'span>' }}
+              <h2
+                class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.heading }}
               </h2>
-            {% when 'rating_stars' %}
-              {% render 'rating-stars-block', block: block, margins: false, block_attributes: true %}
             {%- when 'caption' -%}
               <p
                 class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}"
@@ -80,42 +68,6 @@
                   </a>
                 {%- endif -%}
               </div>
-            {% when 'atc_button' %}
-              <div class='rich-text__buttons' {{ block.shopify_attributes }}>
-                {% if block.settings.atc_product == blank %}
-                  <button 
-                    id='SectionAtcBtn-{{ section.id }}' 
-                    type="button"
-                    class="button main-product-atc button--has-spinner"
-                    {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
-                      disabled
-                    {% endif %}
-                  >
-                    {{ block.settings.button_label }}
-                    <div class="loading-overlay__spinner">
-                      <svg
-                        aria-hidden="true"
-                        focusable="false"
-                        class="spinner"
-                        viewBox="0 0 66 66"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                      </svg>
-                    </div>
-                  </button>
-                {% else %}
-                  {% assign product_form_id = 'section-product-form-'
-                    | append: section.id
-                    | append: block.id
-                  %}
-                  {% render 'separate-atc-btn',
-                    product: block.settings.atc_product,
-                    product_form_id: product_form_id,
-                    label: block.settings.button_label
-                  %}
-                {% endif %}
-              </div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -132,33 +84,6 @@
     "groups": ["header", "footer"]
   },
   "settings": [
-    {
-      "type": "checkbox",
-      "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
-      "default": false
-    },
-    {
-      "type": "select",
-      "id": "visibility",
-      "options": [
-        {
-          "value": "desktop-hidden",
-          "label": "Mobile only"
-        },
-        {
-          "value": "mobile-hidden",
-          "label": "Desktop only"
-        },
-        {
-          "value": "always-display",
-          "label": "All devices"
-        }
-      ],
-      "label": "Display on",
-      "default": "always-display"
-    },
     {
       "type": "select",
       "id": "desktop_content_position",
@@ -266,9 +191,9 @@
       "limit": 3,
       "settings": [
         {
-          "type": "richtext",
+          "type": "inline_richtext",
           "id": "heading",
-          "default": "<p>Talk about your brand</p>",
+          "default": "Talk about your brand",
           "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
         },
         {
@@ -294,71 +219,6 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
-        }
-      ]
-    },
-    {
-      "type": "rating_stars",
-      "name": "Rating stars",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "range",
-          "id": "rating",
-          "label": "Rating",
-          "min": 1,
-          "max": 5,
-          "step": 0.1,
-          "default": 4.8
-        },
-        {
-          "type": "color",
-          "id": "star_color",
-          "default": "#ffcc00",
-          "label": "Stars color"
-        },
-        {
-          "type": "select",
-          "id": "bg_stars_style",
-          "options": [
-            {
-              "value": "outlined",
-              "label": "Outlined"
-            },
-            {
-              "value": "full",
-              "label": "Full"
-            }
-          ],
-          "label": "Background stars style",
-          "default": "full"
-        },
-        {
-          "type": "color",
-          "id": "bg_star_color",
-          "default": "#ececec",
-          "label": "Background stars color"
-        },
-        {
-          "type": "inline_richtext",
-          "id": "label",
-          "label": "Text",
-          "default": "(xxxx Reviews)"
-        },
-        {
-          "type": "range",
-          "id": "size",
-          "min": 10,
-          "max": 24,
-          "step": 1,
-          "unit": "px",
-          "default": 16,
-          "label": "Text size"
-        },
-        {
-          "type": "text",
-          "id": "scroll_id",
-          "label": "ID of the section to scroll to"
         }
       ]
     },
@@ -463,25 +323,6 @@
           "id": "button_style_secondary_2",
           "default": false,
           "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_2.label"
-        }
-      ]
-    },
-    {
-      "type": "atc_button",
-      "name":"Add to Cart button",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "button_label",
-          "label": "Button label",
-          "default": "Add to Cart"
-        },
-        {
-          "type": "product",
-          "id": "atc_product",
-          "label": "ATC Custom product",
-          "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
         }
       ]
     }

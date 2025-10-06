@@ -425,6 +425,18 @@
         "options__4": {
           "label": "ขนาดใหญ่พิเศษ"
         }
+      },
+      "animation": {
+        "content": "ภาพเคลื่อนไหว",
+        "image_behavior": {
+          "options__1": {
+            "label": "ไม่มี"
+          },
+          "options__2": {
+            "label": "การเคลื่อนไหวแวดล้อม"
+          },
+          "label": "พฤติกรรมภาพ"
+        }
       }
     },
     "announcement-bar": {
@@ -650,7 +662,7 @@
       }
     },
     "featured-collection": {
-      "name": "คอลเลกชันแนะนำ",
+      "name": "คอลเลกชันเด่น",
       "settings": {
         "title": {
           "label": "หัวเรื่อง"
@@ -749,7 +761,7 @@
         }
       },
       "presets": {
-        "name": "คอลเลกชันแนะนำ"
+        "name": "คอลเลกชันเด่น"
       }
     },
     "footer": {
@@ -890,6 +902,9 @@
           },
           "options__2": {
             "label": "เมกะเมนู"
+          },
+          "options__3": {
+            "label": "แถบตัวเลือกแบบซ่อนได้"
           }
         },
         "mobile_layout": {
@@ -903,9 +918,6 @@
           "options__2": {
             "label": "ซ้าย"
           }
-        },
-        "logo_header": {
-          "content": "โลโก้"
         },
         "logo_help": {
           "content": "แก้ไขโลโก้ของคุณใน [การตั้งค่าธีม ](/editor?context=theme&category=logo)"
@@ -924,6 +936,24 @@
           "options__4": {
             "label": "เสมอ, ลดขนาดโลโก้"
           }
+        },
+        "header__3": {
+          "content": "ตัวเลือกประเทศ/ภูมิภาค"
+        },
+        "header__4": {
+          "info": "หากต้องการเพิ่มประเทศ/ภูมิภาค ให้ไปที่ [การตั้งค่าตลาด](/admin/settings/markets)"
+        },
+        "enable_country_selector": {
+          "label": "เปิดใช้งานตัวเลือกประเทศ/ภูมิภาค"
+        },
+        "header__5": {
+          "content": "ตัวเลือกภาษา"
+        },
+        "header__6": {
+          "info": "หากต้องการเพิ่มภาษา ให้ไปที่ [การตั้งค่าภาษา](/admin/settings/languages)"
+        },
+        "enable_language_selector": {
+          "label": "เปิดใช้งานตัวเลือกภาษา"
         }
       }
     },
@@ -951,9 +981,6 @@
         },
         "image_overlay_opacity": {
           "label": "ความทึบของการวางซ้อนรูปภาพ"
-        },
-        "header": {
-          "content": "เลย์เอาต์ของมือถือ"
         },
         "show_text_below": {
           "label": "แสดงคอนเทนเนอร์บนมือถือ"
@@ -1027,6 +1054,9 @@
             "label": "ขวา"
           },
           "label": "การจัดวางเนื้อหาบนมือถือ"
+        },
+        "mobile": {
+          "content": "เลย์เอาต์สำหรับมือถือ"
         }
       },
       "blocks": {
@@ -1574,6 +1604,10 @@
             "show_dynamic_checkout": {
               "label": "แสดงปุ่มชำระเงินแบบไดนามิก",
               "info": "วิธีการชำระเงินที่พร้อมใช้งานบนร้านค้าของคุณ จะช่วยให้ลูกค้าเห็นตัวเลือกที่พวกเขาต้องการ เช่น PayPal หรือ Apple Pay  [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+            },
+            "show_gift_card_recipient": {
+              "label": "แสดงแบบฟอร์มข้อมูลผู้รับสำหรับผลิตภัณฑ์บัตรของขวัญ",
+              "info": "สามารถเลือกส่งผลิตภัณฑ์บัตรของขวัญตรงถึงผู้รับพร้อมข้อความของตนเองได้"
             }
           },
           "name": "ปุ่มซื้อ"
@@ -2343,8 +2377,7 @@
         },
         "video_url": {
           "label": "URL",
-          "placeholder": "ใช้ URL ของ YouTube หรือ Vimeo",
-          "info": "วิดีโอจะเล่นในหน้า"
+          "info": "ใช้ URL ของ YouTube หรือ Vimeo"
         },
         "description": {
           "label": "ข้อความกำกับวิดีโอ",
@@ -2356,6 +2389,24 @@
         },
         "full_width": {
           "label": "ทำให้ส่วนเต็มความกว้าง"
+        },
+        "video": {
+          "label": "วิดีโอ"
+        },
+        "enable_video_looping": {
+          "label": "เล่นวิดีโอแบบวนซ้ำ"
+        },
+        "header__1": {
+          "content": "วิดีโอโฮสต์โดย Shopify"
+        },
+        "header__2": {
+          "content": "หรือวิดีโอที่ติดตั้งภายในจาก URL"
+        },
+        "header__3": {
+          "content": "สไตล์"
+        },
+        "paragraph": {
+          "content": "แสดงเมื่อไม่มีวิดีโอโฮสต์โดย Shopify ที่ถูกเลือก"
         }
       },
       "presets": {
@@ -2414,6 +2465,10 @@
             "show_dynamic_checkout": {
               "label": "แสดงปุ่มชำระเงินแบบไดนามิก",
               "info": "วิธีการชำระเงินที่พร้อมใช้งานบนร้านค้าของคุณจะช่วยให้ลูกค้าเห็นตัวเลือกที่พวกเขาต้องการ เช่น PayPal หรือ Apple Pay [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+            },
+            "show_gift_card_recipient": {
+              "label": "แสดงแบบฟอร์มผู้รับสำหรับผลิตภัณฑ์บัตรของขวัญ",
+              "info": "สามารถเลือกส่งผลิตภัณฑ์บัตรของขวัญให้ผู้รับพร้อมข้อความของตนเองได้เมื่อเปิดใช้งานแล้ว"
             }
           }
         },

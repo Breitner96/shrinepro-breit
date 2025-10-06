@@ -2,7 +2,7 @@
 {%- assign pick_up_availabilities = product_variant.store_availabilities | where: 'pick_up_enabled', true -%}
 
 {%- if pick_up_availabilities.size > 0 -%}
-  <pickup-availability-preview class="pickup-availability-preview content-for-grouping">
+  <pickup-availability-preview class="pickup-availability-preview">
     {%- liquid
       assign closest_location = pick_up_availabilities.first
 

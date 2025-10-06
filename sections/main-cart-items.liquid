@@ -1,3 +1,10 @@
+{{ 'component-cart.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}
+{{ 'component-totals.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -10,11 +17,20 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+a.underlined-link {
+    display: none;
+}
+
 {%- endstyle -%}
 
+{%- unless settings.cart_type == 'drawer' -%}
+  <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+{%- endunless -%}
+
 <cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
-  <div class="title-wrapper-with-link title-wrapper-with-link--spacing">
-    <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
+  <div class="title-wrapper-with-link">
+    <h1 style="font-size:17px;" class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
     <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
   </div>
 

@@ -1,14 +1,12 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
       #Banner-{{ section.id }}::before,
       #Banner-{{ section.id }} .banner__media::before,
       #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
-        {% if section.settings.image_2 != blank and section.settings.image_1_visibility == 'mobile-hidden' %}
-          padding-bottom: {{ 1 | divided_by: section.settings.image_2.aspect_ratio | times: 100 }}%;
-        {% else %}
-          padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
-        {% endif %}
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
         content: '';
         display: block;
       }
@@ -31,29 +29,37 @@
   }
 {%- endstyle -%}
 
-{% if section.settings.display_id %}
-  <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-    <span class="copy-text">Click to copy section ID</span>
-    <span class="copy-success">ID copied successfully!</span>
-  </copy-button>
-{% endif %}
+{%- liquid
+  if section.settings.image_behavior == 'ambient'
+    assign half_width = '60vw'
+    assign full_width = '120vw'
+    assign stacked_sizes = '(min-width: 750px) 60vw, 120vw'
+    assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
+  else
+    assign half_width = '50vw'
+    assign full_width = '100vw'
+    assign stacked_sizes = '(min-width: 750px) 50vw, 100vw'
+    assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+  endif
+-%}
+
 <div
   id="Banner-{{ section.id }}"
-  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} content-for-grouping {{ section.settings.visibility }}"
+  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}"
 >
   {%- if section.settings.image != blank -%}
-    <div class="banner__media media {{ section.settings.image_1_visibility }}{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank and section.settings.image_2_visibility != 'desktop-hidden' %} banner__media-half{% endif %}">
+    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
       {%- liquid
         assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
         if section.settings.image_2 != blank
           assign image_class = 'banner__media-image-half'
         endif
         if section.settings.image_2 != blank and section.settings.stack_images_on_mobile
-          assign sizes = '(min-width: 750px) 50vw, 100vw'
+          assign sizes = stacked_sizes
         elsif section.settings.image_2 != blank
-          assign sizes = '50vw'
+          assign sizes = half_width
         else
-          assign sizes = '100vw'
+          assign sizes = full_width
         endif
       -%}
       {{
@@ -65,27 +71,27 @@
           height: image_height,
           class: image_class,
           sizes: sizes,
-          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+          widths: widths
       }}
     </div>
   {%- elsif section.settings.image_2 == blank -%}
-    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
+    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
       {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
     </div>
   {%- endif -%}
   {%- if section.settings.image_2 != blank -%}
-    <div class="banner__media media {{ section.settings.image_2_visibility }}{% if section.settings.image != blank and section.settings.image_2_visibility != 'desktop-hidden' %} banner__media-half{% endif %}">
+    <div class="banner__media media{% if section.settings.image != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
       {%- liquid
         assign image_height_2 = section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio
         if section.settings.image != blank
           assign image_class_2 = 'banner__media-image-half'
         endif
         if section.settings.image != blank and section.settings.stack_images_on_mobile
-          assign sizes = '(min-width: 750px) 50vw, 100vw'
-        elsif section.settings.image != blank
-          assign sizes = '50vw'
+          assign sizes = stacked_sizes
+        elsif section.settings.image_2 != blank
+          assign sizes = half_width
         else
-          assign sizes = '100vw'
+          assign sizes = full_width
         endif
       -%}
       {{
@@ -97,21 +103,19 @@
           height: image_height_2,
           class: image_class_2,
           sizes: sizes,
-          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+          widths: widths
       }}
     </div>
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
-    <div class="banner__box banner--transparent-{{ section.settings.transparent_container_color }} content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.heading | escape }}</span>
-            </h2>
+            <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading }}</h2>
           {%- when 'text' -%}
-            <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.text | escape }}</span>
+            <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+              <p>{{ block.settings.text }}</p>
             </div>
           {%- when 'buttons' -%}
             <div
@@ -143,42 +147,6 @@
                 </a>
               {%- endif -%}
             </div>
-          {% when 'atc_button' %}
-            <div class="banner__buttons" {{ block.shopify_attributes }}>
-              {% if block.settings.atc_product == blank %}
-                <button
-                  id="SectionAtcBtn-{{ section.id }}"
-                  type="button"
-                  class="button main-product-atc button--has-spinner"
-                  {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
-                    disabled
-                  {% endif %}
-                >
-                  {{ block.settings.button_label }}
-                  <div class="loading-overlay__spinner">
-                    <svg
-                      aria-hidden="true"
-                      focusable="false"
-                      class="spinner"
-                      viewBox="0 0 66 66"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                    </svg>
-                  </div>
-                </button>
-              {% else %}
-                {% assign product_form_id = 'section-product-form-'
-                  | append: section.id
-                  | append: block.id
-                %}
-                {% render 'separate-atc-btn',
-                  product: block.settings.atc_product,
-                  product_form_id: product_form_id,
-                  label: block.settings.button_label
-                %}
-              {% endif %}
-            </div>
         {%- endcase -%}
       {%- endfor -%}
     </div>
@@ -195,73 +163,14 @@
   },
   "settings": [
     {
-      "type": "checkbox",
-      "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
-      "default": false
-    },
-    {
-      "type": "select",
-      "id": "visibility",
-      "options": [
-        {
-          "value": "desktop-hidden",
-          "label": "Mobile only"
-        },
-        {
-          "value": "mobile-hidden",
-          "label": "Desktop only"
-        },
-        {
-          "value": "always-display",
-          "label": "All devices"
-        }
-      ],
-      "label": "Display on",
-      "default": "always-display"
-    },
-    {
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.image-banner.settings.image.label"
     },
     {
-      "type": "select",
-      "id": "image_1_visibility",
-      "label": "Display first image on:",
-      "options": [
-        {
-          "value": "mobile-hidden",
-          "label": "Desktop only"
-        },
-        {
-          "value": "always-display",
-          "label": "All devices"
-        }
-      ],
-      "default": "always-display"
-    },
-    {
       "type": "image_picker",
       "id": "image_2",
       "label": "t:sections.image-banner.settings.image_2.label"
-    },
-    {
-      "type": "select",
-      "id": "image_2_visibility",
-      "label": "Display second image on:",
-      "options": [
-        {
-          "value": "desktop-hidden",
-          "label": "Mobile only"
-        },
-        {
-          "value": "always-display",
-          "label": "All devices"
-        }
-      ],
-      "default": "always-display"
     },
     {
       "type": "range",
@@ -398,24 +307,28 @@
       "info": "t:sections.image-banner.settings.color_scheme.info"
     },
     {
+      "type": "header",
+      "content": "t:sections.all.animation.content"
+    },
+    {
       "type": "select",
-      "id": "transparent_container_color",
-      "label": "Transparent container text color",
+      "id": "image_behavior",
       "options": [
         {
-          "value": "white",
-          "label": "White"
+          "value": "none",
+          "label": "t:sections.all.animation.image_behavior.options__1.label"
         },
         {
-          "value": "black",
-          "label": "Black"
+          "value": "ambient",
+          "label": "t:sections.all.animation.image_behavior.options__2.label"
         }
       ],
-      "default": "white"
+      "default": "none",
+      "label": "t:sections.all.animation.image_behavior.label"
     },
     {
       "type": "header",
-      "content": "t:sections.image-banner.settings.header.content"
+      "content": "t:sections.image-banner.settings.mobile.content"
     },
     {
       "type": "select",
@@ -457,7 +370,7 @@
       "limit": 1,
       "settings": [
         {
-          "type": "text",
+          "type": "inline_richtext",
           "id": "heading",
           "default": "Image banner",
           "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
@@ -490,7 +403,7 @@
       "limit": 1,
       "settings": [
         {
-          "type": "text",
+          "type": "inline_richtext",
           "id": "text",
           "default": "Give customers details about the banner image(s) or content on the template.",
           "label": "t:sections.image-banner.blocks.text.settings.text.label"
@@ -557,25 +470,6 @@
           "id": "button_style_secondary_2",
           "default": false,
           "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
-        }
-      ]
-    },
-    {
-      "type": "atc_button",
-      "name":"Add to Cart button",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "button_label",
-          "label": "Button label",
-          "default": "Add to Cart"
-        },
-        {
-          "type": "product",
-          "id": "atc_product",
-          "label": "ATC Custom product",
-          "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
         }
       ]
     }

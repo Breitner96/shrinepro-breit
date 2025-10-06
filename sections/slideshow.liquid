@@ -1,14 +1,14 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
+
 {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
       #Slider-{{ section.id }}::before,
       #Slider-{{ section.id }} .media::before,
       #Slider-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
-        {% if section.blocks.first.settings.mobile_image != blank  %}
-          padding-bottom: {{ 1 | divided_by: section.blocks.first.settings.mobile_image.aspect_ratio | times: 100 }}%;
-        {% else %}
-          padding-bottom: {{ 1 | divided_by: section.blocks.first.settings.image.aspect_ratio | times: 100 }}%;
-        {% endif %}
+        padding-bottom: {{ 1 | divided_by: section.blocks.first.settings.image.aspect_ratio | times: 100 }}%;
         content: '';
         display: block;
       }
@@ -26,13 +26,13 @@
 {%- endif -%}
 
 <slideshow-component
-  class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %} {{ section.settings.visibility }}"
+  class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
   role="region"
   aria-roledescription="{{ 'sections.slideshow.carousel' | t }}"
   aria-label="{{ section.settings.accessibility_info | escape }}"
 >
   {%- if section.settings.auto_rotate and section.blocks.size > 1 -%}
-    <div class="slideshow__controls slideshow__controls--top slideshow__controls--desktop-{{ section.settings.desktop_pagination_position }}{% if section.settings.mobile_pagination_position == 'over' and section.settings.show_text_below == false %} slideshow__controls--mobile-over{% endif %} slider-buttons no-js-hidden{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
+    <div class="slideshow__controls slideshow__controls--top slider-buttons no-js-hidden{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
       <button
         type="button"
         class="slider-button slider-button--prev"
@@ -127,51 +127,41 @@
         aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
         tabindex="-1"
       >
-        <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}">
+        <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
           {%- if block.settings.image -%}
-            {% liquid
-              assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round 
-              if block.settings.mobile_image != blank
-                assign main_image_class = 'mobile-hidden'
-              else 
-                assign main_image_class = ''
+            {%- liquid
+              assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
+              if section.settings.image_behavior == 'ambient'
+                assign sizes = '120vw'
+                assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
+              else
+                assign sizes = '100vw'
+                assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
               endif
-            %}
+            -%}
             {{
               block.settings.image
               | image_url: width: 3840
               | image_tag:
                 loading: 'lazy',
                 height: height,
-                sizes: '100vw',
-                class: main_image_class,
-                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                sizes: sizes,
+                widths: widths
             }}
-            {% if block.settings.mobile_image != blank %}
-              {% assign height = block.settings.mobile_image.width | divided_by: block.settings.mobile_image.aspect_ratio | round %}
-              {{
-                block.settings.mobile_image
-                | image_url: width: 3840
-                | image_tag:
-                  loading: 'lazy',
-                  height: height,
-                  sizes: '100vw',
-                  class: 'desktop-hidden',
-                  widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-              }}
-            {% endif %}
           {%- else -%}
             {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
         </div>
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
-          <div class="slideshow__text banner__box banner--transparent-{{ block.settings.transparent_container_color }} content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
+          <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
             {%- if block.settings.heading != blank -%}
-              <h2 class="banner__heading {{ block.settings.heading_size }}">{{ block.settings.heading }}</h2>
+              <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }}">
+                {{ block.settings.heading }}
+              </h2>
             {%- endif -%}
             {%- if block.settings.subheading != blank -%}
-              <div class="banner__text" {{ block.shopify_attributes }}>
-                <span>{{ block.settings.subheading }}</span>
+              <div class="banner__text rte" {{ block.shopify_attributes }}>
+                <p>{{ block.settings.subheading }}</p>
               </div>
             {%- endif -%}
             {%- if block.settings.button_label != blank -%}
@@ -184,45 +174,8 @@
                   {% endif %}
                   class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}"
                 >
-                  {{- block.settings.button_label -}}
+                  {{- block.settings.button_label | escape -}}
                 </a>
-              </div>
-            {%- endif -%}
-            {%- if block.settings.atc_button_label != blank -%}
-              <div class="banner__buttons">
-                {% if block.settings.atc_product == blank %}
-                  <button
-                    id="SectionAtcBtn-{{ section.id }}-{{ forloop.index }}"
-                    type="button"
-                    class="button main-product-atc button--has-spinner"
-                    {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
-                      disabled
-                    {% endif %}
-                  >
-                    {{ block.settings.atc_button_label }}
-                    <div class="loading-overlay__spinner">
-                      <svg
-                        aria-hidden="true"
-                        focusable="false"
-                        class="spinner"
-                        viewBox="0 0 66 66"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                      </svg>
-                    </div>
-                  </button>
-                {% else %}
-                  {% assign product_form_id = 'section-product-form-'
-                    | append: section.id
-                    | append: block.id
-                  %}
-                  {% render 'separate-atc-btn',
-                    product: block.settings.atc_product,
-                    product_form_id: product_form_id,
-                    label: block.settings.atc_button_label
-                  %}
-                {% endif %}
               </div>
             {%- endif -%}
           </div>
@@ -232,7 +185,7 @@
   </div>
 
   {%- if section.blocks.size > 1 and section.settings.auto_rotate == false -%}
-    <div class="slideshow__controls slideshow__controls--desktop-{{ section.settings.desktop_pagination_position }}{% if section.settings.mobile_pagination_position == 'over' and section.settings.show_text_below == false %} slideshow__controls--mobile-over{% endif %} slider-buttons no-js-hidden{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
+    <div class="slideshow__controls slider-buttons no-js-hidden{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
       <button
         type="button"
         class="slider-button slider-button--prev"
@@ -320,26 +273,6 @@
   "settings": [
     {
       "type": "select",
-      "id": "visibility",
-      "options": [
-        {
-          "value": "desktop-hidden",
-          "label": "Mobile only"
-        },
-        {
-          "value": "mobile-hidden",
-          "label": "Desktop only"
-        },
-        {
-          "value": "always-display",
-          "label": "All devices"
-        }
-      ],
-      "label": "Display on",
-      "default": "always-display"
-    },
-    {
-      "type": "select",
       "id": "layout",
       "options": [
         {
@@ -395,24 +328,8 @@
           "label": "t:sections.slideshow.settings.slider_visual.options__3.label"
         }
       ],
-      "default": "dots",
+      "default": "counter",
       "label": "t:sections.slideshow.settings.slider_visual.label"
-    },
-    {
-      "type": "select",
-      "id": "desktop_pagination_position",
-      "options": [
-        {
-          "value": "under",
-          "label": "Under the section"
-        },
-        {
-          "value": "over",
-          "label": "Over the section"
-        }
-      ],
-      "default": "over",
-      "label": "Desktop pagination position"
     },
     {
       "type": "checkbox",
@@ -432,30 +349,33 @@
     },
     {
       "type": "header",
+      "content": "t:sections.all.animation.content"
+    },
+    {
+      "type": "select",
+      "id": "image_behavior",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.all.animation.image_behavior.options__1.label"
+        },
+        {
+          "value": "ambient",
+          "label": "t:sections.all.animation.image_behavior.options__2.label"
+        }
+      ],
+      "default": "none",
+      "label": "t:sections.all.animation.image_behavior.label"
+    },
+    {
+      "type": "header",
       "content": "t:sections.slideshow.settings.mobile.content"
     },
     {
       "type": "checkbox",
       "id": "show_text_below",
-      "label": "Show content below images on mobile",
+      "label": "t:sections.slideshow.settings.show_text_below.label",
       "default": true
-    },
-    {
-      "type": "select",
-      "id": "mobile_pagination_position",
-      "options": [
-        {
-          "value": "under",
-          "label": "Under the section"
-        },
-        {
-          "value": "over",
-          "label": "Over the section"
-        }
-      ],
-      "default": "under",
-      "label": "Mobile pagination position",
-      "info": "Over the section is only available if Show content below images on mobile is disabled."
     },
     {
       "type": "header",
@@ -481,13 +401,7 @@
           "label": "t:sections.slideshow.blocks.slide.settings.image.label"
         },
         {
-          "type": "image_picker",
-          "id": "mobile_image",
-          "label": "Mobile image",
-          "info": "If empty, the main image will also be displayed on mobile."
-        },
-        {
-          "type": "text",
+          "type": "inline_richtext",
           "id": "heading",
           "default": "Image slide",
           "label": "t:sections.slideshow.blocks.slide.settings.heading.label"
@@ -513,7 +427,7 @@
           "label": "t:sections.all.heading_size.label"
         },
         {
-          "type": "text",
+          "type": "inline_richtext",
           "id": "subheading",
           "default": "Tell your brand's story through images",
           "label": "t:sections.slideshow.blocks.slide.settings.subheading.label"
@@ -535,18 +449,6 @@
           "id": "button_style_secondary",
           "label": "t:sections.slideshow.blocks.slide.settings.secondary_style.label",
           "default": false
-        },
-        {
-          "type": "text",
-          "id": "atc_button_label",
-          "label": "Add to Cart button label",
-          "info": "Leave the label blank to hide the Add to Cart button."
-        },
-        {
-          "type": "product",
-          "id": "atc_product",
-          "label": "ATC Custom product",
-          "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
         },
         {
           "type": "select",
@@ -657,22 +559,6 @@
           "default": "background-1",
           "label": "t:sections.all.colors.label",
           "info": "t:sections.slideshow.blocks.slide.settings.color_scheme.info"
-        },
-        {
-          "type": "select",
-          "id": "transparent_container_color",
-          "label": "Transparent container text color",
-          "options": [
-            {
-              "value": "white",
-              "label": "White"
-            },
-            {
-              "value": "black",
-              "label": "Black"
-            }
-          ],
-          "default": "white"
         },
         {
           "type": "header",

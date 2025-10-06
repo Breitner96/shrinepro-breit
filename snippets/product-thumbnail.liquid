@@ -53,17 +53,6 @@
   class="product-media-container media-type-{{ media.media_type }} media-fit-{{ media_fit }} global-media-settings gradient{% if constrain_to_viewport %} constrain-height{% endif %}"
   style="--ratio: {{ media.aspect_ratio | default: 1.0 }}; --preview-ratio: {{ media.preview_image.aspect_ratio | default: 1.0 }};"
 >
-  {% if section.settings.trust_badge != blank %}
-    <div class='product-media__trust-badge product-media__trust-badge--{{ section.settings.trust_badge_position }} product-media__trust-badge--{{ section.settings.trust_badge_size }}'>
-      <img
-        src="{{ section.settings.trust_badge | image_url: width: 500 }}"
-        alt="{{ section.settings.trust_badge.alt | escape }}"
-        loading="lazy"
-        width="auto"
-        height="auto"
-      >
-    </div>
-  {% endif %}
   <noscript>
     {%- if media.media_type == 'video' or media.media_type == 'external_video' -%}
       <span class="product__media-icon motion-reduce quick-add-hidden">{% render 'icon-play' %}</span>
@@ -101,6 +90,17 @@
         endcase
       -%}
     </span>
+    <div class="loading-overlay__spinner hidden">
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        class="spinner"
+        viewBox="0 0 66 66"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+      </svg>
+    </div>
     <div class="product__media media media--transparent">
       {{ media.preview_image | image_url: width: 1946 | image_tag:
         class: image_class,

@@ -26,7 +26,7 @@
 
 .blog-placeholder .rte-width {
   margin-top: 1.2rem;
-  color: rgba(var(--color-foreground), 0.9);
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 @media screen and (min-width: 990px) {
@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 749px) {
   .blog__post.article {
-    width: calc(100% - 3rem);
+    width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
   }
 }
 
@@ -85,3 +85,4 @@
     }
   }
 }
+

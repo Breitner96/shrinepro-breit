@@ -1,0 +1,27 @@
+<body onload="getShippingDate()">
+<center><i class="fa-solid fa-location-arrow"></i> {{block.settings.preshipsby}}
+<span id="shipping-date"></span> {{block.settings.postshipsby}} </center>
+
+</body>
+
+
+
+
+	<script type="text/javascript">
+		function getShippingDate() {
+			// Get the current date and add 2 days
+			let shippingDate = new Date();
+			shippingDate.setDate(shippingDate.getDate() + {{block.settings.shippingarrow}});
+
+			// Check if the shipping date falls on a weekend (Saturday or Sunday)
+			if (shippingDate.getDay() === 6) { // Saturday
+				shippingDate.setDate(shippingDate.getDate() + {{block.settings.shippingarrow}}); // Add 2 more days for Tuesday
+			} else if (shippingDate.getDay() === 0) { // Sunday
+				shippingDate.setDate(shippingDate.getDate() + 1); // Add 1 more day for Tuesday
+			}
+
+			// Format the shipping date as a string and display it in the HTML page
+			let formattedDate = shippingDate.toLocaleDateString('en-US', { weekday: 'long' });
+			document.getElementById('shipping-date').innerHTML = formattedDate;
+		}
+	</script>

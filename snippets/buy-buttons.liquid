@@ -5,24 +5,26 @@
   - block: {Object} passing the block information.
   - product_form_id: {String} product form id.
   - section_id: {String} id of section to which this snippet belongs.
-  - show_pickup_availability:: {Boolean} for the pickup availability. If true the pickup availability is rendered, false - not rendered (optional).
+  - show_pickup_availability: {Boolean} for the pickup availability. If true the pickup availability is rendered, false - not rendered (optional).
 
   Usage:
-  {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, show_pickup_availability: true %}
+  {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true %}
 {% endcomment %}
-{% if block.settings.enable_custom_color %}
-  {% style %}
-    #ProductSubmitButton-{{ section_id }} {
-      --color-button: {{ block.settings.custom_color.red }}, {{ block.settings.custom_color.green }}, {{ block.settings.custom_color.blue }};
-    }
-  {% endstyle %}
-{% endif %}
-<div
-  {{ block.shopify_attributes }}
-  style="--margin-top: {{ block.settings.margin_top | divided_by: 10.0 }}rem;--margin-bottom: {{ block.settings.margin_bottom | divided_by: 10.0 }}rem;"
->
+<div {{ block.shopify_attributes }}>
   {%- if product != blank -%}
-    <product-form class="product-form main-product-form" data-section="{{ section.id }}" data-options="{{ product.options | join: ',' }}" id="ProductForm-{{ section.id }}">
+    {%- liquid
+      assign gift_card_recipient_feature_active = false
+      if block.settings.show_gift_card_recipient and product.gift_card?
+        assign gift_card_recipient_feature_active = true
+      endif
+
+      assign show_dynamic_checkout = false
+      if block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false
+        assign show_dynamic_checkout = true
+      endif
+    -%}
+
+    <product-form class="product-form" data-hide-errors="{{ gift_card_recipient_feature_active }}">
       <div class="product-form__error-message-wrapper" role="alert" hidden>
         <svg
           aria-hidden="true"
@@ -45,21 +47,22 @@
         novalidate: 'novalidate',
         data-type: 'add-to-cart-form'
       -%}
-        <div class="hidden product-form__variants" id="product-form-{{ section.id }}__variants" data-values=""></div>
         <input
           type="hidden"
           name="id"
           value="{{ product.selected_or_first_available_variant.id }}"
           disabled
           class="product-variant-id"
-          {% if block.settings.skip_cart %}
-            data-skip-cart="true"
-          {% endif %}
         >
-        <div class="product-form__buttons{% if block.settings.uppercase_text %} product-form__buttons--uppercase{% endif %}">
+
+        {%- if gift_card_recipient_feature_active -%}
+          {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
+        {%- endif -%}
+
+        <div class="product-form__buttons">
           {%- liquid
             assign check_against_inventory = true
-            if product.selected_or_first_available_variant.inventory_management != 'shopify' or product.selected_or_first_available_variant.inventory_policy == 'continue'
+            if product.selected_or_first_available_variant.inventory_management != 'shopify' or  product.selected_or_first_available_variant.inventory_policy == 'continue'
               assign check_against_inventory = false
             endif
             if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
@@ -67,30 +70,56 @@
             endif
           -%}
           <button
-            id="ProductSubmitButton-{{ section_id }}"
+            id = "ProductSubmitButton-{{ section_id }}"
             type="submit"
             name="add"
-            class="atc-button product-form__submit button button--full-width button--margin-x{% if main_product %} main-product-atc{% endif %}"
+            class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
             {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
               disabled
-              data-unavailable="true"
             {% endif %}
-            data-required-fields="0"
-            data-valid-fields="0"
           >
-            <span class="main-atc__error" style="display:none;"></span>
-            <span class="main-atc__label">
+            <span>
               {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
               {%- else -%}
-                <span id="main-atc-price-{{ section.id }}">
-                  {% if block.settings.display_price %}
-                    {{ product.selected_or_first_available_variant.price | money }} •
-                  {% endif %}
-                </span>
                 {{ 'products.product.add_to_cart' | t }}
               {%- endif -%}
             </span>
+
+ {% if section.settings.atcicon %}
+<i class="fa-solid fa-cart-shopping" style="margin-left:10px;"></i>
+  {%- endif -%}
+
+
+ {% if section.settings.atcsavings %}
+   {%- if product.price_varies == true and product.compare_at_price_varies %}
+  {% assign amount = 0 %}
+      {% for variant in product.variants %}
+      {% assign saving = variant.compare_at_price | minus: variant.price %}
+      {% assign amount = saving | at_least: amount %}
+      {% endfor %} 
+      {% capture saved_amount %}{{ amount | money_without_trailing_zeros }}{% endcapture %}
+
+ <span style="font-weight: bold;margin-left: 5px;"> & SAVE {{ saved_amount }}</span>
+  {%- endif -%}
+  {%- endif -%}
+
+
+
+
+                        <div class="loading-overlay__spinner hidden">
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            role="presentation"
+                            class="spinner"
+                            viewBox="0 0 66 66"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                          </svg>
+
+
             <div class="loading-overlay__spinner hidden">
               <svg
                 aria-hidden="true"
@@ -103,7 +132,7 @@
               </svg>
             </div>
           </button>
-          {%- if block.settings.show_dynamic_checkout and block.settings.skip_cart == false -%}
+   {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}
         </div>
@@ -123,6 +152,15 @@
       </div>
     </div>
   {%- endif -%}
+
+
+
+ <div class="shipping-calculate" {% if section.settings.enable_shipping_calculate == false %} style="display: none"{% endif %}>
+    {%- render 'shipping-calculate' -%}
+  </div>
+
+
+
 
   {%- if show_pickup_availability -%}
     {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}

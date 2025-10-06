@@ -4,6 +4,7 @@
   Accepts:
   - block: {Object} passes in the block information.
 
+
   Usage:
   {% render 'icon-with-text',
     block: block
@@ -36,14 +37,13 @@
   endif
 -%}
 <ul
-  class="icon-with-text icon-with-text--icon-{{ block.settings.icon_size }} icon-with-text--{{ block.settings.layout }} list-unstyled{% if text_only_all_items %} icon-with-text--text-only{% endif %}"
-  style="--margin-top: {{ block.settings.margin_top | divided_by: 10.0 }}rem;--margin-bottom: {{ block.settings.margin_bottom | divided_by: 10.0 }}rem;"
+  class="icon-with-text icon-with-text--{{ block.settings.layout }} list-unstyled{% if text_only_all_items %} icon-with-text--text-only{% endif %}"
   {{ block.shopify_attributes }}
 >
   {%- unless heading_1_empty -%}
     <li class="icon-with-text__item">
       {%- if block.settings.image_1 == null -%}
-        {% render 'material-icon', icon: block.settings.icon_1, filled: block.settings.icon_1_fill, custom_color: block.settings.icon_color %}
+        {%- render 'icon-accordion', icon: block.settings.icon_1 -%}
       {%- else -%}
         <img
           src="{{ block.settings.image_1 | image_url }}"
@@ -57,7 +57,7 @@
           loading="lazy"
         >
       {%- endif -%}
-      <span class="h4">
+      <span class="h4 inline-richtext">
         {{- block.settings.heading_1 -}}
       </span>
     </li>
@@ -65,7 +65,7 @@
   {%- unless heading_2_empty -%}
     <li class="icon-with-text__item">
       {%- if block.settings.image_2 == null -%}
-        {% render 'material-icon', icon: block.settings.icon_2, filled: block.settings.icon_2_fill, custom_color: block.settings.icon_color %}
+        {% render 'icon-accordion', icon: block.settings.icon_2 -%}
       {%- else -%}
         <img
           src="{{ block.settings.image_2 | image_url }}"
@@ -79,7 +79,7 @@
           loading="lazy"
         >
       {%- endif -%}
-      <span class="h4">
+      <span class="h4 inline-richtext">
         {{- block.settings.heading_2 -}}
       </span>
     </li>
@@ -87,7 +87,7 @@
   {%- unless heading_3_empty -%}
     <li class="icon-with-text__item">
       {%- if block.settings.image_3 == null -%}
-        {% render 'material-icon', icon: block.settings.icon_3, filled: block.settings.icon_3_fill, custom_color: block.settings.icon_color %}
+        {% render 'icon-accordion', icon: block.settings.icon_3 -%}
       {%- else -%}
         <img
           src="{{ block.settings.image_3 | image_url }}"
@@ -101,7 +101,7 @@
           loading="lazy"
         >
       {%- endif -%}
-      <span class="h4">
+      <span class="h4 inline-richtext">
         {{- block.settings.heading_3 -}}
       </span>
     </li>

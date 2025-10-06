@@ -25,7 +25,7 @@ pickup-availability[available] {
 
 .pickup-availability-button {
   background-color: transparent;
-  color: rgba(var(--color-foreground), 0.9);
+  color: rgba(var(--color-foreground), 0.75);
   letter-spacing: 0.06rem;
   padding: 0 0 0.2rem;
   text-align: left;
@@ -58,9 +58,10 @@ pickup-availability-drawer {
   border-color: rgba(var(--color-foreground), var(--drawer-border-opacity));
   border-style: solid;
   filter: drop-shadow(
-    var(--drawer-shadow-horizontal-offset) var(--drawer-shadow-vertical-offset)
-      var(--drawer-shadow-blur-radius)
-      rgba(var(--color-shadow), var(--drawer-shadow-opacity))
+    var(--drawer-shadow-horizontal-offset)
+    var(--drawer-shadow-vertical-offset)
+    var(--drawer-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--drawer-shadow-opacity))
   );
 }
 
@@ -109,7 +110,7 @@ pickup-availability-drawer[open] {
 }
 
 .pickup-availability-drawer-button:hover {
-  color: rgba(var(--color-foreground), 0.9);
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 .pickup-availability-variant {
