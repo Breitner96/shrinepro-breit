@@ -23,6 +23,18 @@
   {%- endstyle -%}
 {%- endif -%}
 
+{%- if section.settings.image != blank -%}
+  {%- liquid
+    assign preload_width_1 = 1100
+    assign preload_width_2 = 1500
+  -%}
+  <link rel="preload" as="image"
+        href="{{ section.settings.image | image_url: width: preload_width_1 }}"
+        imagesrcset="{{ section.settings.image | image_url: width: preload_width_1 }} {{ preload_width_1 }}w, {{ section.settings.image | image_url: width: preload_width_2 }} {{ preload_width_2 }}w"
+        imagesizes="{{ full_width }}"
+        fetchpriority="high">
+{%- endif -%}
+
 {%- style -%}
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};

@@ -25,6 +25,18 @@
   {%- endstyle -%}
 {%- endif -%}
 
+{%- if section.blocks.first and section.blocks.first.settings.image != blank -%}
+  {%- liquid
+    assign preload_width_1 = 1100
+    assign preload_width_2 = 1500
+  -%}
+  <link rel="preload" as="image"
+        href="{{ section.blocks.first.settings.image | image_url: width: preload_width_1 }}"
+        imagesrcset="{{ section.blocks.first.settings.image | image_url: width: preload_width_1 }} {{ preload_width_1 }}w, {{ section.blocks.first.settings.image | image_url: width: preload_width_2 }} {{ preload_width_2 }}w"
+        imagesizes="100vw"
+        fetchpriority="high">
+{%- endif -%}
+
 <slideshow-component
   class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
   role="region"
