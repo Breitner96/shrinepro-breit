@@ -614,15 +614,15 @@
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3": {
           "type": "row",
           "settings": {
-            "percentage": 70,
-            "row_text": "<p>de firmeza / suavidad</p>"
+            "percentage": 86,
+            "row_text": "<p>Más firmeza / suavidad</p>"
           }
         },
         "row_ztzhPp": {
           "type": "row",
           "settings": {
-            "percentage": 65,
-            "row_text": "<p>de imperfecciones / brotes</p>"
+            "percentage": 83,
+            "row_text": "<p>Reportan menos imperfecciones / brotes</p>"
           }
         },
         "row_QBkenz": {
