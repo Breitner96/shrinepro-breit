@@ -411,47 +411,25 @@
     "b6fc2703-d30b-40d4-b2cb-fcc2eade4e34": {
       "type": "multicolumn",
       "blocks": {
-        "column_fxTMrg": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Resenas2.avif",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Resenas3.avif",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_CXA8cR": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Resenas1.avif",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_tE6enz": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Resenas4__1.avif",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Andrea G. ⭐️⭐️⭐️⭐️⭐️",
+            "text": "<p>No sentí nada de ardor ni hormigueo. Es justo lo que esperaba de una crema coreana-consciente.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UzdxjU": {
+          "type": "column",
+          "settings": {
+            "title": "Laura M. ⭐️⭐️⭐️⭐️⭐️",
+            "text": "<p>He probado muchas cremas “suaves” y ninguna me dio resultados visibles como esta.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wqhwVR": {
           "type": "column",
           "settings": {
             "title": "Andrea G. ⭐️⭐️⭐️⭐️⭐️",
@@ -462,11 +440,9 @@
         }
       },
       "block_order": [
-        "column_fxTMrg",
-        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1",
-        "column_CXA8cR",
-        "column_tE6enz",
-        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3"
+        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3",
+        "column_UzdxjU",
+        "column_wqhwVR"
       ],
       "settings": {
         "title": "Mira lo que dicen nuestros clientes",
