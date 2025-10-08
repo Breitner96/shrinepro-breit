@@ -601,35 +601,35 @@
           "type": "row",
           "settings": {
             "percentage": 85,
-            "row_text": "<p>Reporta menos caída de cabello.</p>"
+            "row_text": "<p>Reportan menos enrojecimiento visible</p>"
           }
         },
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-2": {
           "type": "row",
           "settings": {
             "percentage": 75,
-            "row_text": "<p>nota más energía diaria.</p>"
+            "row_text": "<p>de hidratación profunda</p>"
           }
         },
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3": {
           "type": "row",
           "settings": {
             "percentage": 70,
-            "row_text": "<p>observa uñas más fuertes y resistentes.</p>"
+            "row_text": "<p>de firmeza / suavidad</p>"
           }
         },
         "row_ztzhPp": {
           "type": "row",
           "settings": {
             "percentage": 65,
-            "row_text": "<p>nota piel más luminosa y fresca.</p>"
+            "row_text": "<p>de imperfecciones / brotes</p>"
           }
         },
         "row_QBkenz": {
           "type": "row",
           "settings": {
             "percentage": 60,
-            "row_text": "<p>logra mantener el hábito de suplementación diaria.</p>"
+            "row_text": "<p>e satisfacción en piel sensible</p>"
           }
         }
       },
@@ -641,7 +641,7 @@
         "row_QBkenz"
       ],
       "settings": {
-        "title": "✨ Resultados que nuestros clientes experimentan en 21 días",
+        "title": "✨ Lo que puedes esperar en semanas con Crema 345",
         "heading_size": "h1",
         "text": "",
         "color_scheme": "background-1",
