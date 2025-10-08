@@ -460,8 +460,8 @@
         "color_scheme": "accent-1",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 4,
-        "padding_bottom": 12
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     },
     "78161370-bfb0-428e-adf1-f106aca5123b": {
