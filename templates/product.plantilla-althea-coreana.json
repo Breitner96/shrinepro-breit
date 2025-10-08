@@ -672,36 +672,36 @@
         "40c59e33-8ce9-492f-ad4d-9d0fddb2fb10": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Tiene efectos secundarios?",
+            "heading": "¿Puedo usarla con otros productos coreanos (esencia, suero, etc.)?",
             "icon": "question_mark",
-            "row_content": "<p>No, es un suplemento natural, vegano y seguro.</p>",
+            "row_content": "<p>Sí, úsala como el paso final hidratante. No interfiere con tus otros productos.</p>",
             "page": ""
           }
         },
         "f68ace48-4162-4c3e-bc8c-5518a8de0427": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Puedo tomarlo junto con otros suplementos?",
+            "heading": "¿Tiene aroma fuerte?",
             "icon": "question_mark",
-            "row_content": "<p>Sí, pero se recomienda consultar a tu médico si ya estás en otro tratamiento.</p>",
+            "row_content": "<p>No. Su aroma es muy sutil o neutro, no contiene perfumes artificiales.</p>",
             "page": ""
           }
         },
         "524169b2-9412-4aeb-b45b-7c0e4edd9cba": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Cuánto dura el producto?",
+            "heading": "¿Causará que me salgan granitos?",
             "icon": "question_mark",
-            "row_content": "<p>El multivitamínico dura aproximadamente 30 días. El reto incluye 21 días de cápsulas y líquido.</p>",
+            "row_content": "<p>No es comedogénica y tiene textura ligera. Si usas muchas cremas grasosas encima, eso podría generar congestión — pero ella está diseñada para no obstruir.</p>",
             "page": ""
           }
         },
         "collapsible_row_yW7Gd7": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Qué pasa si no me funciona?",
+            "heading": "¿Cuándo veré resultados?",
             "icon": "question_mark",
-            "row_content": "<p>Tienes 7 días para devolver el producto si está sin abrir y garantía de satisfacción.</p>",
+            "row_content": "<p>Muchas usuarias notan calma e hidratación inmediata, mejoras en textura y rojez en 2–4 semanas de uso constante.</p>",
             "page": ""
           }
         }
