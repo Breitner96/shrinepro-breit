@@ -298,17 +298,17 @@
       "blocks": {
         "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "heading": "Dr. Althea Crema 345 combina activos de última generación con extractos botánicos para calmar, reparar e hidratar.",
+            "heading": "",
             "heading_size": "h2"
           }
         },
         "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-1": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>Aquí, complementas y refuerzas el punto de dolor anterior</p>",
-            "text_style": "body"
+            "text": "<h2><strong>Dr. Althea Crema 345 combina activos de última generación con extractos botánicos para calmar, reparar e hidratar.</strong></h2>",
+            "text_style": "subtitle"
           }
         },
         "fb814fee-541b-418f-a1f8-b03b37c368ce": {
