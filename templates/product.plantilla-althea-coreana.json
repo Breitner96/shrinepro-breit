@@ -453,10 +453,9 @@
         },
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
           "type": "column",
-          "disabled": true,
           "settings": {
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "title": "Andrea G. ⭐️⭐️⭐️⭐️⭐️",
+            "text": "<p>No sentí nada de ardor ni hormigueo. Es justo lo que esperaba de una crema coreana-consciente.</p>",
             "link_label": "",
             "link": ""
           }
