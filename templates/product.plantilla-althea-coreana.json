@@ -529,7 +529,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-1": {
           "type": "row",
           "settings": {
-            "benefit": "Fórmula líquida de alta absorción",
+            "benefit": "Activos científicos",
             "us": true,
             "others": false
           }
@@ -537,7 +537,7 @@
         "row_cc8erd": {
           "type": "row",
           "settings": {
-            "benefit": "Incluye biotina + vitaminas + antioxidantes",
+            "benefit": "Ingredientes naturales",
             "us": true,
             "others": true
           }
@@ -545,7 +545,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2": {
           "type": "row",
           "settings": {
-            "benefit": "Plan estructurado 21 días",
+            "benefit": "Apta para piel sensible",
             "us": true,
             "others": false
           }
@@ -553,15 +553,15 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-3": {
           "type": "row",
           "settings": {
-            "benefit": "Vegano, sin gluten, sin OGM",
+            "benefit": "Sin fragancias/parabenos",
             "us": true,
-            "others": false
+            "others": true
           }
         },
         "6a12410f-0263-49d1-941c-4d61208408bb": {
           "type": "row",
           "settings": {
-            "benefit": "Resultados visibles en cabello, piel, uñas y energía",
+            "benefit": "Textura ligera / rápida absorción",
             "us": true,
             "others": false
           }
@@ -575,9 +575,9 @@
         "6a12410f-0263-49d1-941c-4d61208408bb"
       ],
       "settings": {
-        "title": "¿Por qué este combo es mejor que la competencia?",
+        "title": "¿Por qué Dr. Althea 345 supera otras cremas?",
         "heading_size": "h1",
-        "text": "",
+        "text": "<p>Observa cómo nuestra fórmula compite frente a opciones naturales, dermocosméticas o genéricas:</p>",
         "button_label": "",
         "link": "",
         "button_style_secondary": false,
