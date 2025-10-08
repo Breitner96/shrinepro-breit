@@ -38,23 +38,23 @@
         "text_gazJkx": {
           "type": "text",
           "settings": {
-            "text": "<strong>La crema que une ciencia coreana con extractos naturales.</strong>",
+            "text": "90% de las pieles sensibles tienen la barrera dañada. Esta crema la repara desde el primer uso.",
             "text_style": "body"
           }
         },
         "text_9dVAt7": {
           "type": "text",
           "settings": {
-            "text": "Una fórmula coreana probada que cuida tu piel con ingredientes naturales y enfoque científico.”",
+            "text": "<strong>La respuesta científica para pieles frágiles, reactivas o dañadas por el estrés.</strong>",
             "text_style": "body"
           }
         },
         "daa0e452-23d5-4bd1-afb3-35d7babab88c": {
           "type": "keybenefit",
           "settings": {
-            "key1": "Calma intensamente: gracias a madecassoside y centella asiática para reducir rojez e inflamación",
-            "key2": "Hidratación profunda: ácido hialurónico y beta-glucanos penetra en capas internas",
-            "key3": "Reconstrucción de barrera cutánea: ceramidas + pantenol + extracto de regaliz para reparar sin irritar",
+            "key1": "Repara la barrera cutánea: ceramidas y pantenol restauran la cohesión lipídica de la piel desde el primer contacto.",
+            "key2": "Hidratación prolongada: ácido hialurónico y beta-glucanos retienen agua hasta 24 h, mejorando la elasticidad.",
+            "key3": "Efecto calmante inmediato: centella asiática y extracto de regaliz reducen rojez, picor y sensibilidad.",
             "checkmarkcolor": "#4e1c5a",
             "checkmarkcolorbackground": "#fafafa"
           }
