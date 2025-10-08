@@ -285,8 +285,8 @@
     "086a98ac-209d-4db2-9d62-5b0fe9663693": {
       "type": "compare-image",
       "settings": {
-        "image1": "shopify://shop_images/ChatGPT-Image-29-sept-2025_-09_33_28-p.m..webp",
-        "image2": "shopify://shop_images/ChatGPT-Image-29-sept-2025_-09_33_28-p.m._1aff2189-874d-44dd-b194-6c7bfef86ca6.webp",
+        "image1": "shopify://shop_images/dermapen-antes-y-despues-2-1.jpg",
+        "image2": "shopify://shop_images/dermapen-antes-y-despues-2-1_fa0b9f61-cd91-4dd0-88c8-0ee3f75cb5cb.jpg",
         "title": "✨ De piel irritada a una piel calmada, hidratada y resistente",
         "text": "<p>Imagina lucir una tez suave, sin enrojecimientos y fortalecida día tras día con la ciencia coreana + naturaleza consciente.</p>",
         "before": "",
@@ -327,7 +327,7 @@
         "fb814fee-541b-418f-a1f8-b03b37c368ce"
       ],
       "settings": {
-        "image": "shopify://shop_images/2_7338d991-b286-49ee-99ef-a8d25f207145.webp",
+        "image": "shopify://shop_images/Dr._Althea_345_Relief_Cream_4.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -348,7 +348,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_29_sept_2025_11_05_19_p.m..png",
-            "title": "Fórmula líquida con vitaminas esenciales.",
+            "title": "Textura ligera, rápida absorción",
             "text": "",
             "link_label": "",
             "link": ""
@@ -358,7 +358,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_29_sept_2025_11_10_14_p.m..png",
-            "title": "Biotina y antioxidantes fortalecen desde la raíz.",
+            "title": "45 ingredientes naturales + activos clínicos",
             "text": "",
             "link_label": "",
             "link": ""
@@ -368,7 +368,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_29_sept_2025_11_10_15_p.m..png",
-            "title": "Vitaminas y minerales para mayor resistencia.",
+            "title": "Fórmula testada pH 5.0 – 6.0 para compatibilidad cutánea",
             "text": "",
             "link_label": "",
             "link": ""
@@ -378,7 +378,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_29_sept_2025_11_10_17_p.m..png",
-            "title": "Checklist de 21 días para motivarte.",
+            "title": "Base ideal para maquillaje ligero",
             "text": "",
             "link_label": "",
             "link": ""
