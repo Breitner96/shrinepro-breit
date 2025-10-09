@@ -517,7 +517,7 @@
           "settings": {
             "benefit": "Pantenol + Centella asiática",
             "us": true,
-            "others": true
+            "others": false
           }
         },
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2": {
@@ -533,13 +533,13 @@
           "settings": {
             "benefit": "Sin fragancias/parabenos",
             "us": true,
-            "others": true
+            "others": false
           }
         },
         "6a12410f-0263-49d1-941c-4d61208408bb": {
           "type": "row",
           "settings": {
-            "benefit": "Textura ligera / rápida absorción",
+            "benefit": "Reparación desde la primera aplicación",
             "us": true,
             "others": false
           }
