@@ -659,9 +659,9 @@
         "f68ace48-4162-4c3e-bc8c-5518a8de0427": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Tiene aroma fuerte?",
+            "heading": "¿Puedo usarla si tengo acné o rosácea?",
             "icon": "question_mark",
-            "row_content": "<p>No. Su aroma es muy sutil o neutro, no contiene perfumes artificiales.</p>",
+            "row_content": "<p>Sí, es no comedogénica y ayuda a reducir inflamación sin bloquear poros.</p>",
             "page": ""
           }
         },
