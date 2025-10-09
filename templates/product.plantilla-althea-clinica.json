@@ -579,35 +579,35 @@
           "type": "row",
           "settings": {
             "percentage": 85,
-            "row_text": "<p>Reportan menos enrojecimiento visible</p>"
+            "row_text": "<p>Reparación de la barrera cutánea</p>"
           }
         },
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-2": {
           "type": "row",
           "settings": {
             "percentage": 75,
-            "row_text": "<p>Más hidratación profunda</p>"
+            "row_text": "<p>Hidratación inmediata</p>"
           }
         },
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3": {
           "type": "row",
           "settings": {
             "percentage": 86,
-            "row_text": "<p>Más firmeza / suavidad</p>"
+            "row_text": "<p>Reducción de enrojecimiento</p>"
           }
         },
         "row_ztzhPp": {
           "type": "row",
           "settings": {
             "percentage": 83,
-            "row_text": "<p>Reportan menos imperfecciones / brotes</p>"
+            "row_text": "<p>Textura más uniforme</p>"
           }
         },
         "row_QBkenz": {
           "type": "row",
           "settings": {
             "percentage": 89,
-            "row_text": "<p>Satisfacción en piel sensible</p>"
+            "row_text": "<p>Piel más resistente</p>"
           }
         }
       },
