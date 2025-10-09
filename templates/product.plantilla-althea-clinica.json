@@ -668,9 +668,9 @@
         "524169b2-9412-4aeb-b45b-7c0e4edd9cba": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Causará que me salgan granitos?",
+            "heading": "¿Tiene aroma o fragancia?",
             "icon": "question_mark",
-            "row_content": "<p>No es comedogénica y tiene textura ligera. Si usas muchas cremas grasosas encima, eso podría generar congestión — pero ella está diseñada para no obstruir.</p>",
+            "row_content": "<p>No. Su olor es neutro, sin perfumes añadidos ni alcoholes secantes.</p>",
             "page": ""
           }
         },
