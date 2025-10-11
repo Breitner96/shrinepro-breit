@@ -506,7 +506,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-1": {
           "type": "row",
           "settings": {
-            "benefit": "Consumo eléctrico",
+            "benefit": "Energía solar",
             "us": true,
             "others": false
           }
@@ -514,7 +514,7 @@
         "row_cc8erd": {
           "type": "row",
           "settings": {
-            "benefit": "Instalación",
+            "benefit": "Instalación rápida",
             "us": true,
             "others": false
           }
@@ -522,7 +522,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2": {
           "type": "row",
           "settings": {
-            "benefit": "Modos de luz",
+            "benefit": "8 modos de luz",
             "us": true,
             "others": false
           }
@@ -530,7 +530,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-3": {
           "type": "row",
           "settings": {
-            "benefit": "Resistencia al agua",
+            "benefit": "Sin cables ni enchufes",
             "us": true,
             "others": false
           }
@@ -538,7 +538,7 @@
         "6a12410f-0263-49d1-941c-4d61208408bb": {
           "type": "row",
           "settings": {
-            "benefit": "Costo de mantenimiento",
+            "benefit": "Ahorro energético",
             "us": true,
             "others": false
           }
@@ -552,7 +552,7 @@
         "6a12410f-0263-49d1-941c-4d61208408bb"
       ],
       "settings": {
-        "title": "⚖️ La diferencia entre pagar por luz... o dejar que el sol pague por ti.",
+        "title": "¿Por qué elegir Estrella Cascada Solar LED? 🌟",
         "heading_size": "h1",
         "text": "",
         "button_label": "",
