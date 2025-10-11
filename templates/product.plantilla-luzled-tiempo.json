@@ -38,7 +38,7 @@
         "text_gazJkx": {
           "type": "text",
           "settings": {
-            "text": "¿Cansado de gastar horas instalando luces complicadas?",
+            "text": "<strong>¿Cansado de gastar horas instalando luces complicadas?</strong>",
             "text_style": "body"
           }
         },
