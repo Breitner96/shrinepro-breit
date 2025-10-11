@@ -506,7 +506,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-1": {
           "type": "row",
           "settings": {
-            "benefit": "Activos científicos",
+            "benefit": "Consumo eléctrico",
             "us": true,
             "others": false
           }
@@ -514,15 +514,15 @@
         "row_cc8erd": {
           "type": "row",
           "settings": {
-            "benefit": "Ingredientes naturales",
+            "benefit": "Instalación",
             "us": true,
-            "others": true
+            "others": false
           }
         },
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2": {
           "type": "row",
           "settings": {
-            "benefit": "Apta para piel sensible",
+            "benefit": "Modos de luz",
             "us": true,
             "others": false
           }
@@ -530,15 +530,15 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-3": {
           "type": "row",
           "settings": {
-            "benefit": "Sin fragancias/parabenos",
+            "benefit": "Resistencia al agua",
             "us": true,
-            "others": true
+            "others": false
           }
         },
         "6a12410f-0263-49d1-941c-4d61208408bb": {
           "type": "row",
           "settings": {
-            "benefit": "Textura ligera / rápida absorción",
+            "benefit": "Costo de mantenimiento",
             "us": true,
             "others": false
           }
@@ -554,7 +554,7 @@
       "settings": {
         "title": "La diferencia entre pagar por luz... o dejar que el sol pague por ti.",
         "heading_size": "h1",
-        "text": "<p>Observa cómo nuestra fórmula compite frente a opciones naturales, dermocosméticas o genéricas:</p>",
+        "text": "",
         "button_label": "",
         "link": "",
         "button_style_secondary": false,
