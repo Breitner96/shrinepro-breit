@@ -591,22 +591,22 @@
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3": {
           "type": "row",
           "settings": {
-            "percentage": 86,
-            "row_text": "<p>Más firmeza / suavidad</p>"
+            "percentage": 90,
+            "row_text": "<p><strong>usuarios</strong> reportan mayor satisfacción visual.</p>"
           }
         },
         "row_ztzhPp": {
           "type": "row",
           "settings": {
-            "percentage": 83,
-            "row_text": "<p>Reportan menos imperfecciones / brotes</p>"
+            "percentage": 95,
+            "row_text": "<p><strong>resistencia</strong> comprobada ante lluvia o humedad.</p>"
           }
         },
         "row_QBkenz": {
           "type": "row",
           "settings": {
-            "percentage": 89,
-            "row_text": "<p>Satisfacción en piel sensible</p>"
+            "percentage": 100,
+            "row_text": "<p>energía limpia y renovable.</p>"
           }
         }
       },
