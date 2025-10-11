@@ -658,27 +658,27 @@
         "f68ace48-4162-4c3e-bc8c-5518a8de0427": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Tiene aroma fuerte?",
+            "heading": "¿Es resistente al agua?",
             "icon": "question_mark",
-            "row_content": "<p>No. Su aroma es muy sutil o neutro, no contiene perfumes artificiales.</p>",
+            "row_content": "<p>Sí, cuenta con protección IP65, ideal para exteriores.</p>",
             "page": ""
           }
         },
         "524169b2-9412-4aeb-b45b-7c0e4edd9cba": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Causará que me salgan granitos?",
+            "heading": "¿Cuánto tarda en cargarse?",
             "icon": "question_mark",
-            "row_content": "<p>No es comedogénica y tiene textura ligera. Si usas muchas cremas grasosas encima, eso podría generar congestión — pero ella está diseñada para no obstruir.</p>",
+            "row_content": "<p>Aproximadamente 6-8 horas de sol para una noche completa de iluminación.</p>",
             "page": ""
           }
         },
         "collapsible_row_yW7Gd7": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Cuándo veré resultados?",
+            "heading": "¿Puedo usarla en interiores?",
             "icon": "question_mark",
-            "row_content": "<p>Muchas usuarias notan calma e hidratación inmediata, mejoras en textura y rojez en 2–4 semanas de uso constante.</p>",
+            "row_content": "<p>Sí, siempre que el panel reciba luz solar durante el día.</p>",
             "page": ""
           }
         }
