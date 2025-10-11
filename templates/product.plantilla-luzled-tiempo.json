@@ -676,9 +676,9 @@
         "collapsible_row_yW7Gd7": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Puedo usarla en interiores?",
+            "heading": "¿Qué hago si el producto llega dañado?",
             "icon": "question_mark",
-            "row_content": "<p>Sí, siempre que el panel reciba luz solar durante el día.</p>",
+            "row_content": "<p>Contacta al soporte dentro de los primeros 10 días y recibirás reemplazo o reembolso.</p>",
             "page": ""
           }
         }
