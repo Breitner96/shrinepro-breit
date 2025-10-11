@@ -38,23 +38,23 @@
         "text_gazJkx": {
           "type": "text",
           "settings": {
-            "text": "<strong>¿Tu factura de luz sube cada Navidad?</strong>",
+            "text": "¿Cansado de gastar horas instalando luces complicadas?",
             "text_style": "body"
           }
         },
         "text_9dVAt7": {
           "type": "text",
           "settings": {
-            "text": "Decora tu hogar sin gastar un solo peso en electricidad....que el sol paga por ti.",
+            "text": "Decora tu hogar con magia solar y sin complicaciones.",
             "text_style": "body"
           }
         },
         "daa0e452-23d5-4bd1-afb3-35d7babab88c": {
           "type": "keybenefit",
           "settings": {
-            "key1": "Ahorro garantizado: funciona 100% con energía solar.",
-            "key2": "Impermeable y duradera: ideal para exteriores, lluvia o sol.",
-            "key3": "Decoración versátil: 8 modos de luz para adaptarse a tu estilo.",
+            "key1": "Decoración instantánea: de la caja a tu fachada iluminada en menos de 5 minutos.",
+            "key2": "Energía solar eficiente: olvídate de cables, extensiones o altos consumos.",
+            "key3": "Resistente al clima: ideal para interiores y exteriores, sin preocuparte por lluvia o humedad.",
             "checkmarkcolor": "#4e1c5a",
             "checkmarkcolorbackground": "#fafafa"
           }
