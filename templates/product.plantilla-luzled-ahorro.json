@@ -208,7 +208,7 @@
         "productgalleryimage": "Producto Exclusivo",
         "badge_background": "#f9e113",
         "textbadge_background": "#000000",
-        "badge_text": "uppercase",
+        "badge_text": "capitalize",
         "stickybutton": false,
         "stickybuttontext": "Select Colors",
         "atcicon": true,
@@ -413,7 +413,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/whatsapp-image-2025-07-24-at-18_optimized.54.58.jpg",
+            "image": "shopify://shop_images/RsXMhTHZPi.webp",
             "title": "Mónica A. ⭐️⭐️⭐️⭐️⭐️",
             "text": "<p>Parece una lluvia de estrellas. Todo el vecindario me preguntó dónde la compré.</p>",
             "link_label": "",
@@ -423,7 +423,7 @@
         "column_UzdxjU": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/whatsapp-image-2025-07-24-at-18_optimized.54.34.jpg",
+            "image": "shopify://shop_images/tXdZ4wNzfj.webp",
             "title": "Andrés G. ⭐️⭐️⭐️⭐️⭐️",
             "text": "<p>Es mi segunda compra, la primera sigue funcionando perfecto desde el año pasado.</p>",
             "link_label": "",
@@ -433,7 +433,7 @@
         "column_wqhwVR": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/whatsapp-image-2025-07-24-at-18_optimized.54.30.jpg",
+            "image": "shopify://shop_images/2e1cd1b5-fb96-493e-9e1e-823cce1da4ca.webp",
             "title": "Nathalia R. ⭐️⭐️⭐️⭐️⭐️",
             "text": "<p>De verdad ahorra energía. Es linda, práctica y ecológica.</p>",
             "link_label": "",
