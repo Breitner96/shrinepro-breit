@@ -298,17 +298,16 @@
       "blocks": {
         "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-0": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "",
+            "heading": "¿Por qué seguir pagando por la luz cuando el sol puede hacerlo por ti?”",
             "heading_size": "h2"
           }
         },
         "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-1": {
           "type": "text",
           "settings": {
-            "text": "<h2><strong>Instálala en segundos y deja que el sol ilumine tu Navidad sin gastar en electricidad.</strong></h2>",
-            "text_style": "subtitle"
+            "text": "<p>Instálala en segundos y deja que el sol ilumine tu Navidad sin gastar en electricidad.</p>",
+            "text_style": "body"
           }
         },
         "fb814fee-541b-418f-a1f8-b03b37c368ce": {
@@ -331,12 +330,12 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "content_layout": "overlap",
         "color_scheme": "background-1",
         "image_behavior": "none",
-        "mobile_content_alignment": "left",
+        "mobile_content_alignment": "center",
         "padding_top": 0,
         "padding_bottom": 0
       }
