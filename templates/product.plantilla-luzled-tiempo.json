@@ -667,9 +667,9 @@
         "524169b2-9412-4aeb-b45b-7c0e4edd9cba": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Cuánto tarda en cargarse?",
+            "heading": "¿Puedo pagar al recibir?",
             "icon": "question_mark",
-            "row_content": "<p>Aproximadamente 6-8 horas de sol para una noche completa de iluminación.</p>",
+            "row_content": "<p>Sí, Aura tienda ofrece pago contra entrega en todo el país.</p>",
             "page": ""
           }
         },
