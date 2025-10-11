@@ -552,7 +552,7 @@
         "6a12410f-0263-49d1-941c-4d61208408bb"
       ],
       "settings": {
-        "title": "¿Por qué Dr. Althea 345 supera otras cremas?",
+        "title": "La diferencia entre pagar por luz... o dejar que el sol pague por ti.",
         "heading_size": "h1",
         "text": "<p>Observa cómo nuestra fórmula compite frente a opciones naturales, dermocosméticas o genéricas:</p>",
         "button_label": "",
@@ -567,7 +567,7 @@
         "benefit_color_scheme": "accent-1",
         "checkmark_color": "#53af01",
         "icon_cells_color_scheme": "background-1",
-        "padding_top": 8,
+        "padding_top": 20,
         "padding_bottom": 16
       }
     },
