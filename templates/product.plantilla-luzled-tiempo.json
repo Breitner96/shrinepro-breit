@@ -640,9 +640,9 @@
         "template--19239854407957__ffa79f40-3ca5-4c0f-842b-5fa404007924-1685852323c73bd29d-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Funciona en días nublados?",
+            "heading": "¿Funciona sin sol directo?",
             "icon": "question_mark",
-            "row_content": "<p>Sí. El panel almacena energía incluso con luz indirecta, aunque el brillo puede ser menor.</p>",
+            "row_content": "<p>Sí, aunque rinde mejor con exposición solar directa durante el día.</p>",
             "page": ""
           }
         },
