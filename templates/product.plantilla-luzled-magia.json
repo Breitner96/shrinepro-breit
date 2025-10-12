@@ -552,7 +552,7 @@
         "6a12410f-0263-49d1-941c-4d61208408bb"
       ],
       "settings": {
-        "title": "¿Por qué elegir Estrella Cascada Solar LED? 🌟",
+        "title": "La Diferencia Está en la Magia Solar ✨",
         "heading_size": "h1",
         "text": "",
         "button_label": "",
@@ -640,9 +640,9 @@
         "template--19239854407957__ffa79f40-3ca5-4c0f-842b-5fa404007924-1685852323c73bd29d-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Funciona sin sol directo?",
+            "heading": "¿Necesita estar conectada a la corriente eléctrica?",
             "icon": "question_mark",
-            "row_content": "<p>Sí, aunque rinde mejor con exposición solar directa durante el día.</p>",
+            "row_content": "<p>No, funciona 100% con energía solar. Solo asegúrate de colocar el panel donde reciba buena luz solar.</p>",
             "page": ""
           }
         },
@@ -651,7 +651,7 @@
           "settings": {
             "heading": "¿Se puede usar en exteriores?",
             "icon": "question_mark",
-            "row_content": "<p>Totalmente, es resistente al agua y clima.</p>",
+            "row_content": "<p>Sí, es totalmente resistente al agua y al clima (IP65).</p>",
             "page": ""
           }
         },
