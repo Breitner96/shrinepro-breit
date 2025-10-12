@@ -287,7 +287,7 @@
       "settings": {
         "image1": "shopify://shop_images/acc69502-fa7d-4c48-9978-dfabd4f54e89.webp",
         "image2": "shopify://shop_images/aedad198-cf87-4394-ada3-c41f8054f7aa.webp",
-        "title": "🎄 De fachada apagada… a un espectáculo de luz",
+        "title": "Convierte la Oscuridad en un Espectáculo de Luz 🌟",
         "text": "<p>En minutos, transforma tu hogar en un rincón mágico gracias a la energía solar.</p>",
         "before": "",
         "after": ""
@@ -299,7 +299,7 @@
         "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-0": {
           "type": "heading",
           "settings": {
-            "heading": "Dile adiós al estrés de decorar 🌲",
+            "heading": "Porque la Magia no Debería Ser Complicada 🎄",
             "heading_size": "h2"
           }
         },
@@ -506,7 +506,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-1": {
           "type": "row",
           "settings": {
-            "benefit": "Energía solar",
+            "benefit": "Energía Solar Automática",
             "us": true,
             "others": false
           }
@@ -514,7 +514,7 @@
         "row_cc8erd": {
           "type": "row",
           "settings": {
-            "benefit": "Instalación rápida",
+            "benefit": "Sin Cables ni Enchufes",
             "us": true,
             "others": false
           }
@@ -522,7 +522,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2": {
           "type": "row",
           "settings": {
-            "benefit": "8 modos de luz",
+            "benefit": "Resistente al Agua (IP65)",
             "us": true,
             "others": false
           }
@@ -530,7 +530,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-3": {
           "type": "row",
           "settings": {
-            "benefit": "Sin cables ni enchufes",
+            "benefit": "Modos de Luz (8 opciones)",
             "us": true,
             "others": false
           }
@@ -538,7 +538,7 @@
         "6a12410f-0263-49d1-941c-4d61208408bb": {
           "type": "row",
           "settings": {
-            "benefit": "Ahorro energético",
+            "benefit": "Ahorro Energético",
             "us": true,
             "others": false
           }
