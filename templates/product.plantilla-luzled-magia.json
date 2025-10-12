@@ -667,9 +667,9 @@
         "524169b2-9412-4aeb-b45b-7c0e4edd9cba": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Puedo pagar al recibir?",
+            "heading": "¿Viene con todo lo necesario para instalarla?",
             "icon": "question_mark",
-            "row_content": "<p>Sí, Aura tienda ofrece pago contra entrega en todo el país.</p>",
+            "row_content": "<p>Sí, incluye el panel solar, estrella, luces colgantes y accesorios de montaje.</p>",
             "page": ""
           }
         },
