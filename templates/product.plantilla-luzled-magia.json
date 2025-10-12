@@ -676,9 +676,9 @@
         "collapsible_row_yW7Gd7": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "¿Qué hago si el producto llega dañado?",
+            "heading": "¿Qué pasa si no me gusta o llega defectuosa?",
             "icon": "question_mark",
-            "row_content": "<p>Contacta al soporte dentro de los primeros 10 días y recibirás reemplazo o reembolso.</p>",
+            "row_content": "<p>Tienes <strong>7 días</strong> para solicitar cambio o devolución sin costo.</p>",
             "page": ""
           }
         }
