@@ -169,6 +169,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Pago Contraentrega | Envío Gratis",
               "text_alignment": "center",
@@ -185,10 +186,10 @@
       "new-announcement-bar": {
         "type": "new-announcement-bar",
         "settings": {
-          "enable_custombar": false,
+          "enable_custombar": true,
           "custom_top_bar1": "Precio Preventa de Temporada",
           "custom_top_bar2": "",
-          "custombarcolor": "#1b9e08"
+          "custombarcolor": "#9e0808"
         }
       },
       "header": {
