@@ -78,6 +78,12 @@
             "show_gift_card_recipient": false
           }
         },
+        "custom_liquid_XA7LtG": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style> \n        .unique-body-Abc123 {\n            font-family: Arial, sans-serif;\n            background-color: #f0f2f5;\n            margin: 0;\n            padding: 20px;\n        }\n        .unique-deal-banner-Abc123 {\n            display: flex;\n            border-radius: 15px;\n            overflow: hidden;\n            font-family: 'Arial', sans-serif;\n            font-size: 14px;\n        }\n\n        .unique-deal-text-container-Abc123 {\n            background-color: #000000; \n            padding: 10px 20px;\n            display: flex;\n            align-items: center;\n        }\n\n        .unique-deal-text-Abc123 {\n            font-family: 'Roboto', sans-serif;\n            font-weight: 700;\n            color: white; \n        }\n\n        .unique-deal-timer-container-Abc123 {\n            background-color: #000000; \n            padding: 10px 20px;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            flex-grow: 1;\n        }\n\n        .unique-deal-timer-Abc123 {\n            font-family: 'Oswald', sans-serif;\n            font-size: 16px;\n            font-weight: 700;\n            color: white;\n            animation: unique-timerAnimation-Abc123 1s ease-in-out infinite alternate;\n        }\n\n        @keyframes unique-timerAnimation-Abc123 {\n            0% { transform: scale(1); }\n            100% { transform: scale(1.1); }\n        }\n    \n</style>\n<div class=\"unique-deal-banner-Abc123\">\n        <div class=\"unique-deal-text-container-Abc123\">\n            <span class=\"unique-deal-text-Abc123\">Super Ofertas</span>\n        </div>\n        <div class=\"unique-deal-timer-container-Abc123\">\n            <span class=\"unique-deal-timer-Abc123\" id=\"countdown\">Termina en: 0d : 11 : 59 : 10</span>\n        </div>\n    </div>"
+          }
+        },
         "eed7bb10-67b9-4655-8c71-ca64ed54fb48": {
           "type": "shippingarrow",
           "settings": {
@@ -181,6 +187,7 @@
         "daa0e452-23d5-4bd1-afb3-35d7babab88c",
         "variant_picker",
         "buy_buttons",
+        "custom_liquid_XA7LtG",
         "eed7bb10-67b9-4655-8c71-ca64ed54fb48",
         "1c393517-7c5c-4915-ba22-5dbd8ede91e5",
         "2c100155-1d2d-4504-a37e-f2abd070099f",
