@@ -52,10 +52,10 @@
         "daa0e452-23d5-4bd1-afb3-35d7babab88c": {
           "type": "keybenefit",
           "settings": {
-            "key1": "Ahorro garantizado: funciona 100% con energía solar.",
-            "key2": "Impermeable y duradera: ideal para exteriores, lluvia o sol.",
-            "key3": "Decoración versátil: 8 modos de luz para adaptarse a tu estilo.",
-            "checkmarkcolor": "#4e1c5a",
+            "key1": "☀️ Ahorra y disfruta: funciona 100 % con energía solar, sin enchufes ni consumo eléctrico.",
+            "key2": "💧 Todo terreno: resistente a lluvia, sol y viento, ideal para exteriores.",
+            "key3": "🎇 Personaliza tu magia: 8 modos de luz para cada ambiente y ocasión.",
+            "checkmarkcolor": "#53af01",
             "checkmarkcolorbackground": "#fafafa"
           }
         },
