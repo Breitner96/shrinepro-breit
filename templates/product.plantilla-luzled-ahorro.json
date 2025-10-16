@@ -26,9 +26,20 @@
             "custom_liquid": "<div class=\"review-container\">\n  <div class=\"stars\">\n    {% for i in (1..5) %}\n      <span class=\"star\">★</span>\n    {% endfor %}\n  </div>\n  <span class=\"review-text\">+1,236 Vendidos | +137 reseñas</span>\n</div>\n\n<style>\n  .review-container {\n    display: flex;\n    align-items: center;\n    font-family: Arial, sans-serif;\n    font-size: 18px;\n    margin-top: 10px;\n    margin-bottom: 0;\n  }\n\n  .stars {\n    color: #FFD700; /* Color dorado */\n    font-size: 17px; /* Corregido el error de 17x */\n    display: flex;\n    align-items: center;\n  }\n\n  .star {\n    margin-right: 2px;\n  }\n\n  .review-text {\n    margin-left: 8px;\n    color: #000;\n    font-size: 14px;\n    font-weight: light;\n  }\n</style>"
           }
         },
+        "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d": {
+          "type": "price",
+          "disabled": true,
+          "settings": {}
+        },
         "title": {
           "type": "title",
           "settings": {}
+        },
+        "custom_liquid_dBhDLK": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"display:flex;flex-direction:column;gap:1px;align-items:flex-start;margin-top:4px;\">\n  {% assign compare_price = product.compare_at_price | default: product.variants.first.compare_at_price %}\n  {% if compare_price and compare_price > product.price %}\n    <!-- Precio tachado (Antes) -->\n    <div style=\"font-size:14px;color:#999;text-decoration:line-through;font-weight:400;margin-bottom:-2px;\">\n      Antes: {{ compare_price | money }}\n    </div>\n  {% endif %}\n\n  <!-- Precio actual -->\n  <div style=\"font-size:26px;font-weight:900;color:#000;line-height:1.1;\">\n    {{ product.price | money }}\n  </div>\n\n  {% if compare_price and compare_price > product.price %}\n    {% assign ahorro = compare_price | minus: product.price %}\n    {% assign descuento = ahorro | times: 100 | divided_by: compare_price | round %}\n    <!-- Ahorro -->\n    <div style=\"background:#ffebee;border:1px solid #ff9a9a;color:#c81f13;padding:4px 6px;border-radius:6px;font-weight:700;font-size:13px;\">\n      Ahorras {{ ahorro | money }} (–{{ descuento }}%)\n    </div>\n  {% endif %}\n</div>"
+          }
         },
         "text_gazJkx": {
           "type": "text",
@@ -59,17 +70,6 @@
           "settings": {
             "picker_type": "button"
           }
-        },
-        "custom_liquid_dBhDLK": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div style=\"display:flex;flex-direction:column;gap:1px;align-items:flex-start;margin-top:4px;\">\n  {% assign compare_price = product.compare_at_price | default: product.variants.first.compare_at_price %}\n  {% if compare_price and compare_price > product.price %}\n    <!-- Precio tachado (Antes) -->\n    <div style=\"font-size:14px;color:#999;text-decoration:line-through;font-weight:400;margin-bottom:-2px;\">\n      Antes: {{ compare_price | money }}\n    </div>\n  {% endif %}\n\n  <!-- Precio actual -->\n  <div style=\"font-size:26px;font-weight:900;color:#000;line-height:1.1;\">\n    {{ product.price | money }}\n  </div>\n\n  {% if compare_price and compare_price > product.price %}\n    {% assign ahorro = compare_price | minus: product.price %}\n    {% assign descuento = ahorro | times: 100 | divided_by: compare_price | round %}\n    <!-- Ahorro -->\n    <div style=\"background:#ffebee;border:1px solid #ff9a9a;color:#c81f13;padding:4px 6px;border-radius:6px;font-weight:700;font-size:13px;\">\n      Ahorras {{ ahorro | money }} (–{{ descuento }}%)\n    </div>\n  {% endif %}\n</div>"
-          }
-        },
-        "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d": {
-          "type": "price",
-          "disabled": true,
-          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -173,13 +173,13 @@
       "block_order": [
         "inventory_hBFFgr",
         "custom_liquid_9XDG7p",
+        "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d",
         "title",
+        "custom_liquid_dBhDLK",
         "text_gazJkx",
         "text_9dVAt7",
         "daa0e452-23d5-4bd1-afb3-35d7babab88c",
         "variant_picker",
-        "custom_liquid_dBhDLK",
-        "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d",
         "buy_buttons",
         "eed7bb10-67b9-4655-8c71-ca64ed54fb48",
         "1c393517-7c5c-4915-ba22-5dbd8ede91e5",
