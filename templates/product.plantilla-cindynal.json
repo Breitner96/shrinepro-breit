@@ -133,7 +133,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "💰 Devoluciones",
-            "icon": "return",
+            "icon": "none",
             "content": "<ul><li>Devolución válida dentro de 10 días tras recibir el producto (si está sin abrir y en perfecto estado).</li><li>Proceso rápido y sencillo de devolución.</li></ul>",
             "page": ""
           }
