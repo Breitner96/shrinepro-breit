@@ -702,8 +702,8 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 4,
-        "padding_bottom": 16
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "13348d96-1a54-4009-b416-60d21a04c302": {
