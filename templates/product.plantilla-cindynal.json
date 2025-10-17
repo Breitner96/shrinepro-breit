@@ -123,8 +123,8 @@
         "c11bfb2f-901d-4b03-90cf-b6b766353d13": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Información de Envío",
-            "icon": "truck",
+            "heading": "🚚 Información de Envío",
+            "icon": "none",
             "content": "<ul><li><strong>Procesamiento de pedidos: </strong>1–2 días hábiles.</li><li><strong>Envío nacional (Colombia): </strong>4–8 días hábiles.</li><li>Recibirás número de guía para rastrear tu pedido.</li></ul>",
             "page": ""
           }
