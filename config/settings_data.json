@@ -169,6 +169,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Pago Contraentrega | Envío Gratis",
               "text_alignment": "center",

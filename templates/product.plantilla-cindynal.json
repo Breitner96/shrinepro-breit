@@ -411,10 +411,20 @@
     "b6fc2703-d30b-40d4-b2cb-fcc2eade4e34": {
       "type": "multicolumn",
       "blocks": {
+        "column_wqhwVR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/A07f4dc8563e541e298ee5f2fe9fbf507k.webp",
+            "title": "Camila G. ⭐️⭐️⭐️⭐️⭐️",
+            "text": "<p>Volvería a comprarla sin pensarlo: calmó mi piel tras el sol intenso.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/whatsapp-image-2025-07-24-at-18_optimized.54.58.jpg",
+            "image": "shopify://shop_images/Ab890b5b14ed7474faaa7aaf9d98796f6S.avif",
             "title": "Andrea G. ⭐️⭐️⭐️⭐️⭐️",
             "text": "<p>No sentí nada de ardor ni hormigueo. Es justo lo que esperaba de una crema coreana-consciente.</p>",
             "link_label": "",
@@ -424,28 +434,18 @@
         "column_UzdxjU": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/whatsapp-image-2025-07-24-at-18_optimized.54.34.jpg",
+            "image": "shopify://shop_images/Aafb0dd8c6f0a410180fab7dca1e06a98Y.webp",
             "title": "Laura M. ⭐️⭐️⭐️⭐️⭐️",
             "text": "<p>He probado muchas cremas “suaves” y ninguna me dio resultados visibles como esta.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_wqhwVR": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/whatsapp-image-2025-07-24-at-18_optimized.54.30.jpg",
-            "title": "Camila G. ⭐️⭐️⭐️⭐️⭐️",
-            "text": "<p>Volvería a comprarla sin pensarlo: calmó mi piel tras el sol intenso.</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
+        "column_wqhwVR",
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3",
-        "column_UzdxjU",
-        "column_wqhwVR"
+        "column_UzdxjU"
       ],
       "settings": {
         "title": "Mira lo que dicen nuestros clientes",
