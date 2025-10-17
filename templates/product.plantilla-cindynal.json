@@ -38,23 +38,23 @@
         "text_gazJkx": {
           "type": "text",
           "settings": {
-            "text": "<strong>La crema que une ciencia coreana con extractos naturales.</strong>",
+            "text": "<strong>¿Cansado de talones agrietados y piel seca que parece imposible de reparar?</strong>",
             "text_style": "body"
           }
         },
         "text_9dVAt7": {
           "type": "text",
           "settings": {
-            "text": "Una fórmula coreana probada que cuida tu piel con ingredientes naturales y enfoque científico.”",
+            "text": "Hidratación intensa y reparación profunda con <strong>Aceite de Caballo </strong>para pies agrietados, secos y con callos.",
             "text_style": "body"
           }
         },
         "daa0e452-23d5-4bd1-afb3-35d7babab88c": {
           "type": "keybenefit",
           "settings": {
-            "key1": "Calma intensamente: gracias a madecassoside y centella asiática para reducir rojez e inflamación",
-            "key2": "Hidratación profunda: ácido hialurónico y beta-glucanos penetra en capas internas",
-            "key3": "Reconstrucción de barrera cutánea: ceramidas + pantenol + extracto de regaliz para reparar sin irritar",
+            "key1": "Reparación intensiva: El Aceite de Caballo regenera la piel seca y dañada con alto poder nutritivo.",
+            "key2": "Hidratación profunda: La Urea y el Ácido Hialurónico retienen la humedad y suavizan la piel.",
+            "key3": "Efecto antifúngico y antibacteriano: Fórmula herbal que combate hongos, olores y bacterias.",
             "checkmarkcolor": "#4e1c5a",
             "checkmarkcolorbackground": "#fafafa"
           }
