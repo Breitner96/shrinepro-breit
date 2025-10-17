@@ -507,7 +507,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-1": {
           "type": "row",
           "settings": {
-            "benefit": "Activos científicos",
+            "benefit": "Aceite de Caballo natural",
             "us": true,
             "others": false
           }
@@ -515,15 +515,15 @@
         "row_cc8erd": {
           "type": "row",
           "settings": {
-            "benefit": "Ingredientes naturales",
+            "benefit": "Urea + Ácido Hialurónico",
             "us": true,
-            "others": true
+            "others": false
           }
         },
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2": {
           "type": "row",
           "settings": {
-            "benefit": "Apta para piel sensible",
+            "benefit": "Acción antifúngica",
             "us": true,
             "others": false
           }
@@ -531,15 +531,15 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-3": {
           "type": "row",
           "settings": {
-            "benefit": "Sin fragancias/parabenos",
+            "benefit": "Resultados visibles",
             "us": true,
-            "others": true
+            "others": false
           }
         },
         "6a12410f-0263-49d1-941c-4d61208408bb": {
           "type": "row",
           "settings": {
-            "benefit": "Textura ligera / rápida absorción",
+            "benefit": "Libre de parabenos y sulfatos",
             "us": true,
             "others": false
           }
