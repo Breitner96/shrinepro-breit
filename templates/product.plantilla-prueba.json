@@ -19,11 +19,31 @@
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "custom_liquid_EdtTeG": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div \n  class=\"value-proposal\"\n  style=\"\n    display: inline-block;\n    text-align: center;\n    background-color: #FCE9E5; /* Rosa claro elegante */\n    padding: 14px 18px;\n    border-radius: 10px;\n    margin: 10px auto;\n    line-height: 1.35;\n  \"\n>\n  <h2 \n    style=\"\n      font-size: 24px;\n      font-weight: 700;\n      color: #4E1B5A; /* Marrón vino cosmético */\n      margin: 0 0 6px 0;\n    \"\n  >\n    Despierta con la piel que tenías hace 10 años\n  </h2>\n  <p \n    style=\"\n      font-size: 16px;\n      font-weight: 400;\n      color: #6B5B57; /* Gris cálido natural */\n      opacity: 0.9;\n      margin: 0;\n    \"\n  >\n    La única máscara que protege tu piel contra la gravedad y presión nocturna durante las 8 horas completas.  \n    Resultados visibles desde la primera noche.\n  </p>\n</div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_XbHqVb": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<!-- Botón personalizado Realisit Checkout -->\n<a \n  href=\"https://turealisit.com/checkout?\n  product_name={{ product.title | url_encode }}\n  &product_id={{ product.id }}\n  &price={{ product.price | money_without_currency | url_encode }}\n  &variant_id={{ product.selected_or_first_available_variant.id }}\n  &quantity=1\n  &source=shopify\"\n  class=\"realisit-buy-button\"\n  target=\"_blank\"\n  rel=\"noopener noreferrer\"\n>\n  <button \n    style=\"\n      background-color:#4E1B5A;\n      color:white;\n      font-size:1.1em;\n      padding:14px 28px;\n      border:none;\n      border-radius:12px;\n      font-weight:600;\n      cursor:pointer;\n      transition:all 0.3s ease;\n      width:100%;\n      text-transform:uppercase;\n    \"\n    onmouseover=\"this.style.backgroundColor='#632277'\"\n    onmouseout=\"this.style.backgroundColor='#4E1B5A'\"\n  >\n    Compra ahora y Deten el envejecimiento nocturno \n  </button>\n</a>\n\n<style>\n  .realisit-buy-button button:hover {\n    box-shadow: 0 0 12px rgba(78, 27, 90, 0.4);\n    transform: scale(1.03",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "image_banner_B64BPM": {
@@ -47,10 +67,10 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<!-- Botón personalizado Realisit Checkout -->\n<a \n  href=\"https://turealisit.com/checkout?\n  product_name={{ product.title | url_encode }}\n  &product_id={{ product.id }}\n  &price={{ product.price | money_without_currency | url_encode }}\n  &variant_id={{ product.selected_or_first_available_variant.id }}\n  &quantity=1\n  &source=shopify\"\n  class=\"realisit-buy-button\"\n  target=\"_blank\"\n  rel=\"noopener noreferrer\"\n>\n  <button \n    style=\"\n      background-color:#4E1B5A;\n      color:white;\n      font-size:1.1em;\n      padding:14px 28px;\n      border:none;\n      border-radius:12px;\n      font-weight:600;\n      cursor:pointer;\n      transition:all 0.3s ease;\n      width:100%;\n      text-transform:uppercase;\n    \"\n    onmouseover=\"this.style.backgroundColor='#632277'\"\n    onmouseout=\"this.style.backgroundColor='#4E1B5A'\"\n  >\n    🚀 Comprar ahora\n  </button>\n</a>\n\n<style>\n  .realisit-buy-button button:hover {\n    box-shadow: 0 0 12px rgba(78, 27, 90, 0.4);\n    transform: scale(1.03",
+        "custom_liquid": "<!-- Botón personalizado Realisit Checkout -->\n<a \n  href=\"https://turealisit.com/checkout?\n  product_name={{ product.title | url_encode }}\n  &product_id={{ product.id }}\n  &price={{ product.price | money_without_currency | url_encode }}\n  &variant_id={{ product.selected_or_first_available_variant.id }}\n  &quantity=1\n  &source=shopify\"\n  class=\"realisit-buy-button\"\n  target=\"_blank\"\n  rel=\"noopener noreferrer\"\n>\n  <button \n    style=\"\n      background-color:#4E1B5A;\n      color:white;\n      font-size:1.1em;\n      padding:14px 28px;\n      border:none;\n      border-radius:12px;\n      font-weight:600;\n      cursor:pointer;\n      transition:all 0.3s ease;\n      width:100%;\n      text-transform:uppercase;\n    \"\n    onmouseover=\"this.style.backgroundColor='#632277'\"\n    onmouseout=\"this.style.backgroundColor='#4E1B5A'\"\n  >\n    Comprar ahora\n  </button>\n</a>\n\n<style>\n  .realisit-buy-button button:hover {\n    box-shadow: 0 0 12px rgba(78, 27, 90, 0.4);\n    transform: scale(1.03",
         "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "image_banner_wBgW8H": {
@@ -102,6 +122,16 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "custom_liquid_iaidJw": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<!-- Botón personalizado Realisit Checkout -->\n<a \n  href=\"https://turealisit.com/checkout?\n  product_name={{ product.title | url_encode }}\n  &product_id={{ product.id }}\n  &price={{ product.price | money_without_currency | url_encode }}\n  &variant_id={{ product.selected_or_first_available_variant.id }}\n  &quantity=1\n  &source=shopify\"\n  class=\"realisit-buy-button\"\n  target=\"_blank\"\n  rel=\"noopener noreferrer\"\n>\n  <button \n    style=\"\n      background-color:#4E1B5A;\n      color:white;\n      font-size:1.1em;\n      padding:14px 28px;\n      border:none;\n      border-radius:12px;\n      font-weight:600;\n      cursor:pointer;\n      transition:all 0.3s ease;\n      width:100%;\n      text-transform:uppercase;\n    \"\n    onmouseover=\"this.style.backgroundColor='#632277'\"\n    onmouseout=\"this.style.backgroundColor='#4E1B5A'\"\n  >\n    Comprar ahora\n  </button>\n</a>\n\n<style>\n  .realisit-buy-button button:hover {\n    box-shadow: 0 0 12px rgba(78, 27, 90, 0.4);\n    transform: scale(1.03",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "image_banner_wjdHdP": {
@@ -725,11 +755,14 @@
   },
   "order": [
     "image_banner_RmbHdj",
+    "custom_liquid_EdtTeG",
+    "custom_liquid_XbHqVb",
     "image_banner_B64BPM",
     "custom_liquid_aYgTFJ",
     "image_banner_wBgW8H",
     "image_banner_f4WbtD",
     "image_banner_RjNixR",
+    "custom_liquid_iaidJw",
     "image_banner_wjdHdP",
     "main",
     "related-products",
