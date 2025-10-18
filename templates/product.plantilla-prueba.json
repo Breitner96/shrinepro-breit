@@ -9,6 +9,108 @@
  */
 {
   "sections": {
+    "image_banner_RmbHdj": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPTImage18oct2025_11_10_12a.m..png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_B64BPM": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_18_oct_2025_11_10_08_a.m..png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_wBgW8H": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_18_oct_2025_11_10_16_a.m..png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_f4WbtD": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_18_oct_2025_11_10_18_a.m..png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_RjNixR": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_18_oct_2025_11_10_22_a.m..png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_wjdHdP": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_18_oct_2025_11_10_26_a.m..png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -133,6 +235,7 @@
         "c11bfb2f-901d-4b03-90cf-b6b766353d13",
         "e6778313-45ad-4d6d-8260-2498242a6df0"
       ],
+      "disabled": true,
       "custom_css": [
         "div.product__title > h1 {font-size: 17px !important;}",
         ".button--secondary {background-color: #7069bc; color: white;}"
@@ -153,7 +256,7 @@
         "atcicon": false,
         "atcsavings": false,
         "mostpopularcolor": "#000000",
-        "enable_shipping_calculate": true,
+        "enable_shipping_calculate": false,
         "shipping_calculator_label": "Tiempo de Entrega",
         "days_to_start_shipping": 3,
         "approximate_days_for_delivery": 10,
@@ -612,6 +715,12 @@
     }
   },
   "order": [
+    "image_banner_RmbHdj",
+    "image_banner_B64BPM",
+    "image_banner_wBgW8H",
+    "image_banner_f4WbtD",
+    "image_banner_RjNixR",
+    "image_banner_wjdHdP",
     "main",
     "related-products",
     "7401e664-d026-4a46-bd1f-bc32c9f0558a",
