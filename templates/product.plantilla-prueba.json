@@ -63,6 +63,16 @@
         "padding_bottom": 0
       }
     },
+    "custom_liquid_qDPGbi": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div \n  class=\"benefits-block\"\n  style=\"\n    background-color: #FCE9E5; /* Fondo rosado suave */\n    border-radius: 14px;\n    padding: 24px 28px;\n    max-width: 800px;\n    margin: 20px auto;\n    text-align: left;\n    line-height: 1.5;\n    color: #4E1B5A;\n    box-shadow: 0 4px 12px rgba(78, 27, 90, 0.05);\n  \"\n>\n  <ul style=\"list-style: none; padding: 0; margin: 0;\">\n    <li style=\"margin-bottom: 12px; display: flex; align-items: start;\">\n      <span style=\"font-size: 20px; margin-right: 8px;\">✨</span>\n      Protege contra la gravedad que tira tu piel hacia abajo 8 horas seguidas\n    </li>\n    <li style=\"margin-bottom: 12px; display: flex; align-items: start;\">\n      <span style=\"font-size: 20px; margin-right: 8px;\">💫</span>\n      Reduce la presión de la almohada que causa arrugas y pérdida de firmeza\n    </li>\n    <li style=\"margin-bottom: 12px; display: flex; align-items: start;\">\n      <span style=\"font-size: 20px; margin-right: 8px;\">🌙</span>\n      Sella tu colágeno natural evitando que se degrade mientras duermes\n    </li>\n  </ul>\n\n  <p \n    style=\"\n      margin-top: 18px;\n      font-size: 16px;\n      font-weight: 600;\n      text-align: center;\n      color: #4E1B5A;\n    \"\n  >\n    No es una crema. Es un <span style=\"color:#6B5B57;\">escudo nocturno</span> para tu piel.\n  </p>\n</div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "image_banner_wBgW8H": {
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
@@ -748,6 +758,7 @@
     "custom_liquid_EdtTeG",
     "image_banner_B64BPM",
     "custom_liquid_aYgTFJ",
+    "custom_liquid_qDPGbi",
     "image_banner_wBgW8H",
     "image_banner_f4WbtD",
     "image_banner_RjNixR",
