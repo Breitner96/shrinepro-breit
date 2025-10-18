@@ -1,1 +1,64 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","blocks":{"f06c518f-a300-424a-a384-0cef0976fbb1":{"type":"text","settings":{"heading":"","subtext":"<p>🏢 <strong>Compañia: Aura Shop<\/strong><\/p>"}},"ce4df638-505d-4898-a818-5fe4fcaa4e11":{"type":"text","settings":{"heading":"Nuestra Promesa","subtext":"<p>Contáctanos Facilmente a cualquiera de nuestras lineas de atencion.<br\/>Servicio al cliente 24\/7<\/p>"}},"f9dc0b7d-bfd8-48e8-b286-8fda5de2783a":{"type":"link_list","settings":{"heading":"DESCUBRE NUESTRAS POLÍTICAS","menu":"footer"}}},"block_order":["f06c518f-a300-424a-a384-0cef0976fbb1","ce4df638-505d-4898-a818-5fe4fcaa4e11","f9dc0b7d-bfd8-48e8-b286-8fda5de2783a"],"settings":{"color_scheme":"accent-1","newsletter_enable":false,"newsletter_heading":"Suscríbete a nuestro correo","enable_follow_on_shop":false,"show_social":false,"enable_country_selector":false,"enable_language_selector":false,"payment_enable":false,"show_policy":false,"margin_top":0,"padding_top":44,"padding_bottom":0}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "f06c518f-a300-424a-a384-0cef0976fbb1": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "subtext": "<p>🏢 <strong>Compañia: Aura Shop</strong></p>"
+          }
+        },
+        "ce4df638-505d-4898-a818-5fe4fcaa4e11": {
+          "type": "text",
+          "settings": {
+            "heading": "Nuestra Promesa",
+            "subtext": "<p>Contáctanos Facilmente a cualquiera de nuestras lineas de atencion.<br/>Servicio al cliente 24/7</p>"
+          }
+        },
+        "f9dc0b7d-bfd8-48e8-b286-8fda5de2783a": {
+          "type": "link_list",
+          "settings": {
+            "heading": "DESCUBRE NUESTRAS POLÍTICAS",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "f06c518f-a300-424a-a384-0cef0976fbb1",
+        "ce4df638-505d-4898-a818-5fe4fcaa4e11",
+        "f9dc0b7d-bfd8-48e8-b286-8fda5de2783a"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent-1",
+        "newsletter_enable": false,
+        "newsletter_heading": "Suscríbete a nuestro correo",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 44,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

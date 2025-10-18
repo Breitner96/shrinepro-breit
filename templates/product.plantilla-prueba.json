@@ -43,6 +43,16 @@
         "show_text_below": true
       }
     },
+    "custom_liquid_aYgTFJ": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_banner_wBgW8H": {
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
@@ -81,7 +91,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_18_oct_2025_11_10_22_a.m..png",
+        "image": "shopify://shop_images/Gemini_Generated_Image_v1qjukv1qjukv1qj.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -717,6 +727,7 @@
   "order": [
     "image_banner_RmbHdj",
     "image_banner_B64BPM",
+    "custom_liquid_aYgTFJ",
     "image_banner_wBgW8H",
     "image_banner_f4WbtD",
     "image_banner_RjNixR",

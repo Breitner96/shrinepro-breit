@@ -186,7 +186,7 @@
       "new-announcement-bar": {
         "type": "new-announcement-bar",
         "settings": {
-          "enable_custombar": true,
+          "enable_custombar": false,
           "custom_top_bar1": "Precio Preventa de Temporada",
           "custom_top_bar2": "",
           "custombarcolor": "#9e0808"
