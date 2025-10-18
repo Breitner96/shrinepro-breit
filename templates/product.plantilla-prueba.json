@@ -47,7 +47,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "<!-- Botón personalizado Realisit Checkout -->\n<a \n  href=\"https://turealisit.com/checkout?\n  product_name={{ product.title | url_encode }}\n  &product_id={{ product.id }}\n  &price={{ product.price | money_without_currency | url_encode }}\n  &variant_id={{ product.selected_or_first_available_variant.id }}\n  &quantity=1\n  &source=shopify\"\n  class=\"realisit-buy-button\"\n  target=\"_blank\"\n  rel=\"noopener noreferrer\"\n>\n  <button \n    style=\"\n      background-color:#4E1B5A;\n      color:white;\n      font-size:1.1em;\n      padding:14px 28px;\n      border:none;\n      border-radius:12px;\n      font-weight:600;\n      cursor:pointer;\n      transition:all 0.3s ease;\n      width:100%;\n      text-transform:uppercase;\n    \"\n    onmouseover=\"this.style.backgroundColor='#632277'\"\n    onmouseout=\"this.style.backgroundColor='#4E1B5A'\"\n  >\n    🚀 Comprar ahora\n  </button>\n</a>\n\n<style>\n  .realisit-buy-button button:hover {\n    box-shadow: 0 0 12px rgba(78, 27, 90, 0.4);\n    transform: scale(1.03",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
@@ -131,7 +131,6 @@
         },
         "8112c0f2-d635-40d1-ba99-bcc0b2ef3bdb": {
           "type": "shopify://apps/a2reviews-product-reviews/blocks/total/6a88647f-451d-4142-88de-9df2dab10243",
-          "disabled": true,
           "settings": {
             "type": "product",
             "show_total_rating": true,
@@ -142,7 +141,6 @@
         },
         "price": {
           "type": "price",
-          "disabled": true,
           "settings": {}
         },
         "1088bb43-2931-4cb5-b642-6c5e04e45224": {
@@ -719,6 +717,7 @@
       "block_order": [
         "69617930-3b31-4adf-a8e8-5c140c0a0e22"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
