@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const timerDisplay = document.getElementById("timer-demo");
   if (!timerDisplay) return; // Evita errores si el bloque no existe
   const contenedor = document.getElementById("contador-oferta");
-  let totalSeconds = (0 * 3600) + (5 * 60) + 47;
+  let totalSeconds = (0 * 3600) + 5 * 60;
 
   const formatTime = n => n.toString().padStart(2, "0");
 
