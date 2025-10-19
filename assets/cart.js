@@ -211,94 +211,28 @@ if (!customElements.get('cart-note')) {
   });
 };
 
-// Contador para bloques creados en texto (Releasit)
-// Pegar ESTE BLOQUE en Settings -> Custom Scripts -> Footer Script
+document.addEventListener("DOMContentLoaded", function() {
+  const timerDisplay = document.getElementById("timer-demo");
+  if (!timerDisplay) return; // Evita errores si el bloque no existe
+  const contenedor = document.getElementById("contador-oferta");
+  let totalSeconds = (0 * 3600) + (5 * 60) + 47;
 
-(function(){
-  // Formatea con ceros
-  function pad(n){ return n.toString().padStart(2,'0'); }
+  const formatTime = n => n.toString().padStart(2, "0");
 
-  // Convierte "HH:MM:SS" o "MM:SS" o "SS" a segundos
-  function timeToSeconds(timeStr){
-    if(!timeStr) return 0;
-    const parts = timeStr.split(':').map(p => parseInt(p,10));
-    if(parts.length === 3) return parts[0]*3600 + parts[1]*60 + parts[2];
-    if(parts.length === 2) return parts[0]*60 + parts[1];
-    return parts[0] || 0;
-  }
+  function updateTimer() {
+    const h = Math.floor(totalSeconds / 3600);
+    const m = Math.floor((totalSeconds % 3600) / 60);
+    const s = totalSeconds % 60;
+    timerDisplay.textContent = `${formatTime(h)}:${formatTime(m)}:${formatTime(s)}`;
 
-  // Formatea segundos a "HH:MM:SS"
-  function secondsToHHMMSS(sec){
-    const h = Math.floor(sec/3600);
-    const m = Math.floor((sec%3600)/60);
-    const s = sec%60;
-    return `${pad(h)}:${pad(m)}:${pad(s)}`;
-  }
-
-  // Inicializa todos los contadores encontrados
-  function initCounters(){
-    const nodes = document.querySelectorAll('.contador-oferta');
-    nodes.forEach(container => {
-      // Evitar reiniciar si ya está inicializado
-      if (container.__contador_iniciado) return;
-      container.__contador_iniciado = true;
-
-      const display = container.querySelector('.timer-demo');
-      // Si no existe el display, crea uno (por compatibilidad)
-      let timerEl = display;
-      if(!timerEl){
-        const spanTiempo = container.querySelector('.tiempo') || container;
-        timerEl = spanTiempo.querySelector('.timer-demo');
-        if(!timerEl){
-          timerEl = document.createElement('span');
-          timerEl.className = 'timer-demo';
-          timerEl.textContent = container.getAttribute('data-time') || '00:00:00';
-          spanTiempo.appendChild(timerEl);
-        }
-      }
-
-      // Lee tiempo inicial desde data-time (fall back a texto actual)
-      const timeAttr = (container.getAttribute('data-time') || '').trim();
-      let totalSeconds = timeAttr ? timeToSeconds(timeAttr) : timeToSeconds(timerEl.textContent.trim());
-
-      // Si no hay segundos válidos, no iniciar
-      if (!Number.isFinite(totalSeconds) || totalSeconds < 0) totalSeconds = 0;
-
-      // Primera actualización visual
-      timerEl.textContent = secondsToHHMMSS(totalSeconds);
-
-      // Intervalo por contador
-      const intervalId = setInterval(() => {
-        if (totalSeconds <= 0) {
-          clearInterval(intervalId);
-          container.innerHTML = "⚠️ ¡La oferta ha terminado!";
-          return;
-        }
-        totalSeconds--;
-        timerEl.textContent = secondsToHHMMSS(totalSeconds);
-      }, 1000);
-    });
-  }
-
-  // Esperar DOM listo (en footer script esto normalmente ya está cargado, pero lo cuidamos)
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initCounters);
-  } else {
-    initCounters();
-  }
-
-  // También observa cambios en el DOM para inicializar contadores que se inyecten dinámicamente
-  const obs = new MutationObserver(muts => {
-    // pequeño debounce: si aparece un .contador-oferta lo inicializamos
-    for (const m of muts) {
-      if (m.addedNodes && m.addedNodes.length) {
-        if (document.querySelector('.contador-oferta:not([__contador_iniciado])')) {
-          initCounters();
-          break;
-        }
-      }
+    if (totalSeconds <= 0) {
+      clearInterval(timerInterval);
+      contenedor.innerHTML = "⚠️ ¡La oferta ha terminado!";
+    } else {
+      totalSeconds--;
     }
-  });
-  obs.observe(document.body, { childList: true, subtree: true });
+  }
 
-})();
+  const timerInterval = setInterval(updateTimer, 1000);
+  updateTimer();
+});
