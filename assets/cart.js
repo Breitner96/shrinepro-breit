@@ -215,7 +215,7 @@ if (!customElements.get('cart-note')) {
 const timerDisplay = document.getElementById("timer-demo");
 
 // Tiempo inicial en segundos (00:05:47)
-let totalSeconds = (0 * 3600) + (5 * 60) + 47;
+let totalSeconds = (0 * 3600) + 5 * 60;
 
 // 🔹 Función para formatear con ceros
 const formatTime = (num) => num.toString().padStart(2, "0");
