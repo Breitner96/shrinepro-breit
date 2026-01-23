@@ -604,36 +604,45 @@
         "template--19239854407957__ffa79f40-3ca5-4c0f-842b-5fa404007924-1685852323c73bd29d-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Título de la pregunta",
+            "heading": "¿En cuánto tiempo se ven resultados?",
             "icon": "question_mark",
-            "row_content": "<p>respuesta de la pregunta</p>",
+            "row_content": "<p>Normalmente se notan cambios progresivos con uso <strong>2 veces al día</strong> durante varias semanas.</p>",
             "page": ""
           }
         },
         "40c59e33-8ce9-492f-ad4d-9d0fddb2fb10": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Título de la pregunta",
+            "heading": "¿Se puede usar después de cera o afeitado?",
             "icon": "question_mark",
-            "row_content": "<p>respuesta de la pregunta</p>",
+            "row_content": "<p>Sí, es ideal post-depilación/afeitado para <strong>calmar e hidratar</strong>.</p>",
             "page": ""
           }
         },
         "f68ace48-4162-4c3e-bc8c-5518a8de0427": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Título de la pregunta",
+            "heading": "¿Es grasoso?",
             "icon": "question_mark",
-            "row_content": "<p>respuesta de la pregunta</p>",
+            "row_content": "<p>No, tiene textura ligera y <strong>se absorbe rápido</strong>.</p>",
             "page": ""
           }
         },
         "524169b2-9412-4aeb-b45b-7c0e4edd9cba": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Título de la pregunta",
+            "heading": "¿En qué zonas puedo usarlo?",
             "icon": "question_mark",
-            "row_content": "<p>respuesta de la pregunta</p>",
+            "row_content": "<p>Piernas, brazos, axilas, abdomen (evita mucosas y piel irritada/lesionada).</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_kqMJRC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Sirve para todo tipo de piel?",
+            "icon": "question_mark",
+            "row_content": "<p>En general sí, pero si tu piel es muy sensible, prueba primero en una pequeña zona.</p>",
             "page": ""
           }
         }
@@ -642,11 +651,12 @@
         "template--19239854407957__ffa79f40-3ca5-4c0f-842b-5fa404007924-1685852323c73bd29d-0",
         "40c59e33-8ce9-492f-ad4d-9d0fddb2fb10",
         "f68ace48-4162-4c3e-bc8c-5518a8de0427",
-        "524169b2-9412-4aeb-b45b-7c0e4edd9cba"
+        "524169b2-9412-4aeb-b45b-7c0e4edd9cba",
+        "collapsible_row_kqMJRC"
       ],
       "settings": {
-        "caption": "vamos con preguntas frecuentes",
-        "heading": "Aquí pones un titulo para todas las preguntas (máximo 5 preguntas frecuentes)",
+        "caption": "",
+        "heading": "Preguntas frecuentes (FAQ)",
         "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "none",
