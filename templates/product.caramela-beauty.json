@@ -18,8 +18,15 @@
             "custom_liquid": "<div class=\"review-container\">\n  <div class=\"stars\">\n    {% for i in (1..5) %}\n      <span class=\"star\">★</span>\n    {% endfor %}\n  </div>\n  <span class=\"review-text\">+560 Reseñas</span>\n</div>\n\n<style>\n  .review-container {\n    display: flex;\n    align-items: center;\n    font-family: Arial, sans-serif;\n    font-size: 18px;\n    font-weight: bold;\n    margin-top: 10px;\n    margin-bottom: 0;\n  }\n\n  .stars {\n    color: #FFD700; /* Color dorado */\n    font-size: 17px; /* Corregido el error de 17x */\n    display: flex;\n    align-items: center;\n  }\n\n  .star {\n    margin-right: 2px;\n  }\n\n  .review-text {\n    margin-left: 8px;\n    color: #000;\n    font-size: 14px;\n    font-weight: bold;\n  }\n</style>"
           }
         },
+        "custom_liquid_KJBX9c": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Verificación Producto</title>\n    <style>\n        .product-name-container {\n            font-family: Arial, sans-serif;\n            font-size: 25px;\n            display: inline-block;\n        }\n        .product-name {\n            font-weight: bold;\n        }\n        .check-icon {\ndisplay: inline-block; \n            width: 25px;\n            height: 25px;\n            margin-left: 3px; /* Margen mínimo para que el check quede muy cerca del texto */\n        }\n    </style>\n</head>\n<body>\n\n    <div class=\"product-name-container\">\n        <span class=\"product-name\">{{product.title}}</span>\n        <img class=\"check-icon\" src=\"https://cdn-icons-png.flaticon.com/512/1828/1828640.png\" alt=\"Verificado\"> <!-- Reemplaza con la ruta correcta del ícono -->\n    </div>\n\n</body>\n</html>"
+          }
+        },
         "title": {
           "type": "title",
+          "disabled": true,
           "settings": {}
         },
         "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d": {
@@ -149,6 +156,7 @@
       },
       "block_order": [
         "custom_liquid_9XDG7p",
+        "custom_liquid_KJBX9c",
         "title",
         "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d",
         "text_gazJkx",
