@@ -110,7 +110,7 @@
           "settings": {
             "heading": "Información de Envío",
             "icon": "truck",
-            "content": "<p>Escribe aquí, tus condiciones de envío y tiempos de entrega reales.</p>",
+            "content": "<p>📦 <strong>Procesamiento:</strong> 1–3 días hábiles.<br/><br/>🚚 <strong>Envío GRATIS:</strong> entrega estimada <strong>7–14 días hábiles</strong>.<br/><br/>🔎 <strong>Seguimiento:</strong> recibirás un número de tracking cuando tu pedido sea despachado.</p>",
             "page": ""
           }
         },
@@ -119,7 +119,7 @@
           "settings": {
             "heading": "Devoluciones",
             "icon": "return",
-            "content": "<p>Escribe aquí tus condiciones para devoluciones faciles y aumentar la confianza en los clientes</p>",
+            "content": "<p>✅ <strong>Garantía de 60 días:</strong> si no estás feliz con tu compra, puedes solicitar devolución dentro de los 60 días posteriores a la entrega.<br/><br/>📩 Solo escríbenos con tu número de pedido y te indicamos el proceso.<br/><br/>💳 Una vez aprobado, procesamos tu reembolso según el método de pago.</p>",
             "page": ""
           }
         },
