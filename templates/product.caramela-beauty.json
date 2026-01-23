@@ -31,6 +31,7 @@
         },
         "98b016bf-08b0-446c-8b05-c9fcc99c3d04": {
           "type": "shopify://apps/audien-reviews/blocks/star_rating/ce002b21-24e0-4d65-87ca-18c9770b24d4",
+          "disabled": true,
           "settings": {
             "size": 16,
             "rating_text": "",
