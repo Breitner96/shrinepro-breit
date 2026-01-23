@@ -449,14 +449,14 @@
         "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Prueba Social - Foto",
+            "heading": "CAMILA  RAMIREZ",
             "heading_size": "h1"
           }
         },
         "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Y este texto es para una recomendación del producto</p>",
+            "text": "<p>Si te depilas o te afeitas seguido, te lo recomiendo muchísimo. Se absorbe rápido, calma la piel y con el uso constante sientes la piel más lisa y el vello tarda más en reaparecer.</p>",
             "text_style": "body"
           }
         }
@@ -466,6 +466,7 @@
         "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-text-1"
       ],
       "settings": {
+        "image": "shopify://shop_images/pruebasocial.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
