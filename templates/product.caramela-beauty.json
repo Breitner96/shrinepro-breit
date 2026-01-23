@@ -268,6 +268,8 @@
     "086a98ac-209d-4db2-9d62-5b0fe9663693": {
       "type": "compare-image",
       "settings": {
+        "image1": "shopify://shop_images/antes_optimized.jpg",
+        "image2": "shopify://shop_images/despues_optimized.jpg",
         "title": "De “piel áspera e irritada” a “piel lisa y sedosa”",
         "text": "<p>Rutina diaria con <strong>Cyperus Rotundus (Nutgrass)</strong> + aceites vegetales para una piel más suave, uniforme e hidratada, especialmente después de depilarte o afeitarte.</p>",
         "before": "ANTES",
