@@ -12,9 +12,11 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {}
+        "custom_liquid_fbPhzc": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
         },
         "price": {
           "type": "price",
@@ -99,7 +101,7 @@
         }
       },
       "block_order": [
-        "title",
+        "custom_liquid_fbPhzc",
         "price",
         "1088bb43-2931-4cb5-b642-6c5e04e45224",
         "daa0e452-23d5-4bd1-afb3-35d7babab88c",
