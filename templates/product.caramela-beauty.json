@@ -74,8 +74,9 @@
         "1c393517-7c5c-4915-ba22-5dbd8ede91e5": {
           "type": "featuredreview",
           "settings": {
-            "reviewtext": "(FOTO DE UN CLIENTE FELIZ) Escribe aquí una review de un cliente, entorno al producto que estas vendiendo",
-            "reviewname": "Nombre (Ciudad, País)"
+            "reviewimage": "shopify://shop_images/testimonio_optimized.jpg",
+            "reviewtext": "Noté que el vello me tarda más en salir y además me bajó la irritación.",
+            "reviewname": "Camila G. (Cali, Colombia)"
           }
         },
         "2c100155-1d2d-4504-a37e-f2abd070099f": {
