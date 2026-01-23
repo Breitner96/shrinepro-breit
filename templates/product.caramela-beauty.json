@@ -48,6 +48,7 @@
         },
         "text_gazJkx": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<strong>BENEFICIOS </strong>",
             "text_style": "body"
