@@ -149,6 +149,7 @@
                     {{ 'onboarding.product_title' | t }}
                   {%- endif -%}
                 </h2>
+<div class="audien-review-star-rating" style="display:none;" data-product-id="{{ card_product.id | default: product.id }}" data-domain="{{ shop.domain }}"></div>
               {%- when 'price' -%}
                 <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',

@@ -159,6 +159,7 @@
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
             {%- endif -%}
+<div class="audien-review-star-rating" style="display:none;" data-product-id="{{ card_product.id | default: product.id }}" data-domain="{{ shop.domain }}"></div>
 
             <span class="caption-large light">{{ block.settings.description | escape }}</span>
 
