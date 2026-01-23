@@ -393,6 +393,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/testimonio2_optimized.jpg",
             "title": "Sandra T. ⭐️⭐️⭐️⭐️⭐️",
             "text": "<p>Me cambió la rutina: lo uso mañana y noche y siento la piel <strong>más bonita</strong>.</p>",
             "link_label": "",
@@ -402,6 +403,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-2": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/testimonio3_optimized.jpg",
             "title": "Camila R. ⭐️⭐️⭐️⭐️⭐️",
             "text": "<p>Lo mejor es que no deja la piel pegajosa y calma muchísimo.</p>",
             "link_label": "",
@@ -411,6 +413,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/testimonio1_optimized.jpg",
             "title": "Patricia M. ⭐️⭐️⭐️⭐️⭐️",
             "text": "<p>En axilas me funciona súper, menos irritación y la piel más suave.</p>",
             "link_label": "",
