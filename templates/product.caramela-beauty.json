@@ -82,7 +82,7 @@
           "type": "shippingarrow",
           "settings": {
             "preshipsby": "Se envía en máximo 3",
-            "shippingarrow": "3",
+            "shippingarrow": "",
             "postshipsby": "días si compras hoy!"
           }
         },
