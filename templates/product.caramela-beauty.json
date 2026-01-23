@@ -281,13 +281,15 @@
       "blocks": {
         "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "heading": "Titulo llamativo de máximo 5 palabras (Tocar el dolor principal)",
+            "heading": "Tu piel no necesita sufrir para verse increíble",
             "heading_size": "h2"
           }
         },
         "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Aquí, complementas y refuerzas el punto de dolor anterior</p>",
             "text_style": "body"
@@ -308,6 +310,7 @@
         "fb814fee-541b-418f-a1f8-b03b37c368ce"
       ],
       "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_20_ene_2026_06_18_25_p.m..webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
