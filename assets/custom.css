@@ -257,6 +257,7 @@ object-fit: cover;
 
 /* Sticky atc */
 .bottomMenu {
+  display:none;
     position: fixed;
     bottom: 0;
     width: 100%;
