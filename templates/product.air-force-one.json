@@ -29,6 +29,18 @@
           "disabled": true,
           "settings": {}
         },
+        "a6595518-35a6-4711-b43f-cfa3b0cd3529": {
+          "type": "shopify://apps/audien-reviews/blocks/star_rating/ce002b21-24e0-4d65-87ca-18c9770b24d4",
+          "settings": {
+            "size": 16,
+            "rating_text": "",
+            "rating_hide_text": false,
+            "widget_alignment": "left",
+            "rating_color_for_star": "rgba(0,0,0,0)",
+            "primary_color_for_star": "rgba(0,0,0,0)",
+            "custom_css": ""
+          }
+        },
         "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d": {
           "type": "price",
           "settings": {}
@@ -155,10 +167,6 @@
           "type": "description",
           "disabled": true,
           "settings": {}
-        },
-        "a6595518-35a6-4711-b43f-cfa3b0cd3529": {
-          "type": "shopify://apps/audien-reviews/blocks/star_rating/ce002b21-24e0-4d65-87ca-18c9770b24d4",
-          "settings": {}
         }
       },
       "block_order": [
@@ -216,7 +224,7 @@
         "gallery_layout": "thumbnail",
         "media_position": "left",
         "image_zoom": "lightbox",
-        "mobile_thumbnails": "hide",
+        "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 0,
