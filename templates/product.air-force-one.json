@@ -269,6 +269,7 @@
     },
     "086a98ac-209d-4db2-9d62-5b0fe9663693": {
       "type": "compare-image",
+      "disabled": true,
       "settings": {
         "image1": "shopify://shop_images/antes_optimized.jpg",
         "image2": "shopify://shop_images/despues_optimized.jpg",
@@ -312,7 +313,7 @@
         "fb814fee-541b-418f-a1f8-b03b37c368ce"
       ],
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_20_ene_2026_06_18_25_p.m..webp",
+        "image": "shopify://shop_images/tenisNegro.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -372,6 +373,7 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-3",
         "8f4c5208-c742-4fe0-9e42-8cc758a77b8c"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -396,8 +398,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/testimonio2_optimized.jpg",
-            "title": "Sandra T. ⭐️⭐️⭐️⭐️⭐️",
-            "text": "<p>Me cambió la rutina: lo uso mañana y noche y siento la piel <strong>más bonita</strong>.</p>",
+            "title": "Mario T. ⭐️⭐️⭐️⭐️⭐️",
+            "text": "<p>Me llegaron súper rápido y están hermosas. La talla me quedó perfecta y el llaverito fue un detallazo. ¡Recomendadas!”</p>",
             "link_label": "",
             "link": ""
           }
@@ -406,8 +408,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/testimonio3_optimized.jpg",
-            "title": "Camila R. ⭐️⭐️⭐️⭐️⭐️",
-            "text": "<p>Lo mejor es que no deja la piel pegajosa y calma muchísimo.</p>",
+            "title": "Ramio R. ⭐️⭐️⭐️⭐️⭐️",
+            "text": "<p>Están comodísimas para usarlas todo el día y combinan con todo. La entrega fue en buen estado y el regalo venía en el paquete.”</p>",
             "link_label": "",
             "link": ""
           }
@@ -416,8 +418,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/testimonio1_optimized.jpg",
-            "title": "Patricia M. ⭐️⭐️⭐️⭐️⭐️",
-            "text": "<p>En axilas me funciona súper, menos irritación y la piel más suave.</p>",
+            "title": "Luis M. ⭐️⭐️⭐️⭐️⭐️",
+            "text": "<p>Me encantó la calidad y cómo se ven puestas. Además el llaverito está muy bonito, se nota el cuidado en el envío. Volvería a comprar.</p>",
             "link_label": "",
             "link": ""
           }
