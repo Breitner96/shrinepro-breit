@@ -330,8 +330,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-1": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 1",
-            "text": "<p>Ampliar el beneficio 1</p>",
+            "title": "✅ <strong>Post-afeitado sin incomodidad</strong>",
+            "text": "<p>ayuda a calmar la piel y mejorar la sensación tras rasurar.</p>",
             "link_label": "",
             "link": ""
           }
@@ -339,8 +339,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-2": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 2",
-            "text": "<p>Ampliar el beneficio 2</p>",
+            "title": "✅ <strong>Textura más uniforme</strong>",
+            "text": "<p>rosa mosqueta favorece una apariencia más pareja y luminosa.</p>",
             "link_label": "",
             "link": ""
           }
@@ -348,8 +348,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-3": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 3",
-            "text": "<p>Ampliar el beneficio 3</p>",
+            "title": "✅ <strong>Sensación ligera (sin grasa)</strong>",
+            "text": "<p>rápida absorción para usarlo a diario sin molestia.</p>",
             "link_label": "",
             "link": ""
           }
@@ -357,8 +357,8 @@
         "8f4c5208-c742-4fe0-9e42-8cc758a77b8c": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 4",
-            "text": "<p>Ampliar el beneficio 4</p>",
+            "title": "✅ <strong>Rutina fácil y rápida</strong>",
+            "text": "<p>solo aplicar y masajear 30–60 segundos.</p>",
             "link_label": "",
             "link": ""
           }
@@ -371,7 +371,7 @@
         "8f4c5208-c742-4fe0-9e42-8cc758a77b8c"
       ],
       "settings": {
-        "title": "(NO USAR TITULO)",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
