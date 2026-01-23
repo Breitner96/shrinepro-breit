@@ -1,1 +1,293 @@
-{"sections":{"c8b3c1e5-1c7f-454e-a20d-b5d59424986d":{"type":"rich-text","blocks":{"template--19583287034172__c8b3c1e5-1c7f-454e-a20d-b5d59424986d-16871189565c65cc6e-0":{"type":"heading","settings":{"heading":"Productos Exclusivos","heading_size":"h2"}},"e28ab570-0615-4f77-9ede-8701b8284dd4":{"type":"caption","settings":{"caption":"(Promociones todos los días)","text_style":"subtitle","text_size":"medium"}}},"block_order":["template--19583287034172__c8b3c1e5-1c7f-454e-a20d-b5d59424986d-16871189565c65cc6e-0","e28ab570-0615-4f77-9ede-8701b8284dd4"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"background-1","full_width":true,"padding_top":8,"padding_bottom":8}},"image-with-text":{"type":"image-with-text","blocks":{"heading":{"type":"heading","settings":{"heading":"Es momento de comprar","heading_size":"h2"}},"8cb5fb1f-50bf-4494-b647-c1ce7ed28b11":{"type":"text","settings":{"text":"<p>¡Siéntete seguro de ti mismo! En nuestra tienda tenemos pagos contraentrega<\/p>","text_style":"body"}},"button":{"type":"button","settings":{"button_label":"Shop now","button_link":"shopify:\/\/collections\/all"}},"306c2cf4-48be-4db4-8b93-7ad7b75d6ae1":{"type":"caption","settings":{"caption":"MÁS DE 72,500+ CLIENTES FELICES","text_style":"caption-with-letter-spacing","text_size":"medium"}}},"block_order":["heading","8cb5fb1f-50bf-4494-b647-c1ce7ed28b11","button","306c2cf4-48be-4db4-8b93-7ad7b75d6ae1"],"settings":{"height":"small","desktop_image_width":"medium","layout":"text_first","desktop_content_position":"bottom","desktop_content_alignment":"center","content_layout":"no-overlap","color_scheme":"background-1","image_behavior":"none","mobile_content_alignment":"left","padding_top":0,"padding_bottom":0}},"85737c2a-678d-45f4-9cb2-9a4a311a30f6":{"type":"multicolumn","blocks":{"template--19239854047509__85737c2a-678d-45f4-9cb2-9a4a311a30f6-16859164819852504b-0":{"type":"column","settings":{"title":"","text":"","link_label":"","link":""}},"template--19239854047509__85737c2a-678d-45f4-9cb2-9a4a311a30f6-16859164819852504b-1":{"type":"column","settings":{"title":"","text":"","link_label":"","link":""}},"template--19239854047509__85737c2a-678d-45f4-9cb2-9a4a311a30f6-16859164819852504b-2":{"type":"column","settings":{"title":"","text":"","link_label":"","link":""}},"4946b2f8-c16c-4642-af23-751381c8be93":{"type":"column","settings":{"title":"","text":"","link_label":"","link":""}}},"block_order":["template--19239854047509__85737c2a-678d-45f4-9cb2-9a4a311a30f6-16859164819852504b-0","template--19239854047509__85737c2a-678d-45f4-9cb2-9a4a311a30f6-16859164819852504b-1","template--19239854047509__85737c2a-678d-45f4-9cb2-9a4a311a30f6-16859164819852504b-2","4946b2f8-c16c-4642-af23-751381c8be93"],"disabled":true,"settings":{"title":"","heading_size":"h1","image_width":"full","image_ratio":"adapt","columns_desktop":4,"column_alignment":"center","background_style":"primary","button_label":"","button_link":"","color_scheme":"inverse","columns_mobile":"2","swipe_on_mobile":false,"padding_top":0,"padding_bottom":20}},"4db7499b-96e7-445e-8b7e-92c78186e9b7":{"type":"compare-chart","blocks":{"template--19569037607228__4db7499b-96e7-445e-8b7e-92c78186e9b7-1687024082f903de43-0":{"type":"row","settings":{"benefit":"Pago Contraentrega","us":true,"others":false}},"template--19569037607228__4db7499b-96e7-445e-8b7e-92c78186e9b7-1687024082f903de43-1":{"type":"row","settings":{"benefit":"Envíos Gratis","us":true,"others":false}},"template--19569037607228__4db7499b-96e7-445e-8b7e-92c78186e9b7-1687024082f903de43-2":{"type":"row","settings":{"benefit":"Garantía Segura","us":true,"others":false}},"8d4ce2b0-311a-473c-823f-1c2a7cddabb0":{"type":"row","settings":{"benefit":"Productos Exclusivos","us":true,"others":false}},"ca9c466f-7056-4b1a-820d-c61162d61899":{"type":"row","settings":{"benefit":"Precios Altos","us":false,"others":true}}},"block_order":["template--19569037607228__4db7499b-96e7-445e-8b7e-92c78186e9b7-1687024082f903de43-0","template--19569037607228__4db7499b-96e7-445e-8b7e-92c78186e9b7-1687024082f903de43-1","template--19569037607228__4db7499b-96e7-445e-8b7e-92c78186e9b7-1687024082f903de43-2","8d4ce2b0-311a-473c-823f-1c2a7cddabb0","ca9c466f-7056-4b1a-820d-c61162d61899"],"settings":{"title":"Que hace especial a nuestra tienda","heading_size":"h1","text":"<p>Descubra porque nos encanta satisfacer a nuestros clientes<\/p>","button_label":"","link":"","button_style_secondary":false,"layout":"table_second","color_scheme":"background-1","logo_width":75,"us_label":"Nosotros","others_label":"Otros","benefit_color_scheme":"accent-1","checkmark_color":"#53af01","icon_cells_color_scheme":"background-1","padding_top":36,"padding_bottom":36}},"4e844363-4d64-4537-ba07-47b167d9e3be":{"type":"multicolumn","blocks":{"565aee10-4107-4e1d-a2e9-50367180f2c2":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Free-Shipping_4e33babc-42bd-4593-bf77-776e0b465fb0.webp","title":"Envíos Gratis","text":"","link_label":"","link":""}},"1653cbe6-bcc6-4f67-b1be-1bef1168ffc1":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/30-Nights-Trial.webp","title":"30-Dias de Garantia","text":"","link_label":"","link":""}},"e822a487-88b5-4df0-8012-7c1cfc026f91":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Easy-Returns_e3d53311-3dfb-4739-983c-55f8f03b6776.webp","title":"Devoluciones Faciles","text":"","link_label":"","link":""}}},"block_order":["565aee10-4107-4e1d-a2e9-50367180f2c2","1653cbe6-bcc6-4f67-b1be-1bef1168ffc1","e822a487-88b5-4df0-8012-7c1cfc026f91"],"settings":{"title":"Pruébenos sin riesgos","heading_size":"h2","image_width":"third","image_ratio":"adapt","columns_desktop":3,"column_alignment":"center","background_style":"primary","button_label":"","button_link":"","color_scheme":"background-1","columns_mobile":"1","swipe_on_mobile":false,"padding_top":0,"padding_bottom":20}}},"order":["c8b3c1e5-1c7f-454e-a20d-b5d59424986d","image-with-text","85737c2a-678d-45f4-9cb2-9a4a311a30f6","4db7499b-96e7-445e-8b7e-92c78186e9b7","4e844363-4d64-4537-ba07-47b167d9e3be"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "c8b3c1e5-1c7f-454e-a20d-b5d59424986d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19583287034172__c8b3c1e5-1c7f-454e-a20d-b5d59424986d-16871189565c65cc6e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Productos Exclusivos",
+            "heading_size": "h2"
+          }
+        },
+        "e28ab570-0615-4f77-9ede-8701b8284dd4": {
+          "type": "caption",
+          "settings": {
+            "caption": "(Promociones todos los días)",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "template--19583287034172__c8b3c1e5-1c7f-454e-a20d-b5d59424986d-16871189565c65cc6e-0",
+        "e28ab570-0615-4f77-9ede-8701b8284dd4"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "image-with-text": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Es momento de comprar",
+            "heading_size": "h2"
+          }
+        },
+        "8cb5fb1f-50bf-4494-b647-c1ce7ed28b11": {
+          "type": "text",
+          "settings": {
+            "text": "<p>¡Siéntete seguro de ti mismo! En nuestra tienda tenemos pagos contraentrega</p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Comprar Ahora",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "306c2cf4-48be-4db4-8b93-7ad7b75d6ae1": {
+          "type": "caption",
+          "settings": {
+            "caption": "MÁS DE 72,500+ CLIENTES FELICES",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "8cb5fb1f-50bf-4494-b647-c1ce7ed28b11",
+        "button",
+        "306c2cf4-48be-4db4-8b93-7ad7b75d6ae1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/auraconfianza.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "85737c2a-678d-45f4-9cb2-9a4a311a30f6": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19239854047509__85737c2a-678d-45f4-9cb2-9a4a311a30f6-16859164819852504b-0": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19239854047509__85737c2a-678d-45f4-9cb2-9a4a311a30f6-16859164819852504b-1": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19239854047509__85737c2a-678d-45f4-9cb2-9a4a311a30f6-16859164819852504b-2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "4946b2f8-c16c-4642-af23-751381c8be93": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19239854047509__85737c2a-678d-45f4-9cb2-9a4a311a30f6-16859164819852504b-0",
+        "template--19239854047509__85737c2a-678d-45f4-9cb2-9a4a311a30f6-16859164819852504b-1",
+        "template--19239854047509__85737c2a-678d-45f4-9cb2-9a4a311a30f6-16859164819852504b-2",
+        "4946b2f8-c16c-4642-af23-751381c8be93"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "inverse",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "4db7499b-96e7-445e-8b7e-92c78186e9b7": {
+      "type": "compare-chart",
+      "blocks": {
+        "template--19569037607228__4db7499b-96e7-445e-8b7e-92c78186e9b7-1687024082f903de43-0": {
+          "type": "row",
+          "settings": {
+            "benefit": "Pago Contraentrega",
+            "us": true,
+            "others": false
+          }
+        },
+        "template--19569037607228__4db7499b-96e7-445e-8b7e-92c78186e9b7-1687024082f903de43-1": {
+          "type": "row",
+          "settings": {
+            "benefit": "Envíos Gratis",
+            "us": true,
+            "others": false
+          }
+        },
+        "template--19569037607228__4db7499b-96e7-445e-8b7e-92c78186e9b7-1687024082f903de43-2": {
+          "type": "row",
+          "settings": {
+            "benefit": "Garantía Segura",
+            "us": true,
+            "others": false
+          }
+        },
+        "8d4ce2b0-311a-473c-823f-1c2a7cddabb0": {
+          "type": "row",
+          "settings": {
+            "benefit": "Productos Exclusivos",
+            "us": true,
+            "others": false
+          }
+        },
+        "ca9c466f-7056-4b1a-820d-c61162d61899": {
+          "type": "row",
+          "settings": {
+            "benefit": "Precios Altos",
+            "us": false,
+            "others": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19569037607228__4db7499b-96e7-445e-8b7e-92c78186e9b7-1687024082f903de43-0",
+        "template--19569037607228__4db7499b-96e7-445e-8b7e-92c78186e9b7-1687024082f903de43-1",
+        "template--19569037607228__4db7499b-96e7-445e-8b7e-92c78186e9b7-1687024082f903de43-2",
+        "8d4ce2b0-311a-473c-823f-1c2a7cddabb0",
+        "ca9c466f-7056-4b1a-820d-c61162d61899"
+      ],
+      "settings": {
+        "title": "Que hace especial a nuestra tienda",
+        "heading_size": "h1",
+        "text": "<p>Descubra porque nos encanta satisfacer a nuestros clientes</p>",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "layout": "table_second",
+        "color_scheme": "background-1",
+        "logo_width": 75,
+        "us_label": "Nosotros",
+        "others_label": "Otros",
+        "benefit_color_scheme": "accent-1",
+        "checkmark_color": "#53af01",
+        "icon_cells_color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "4e844363-4d64-4537-ba07-47b167d9e3be": {
+      "type": "multicolumn",
+      "blocks": {
+        "565aee10-4107-4e1d-a2e9-50367180f2c2": {
+          "type": "column",
+          "settings": {
+            "title": "Envíos Gratis",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1653cbe6-bcc6-4f67-b1be-1bef1168ffc1": {
+          "type": "column",
+          "settings": {
+            "title": "30-Dias de Garantia",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "e822a487-88b5-4df0-8012-7c1cfc026f91": {
+          "type": "column",
+          "settings": {
+            "title": "Devoluciones Faciles",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "565aee10-4107-4e1d-a2e9-50367180f2c2",
+        "1653cbe6-bcc6-4f67-b1be-1bef1168ffc1",
+        "e822a487-88b5-4df0-8012-7c1cfc026f91"
+      ],
+      "settings": {
+        "title": "Pruébenos sin riesgos",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "c8b3c1e5-1c7f-454e-a20d-b5d59424986d",
+    "image-with-text",
+    "85737c2a-678d-45f4-9cb2-9a4a311a30f6",
+    "4db7499b-96e7-445e-8b7e-92c78186e9b7",
+    "4e844363-4d64-4537-ba07-47b167d9e3be"
+  ]
+}
