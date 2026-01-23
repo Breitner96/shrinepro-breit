@@ -32,7 +32,7 @@
           "type": "link_list",
           "settings": {
             "heading": "DESCUBRE NUESTRAS POLÍTICAS",
-            "menu": "footer"
+            "menu": "men-inferior"
           }
         }
       },
@@ -50,7 +50,7 @@
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": false,
-        "show_policy": false,
+        "show_policy": true,
         "margin_top": 0,
         "padding_top": 44,
         "padding_bottom": 0
