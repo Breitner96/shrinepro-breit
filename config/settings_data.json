@@ -172,8 +172,8 @@
         "type": "new-announcement-bar",
         "settings": {
           "enable_custombar": true,
-          "custom_top_bar1": "Precio Preventa de Temporada",
-          "custom_top_bar2": "bnbvbvbnv",
+          "custom_top_bar1": "Compra Segura",
+          "custom_top_bar2": "Productos Exclusivos",
           "custombarcolor": "#1a1a1a"
         }
       },

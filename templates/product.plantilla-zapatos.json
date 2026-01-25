@@ -510,53 +510,6 @@
         "padding_bottom": 36
       }
     },
-    "3d28e77d-b7ce-4326-99e5-6a739a02727b": {
-      "type": "percentage",
-      "blocks": {
-        "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-1": {
-          "type": "row",
-          "settings": {
-            "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
-          }
-        },
-        "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-2": {
-          "type": "row",
-          "settings": {
-            "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
-          }
-        },
-        "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3": {
-          "type": "row",
-          "settings": {
-            "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-1",
-        "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-2",
-        "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3"
-      ],
-      "settings": {
-        "title": "Recomendación",
-        "heading_size": "h1",
-        "text": "<p>Habla del porcentaje de clientes que estan felices con uno de los beneficios puntuales del producto</p>",
-        "color_scheme": "background-1",
-        "layout": "percentages_second",
-        "percentages_headline": "",
-        "percentages_headline_size": "h2",
-        "percentages_headline_alignment": "left",
-        "caption": "<p>*aquí puedes decir que estos porcentajes son comprobados.</p>",
-        "button_label": "",
-        "link": "",
-        "button_style_secondary": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "ffa79f40-3ca5-4c0f-842b-5fa404007924": {
       "type": "collapsible-content",
       "blocks": {
@@ -698,7 +651,6 @@
     "b6fc2703-d30b-40d4-b2cb-fcc2eade4e34",
     "78161370-bfb0-428e-adf1-f106aca5123b",
     "435217f9-0491-4e04-93de-8fa3a5a996db",
-    "3d28e77d-b7ce-4326-99e5-6a739a02727b",
     "ffa79f40-3ca5-4c0f-842b-5fa404007924",
     "13348d96-1a54-4009-b416-60d21a04c302",
     "ce002b21-24e0-4d65-87ca-18c9770b24d4"
