@@ -203,37 +203,6 @@
         "padding_bottom": 68
       }
     },
-    "7401e664-d026-4a46-bd1f-bc32c9f0558a": {
-      "type": "rich-text",
-      "blocks": {
-        "template--19239854407957__7401e664-d026-4a46-bd1f-bc32c9f0558a-1685852128f579606c-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Desired outcome",
-            "heading_size": "h2"
-          }
-        },
-        "11abbd1c-ea50-4aca-a4aa-563a76d850b5": {
-          "type": "text",
-          "settings": {
-            "text": "<p>How this product meets their desired outcome</p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--19239854407957__7401e664-d026-4a46-bd1f-bc32c9f0558a-1685852128f579606c-0",
-        "11abbd1c-ea50-4aca-a4aa-563a76d850b5"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "086a98ac-209d-4db2-9d62-5b0fe9663693": {
       "type": "compare-image",
       "settings": {
@@ -440,76 +409,6 @@
         "padding_bottom": 36
       }
     },
-    "435217f9-0491-4e04-93de-8fa3a5a996db": {
-      "type": "compare-chart",
-      "blocks": {
-        "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-1": {
-          "type": "row",
-          "settings": {
-            "benefit": "Beneficio 1",
-            "us": true,
-            "others": false
-          }
-        },
-        "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2": {
-          "type": "row",
-          "settings": {
-            "benefit": "Beneficio  2",
-            "us": true,
-            "others": false
-          }
-        },
-        "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-3": {
-          "type": "row",
-          "settings": {
-            "benefit": "Beneficio 3",
-            "us": true,
-            "others": false
-          }
-        },
-        "6a12410f-0263-49d1-941c-4d61208408bb": {
-          "type": "row",
-          "settings": {
-            "benefit": "Beneficio 4",
-            "us": true,
-            "others": false
-          }
-        },
-        "7ea5db61-7af3-4f5f-a41e-30f037ccf10e": {
-          "type": "row",
-          "settings": {
-            "benefit": "Beneficio 5",
-            "us": true,
-            "others": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-1",
-        "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2",
-        "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-3",
-        "6a12410f-0263-49d1-941c-4d61208408bb",
-        "7ea5db61-7af3-4f5f-a41e-30f037ccf10e"
-      ],
-      "settings": {
-        "title": "Exalta tu producto frente a la competencia",
-        "heading_size": "h1",
-        "text": "<p>Menciona porque tu producto es mejor que el de la ocmpetencia</p>",
-        "button_label": "",
-        "link": "",
-        "button_style_secondary": false,
-        "layout": "table_second",
-        "color_scheme": "background-1",
-        "logo_width": 75,
-        "us_label": "Producto X",
-        "others_label": "Otros",
-        "benefit_color_scheme": "accent-1",
-        "checkmark_color": "#53af01",
-        "icon_cells_color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "ffa79f40-3ca5-4c0f-842b-5fa404007924": {
       "type": "collapsible-content",
       "blocks": {
@@ -590,13 +489,11 @@
   "order": [
     "main",
     "related-products",
-    "7401e664-d026-4a46-bd1f-bc32c9f0558a",
     "086a98ac-209d-4db2-9d62-5b0fe9663693",
     "3bc3f381-5c12-4e1e-9f92-289fb87d308d",
     "50f8db15-9a00-4bfb-8176-786845498504",
     "b6fc2703-d30b-40d4-b2cb-fcc2eade4e34",
     "78161370-bfb0-428e-adf1-f106aca5123b",
-    "435217f9-0491-4e04-93de-8fa3a5a996db",
     "ffa79f40-3ca5-4c0f-842b-5fa404007924",
     "ce002b21-24e0-4d65-87ca-18c9770b24d4"
   ]
