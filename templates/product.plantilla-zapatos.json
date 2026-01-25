@@ -105,15 +105,6 @@
             "page": ""
           }
         },
-        "collapsible_tab_NKgDKr": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Cómo se usa",
-            "icon": "check_mark",
-            "content": "",
-            "page": ""
-          }
-        },
         "c11bfb2f-901d-4b03-90cf-b6b766353d13": {
           "type": "collapsible_tab",
           "settings": {
@@ -177,7 +168,6 @@
         "1c393517-7c5c-4915-ba22-5dbd8ede91e5",
         "2c100155-1d2d-4504-a37e-f2abd070099f",
         "collapsible_tab_AUafHX",
-        "collapsible_tab_NKgDKr",
         "c11bfb2f-901d-4b03-90cf-b6b766353d13",
         "e6778313-45ad-4d6d-8260-2498242a6df0",
         "5b41d5c2-f95c-45c9-8b01-8d3aaf8e300f",
