@@ -98,8 +98,8 @@
         "collapsible_tab_AUafHX": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Que Incluye:",
-            "icon": "check_mark",
+            "heading": "Que Incluye",
+            "icon": "clipboard",
             "content": "",
             "page": ""
           }
