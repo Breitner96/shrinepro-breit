@@ -568,61 +568,7 @@
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 4,
-        "padding_bottom": 36
-      }
-    },
-    "13348d96-1a54-4009-b416-60d21a04c302": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--19239854407957__13348d96-1a54-4009-b416-60d21a04c302-1685852213f10cc2f8-0": {
-          "type": "column",
-          "settings": {
-            "title": "Nombre del cliente",
-            "text": "<p>Texto del testimonio</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--19239854407957__13348d96-1a54-4009-b416-60d21a04c302-1685852213f10cc2f8-1": {
-          "type": "column",
-          "settings": {
-            "title": "Nombre del cliente",
-            "text": "<p>texto del testimonio</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--19239854407957__13348d96-1a54-4009-b416-60d21a04c302-1685852213f10cc2f8-2": {
-          "type": "column",
-          "settings": {
-            "title": "Nombre del cliente",
-            "text": "<p>testo del testimonio</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--19239854407957__13348d96-1a54-4009-b416-60d21a04c302-1685852213f10cc2f8-0",
-        "template--19239854407957__13348d96-1a54-4009-b416-60d21a04c302-1685852213f10cc2f8-1",
-        "template--19239854407957__13348d96-1a54-4009-b416-60d21a04c302-1685852213f10cc2f8-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "TESTIMONIOS EN TEXTO",
-        "heading_size": "h2",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 32,
-        "padding_bottom": 0
+        "padding_bottom": 4
       }
     },
     "ce002b21-24e0-4d65-87ca-18c9770b24d4": {
@@ -652,7 +598,6 @@
     "78161370-bfb0-428e-adf1-f106aca5123b",
     "435217f9-0491-4e04-93de-8fa3a5a996db",
     "ffa79f40-3ca5-4c0f-842b-5fa404007924",
-    "13348d96-1a54-4009-b416-60d21a04c302",
     "ce002b21-24e0-4d65-87ca-18c9770b24d4"
   ]
 }
