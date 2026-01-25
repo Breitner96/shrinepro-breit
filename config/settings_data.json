@@ -166,20 +166,6 @@
       },
       "announcement-bar": {
         "type": "announcement-bar",
-        "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "settings": {
-              "text": "Pago Contraentrega | Envío Gratis",
-              "text_alignment": "center",
-              "color_scheme": "inverse",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "announcement-bar-0"
-        ],
         "settings": {}
       },
       "new-announcement-bar": {
