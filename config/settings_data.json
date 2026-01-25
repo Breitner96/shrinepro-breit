@@ -169,7 +169,6 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Pago Contraentrega | Envío Gratis",
               "text_alignment": "center",
@@ -186,7 +185,7 @@
       "new-announcement-bar": {
         "type": "new-announcement-bar",
         "settings": {
-          "enable_custombar": false,
+          "enable_custombar": true,
           "custom_top_bar1": "Precio Preventa de Temporada",
           "custom_top_bar2": "",
           "custombarcolor": "#9e0808"
@@ -198,11 +197,11 @@
         "settings": {
           "color_scheme": "background-1",
           "logo": "shopify://shop_images/screenshot-2026-01-23-at-11_optimized.13.56.png",
-          "logo_width": 120,
+          "logo_width": 100,
           "logo_position": "middle-left",
-          "menu": "main-menu",
-          "menu_type_desktop": "dropdown",
-          "show_line_separator": false,
+          "menu": "",
+          "menu_type_desktop": "mega",
+          "show_line_separator": true,
           "enable_sticky_header": false,
           "disable_search": true,
           "mobile_logo_position": "center",
