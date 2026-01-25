@@ -172,7 +172,7 @@
             "settings": {
               "text": "Pago Contraentrega | Envío Gratis",
               "text_alignment": "center",
-              "color_scheme": "accent-1",
+              "color_scheme": "inverse",
               "link": ""
             }
           }
@@ -187,8 +187,8 @@
         "settings": {
           "enable_custombar": true,
           "custom_top_bar1": "Precio Preventa de Temporada",
-          "custom_top_bar2": "",
-          "custombarcolor": "#9e0808"
+          "custom_top_bar2": "bnbvbvbnv",
+          "custombarcolor": "#1a1a1a"
         }
       },
       "header": {
