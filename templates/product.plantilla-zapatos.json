@@ -58,7 +58,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "bundle"
+            "picker_type": "button"
           }
         },
         "buy_buttons": {
@@ -186,7 +186,7 @@
         ".button--secondary {background-color: #7069bc; color: white;}"
       ],
       "settings": {
-        "new_product_page_media": true,
+        "new_product_page_media": false,
         "othergallerystyle": false,
         "salebadge": true,
         "freeshipprice": true,
