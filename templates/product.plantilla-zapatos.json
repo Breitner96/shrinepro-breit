@@ -76,9 +76,9 @@
         "eed7bb10-67b9-4655-8c71-ca64ed54fb48": {
           "type": "shippingarrow",
           "settings": {
-            "preshipsby": "Se envía en máximo",
-            "shippingarrow": "3",
-            "postshipsby": "días si compras hoy!"
+            "preshipsby": "Se envía en máximo 1",
+            "shippingarrow": "",
+            "postshipsby": "día si confirmas hoy!"
           }
         },
         "1c393517-7c5c-4915-ba22-5dbd8ede91e5": {
