@@ -203,123 +203,6 @@
         "padding_bottom": 68
       }
     },
-    "086a98ac-209d-4db2-9d62-5b0fe9663693": {
-      "type": "compare-image",
-      "settings": {
-        "title": "Beneficios del producto",
-        "text": "<p>Descripción de los beneficios del producto con Imagen Antes/despúes </p>",
-        "before": "ANTES",
-        "after": "DESPUES"
-      }
-    },
-    "3bc3f381-5c12-4e1e-9f92-289fb87d308d": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Titulo llamativo de máximo 5 palabras (Tocar el dolor principal)",
-            "heading_size": "h2"
-          }
-        },
-        "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Aquí, complementas y refuerzas el punto de dolor anterior</p>",
-            "text_style": "body"
-          }
-        },
-        "fb814fee-541b-418f-a1f8-b03b37c368ce": {
-          "type": "caption",
-          "settings": {
-            "caption": "",
-            "text_style": "subtitle",
-            "text_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-0",
-        "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-1",
-        "fb814fee-541b-418f-a1f8-b03b37c368ce"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "50f8db15-9a00-4bfb-8176-786845498504": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-1": {
-          "type": "column",
-          "settings": {
-            "title": "Beneficio 1",
-            "text": "<p>Ampliar el beneficio 1</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-2": {
-          "type": "column",
-          "settings": {
-            "title": "Beneficio 2",
-            "text": "<p>Ampliar el beneficio 2</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-3": {
-          "type": "column",
-          "settings": {
-            "title": "Beneficio 3",
-            "text": "<p>Ampliar el beneficio 3</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "8f4c5208-c742-4fe0-9e42-8cc758a77b8c": {
-          "type": "column",
-          "settings": {
-            "title": "Beneficio 4",
-            "text": "<p>Ampliar el beneficio 4</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-1",
-        "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-2",
-        "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-3",
-        "8f4c5208-c742-4fe0-9e42-8cc758a77b8c"
-      ],
-      "settings": {
-        "title": "(NO USAR TITULO)",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "b6fc2703-d30b-40d4-b2cb-fcc2eade4e34": {
       "type": "multicolumn",
       "blocks": {
@@ -489,9 +372,6 @@
   "order": [
     "main",
     "related-products",
-    "086a98ac-209d-4db2-9d62-5b0fe9663693",
-    "3bc3f381-5c12-4e1e-9f92-289fb87d308d",
-    "50f8db15-9a00-4bfb-8176-786845498504",
     "b6fc2703-d30b-40d4-b2cb-fcc2eade4e34",
     "78161370-bfb0-428e-adf1-f106aca5123b",
     "ffa79f40-3ca5-4c0f-842b-5fa404007924",
