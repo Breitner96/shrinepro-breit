@@ -40,6 +40,7 @@
         },
         "text_gazJkx": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<strong>PROPUESTA DE VALOR</strong>",
             "text_style": "body"
@@ -47,6 +48,7 @@
         },
         "daa0e452-23d5-4bd1-afb3-35d7babab88c": {
           "type": "keybenefit",
+          "disabled": true,
           "settings": {
             "key1": "Beneficio Rapido 1",
             "key2": "Beneficio Rapido 2",
