@@ -2329,44 +2329,6 @@ input[type='radio']:checked + label.variant-swatch-image {
 }
 /* --- FIN PERSONALIZACIÓN --- */
 
-/* Contenedor de las tallas */
-.product-form__input:not(.variant-picker--color) {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px; /* Espacio reducido entre botones */
-  max-width: 100%;
-}
-
-/* Estilo de los botones de talla */
-.product-form__input:not(.variant-picker--color) label {
-  flex: 1 0 calc(20% - 8px); /* 5 columnas */
-  min-width: 45px;
-  max-width: 60px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 !important;
-  font-size: 14px;
-  border-radius: 4px;
-  background-color: #F5F5F5; /* Tu Gris Claro */
-  border: 1px solid #e8e8e8;
-  margin: 0 !important;
-}
-
-/* Talla seleccionada */
-.product-form__input:not(.variant-picker--color) input[type='radio']:checked + label {
-  background-color: #1A1A1A; /* Negro profundo */
-  color: white;
-  border-color: #1A1A1A;
-}
-
-/* Ajuste para que no se vea desordenado en pantallas pequeñas */
-@media (max-width: 480px) {
-  .product-form__input:not(.variant-picker--color) label {
-    flex: 1 0 calc(25% - 8px); /* 4 columnas en móvil muy pequeño */
-  }
-}
 
 @media screen and (max-width: 749px) {
   .header--has-app {
