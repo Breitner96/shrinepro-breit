@@ -208,7 +208,7 @@
           "margin_bottom": 0,
           "padding_top": 0,
           "padding_bottom": 0,
-          "enable_mobilenavicons": false,
+          "enable_mobilenavicons": true,
           "menutext1": "",
           "menutext2": "",
           "menutext3": ""
