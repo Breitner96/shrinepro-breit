@@ -183,7 +183,7 @@
         "settings": {
           "color_scheme": "background-1",
           "logo": "shopify://shop_images/AURA.png",
-          "logo_width": 150,
+          "logo_width": 130,
           "logo_position": "middle-left",
           "menu": "",
           "menu_type_desktop": "mega",
