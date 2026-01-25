@@ -2341,14 +2341,18 @@ product-info .loading-overlay:not(.hidden) ~ *,
   box-shadow: 0 0 0 2px white, 0 0 0 4px #1A1A1A !important;
 }
 
-/* --- LÓGICA DE TALLAS (Grid total) --- */
-/* Solo aplica grid si NO tiene la clase de color */
+/* --- LÓGICA DE TALLAS (Grid total sin desborde) --- */
 fieldset.product-form__input:not(.variant-picker--color) {
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(65px, 1fr)) !important;
+  /* Cambiamos 65px por 1fr con un mínimo más pequeño para que quepan bien */
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)) !important; 
   gap: 8px !important;
   width: 100% !important;
+  max-width: 100vw !important; /* Evita que salga de la pantalla */
+  padding: 0 !important;
+  margin: 10px 0 !important;
   border: none !important;
+  box-sizing: border-box !important; /* Crucial para que el gap no sume ancho extra */
 }
 
 fieldset.product-form__input:not(.variant-picker--color) label {
@@ -2360,8 +2364,9 @@ fieldset.product-form__input:not(.variant-picker--color) label {
   background-color: #f9f9f9 !important;
   border: 1px solid #e8e8e8 !important;
   border-radius: 4px !important;
-  font-weight: bold !important;
   margin: 0 !important;
+  font-weight: bold !important;
+  box-sizing: border-box !important;
 }
 
 /* Talla seleccionada */
@@ -2369,6 +2374,13 @@ fieldset.product-form__input:not(.variant-picker--color) input[type='radio']:che
   background-color: #1A1A1A !important;
   color: white !important;
   border-color: #1A1A1A !important;
+}
+
+/* Ajuste preventivo para pantallas muy pequeñas */
+@media (max-width: 350px) {
+  fieldset.product-form__input:not(.variant-picker--color) {
+    grid-template-columns: repeat(3, 1fr) !important; /* Fuerza 3 columnas si el móvil es diminuto */
+  }
 }
 
 
