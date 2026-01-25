@@ -14,11 +14,12 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "f06c518f-a300-424a-a384-0cef0976fbb1": {
-          "type": "text",
+        "image_MG8ykG": {
+          "type": "image",
           "settings": {
-            "heading": "",
-            "subtext": "<p>🏢 <strong>Compañia: Aura Shop</strong></p>"
+            "image": "shopify://shop_images/AURA.png",
+            "image_width": 255,
+            "alignment": ""
           }
         },
         "ce4df638-505d-4898-a818-5fe4fcaa4e11": {
@@ -37,12 +38,12 @@
         }
       },
       "block_order": [
-        "f06c518f-a300-424a-a384-0cef0976fbb1",
+        "image_MG8ykG",
         "ce4df638-505d-4898-a818-5fe4fcaa4e11",
         "f9dc0b7d-bfd8-48e8-b286-8fda5de2783a"
       ],
       "settings": {
-        "color_scheme": "accent-1",
+        "color_scheme": "inverse",
         "newsletter_enable": false,
         "newsletter_heading": "Suscríbete a nuestro correo",
         "enable_follow_on_shop": false,
@@ -52,7 +53,7 @@
         "payment_enable": false,
         "show_policy": true,
         "margin_top": 0,
-        "padding_top": 44,
+        "padding_top": 20,
         "padding_bottom": 0
       }
     }
