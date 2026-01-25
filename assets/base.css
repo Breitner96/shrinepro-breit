@@ -2310,6 +2310,25 @@ product-info .loading-overlay:not(.hidden) ~ *,
   align-items: center;
 }
 
+/* --- MIS PERSONALIZACIONES: SELECTOR DE COLORES CIRCULARES --- */
+label.variant-swatch-image {
+  border-radius: 50% !important;
+  width: 48px !important;
+  height: 48px !important;
+  background-size: cover !important;
+  background-position: center !important;
+  text-indent: -9999px; /* Oculta el texto del color */
+  border: 1px solid #ccc !important;
+  display: inline-block !important;
+  overflow: hidden;
+}
+
+input[type='radio']:checked + label.variant-swatch-image {
+  border: 2px solid #1A1A1A !important;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #4ECDC4 !important;
+}
+/* --- FIN PERSONALIZACIÓN --- */
+
 @media screen and (max-width: 749px) {
   .header--has-app {
     grid-template-columns: auto 1fr auto;
@@ -3133,6 +3152,8 @@ details-disclosure > details {
 .rte blockquote > * {
   margin: -0.5rem 0 -0.5rem 0;
 }
+
+
 
 /* Ambient animation */
 
