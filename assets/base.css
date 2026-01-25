@@ -2324,8 +2324,8 @@ label.variant-swatch-image {
 }
 
 input[type='radio']:checked + label.variant-swatch-image {
-  border: 2px solid #1A1A1A !important;
-  box-shadow: 0 0 0 2px white, 0 0 0 4px #FF6B35 !important;
+  border: 2px solid #F5F5F5 !important;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #1A1A1A !important;
 }
 /* --- FIN PERSONALIZACIÓN --- */
 
