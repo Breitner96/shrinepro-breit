@@ -256,42 +256,6 @@
         "padding_bottom": 36
       }
     },
-    "78161370-bfb0-428e-adf1-f106aca5123b": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Prueba Social - Foto",
-            "heading_size": "h1"
-          }
-        },
-        "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Y este texto es para una recomendación del producto</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-heading-1",
-        "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-text-1"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "ffa79f40-3ca5-4c0f-842b-5fa404007924": {
       "type": "collapsible-content",
       "blocks": {
@@ -373,7 +337,6 @@
     "main",
     "related-products",
     "b6fc2703-d30b-40d4-b2cb-fcc2eade4e34",
-    "78161370-bfb0-428e-adf1-f106aca5123b",
     "ffa79f40-3ca5-4c0f-842b-5fa404007924",
     "ce002b21-24e0-4d65-87ca-18c9770b24d4"
   ]
