@@ -29,9 +29,9 @@
         "inventory_PaVqzG": {
           "type": "inventory",
           "settings": {
-            "text_style": "body",
-            "inventory_threshold": 10,
-            "show_inventory_quantity": true
+            "text_style": "uppercase",
+            "inventory_threshold": 0,
+            "show_inventory_quantity": false
           }
         },
         "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d": {
