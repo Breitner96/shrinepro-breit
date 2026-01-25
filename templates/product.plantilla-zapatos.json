@@ -117,7 +117,7 @@
           "settings": {
             "heading": "Devoluciones",
             "icon": "return",
-            "content": "<p>Escribe aquí tus condiciones para devoluciones faciles y aumentar la confianza en los clientes</p>",
+            "content": "<h5>• <em><strong>Garantía de Talla Perfecta: </strong></em>¿No te quedaron? No te preocupes. Tienes hasta 30 días para solicitar un cambio de talla sin complicaciones.</h5><h5>• <em><strong>Satisfacción Garantizada:</strong></em> Si el producto llega con algún defecto de fábrica, nos encargamos de la reposición inmediata sin costos adicionales para ti.</h5><h5>•<strong> </strong><em><strong>Compra Sin Riesgos:</strong></em><em> </em>Tu dinero y tu pedido están protegidos. Si no recibes lo que pediste, te devolvemos tu dinero o gestionamos el cambio de inmediato.</h5><h5>•<strong> </strong><em><strong>Proceso Sencillo:</strong></em><em> </em>Para iniciar un cambio, solo escríbenos a nuestro WhatsApp de atención y un asesor te guiará paso a paso para que tengas tus zapatos ideales.</h5>",
             "page": ""
           }
         },
