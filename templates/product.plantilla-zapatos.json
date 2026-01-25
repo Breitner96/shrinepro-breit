@@ -209,6 +209,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_bh41d4bh41d4bh41.png",
             "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
             "text": "<p>Review o testimonio del cliente</p>",
             "link_label": "",
@@ -218,6 +219,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-2": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_bh41d4bh41d4bh41_4706822c-9e17-4059-b525-56cc1006da17.png",
             "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
             "text": "<p>Review o testimonio del cliente</p>",
             "link_label": "",
@@ -227,6 +229,27 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_bh41d4bh41d4bh41_14774b88-e263-4003-bb83-dd0fa204674d.png",
+            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
+            "text": "<p>Review o testimonio del cliente</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_38AXm4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_bh41d4bh41d4bh41_5b724cf9-d499-447f-b2aa-7365b3c7505d.png",
+            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
+            "text": "<p>Review o testimonio del cliente</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3tk8Gw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_bh41d4bh41d4bh41_7c5f9cc1-b507-441b-a9de-01c9ef08f4e5.png",
             "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
             "text": "<p>Review o testimonio del cliente</p>",
             "link_label": "",
@@ -237,7 +260,9 @@
       "block_order": [
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1",
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-2",
-        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3"
+        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3",
+        "column_38AXm4",
+        "column_3tk8Gw"
       ],
       "settings": {
         "title": "Nuestros Clientes",
