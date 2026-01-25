@@ -204,12 +204,12 @@
           "show_line_separator": false,
           "enable_sticky_header": false,
           "disable_search": true,
-          "mobile_logo_position": "center",
+          "mobile_logo_position": "left",
           "margin_bottom": 0,
           "padding_top": 0,
           "padding_bottom": 0,
-          "enable_mobilenavicons": true,
-          "menutext1": "ghgcv",
+          "enable_mobilenavicons": false,
+          "menutext1": "",
           "menutext2": "",
           "menutext3": ""
         }
