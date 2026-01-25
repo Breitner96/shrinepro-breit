@@ -1,18 +1,5 @@
 {% comment %}
-  Renders product variant options
-
-  Accepts:
-  - product: {Object} product object.
-  - option: {Object} current product_option object.
-  - block: {Object} block object.
-
-
-  Usage:
-  {% render 'product-variant-options',
-    product: product,
-    option: option,
-    block: block
-  %}
+  Renders product variant options con soporte de imágenes para colores
 {% endcomment %}
 {%- liquid
   assign variants_available_arr = product.variants | map: 'available'
@@ -21,6 +8,13 @@
   assign variants_option3_arr = product.variants | map: 'option3'
 
   assign product_form_id = 'product-form-' | append: section.id
+
+  # Detectamos si la opción actual es de tipo "Color"
+  assign is_color = false
+  assign option_name_downcase = option.name | downcase
+  if option_name_downcase contains 'color' or option_name_downcase contains 'colour'
+    assign is_color = true
+  endif
 -%}
 
 {%- for value in option.values -%}
@@ -43,6 +37,19 @@
           endif
       endcase
     endfor
+
+    # Lógica para obtener la imagen de la variante si es color
+    assign variant_image = null
+    if is_color
+      for variant in product.variants
+        if variant.options contains value
+          if variant.featured_media != null
+            assign variant_image = variant.featured_media | image_url: width: 100
+            break
+          endif
+        endif
+      endfor
+    endif
   -%}
 
   {%- if block.settings.picker_type == 'button' -%}
@@ -59,7 +66,13 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+    <label 
+      for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      {% if is_color and variant_image %}
+        class="variant-swatch-image"
+        style="background-image: url('{{ variant_image }}');"
+      {% endif %}
+    >
       {{ value -}}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
