@@ -152,7 +152,7 @@
       ],
       "settings": {
         "new_product_page_media": true,
-        "othergallerystyle": true,
+        "othergallerystyle": false,
         "salebadge": true,
         "freeshipprice": true,
         "shiptextnexttoprice": "+ Envíos GRATIS",
