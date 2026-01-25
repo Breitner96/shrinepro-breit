@@ -2383,6 +2383,17 @@ fieldset.product-form__input:not(.variant-picker--color) input[type='radio']:che
   }
 }
 
+/* Ocultar icono de Cuenta/Pedidos */
+.header__icon--account {
+  display: none !important;
+}
+
+/* Ocultar icono del Carrito de compras */
+#cart-icon-bubble, 
+.header__icon--cart {
+  display: none !important;
+}
+
 
 
 
