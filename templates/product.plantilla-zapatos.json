@@ -21,6 +21,7 @@
         },
         "custom_liquid_9XDG7p": {
           "type": "custom_liquid",
+          "name": "Reviews",
           "settings": {
             "custom_liquid": "<div class=\"review-container\">\n  <div class=\"stars\">\n    {% for i in (1..5) %}\n      <span class=\"star\">★</span>\n    {% endfor %}\n  </div>\n  <span class=\"review-text\"> 4.8 |+360 Clientes Satisfechos</span>\n</div>\n\n<style>\n  .review-container {\n    display: flex;\n    align-items: center;\n    font-family: Arial, sans-serif;\nfont-size: 18px;                      font-style: italic;\n    font-weight: normal;\n    margin-top: 0;\n    margin-bottom: 0;\n  }\n\n  .stars {\n    color: #FFD700;\n    font-size: 17px;\n    display: flex;\n    align-items: center;\n  }\n  .star {\n    margin-right: 1px;\n  }\n\n  .review-text {\n    margin-left: 8px;\n    color: #000;\n    font-size: 14px;\n    font-weight: normal;\n  }\n</style>"
           }
