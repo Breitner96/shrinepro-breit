@@ -14,6 +14,7 @@
       "blocks": {
         "custom_liquid_xe8VYT": {
           "type": "custom_liquid",
+          "name": "Titulo Verificado",
           "settings": {
             "custom_liquid": "<div class=\"product-verified-wrapper\">\n    <h1 class=\"product-title-inline\">\n        {{ product.title }}\n        <img class=\"inline-check-icon\" src=\"https://cdn-icons-png.flaticon.com/512/1828/1828640.png\" alt=\"Verificado\">\n    </h1>\n</div>\n\n<style>\n    .product-verified-wrapper {\n        margin: 0 0 10px 0 !important; /* Ajusta el espacio con lo que sigue abajo */\n        padding: 0;\n        line-height: 1.2;\n    }\n\n    .product-title-inline {\n        /* Hereda la fuente de tu título de Shopify */\n        font-family: var(--font-heading-family), sans-serif;\n        font-weight: var(--font-heading-weight, bold);\n        font-size: 25px;\n        color: #1A1A1A; /* Tu color negro profundo */\n        \n        /* IMPORTANTE: Permite que el contenido fluya como texto */\n        display: inline; \n        margin: 0;\n        padding: 0;\n        word-wrap: break-word;\n    }\n\n    .inline-check-icon {\n        /* Se comporta como una letra más */\n        display: inline-block;\n        vertical-align: middle; \n        width: 24px; \n        height: 24px;\n        margin-left: 4px; /* Espacio pequeño tras la última palabra */\n        object-fit: contain;\n    }\n\n    /* Ajuste para móviles */\n    @media (max-width: 749px) {\n        .product-title-inline {\n            font-size: 16px;\n        }\n        .inline-check-icon {\n            width: 18px;\n            height: 18px;\n        }\n    }\n</style>"
           }
@@ -21,12 +22,8 @@
         "custom_liquid_9XDG7p": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"review-container\">\n  <div class=\"stars\">\n    {% for i in (1..5) %}\n      <span class=\"star\">★</span>\n    {% endfor %}\n  </div>\n  <span class=\"review-text\">+560 REVIEWS</span>\n</div>\n\n<style>\n  .review-container {\n    display: flex;\n    align-items: center;\n    font-family: Arial, sans-serif;\n    font-size: 18px;\n    font-weight: bold;\n    margin-top: 10px;\n    margin-bottom: 0;\n  }\n\n  .stars {\n    color: #FFD700; /* Color dorado */\n    font-size: 17px; /* Corregido el error de 17x */\n    display: flex;\n    align-items: center;\n  }\n\n  .star {\n    margin-right: 2px;\n  }\n\n  .review-text {\n    margin-left: 8px;\n    color: #000;\n    font-size: 14px;\n    font-weight: bold;\n  }\n</style>"
+            "custom_liquid": "<div class=\"review-container\">\n  <div class=\"stars\">\n    {% for i in (1..5) %}\n      <span class=\"star\">★</span>\n    {% endfor %}\n  </div>\n  <span class=\"review-text\"> 4.8 |+360 Clientes Satisfechos</span>\n</div>\n\n<style>\n  .review-container {\n    display: flex;\n    align-items: center;\n    font-family: Arial, sans-serif;\nfont-size: 18px;                      font-style: italic;\n    font-weight: normal;\n    margin-top: 0;\n    margin-bottom: 0;\n  }\n\n  .stars {\n    color: #FFD700;\n    font-size: 17px;\n    display: flex;\n    align-items: center;\n  }\n  .star {\n    margin-right: 1px;\n  }\n\n  .review-text {\n    margin-left: 8px;\n    color: #000;\n    font-size: 14px;\n    font-weight: normal;\n  }\n</style>"
           }
-        },
-        "title": {
-          "type": "title",
-          "settings": {}
         },
         "inventory_PaVqzG": {
           "type": "inventory",
@@ -164,7 +161,6 @@
       "block_order": [
         "custom_liquid_xe8VYT",
         "custom_liquid_9XDG7p",
-        "title",
         "inventory_PaVqzG",
         "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d",
         "text_gazJkx",
