@@ -108,7 +108,7 @@
           "settings": {
             "heading": "Información de Envío",
             "icon": "truck",
-            "content": "<p>•<strong> Envío Totalmente Gratis:</strong> No pagues ni un peso más por el transporte; nosotros cubrimos el envío a cualquier rincón del país.</p><p>•<strong> Tiempos de Entrega:</strong> Procesamos tu pedido en 24 horas. Recibe tus zapatos en la puerta de tu casa en un plazo de 3 a 8 días hábiles.</p><p>•<strong> Rastreo en Tiempo Real:</strong> Una vez despachado, te enviaremos un número de guía para que puedas seguir el camino de tu paquete hasta tu hogar.</p><p>•<strong> Modalidad Pago Contra Entrega:</strong> Compra con total tranquilidad; pide hoy y paga en efectivo únicamente cuando recibas el producto en tus manos.</p>",
+            "content": "<h5>• <em><strong>Envío Totalmente Gratis:</strong></em> No pagues ni un peso más por el transporte; nosotros cubrimos el envío a cualquier rincón del país.</h5><h5>• <em><strong>Tiempos de Entrega: </strong></em>Procesamos tu pedido en 24 horas. Recibe tus zapatos en la puerta de tu casa en un plazo de 3 a 8 días hábiles.</h5><h5>• <em><strong>Rastreo en Tiempo Real: </strong></em>Una vez despachado, te enviaremos un número de guía para que puedas seguir el camino de tu paquete hasta tu hogar.</h5><h5>• <em><strong>Modalidad Pago Contra Entrega: </strong></em>Compra con total tranquilidad; pide hoy y paga en efectivo únicamente cuando recibas el producto en tus manos.</h5>",
             "page": ""
           }
         },
