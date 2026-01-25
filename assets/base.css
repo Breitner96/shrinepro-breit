@@ -2310,56 +2310,53 @@ product-info .loading-overlay:not(.hidden) ~ *,
   align-items: center;
 }
 
-/* --- MIS PERSONALIZACIONES: SELECTOR DE COLORES CIRCULARES --- */
-label.variant-swatch-image {
-  border-radius: 50% !important;
-  width: 48px !important;
-  height: 48px !important;
-  background-size: cover !important;
-  background-position: center !important;
-  text-indent: -9999px; /* Oculta el texto del color */
-  border: 1px solid #ccc !important;
-  display: inline-block !important;
-  overflow: hidden;
-}
-
-input[type='radio']:checked + label.variant-swatch-image {
-  border: 2px solid #F5F5F5 !important;
-  box-shadow: 0 0 0 2px white, 0 0 0 4px #1A1A1A !important;
-}
-/* --- FIN PERSONALIZACIÓN --- */
-
-
-/* 1. RESET PARA COLORES: Asegura que sigan siendo círculos */
+/* --- 1. SELECTOR DE COLORES (Círculos Perfectos) --- */
+/* Forzamos a que el contenedor de color NO sea un grid */
 .variant-picker--color {
-  display: block !important; /* Desactiva el grid solo para colores */
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  border: none !important;
+  margin-bottom: 15px !important;
 }
 
 .variant-picker--color label.variant-swatch-image {
-  display: inline-block !important;
+  display: block !important;
   border-radius: 50% !important;
   width: 50px !important;
   height: 50px !important;
-  min-width: 50px !important; /* Evita que se deformen */
-  aspect-ratio: 1 / 1 !important;
-  margin-right: 8px !important;
-  text-indent: -9999px;
+  min-width: 50px !important; /* Blindaje contra deformación */
+  min-height: 50px !important;
+  background-size: cover !important;
+  background-position: center !important;
+  text-indent: -9999px !important;
+  border: 1px solid #ccc !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
 }
 
-/* 2. TALLAS: Grid que ocupa todo el ancho */
-/* Usamos el nombre del atributo para ser más precisos y no tocar el color */
+/* Estado seleccionado para círculos */
+.variant-picker--color input[type='radio']:checked + label.variant-swatch-image {
+  border: 2px solid #F5F5F5 !important;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #1A1A1A !important;
+}
+
+/* --- 2. SELECTOR DE TALLAS (Grid de Ancho Completo) --- */
+/* Solo aplicamos grid al fieldset que NO es de color */
 fieldset.product-form__input:not(.variant-picker--color) {
   display: grid !important;
+  /* El auto-fit hace que las celdas se estiren para llenar el 100% del ancho */
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)) !important; 
   gap: 8px !important;
   width: 100% !important;
-  padding: 0;
-  border: none;
+  padding: 0 !important;
+  border: none !important;
+  margin-top: 10px !important;
 }
 
-/* 3. BOTONES DE TALLA: Centrado y Estirado */
 fieldset.product-form__input:not(.variant-picker--color) label {
-  flex: none !important; /* Quita flex anterior si existía */
   width: 100% !important; 
   height: 45px !important;
   display: flex !important;
@@ -2367,10 +2364,19 @@ fieldset.product-form__input:not(.variant-picker--color) label {
   justify-content: center !important;
   margin: 0 !important;
   padding: 0 !important;
-  box-sizing: border-box;
+  background-color: #f9f9f9 !important;
+  border: 1px solid #e8e8e8 !important;
+  border-radius: 4px !important;
+  font-weight: bold !important;
+  box-sizing: border-box !important;
 }
 
-
+/* Talla seleccionada */
+fieldset.product-form__input:not(.variant-picker--color) input[type='radio']:checked + label {
+  background-color: #1A1A1A !important;
+  color: white !important;
+  border-color: #1A1A1A !important;
+}
 
 @media screen and (max-width: 749px) {
   .header--has-app {
