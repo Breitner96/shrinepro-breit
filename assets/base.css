@@ -2330,6 +2330,49 @@ input[type='radio']:checked + label.variant-swatch-image {
 /* --- FIN PERSONALIZACIÓN --- */
 
 
+/* Contenedor específico para Tallas (excluyendo el de color) */
+.product-form__input:not(.variant-picker--color) {
+  display: grid !important;
+  /* Crea una cuadrícula donde las columnas se ajustan solas al ancho total */
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); 
+  gap: 8px; 
+  width: 100%;
+  margin: 10px 0 !important;
+}
+
+/* Estilo de los cuadros de talla para que ocupen todo el ancho del grid */
+.product-form__input:not(.variant-picker--color) label {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important; /* Ocupa el ancho de su celda en el grid */
+  height: 45px;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  border: 1px solid #e8e8e8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Talla seleccionada: mantiene el minimalismo negro */
+.product-form__input:not(.variant-picker--color) input[type='radio']:checked + label {
+  background-color: #1a1a1a !important;
+  color: #fff !important;
+  border-color: #1a1a1a !important;
+}
+
+/* Ocultar el texto "visually-hidden" de Shopify para que no mueva el número */
+.product-form__input:not(.variant-picker--color) label span {
+  display: none;
+}
+
+
+
+
 @media screen and (max-width: 749px) {
   .header--has-app {
     grid-template-columns: auto 1fr auto;
