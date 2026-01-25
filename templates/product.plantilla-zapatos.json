@@ -210,8 +210,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Gemini_Generated_Image_bh41d4bh41d4bh41.png",
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "title": "<strong>Valentina Torres (Bogotá)</strong>",
+            "text": "<h5><em>Me daba un poco de miedo pedir por internet, pero el pago contra entrega me dio mucha confianza. Pedí mis tenis el martes y el jueves ya los tenía en mi casa. Pagué en efectivo al recibirlos. ¡Súper recomendados!</em></h5>",
             "link_label": "",
             "link": ""
           }
