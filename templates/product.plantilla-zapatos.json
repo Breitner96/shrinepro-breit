@@ -221,7 +221,7 @@
           "settings": {
             "image": "shopify://shop_images/Gemini_Generated_Image_bh41d4bh41d4bh41_4706822c-9e17-4059-b525-56cc1006da17.png",
             "title": "Mateo Holguín (Medellín)",
-            "text": "<h5>Sinceramente me sorprendió la calidad. Los acabados son perfectos y el material se siente muy resistente, nada que envidiar a las tiendas de centro comercial. Además, llegaron en su caja original impecable. ¡10/10!</h5>",
+            "text": "<h5><em>Sinceramente me sorprendió la calidad. Los acabados son perfectos y el material se siente muy resistente, nada que envidiar a las tiendas de centro comercial. Además, llegaron en su caja original impecable. ¡10/10!</em></h5>",
             "link_label": "",
             "link": ""
           }
@@ -231,7 +231,7 @@
           "settings": {
             "image": "shopify://shop_images/Gemini_Generated_Image_bh41d4bh41d4bh41_14774b88-e263-4003-bb83-dd0fa204674d.png",
             "title": "Javier Castro (Cali)",
-            "text": "<h5>Los compré para el trabajo porque paso mucho tiempo de pie y son increíblemente livianos. La suela amortigua muy bien y la talla me quedó exacta siguiendo la guía que tienen en la página.</h5>",
+            "text": "<h5><em>Los compré para el trabajo porque paso mucho tiempo de pie y son increíblemente livianos. La suela amortigua muy bien y la talla me quedó exacta siguiendo la guía que tienen en la página.</em></h5>",
             "link_label": "",
             "link": ""
           }
@@ -240,8 +240,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Gemini_Generated_Image_bh41d4bh41d4bh41_5b724cf9-d499-447f-b2aa-7365b3c7505d.png",
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "title": "Camila Restrepo (Barranquilla)",
+            "text": "<h5><em>Son hermosos, el color es exactamente igual al de las fotos. Se ven súper exclusivos y me han preguntado mucho dónde los compré. El envío gratis a la costa fue un gran plus.</em></h5>",
             "link_label": "",
             "link": ""
           }
