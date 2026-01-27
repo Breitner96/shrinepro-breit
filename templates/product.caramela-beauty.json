@@ -183,7 +183,6 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {}
         }
       },
@@ -302,6 +301,7 @@
     },
     "086a98ac-209d-4db2-9d62-5b0fe9663693": {
       "type": "compare-image",
+      "disabled": true,
       "settings": {
         "image1": "shopify://shop_images/antes_optimized.jpg",
         "image2": "shopify://shop_images/despues_optimized.jpg",
@@ -344,6 +344,7 @@
         "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-1",
         "fb814fee-541b-418f-a1f8-b03b37c368ce"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_20_ene_2026_06_18_25_p.m..webp",
         "height": "adapt",
@@ -405,6 +406,7 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-3",
         "8f4c5208-c742-4fe0-9e42-8cc758a77b8c"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
