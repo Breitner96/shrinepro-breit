@@ -1,0 +1,378 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_liquid_xe8VYT": {
+          "type": "custom_liquid",
+          "name": "Titulo Verificado",
+          "settings": {
+            "custom_liquid": "<div class=\"product-verified-wrapper\">\n    <h1 class=\"product-title-inline\">\n        {{ product.title }}\n        <img class=\"inline-check-icon\" src=\"https://cdn-icons-png.flaticon.com/512/1828/1828640.png\" alt=\"Verificado\">\n    </h1>\n</div>\n\n<style>\n    .product-verified-wrapper {\n        margin: 0 0 10px 0 !important; /* Ajusta el espacio con lo que sigue abajo */\n        padding: 0;\n        line-height: 1.2;\n    }\n\n    .product-title-inline {\n        /* Hereda la fuente de tu título de Shopify */\n        font-family: var(--font-heading-family), sans-serif;\n        font-weight: var(--font-heading-weight, bold);\n        font-size: 25px;\n        color: #1A1A1A; /* Tu color negro profundo */\n        \n        /* IMPORTANTE: Permite que el contenido fluya como texto */\n        display: inline; \n        margin: 0;\n        padding: 0;\n        word-wrap: break-word;\n    }\n\n    .inline-check-icon {\n        /* Se comporta como una letra más */\n        display: inline-block;\n        vertical-align: middle; \n        width: 24px; \n        height: 24px;\n        margin-left: 4px; /* Espacio pequeño tras la última palabra */\n        object-fit: contain;\n    }\n\n    /* Ajuste para móviles */\n    @media (max-width: 749px) {\n        .product-title-inline {\n            font-size: 20px;\n        }\n        .inline-check-icon {\n            width: 18px;\n            height: 18px;\n        }\n    }\n</style>"
+          }
+        },
+        "custom_liquid_9XDG7p": {
+          "type": "custom_liquid",
+          "name": "Reviews",
+          "settings": {
+            "custom_liquid": "<div class=\"review-container\">\n  <div class=\"stars\">\n    {% for i in (1..5) %}\n      <span class=\"star\">★</span>\n    {% endfor %}\n  </div>\n  <span class=\"review-text\"> 4.8 |+360 Clientes Satisfechos</span>\n</div>\n\n<style>\n  .review-container {\n    display: flex;\n    align-items: center;\n    font-family: Arial, sans-serif;\nfont-size: 18px;                      font-style: italic;\n    font-weight: normal;\n    margin-top: 0;\n    margin-bottom: 0;\n  }\n\n  .stars {\n    color: #FFD700;\n    font-size: 17px;\n    display: flex;\n    align-items: center;\n  }\n  .star {\n    margin-right: 1px;\n  }\n\n  .review-text {\n    margin-left: 8px;\n    color: #000;\n    font-size: 14px;\n    font-weight: normal;\n  }\n</style>"
+          }
+        },
+        "custom_liquid_KX6Vd4": {
+          "type": "custom_liquid",
+          "name": "Precio",
+          "settings": {
+            "custom_liquid": "<div class=\"custom-price-container\">\n  {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}\n    <div class=\"price-header\">\n      <span class=\"price-item price-item--regular\">\n        {{ product.selected_or_first_available_variant.compare_at_price | money }}\n      </span>\n      <span class=\"badge-oferta\">Oferta 2x1</span>\n    </div>\n  {%- endif -%}\n\n  <div class=\"price-row-inline\">\n    <div class=\"price-main\">\n      <span class=\"price-item price-item--sale\">\n        {{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}\n      </span>\n      <span class=\"currency-code\">COP</span>\n    </div>\n    \n    <div class=\"shipping-tag\">\n      <span class=\"shipping-text\">+ Envíos <strong>GRATIS</strong></span>\n    </div>\n  </div>\n</div>\n\n<style>\n  .custom-price-container {\n    margin: 15px 0;\n    font-family: var(--font-body-family), sans-serif;\n  }\n\n  /* Precio Original Tachado */\n  .price-header {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    margin-bottom: 5px;\n  }\n\n  .price-item--regular {\n    color: #8c8c8c;\n    text-decoration: line-through;\n    font-size: 1.6rem; /* Tamaño original */\n  }\n\n  /* Badge de Oferta con tu color naranja */\n  .badge-oferta {\n    background-color: #FF6B35; \n    color: #1A1A1A;\n    padding: 2px 12px;\n    border-radius: 20px;\n    font-size: 1.2rem;\n    font-weight: bold;\n    text-transform: uppercase;\n  }\n\n  /* Fila de Precio y Envío */\n  .price-row-inline {\n    display: flex;\n    align-items: baseline;\n    flex-wrap: wrap;\n    gap: 10px;\n  }\n\n  .price-main {\n    display: flex;\n    align-items: baseline;\n    gap: 6px;\n  }\n\n  .price-item--sale {\n    color: #1A1A1A;\n    font-size: 3.2rem; /* Tamaño grande original */\n    font-weight: 900;\n    line-height: 1;\n  }\n\n  .currency-code {\n    font-size: 1.8rem; /* Tamaño original */\n    font-weight: 700;\n    color: #1A1A1A;\n  }\n\n  /* Envío Gratis en la misma línea */\n  .shipping-tag {\n    color: #1A1A1A;\n    font-size: 1.8rem; /* Ajustado para que combine con el COP */\n    font-weight: 700;\n  }\n\n  .shipping-tag strong {\n    font-weight: 900;\n  }\n\n  /* Responsivo */\n  @media (max-width: 480px) {\n    .price-item--sale {\n      font-size: 2.8rem;\n    }\n  }\n</style>"
+          }
+        },
+        "inventory_PaVqzG": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "uppercase",
+            "inventory_threshold": 0,
+            "show_inventory_quantity": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "custom_liquid_iWDE9T": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"size-guide-trigger-container\">\n  <button type=\"button\" class=\"size-guide-button\" id=\"openSizeGuide\">\n    <span class=\"icon-ruler\"></span> Guía de tallas\n  </button>\n</div>\n\n<div id=\"sizeGuideModal\" class=\"size-modal\">\n<h3></h3>\n  <div class=\"size-modal-content\">\n    <div class=\"size-modal-header\">\n      <button type=\"button\" class=\"close-size-modal\" id=\"closeSizeGuide\">&times;</button>\n    </div>\n    <div class=\"size-modal-body\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0983/0213/2505/files/Captura_de_pantalla_2026-01-24_a_la_s_11.29.26_p.m..png?v=1769315433\" alt=\"Guía de tallas\" loading=\"lazy\">\n    </div>\n  </div>\n</div>\n\n<style>\n  /* Contenedor del botón */\n  .size-guide-trigger-container {\n    margin: 10px 0;\n  }\n\n  .size-guide-button {\n    background: none;\n    border: none;\n    color: #1A1A1A;\n    text-decoration: underline;\n    font-size: 1.4rem;\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    gap: 5px;\n    padding: 0;\n    font-weight: 500;\n  }\n\n  /* El fondo del Pop-up (Overlay) */\n  .size-modal {\n    display: none; \n    position: fixed;\n    z-index: 9999;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0,0,0,0.6);\n    backdrop-filter: blur(3px);\n  }\n\n  /* Contenedor blanco */\n  .size-modal-content {\n    background-color: #fff;\n    margin: 5% auto;\n    padding: 0;\n    width: 90%;\n    max-width: 600px;\n    border-radius: 8px;\n    position: relative;\n    box-shadow: 0 4px 20px rgba(0,0,0,0.2);\n    animation: slideIn 0.3s ease-out;\n  }\n\n  @keyframes slideIn {\n    from { transform: translateY(-30px); opacity: 0; }\n    to { transform: translateY(0); opacity: 1; }\n  }\n\n  /* Cabecera del Pop-up */\n  .size-modal-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 15px 20px;\n    border-bottom: 1px solid #eee;\n  }\n\n  .size-modal-header h3 {\n    margin: 0;\n    font-size: 1.8rem;\n    color: #1A1A1A;\n  }\n\n  .close-size-modal {\n    background: none;\n    border: none;\n    font-size: 3rem;\n    line-height: 1;\n    cursor: pointer;\n    color: #888;\n  }\n\n  /* Cuerpo donde va la imagen */\n  .size-modal-body {\n    padding: 20px;\n    max-height: 80vh;\n    overflow-y: auto;\n    text-align: center;\n  }\n\n  .size-modal-body img {\n    max-width: 100%;\n    height: auto;\n    border-radius: 4px;\n  }\n\n  /* Móvil */\n  @media (max-width: 480px) {\n    .size-modal-content {\n      margin: 15% auto;\n      width: 95%;\n    }\n  }\n</style>\n\n<script>\n  const modal = document.getElementById(\"sizeGuideModal\");\n  const btn = document.getElementById(\"openSizeGuide\");\n  const span = document.getElementById(\"closeSizeGuide\");\n\n  // Abrir\n  btn.onclick = function() {\n    modal.style.display = \"block\";\n    document.body.style.overflow = \"hidden\"; // Evita scroll de fondo\n  }\n\n  // Cerrar con la X\n  span.onclick = function() {\n    modal.style.display = \"none\";\n    document.body.style.overflow = \"auto\";\n  }\n\n  // Cerrar haciendo clic fuera del cuadro blanco\n  window.onclick = function(event) {\n    if (event.target == modal) {\n      modal.style.display = \"none\";\n      document.body.style.overflow = \"auto\";\n    }\n  }\n</script>"
+          }
+        },
+        "1088bb43-2931-4cb5-b642-6c5e04e45224": {
+          "type": "clocktext",
+          "settings": {
+            "clocktext": "Últimos días de oferta."
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "eed7bb10-67b9-4655-8c71-ca64ed54fb48": {
+          "type": "shippingarrow",
+          "settings": {
+            "preshipsby": "Se envía en máximo 1",
+            "shippingarrow": "",
+            "postshipsby": "día si confirmas hoy!"
+          }
+        },
+        "custom_liquid_TJNJiE": {
+          "type": "custom_liquid",
+          "name": "Prueba social",
+          "settings": {
+            "custom_liquid": "<div class=\"testimonials-carousel-wrapper\">\n  <div class=\"testimonials-container\">\n    \n    <div class=\"testimonial-card\">\n      <div class=\"testimonial-main-layout\">\n        <div class=\"testimonial-image\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0983/0213/2505/files/unnamed_f815abaf-3f45-402e-a24c-9c41aea3727e.jpg?v=1769351420\" alt=\"Cliente Aura Shop\">\n        </div>\n        <div class=\"testimonial-body-content\">\n          <div class=\"testimonial-stars\">★★★★★</div>\n          <p class=\"testimonial-text\">\"La calidad de los materiales superó mis expectativas. Son muy cómodos para el diario y el color es idéntico a la foto.\"</p>\n          <div class=\"testimonial-footer\">\n            <span class=\"verified-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.2426 16.3137L6 12.071L7.41421 10.6568L10.2426 13.4853L15.8995 7.8284L17.3137 9.24264L10.2426 16.3137Z\" fill=\"#3E84F4\"/><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23Z\" fill=\"#3E84F4\"/></svg>\n            </span>\n            <span class=\"client-info\"><strong>Carlos R.</strong> (Bogotá)</span>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"testimonial-card\">\n      <div class=\"testimonial-main-layout\">\n        <div class=\"testimonial-image\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0983/0213/2505/files/unnamed_97e24deb-12b9-4184-9376-ec8f486f15c5.jpg?v=1769351380\" alt=\"Cliente Aura Shop\">\n        </div>\n        <div class=\"testimonial-body-content\">\n          <div class=\"testimonial-stars\">★★★★</div>\n          <p class=\"testimonial-text\">\"Llegaron en 2 días a Medellín. El pago contra entrega me dio mucha seguridad. Excelente servicio al cliente.\"</p>\n          <div class=\"testimonial-footer\">\n            <span class=\"verified-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.2426 16.3137L6 12.071L7.41421 10.6568L10.2426 13.4853L15.8995 7.8284L17.3137 9.24264L10.2426 16.3137Z\" fill=\"#3E84F4\"/><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23Z\" fill=\"#3E84F4\"/></svg>\n            </span>\n            <span class=\"client-info\"><strong>Luisa M.</strong> (Medellín)</span>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"testimonial-card\">\n      <div class=\"testimonial-main-layout\">\n        <div class=\"testimonial-image\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0983/0213/2505/files/unnamed.jpg?v=1769351341\" alt=\"Cliente Aura Shop\">\n        </div>\n        <div class=\"testimonial-body-content\">\n          <div class=\"testimonial-stars\">★★★★★</div>\n          <p class=\"testimonial-text\">\"Súper livianos y la talla es exacta según la guía. El envío gratis es un ahorro real. Muy recomendados.\"</p>\n          <div class=\"testimonial-footer\">\n            <span class=\"verified-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.2426 16.3137L6 12.071L7.41421 10.6568L10.2426 13.4853L15.8995 7.8284L17.3137 9.24264L10.2426 16.3137Z\" fill=\"#3E84F4\"/><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23Z\" fill=\"#3E84F4\"/></svg>\n            </span>\n            <span class=\"client-info\"><strong>Andrés G.</strong> (Cali)</span>\n          </div>\n        </div>\n      </div>\n    </div>\n\n  </div>\n</div>\n\n<style>\n .testimonials-carousel-wrapper {\n    width: 100%;\n    /* Reducimos al mínimo los márgenes superior e inferior */\n    padding: 0px 0; \n    margin-top: 0;\n    margin-bottom: 0;\n    overflow: hidden;\n  }\n\n  .testimonials-container {\n    display: flex;\n    overflow-x: auto;\n    scroll-snap-type: x mandatory;\n    gap: 12px;\n    /* Ajustamos el padding lateral para que no toque los bordes del cel */\n    padding: 5px 15px; \n    scrollbar-width: none;\n    -webkit-overflow-scrolling: touch;\n  }\n\n  .testimonials-container::-webkit-scrollbar { display: none; }\n\n  .testimonial-card {\n    flex: 0 0 88%; /* Ancho perfecto para ver un poco de la siguiente tarjeta */\n    scroll-snap-align: center;\n    background: #fff;\n    border: 1px solid #f0f0f0;\n    border-radius: 10px;\n    padding: 14px;\n    box-sizing: border-box;\n    box-shadow: 0 2px 6px rgba(0,0,0,0.03);\n  }\n\n  .testimonial-main-layout {\n    display: flex;\n    align-items: flex-start;\n    gap: 12px;\n  }\n\n  .testimonial-image img {\n    width: 50px;\n    height: 50px;\n    border-radius: 50%;\n    object-fit: cover;\n    background: #f9f9f9;\n    flex-shrink: 0;\n  }\n\n  .testimonial-body-content {\n    flex: 1;\n    min-width: 0;\n  }\n\n  .testimonial-stars {\n    font-size: 0.9rem;\n    margin-bottom: 4px;\n  }\n\n  .testimonial-text {\n    margin: 0;\n    font-size: 1.3rem;\n    line-height: 1.3;\n    color: #333;\n    word-break: break-word;\n  }\n\n  .testimonial-footer {\n    display: flex;\n    align-items: center;\n    gap: 5px;\n    margin-top: 10px;\n    padding-top: 8px;\n    border-top: 1px solid #f5f5f5;\n  }\n\n  .verified-icon svg {\n    width: 15px;\n    height: 15px;\n  }\n\n  .client-info {\n    font-size: 1.1rem;\n    color: #666;\n  }\n\n  @media (min-width: 768px) {\n    .testimonial-card { flex: 0 0 350px; }\n    .testimonials-container { justify-content: center; }\n  }\n</style>"
+          }
+        },
+        "3122dfde-b867-4a3c-9e0f-cf61bd664e99": {
+          "type": "moneybackguarantee",
+          "settings": {
+            "moneybackguarantee": "30 DÍAS PARA DEVOLUCIONES"
+          }
+        },
+        "2c100155-1d2d-4504-a37e-f2abd070099f": {
+          "type": "iconss",
+          "settings": {
+            "text1": "Garantía Satisfacción",
+            "text2": "Pagos Contraentrega",
+            "iconcolorreturns": "#1a1a1a"
+          }
+        },
+        "collapsible_tab_AUafHX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Que Incluye",
+            "icon": "clipboard",
+            "content": "<h5>• <em><strong>Par de Calzado Premium:</strong></em> Tus zapatos seleccionados, fabricados con materiales de alta resistencia y acabados de primera calidad.</h5><h5>• <em><strong>Caja Original (Opcional):</strong></em><em> </em>Despachamos en su caja original para asegurar que el calzado llegue impecable y protegido durante el trayecto. (Se debe de solicitar al momento de la confirmación)</h5>",
+            "page": ""
+          }
+        },
+        "c11bfb2f-901d-4b03-90cf-b6b766353d13": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Información de Envío",
+            "icon": "truck",
+            "content": "<h5>• <em><strong>Envío Totalmente Gratis:</strong></em> No pagues ni un peso más por el transporte; nosotros cubrimos el envío a cualquier rincón del país.</h5><h5>• <em><strong>Tiempos de Entrega: </strong></em>Procesamos tu pedido en 24 horas. Recibe tus zapatos en la puerta de tu casa en un plazo de 3 a 8 días hábiles.</h5><h5>• <em><strong>Rastreo en Tiempo Real: </strong></em>Una vez despachado, te enviaremos un número de guía para que puedas seguir el camino de tu paquete hasta tu hogar.</h5><h5>• <em><strong>Modalidad Pago Contra Entrega: </strong></em>Compra con total tranquilidad; pide hoy y paga en efectivo únicamente cuando recibas el producto en tus manos.</h5>",
+            "page": ""
+          }
+        },
+        "e6778313-45ad-4d6d-8260-2498242a6df0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Devoluciones",
+            "icon": "return",
+            "content": "<h5>• <em><strong>Garantía de Talla Perfecta: </strong></em>¿No te quedaron? No te preocupes. Tienes hasta 30 días para solicitar un cambio de talla sin complicaciones.</h5><h5>• <em><strong>Satisfacción Garantizada:</strong></em> Si el producto llega con algún defecto de fábrica, nos encargamos de la reposición inmediata sin costos adicionales para ti.</h5><h5>•<strong> </strong><em><strong>Compra Sin Riesgos:</strong></em><em> </em>Tu dinero y tu pedido están protegidos. Si no recibes lo que pediste, te devolvemos tu dinero o gestionamos el cambio de inmediato.</h5><h5>•<strong> </strong><em><strong>Proceso Sencillo:</strong></em><em> </em>Para iniciar un cambio, solo escríbenos a nuestro WhatsApp de atención y un asesor te guiará paso a paso para que tengas tus zapatos ideales.</h5>",
+            "page": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "custom_liquid_xe8VYT",
+        "custom_liquid_9XDG7p",
+        "custom_liquid_KX6Vd4",
+        "inventory_PaVqzG",
+        "variant_picker",
+        "custom_liquid_iWDE9T",
+        "1088bb43-2931-4cb5-b642-6c5e04e45224",
+        "buy_buttons",
+        "eed7bb10-67b9-4655-8c71-ca64ed54fb48",
+        "custom_liquid_TJNJiE",
+        "3122dfde-b867-4a3c-9e0f-cf61bd664e99",
+        "2c100155-1d2d-4504-a37e-f2abd070099f",
+        "collapsible_tab_AUafHX",
+        "c11bfb2f-901d-4b03-90cf-b6b766353d13",
+        "e6778313-45ad-4d6d-8260-2498242a6df0",
+        "description"
+      ],
+      "custom_css": [
+        "div.product__title > h1 {font-size: 17px !important;}",
+        ".button--secondary {background-color: #7069bc; color: white;}"
+      ],
+      "settings": {
+        "new_product_page_media": true,
+        "othergallerystyle": false,
+        "salebadge": true,
+        "freeshipprice": true,
+        "shiptextnexttoprice": "+ Envíos GRATIS",
+        "enable_gallerybadge": true,
+        "productgalleryimage": "Producto Exclusivo",
+        "badge_background": "#ffffff",
+        "textbadge_background": "#000000",
+        "badge_text": "capitalize",
+        "stickybutton": true,
+        "stickybuttontext": "Select Colors",
+        "atcicon": true,
+        "atcsavings": false,
+        "mostpopularcolor": "#1a1a1a",
+        "enable_shipping_calculate": false,
+        "shipping_calculator_label": "Expected Delivery:",
+        "days_to_start_shipping": 5,
+        "approximate_days_for_delivery": 10,
+        "delivery_align": "center",
+        "enable_sticky_info": true,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 68
+      }
+    },
+    "b6fc2703-d30b-40d4-b2cb-fcc2eade4e34": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_bh41d4bh41d4bh41.png",
+            "title": "<strong>Valentina Torres (Bogotá)</strong>",
+            "text": "<h5>⭐️⭐️⭐️⭐️⭐️</h5><h5><em>Me daba un poco de miedo pedir por internet, pero el pago contra entrega me dio mucha confianza. Pedí mis tenis el martes y el jueves ya los tenía en mi casa. Pagué en efectivo al recibirlos. ¡Súper recomendados!</em></h5>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_bh41d4bh41d4bh41_4706822c-9e17-4059-b525-56cc1006da17.png",
+            "title": "Mateo Holguín (Medellín)",
+            "text": "<h5>⭐️⭐️⭐️⭐️⭐️</h5><h5><em>Sinceramente me sorprendió la calidad. Los acabados son perfectos y el material se siente muy resistente, nada que envidiar a las tiendas de centro comercial. Además, llegaron en su caja original impecable. ¡10/10!</em></h5>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_bh41d4bh41d4bh41_14774b88-e263-4003-bb83-dd0fa204674d.png",
+            "title": "Javier Castro (Cali)",
+            "text": "<h5>⭐️⭐️⭐️⭐️⭐️</h5><h5><em>Los compré para el trabajo porque paso mucho tiempo de pie y son increíblemente livianos. La suela amortigua muy bien y la talla me quedó exacta siguiendo la guía que tienen en la página.</em></h5>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_38AXm4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_bh41d4bh41d4bh41_5b724cf9-d499-447f-b2aa-7365b3c7505d.png",
+            "title": "Camila Restrepo (Barranquilla)",
+            "text": "<h5>⭐️⭐️⭐️⭐️⭐️</h5><h5><em>Son hermosos, el color es exactamente igual al de las fotos. Se ven súper exclusivos y me han preguntado mucho dónde los compré. El envío gratis a la costa fue un gran plus.</em></h5>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3tk8Gw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_bh41d4bh41d4bh41_7c5f9cc1-b507-441b-a9de-01c9ef08f4e5.png",
+            "title": "Felipe Morales (Bucaramanga)",
+            "text": "<h5>⭐️⭐️⭐️⭐️⭐️</h5><h5><em>Ya es el segundo par que pido en Aura Shop y la experiencia siempre es excelente. Son cumplidos con los tiempos y el producto siempre llega en perfecto estado. Gran opción para comprar calzado premium.</em></h5>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1",
+        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-2",
+        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3",
+        "column_38AXm4",
+        "column_3tk8Gw"
+      ],
+      "settings": {
+        "title": "Nuestros Clientes",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "inverse",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "ffa79f40-3ca5-4c0f-842b-5fa404007924": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--19239854407957__ffa79f40-3ca5-4c0f-842b-5fa404007924-1685852323c73bd29d-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cómo sé cuál es mi talla correcta?",
+            "icon": "question_mark",
+            "row_content": "<p>Contamos con una <strong>Guía de Tallas</strong> exacta en la descripción del producto. Te recomendamos medir tu pie en centímetros desde el talón hasta la punta del dedo gordo para asegurar un ajuste perfecto. Si estás entre dos tallas, elige siempre la más grande.</p>",
+            "page": ""
+          }
+        },
+        "40c59e33-8ce9-492f-ad4d-9d0fddb2fb10": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Qué pasa si los zapatos no me quedan o llegan dañados?",
+            "icon": "question_mark",
+            "row_content": "<p>Tu satisfacción es nuestra prioridad. Tienes hasta <strong>5 días después de recibir tu pedido</strong> para solicitar un cambio por talla. Si el producto presenta algún defecto de fábrica, gestionamos la reposición de inmediato sin costo adicional para ti.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_dKGxBq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Realizan envíos a zonas rurales o veredas?",
+            "icon": "question_mark",
+            "row_content": "<p>Llegamos a casi cualquier lugar de Colombia. Sin embargo, en algunas veredas o zonas de difícil acceso, la transportadora podría dejar el paquete en la oficina principal del municipio más cercano. Si tienes dudas sobre tu cobertura, pregúntanos por WhatsApp antes de pedir.</p>",
+            "page": ""
+          }
+        },
+        "f68ace48-4162-4c3e-bc8c-5518a8de0427": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Puedo abrir el paquete antes de pagarle al repartidor?",
+            "icon": "question_mark",
+            "row_content": "<p>Por políticas de seguridad de las empresas de mensajería (Servientrega, Envía, Interrapidísimo), no se permite abrir el paquete antes de realizar el pago en la modalidad de Pago Contra Entrega. No obstante, cuentas con nuestra garantía de satisfacción para cualquier cambio posterior.</p>",
+            "page": ""
+          }
+        },
+        "524169b2-9412-4aeb-b45b-7c0e4edd9cba": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Los productos son originales o réplicas de alta calidad?",
+            "icon": "question_mark",
+            "row_content": "<p>En <strong>Aura Shop</strong> nos especializamos en calzado de alta gama (Top Quality 1.1). Esto significa que utilizamos los mismos materiales y procesos de fabricación que las marcas originales, garantizando una durabilidad y estética idéntica, pero a un precio mucho más accesible.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19239854407957__ffa79f40-3ca5-4c0f-842b-5fa404007924-1685852323c73bd29d-0",
+        "40c59e33-8ce9-492f-ad4d-9d0fddb2fb10",
+        "collapsible_row_dKGxBq",
+        "f68ace48-4162-4c3e-bc8c-5518a8de0427",
+        "524169b2-9412-4aeb-b45b-7c0e4edd9cba"
+      ],
+      "name": "Preguntas Frecuentes",
+      "settings": {
+        "caption": "Todo lo que necesitas saber para estrenar hoy",
+        "heading": "<strong>RESOLVEMOS TUS DUDAS</strong>",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 4,
+        "padding_bottom": 4
+      }
+    },
+    "ce002b21-24e0-4d65-87ca-18c9770b24d4": {
+      "type": "apps",
+      "blocks": {
+        "ce002b21-24e0-4d65-87ca-18c9770b24d4": {
+          "type": "shopify://apps/audien-reviews/blocks/review_list/ce002b21-24e0-4d65-87ca-18c9770b24d4",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "ce002b21-24e0-4d65-87ca-18c9770b24d4"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "b6fc2703-d30b-40d4-b2cb-fcc2eade4e34",
+    "ffa79f40-3ca5-4c0f-842b-5fa404007924",
+    "ce002b21-24e0-4d65-87ca-18c9770b24d4"
+  ]
+}
