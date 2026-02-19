@@ -263,6 +263,8 @@
     "086a98ac-209d-4db2-9d62-5b0fe9663693": {
       "type": "compare-image",
       "settings": {
+        "image1": "shopify://shop_images/Whisk_b33845265b2b181b6474d9c92ed6354edr.webp",
+        "image2": "shopify://shop_images/Whisk_b772fe3c04b198082fb4477fc570f7cbdr_e8792fe1-a238-4303-93b2-059b91cdcb4c.webp",
         "title": "🚩 Deja de lavar 5 cosas por cocinar",
         "text": "<p>¿Cansada de terminar de cocinar y ver la montaña de platos? Con la Olla Multifuncional reduces el uso de utensilios en un 70%. Preparas, lavas y sirves en un mismo lugar.</p>",
         "before": "ANTES",
