@@ -394,6 +394,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/testimonio3_optimized.jpg",
             "title": "María G. ⭐⭐⭐⭐⭐",
             "text": "<p>En mi casa somos 5 y cocino todos los días. Este bowl me cambió la rutina de la cocina. Antes usaba como 4 cosas distintas para preparar la ensalada, ahora solo uno. Lo recomiendo mil veces.</p>",
             "link_label": "",
@@ -403,6 +404,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-2": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/unnamed.jpg",
             "title": "Andrés T. ⭐⭐⭐⭐⭐",
             "text": "<p>Lo compré sin muchas expectativas y terminé comprando uno para mi mamá también. La calidad del acero es increíble y el rallador funciona perfecto para el queso. Vale cada peso.</p>",
             "link_label": "",
@@ -412,6 +414,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/testimonio_optimized.jpg",
             "title": "Camila R. ⭐⭐⭐⭐⭐",
             "text": "<p>Soy muy exigente con los utensilios de cocina y este superó mis expectativas. El colador encaja perfecto, no se mueve, y el rallador tiene buen agarre. ¡Excelente compra!</p>",
             "link_label": "",
@@ -427,10 +430,10 @@
       "settings": {
         "title": "💬 TESTIMONIOS CLIENTES",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
+        "image_width": "third",
+        "image_ratio": "circle",
         "columns_desktop": 3,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
