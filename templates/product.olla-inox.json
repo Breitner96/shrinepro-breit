@@ -301,6 +301,7 @@
         "fb814fee-541b-418f-a1f8-b03b37c368ce"
       ],
       "settings": {
+        "image": "shopify://shop_images/gif_olla.gif",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
