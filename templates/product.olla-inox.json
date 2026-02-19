@@ -105,9 +105,9 @@
         "collapsible_tab_NKgDKr": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Cómo se usa",
-            "icon": "check_mark",
-            "content": "",
+            "heading": "🎬 CÓMO SE USA",
+            "icon": "none",
+            "content": "<p><strong>Corta:</strong> Usa la tapa directamente sobre el bowl para rallar tus ingredientes.</p><p><strong>Lava:</strong> Coloca los alimentos en el colador y abre el grifo; el agua fluye sin que nada se caiga.</p><p><strong>Sirve:</strong> Retira el colador y usa el bowl de acero para mezclar o llevar directamente a la mesa.</p>",
             "page": ""
           }
         },
