@@ -22,6 +22,18 @@
           "type": "title",
           "settings": {}
         },
+        "166d21c7-3639-4a6b-937f-54e36a3c1b1a": {
+          "type": "shopify://apps/audien-reviews/blocks/star_rating/ce002b21-24e0-4d65-87ca-18c9770b24d4",
+          "settings": {
+            "size": 16,
+            "rating_text": "",
+            "rating_hide_text": false,
+            "widget_alignment": "left",
+            "rating_color_for_star": "rgba(0,0,0,0)",
+            "primary_color_for_star": "rgba(0,0,0,0)",
+            "custom_css": ""
+          }
+        },
         "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d": {
           "type": "price",
           "settings": {}
@@ -29,16 +41,16 @@
         "text_gazJkx": {
           "type": "text",
           "settings": {
-            "text": "<strong>PROPUESTA DE VALOR</strong>",
+            "text": "<strong>Ralla, lava y sirve en un solo recipiente. Ahorra tiempo y elimina el desorden en tu cocina.</strong>",
             "text_style": "body"
           }
         },
         "daa0e452-23d5-4bd1-afb3-35d7babab88c": {
           "type": "keybenefit",
           "settings": {
-            "key1": "Beneficio Rapido 1",
-            "key2": "Beneficio Rapido 2",
-            "key3": "Beneficio Rapido 3",
+            "key1": "Sistema 3 en 1, Rallador, colador y bowl profesional.",
+            "key2": "Acero Inoxidable Premium, Resistente al óxido y grado alimenticio.",
+            "key3": "Limpieza en Segundos, Menos trastes que lavar, más tiempo para ti.",
             "checkmarkcolor": "#000000",
             "checkmarkcolorbackground": "#fafafa"
           }
@@ -144,10 +156,6 @@
         "description": {
           "type": "description",
           "disabled": true,
-          "settings": {}
-        },
-        "166d21c7-3639-4a6b-937f-54e36a3c1b1a": {
-          "type": "shopify://apps/audien-reviews/blocks/star_rating/ce002b21-24e0-4d65-87ca-18c9770b24d4",
           "settings": {}
         }
       },
