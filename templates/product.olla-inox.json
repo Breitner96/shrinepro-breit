@@ -556,22 +556,22 @@
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-1": {
           "type": "row",
           "settings": {
-            "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
+            "percentage": 96,
+            "row_text": "<p>nuestros clientes dicen que redujo el desorden en su cocina desde el primer uso.</p>"
           }
         },
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-2": {
           "type": "row",
           "settings": {
-            "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
+            "percentage": 92,
+            "row_text": "<p>afirma que las cuchillas mantienen el filo después de meses.</p>"
           }
         },
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3": {
           "type": "row",
           "settings": {
-            "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
+            "percentage": 98,
+            "row_text": "<p>lo considera un regalo ideal para el hogar.</p>"
           }
         }
       },
@@ -581,7 +581,7 @@
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3"
       ],
       "settings": {
-        "title": "📊 RECOMENDACIÓN",
+        "title": "RECOMENDACIÓN",
         "heading_size": "h1",
         "text": "<p><em>Datos basados en reseñas verificadas de clientes reales.</em></p>",
         "color_scheme": "background-1",
