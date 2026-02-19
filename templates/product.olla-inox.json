@@ -450,14 +450,14 @@
         "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Prueba Social - Foto",
+            "heading": "🏆 PRUEBA SOCIAL",
             "heading_size": "h1"
           }
         },
         "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Y este texto es para una recomendación del producto</p>",
+            "text": "<p><strong>Más de 560 cocineros en Colombia ya simplificaron su cocina con este bowl.</strong><em>El utensilio que una vez pruebas, no puedes creer cómo viviste sin él.</em></p>",
             "text_style": "body"
           }
         }
