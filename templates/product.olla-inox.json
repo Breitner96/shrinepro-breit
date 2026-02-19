@@ -274,8 +274,8 @@
     "086a98ac-209d-4db2-9d62-5b0fe9663693": {
       "type": "compare-image",
       "settings": {
-        "title": "Beneficios del producto",
-        "text": "<p>Descripción de los beneficios del producto con Imagen Antes/despúes </p>",
+        "title": "🚩 Deja de lavar 5 cosas por cocinar",
+        "text": "<p>¿Cansada de terminar de cocinar y ver la montaña de platos? Con la Olla Multifuncional reduces el uso de utensilios en un 70%. Preparas, lavas y sirves en un mismo lugar.</p>",
         "before": "ANTES",
         "after": "DESPUES"
       }
