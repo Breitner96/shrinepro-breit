@@ -57,6 +57,7 @@
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "bundle"
           }
@@ -79,8 +80,9 @@
         "1c393517-7c5c-4915-ba22-5dbd8ede91e5": {
           "type": "featuredreview",
           "settings": {
-            "reviewtext": "(FOTO DE UN CLIENTE FELIZ) Escribe aquí una review de un cliente, entorno al producto que estas vendiendo",
-            "reviewname": "Nombre (Ciudad, País)"
+            "reviewimage": "shopify://shop_images/unnamed_97e24deb-12b9-4184-9376-ec8f486f15c5.jpg",
+            "reviewtext": "Pensé que era un bowl normal, pero el colador y las cuchillas son de otro nivel. Preparo la ensalada en menos de 5 minutos y solo ensucio esto. ¡La mejor compra del año!",
+            "reviewname": "Elena G. (Medellín, Colombia)"
           }
         },
         "2c100155-1d2d-4504-a37e-f2abd070099f": {
