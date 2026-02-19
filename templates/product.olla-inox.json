@@ -96,9 +96,9 @@
         "collapsible_tab_AUafHX": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Que Incluye:",
-            "icon": "check_mark",
-            "content": "",
+            "heading": "📦 QUÉ INCLUYE",
+            "icon": "none",
+            "content": "<p><strong>Bowl de Acero Inoxidable:</strong> Base sólida para mezclar, marinar o servir.</p><p><strong>Cesta Coladora Integrada:</strong> Para lavar y escurrir vegetales o pastas sin derrames.</p><p><strong>Tapa Ralladora con 4 Cortes:</strong> Cuchillas intercambiables para cortes finos, gruesos y láminas.</p>",
             "page": ""
           }
         },
