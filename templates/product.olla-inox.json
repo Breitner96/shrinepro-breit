@@ -486,7 +486,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-1": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 1",
+            "benefit": "Lava y escurre en el mismo recipiente",
             "us": true,
             "others": false
           }
@@ -494,7 +494,15 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio  2",
+            "benefit": "Rallador integrado",
+            "us": true,
+            "others": false
+          }
+        },
+        "row_jJeEr4": {
+          "type": "row",
+          "settings": {
+            "benefit": "Acero inoxidable premium",
             "us": true,
             "others": false
           }
@@ -502,7 +510,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-3": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 3",
+            "benefit": "Ocupa el espacio de 1 utensilio",
             "us": true,
             "others": false
           }
@@ -510,15 +518,7 @@
         "6a12410f-0263-49d1-941c-4d61208408bb": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 4",
-            "us": true,
-            "others": false
-          }
-        },
-        "7ea5db61-7af3-4f5f-a41e-30f037ccf10e": {
-          "type": "row",
-          "settings": {
-            "benefit": "Beneficio 5",
+            "benefit": "Fácil de limpiar",
             "us": true,
             "others": false
           }
@@ -527,12 +527,12 @@
       "block_order": [
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-1",
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2",
+        "row_jJeEr4",
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-3",
-        "6a12410f-0263-49d1-941c-4d61208408bb",
-        "7ea5db61-7af3-4f5f-a41e-30f037ccf10e"
+        "6a12410f-0263-49d1-941c-4d61208408bb"
       ],
       "settings": {
-        "title": "Exalta tu producto frente a la competencia",
+        "title": "⚔️ COMPARATIVA VS COMPETENCIA",
         "heading_size": "h1",
         "text": "<p>Menciona porque tu producto es mejor que el de la ocmpetencia</p>",
         "button_label": "",
