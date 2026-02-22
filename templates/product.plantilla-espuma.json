@@ -318,8 +318,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-1": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 1",
-            "text": "<p>Ampliar el beneficio 1</p>",
+            "title": "🫧 Amortiguación que sientes desde el primer paso",
+            "text": "<p>Las burbujas viscoelásticas absorben el impacto en cada zancada, distribuyendo el peso de forma uniforme. Adiós al dolor en talón, arco y metatarso.</p>",
             "link_label": "",
             "link": ""
           }
@@ -327,8 +327,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-2": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 2",
-            "text": "<p>Ampliar el beneficio 2</p>",
+            "title": "🌬️ Pies frescos. Zapatos sin olor.",
+            "text": "<p>Las microperforaciones generan circulación de aire constante que evita la acumulación de humedad y bacterias. El resultado: pies secos y zapatos que no huelen, todo el día.</p>",
             "link_label": "",
             "link": ""
           }
@@ -336,8 +336,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-3": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 3",
-            "text": "<p>Ampliar el beneficio 3</p>",
+            "title": "✂️ Una talla para todos",
+            "text": "<p>Diseñada con línea guía cortable. Se adapta perfectamente a cualquier zapato de talla 35 a 45. Sin excusas para no usarla.</p>",
             "link_label": "",
             "link": ""
           }
@@ -345,8 +345,8 @@
         "8f4c5208-c742-4fe0-9e42-8cc758a77b8c": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 4",
-            "text": "<p>Ampliar el beneficio 4</p>",
+            "title": "💪 No se deforma. No se aplana.",
+            "text": "<p>La espuma viscoelástica recupera su forma tras cada paso. A diferencia de las plantillas genéricas que se aplastan al primer día, esta mantiene su soporte semana tras semana.</p>",
             "link_label": "",
             "link": ""
           }
@@ -359,12 +359,12 @@
         "8f4c5208-c742-4fe0-9e42-8cc758a77b8c"
       ],
       "settings": {
-        "title": "(NO USAR TITULO)",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
