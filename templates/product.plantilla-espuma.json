@@ -111,9 +111,9 @@
         "e6778313-45ad-4d6d-8260-2498242a6df0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Devoluciones",
-            "icon": "return",
-            "content": "<p>Escribe aquí tus condiciones para devoluciones faciles y aumentar la confianza en los clientes</p>",
+            "heading": "DEVOLUCIONES",
+            "icon": "none",
+            "content": "<p>Si por alguna razón no estás 100% satisfecho con tu compra, tienes 5<strong> días de retracto para devolverlo sin complicaciones y 30 días de garantía por funcionamiento y/o daños del producto que no estén relacionados a su mal uso</strong>. Te hacemos el reembolso completo. Así de simple, porque confiamos en nuestro producto.</p>",
             "page": ""
           }
         },
