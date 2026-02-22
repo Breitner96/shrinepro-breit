@@ -265,6 +265,8 @@
     "086a98ac-209d-4db2-9d62-5b0fe9663693": {
       "type": "compare-image",
       "settings": {
+        "image1": "shopify://shop_images/3_e16698ae-fe50-42a2-803a-37e401b12e36.webp",
+        "image2": "shopify://shop_images/2_46ae9a34-9b4d-4f7e-b909-c7cfc4291963.webp",
         "title": "¿Qué cambia cuando usas la plantilla correcta?",
         "text": "<p>De aguantar el dolor todo el día… a olvidarte de que tienes pies</p>",
         "before": "ANTES",
