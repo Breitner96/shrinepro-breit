@@ -544,7 +544,7 @@
           "type": "row",
           "settings": {
             "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
+            "row_text": "<p>de clientes reportan menos dolor de pies desde la primera semana</p>"
           }
         },
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-2": {
@@ -568,9 +568,9 @@
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3"
       ],
       "settings": {
-        "title": "Recomendación",
+        "title": "PORCENTAJES DE SATISFACCIÓN",
         "heading_size": "h1",
-        "text": "<p>Habla del porcentaje de clientes que estan felices con uno de los beneficios puntuales del producto</p>",
+        "text": "",
         "color_scheme": "background-1",
         "layout": "percentages_second",
         "percentages_headline": "",
