@@ -543,22 +543,22 @@
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-1": {
           "type": "row",
           "settings": {
-            "percentage": 90,
+            "percentage": 96,
             "row_text": "<p>de clientes reportan menos dolor de pies desde la primera semana</p>"
           }
         },
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-2": {
           "type": "row",
           "settings": {
-            "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
+            "percentage": 91,
+            "row_text": "<p>nota reducción del mal olor desde el primer día de uso</p>"
           }
         },
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3": {
           "type": "row",
           "settings": {
-            "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
+            "percentage": 96,
+            "row_text": "<p>volvería a comprarla y la recomendaría a un familiar</p>"
           }
         }
       },
