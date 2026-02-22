@@ -84,9 +84,9 @@
         "collapsible_tab_AUafHX": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Que Incluye:",
-            "icon": "check_mark",
-            "content": "",
+            "heading": "QUÉ INCLUYE",
+            "icon": "none",
+            "content": "<p>Tu pedido incluye:</p><ul><li>📦 <strong>2 pares de Plantillas</strong> (4 plantillas en total) — Pague 2 Lleve 4</li><li>✂️ Línea guía impresa para cortar a tu talla exacta en segundos</li><li>🌬️ Doble cara: espuma viscoelástica antiimpacto + malla transpirable antiolor</li><li>👟 Compatible con zapatos de trabajo, deportivos, casuales y de vestir</li></ul>",
             "page": ""
           }
         },
