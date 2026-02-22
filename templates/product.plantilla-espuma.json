@@ -36,9 +36,9 @@
         "daa0e452-23d5-4bd1-afb3-35d7babab88c": {
           "type": "keybenefit",
           "settings": {
-            "key1": "Beneficio Rapido 1",
-            "key2": "Beneficio Rapido 2",
-            "key3": "Beneficio Rapido 3",
+            "key1": "Amortigua cada paso y elimina el dolor de pies desde la primera hora",
+            "key2": "Microperforaciones que ventilan y eliminan el mal olor todo el día",
+            "key3": "Se adapta a cualquier talla: córtala a tu medida en segundos",
             "checkmarkcolor": "#000000",
             "checkmarkcolorbackground": "#fafafa"
           }
@@ -67,8 +67,9 @@
         "1c393517-7c5c-4915-ba22-5dbd8ede91e5": {
           "type": "featuredreview",
           "settings": {
-            "reviewtext": "(FOTO DE UN CLIENTE FELIZ) Escribe aquí una review de un cliente, entorno al producto que estas vendiendo",
-            "reviewname": "Nombre (Ciudad, País)"
+            "reviewimage": "shopify://shop_images/testimonio_optimized.jpg",
+            "reviewtext": "Llevaba años con los pies destruidos al final del día. Desde que uso estas plantillas camino más de 8 horas en el trabajo y llego a casa sin ese dolor horrible en los talones. Y lo mejor: mis zapatos ya no huelen. Mi familia me lo agradeció.",
+            "reviewname": "Laura M. (Bogotá, Colombia)"
           }
         },
         "2c100155-1d2d-4504-a37e-f2abd070099f": {
@@ -145,16 +146,11 @@
           "type": "description",
           "disabled": true,
           "settings": {}
-        },
-        "166d21c7-3639-4a6b-937f-54e36a3c1b1a": {
-          "type": "shopify://apps/audien-reviews/blocks/star_rating/ce002b21-24e0-4d65-87ca-18c9770b24d4",
-          "settings": {}
         }
       },
       "block_order": [
         "custom_liquid_9XDG7p",
         "title",
-        "166d21c7-3639-4a6b-937f-54e36a3c1b1a",
         "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d",
         "text_gazJkx",
         "daa0e452-23d5-4bd1-afb3-35d7babab88c",
