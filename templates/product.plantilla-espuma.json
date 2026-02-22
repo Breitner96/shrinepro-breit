@@ -93,9 +93,9 @@
         "collapsible_tab_NKgDKr": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Cómo se usa",
-            "icon": "check_mark",
-            "content": "",
+            "heading": "CÓMO SE USA",
+            "icon": "none",
+            "content": "<p><strong>3 pasos y listo 👇</strong></p><p><strong>Paso 1 →</strong> Coloca la plantilla sobre tu zapato y marca tu talla<br/><strong>Paso 2 →</strong> Recórtala con tijeras siguiendo la línea guía impresa<br/><strong>Paso 3 →</strong> Insértala con la malla hacia arriba (contacto con el pie) y listo</p><p><em>Funciona en cualquier zapato. Sin instalación complicada.</em></p>",
             "page": ""
           }
         },
