@@ -473,7 +473,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-1": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 1",
+            "benefit": "Amortiguación viscoelástica",
             "us": true,
             "others": false
           }
@@ -481,7 +481,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio  2",
+            "benefit": "Ventilación antiolor",
             "us": true,
             "others": false
           }
@@ -489,7 +489,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-3": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 3",
+            "benefit": "Cortable a cualquier talla",
             "us": true,
             "others": false
           }
@@ -497,7 +497,7 @@
         "6a12410f-0263-49d1-941c-4d61208408bb": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 4",
+            "benefit": "Dura más de 3 meses",
             "us": true,
             "others": false
           }
@@ -505,7 +505,7 @@
         "7ea5db61-7af3-4f5f-a41e-30f037ccf10e": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 5",
+            "benefit": "Oferta Pague 2 Lleve 4",
             "us": true,
             "others": false
           }
@@ -519,17 +519,17 @@
         "7ea5db61-7af3-4f5f-a41e-30f037ccf10e"
       ],
       "settings": {
-        "title": "Exalta tu producto frente a la competencia",
-        "heading_size": "h1",
-        "text": "<p>Menciona porque tu producto es mejor que el de la ocmpetencia</p>",
+        "title": "TABLA COMPARATIVA VS. COMPETENCIA",
+        "heading_size": "h2",
+        "text": "",
         "button_label": "",
         "link": "",
         "button_style_secondary": false,
         "layout": "table_second",
         "color_scheme": "background-1",
         "logo_width": 75,
-        "us_label": "Producto X",
-        "others_label": "Otros",
+        "us_label": "Nuestra Plantilla",
+        "others_label": "Plantillas genéricas",
         "benefit_color_scheme": "accent-1",
         "checkmark_color": "#53af01",
         "icon_cells_color_scheme": "background-1",
