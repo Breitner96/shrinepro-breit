@@ -401,6 +401,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/unnamed.jpg",
             "title": "Jhon A. (Barranquilla) ⭐⭐⭐⭐⭐",
             "text": "<p>Las compré para toda la familia. Precio increíble por la cantidad que te mandan. Calidad premium.</p>",
             "link_label": "",
