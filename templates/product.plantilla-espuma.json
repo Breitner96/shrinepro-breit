@@ -49,9 +49,8 @@
         },
         "variant_picker": {
           "type": "variant_picker",
-          "disabled": true,
           "settings": {
-            "picker_type": "bundle"
+            "picker_type": "button"
           }
         },
         "buy_buttons": {
