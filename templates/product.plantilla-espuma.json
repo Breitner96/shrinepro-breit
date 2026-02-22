@@ -460,7 +460,8 @@
         "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-text-1"
       ],
       "settings": {
-        "height": "adapt",
+        "image": "shopify://shop_images/1_0edf1127-af9c-441a-9cfe-538590125efd.webp",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
