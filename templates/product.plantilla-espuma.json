@@ -60,7 +60,7 @@
           "type": "shippingarrow",
           "settings": {
             "preshipsby": "Se envía en máximo",
-            "shippingarrow": "3",
+            "shippingarrow": "1",
             "postshipsby": "días si compras hoy!"
           }
         },
@@ -77,7 +77,7 @@
           "settings": {
             "text1": "Pagos Contraentrega",
             "text2": "Envíos Gratis",
-            "iconcolorreturns": "#7069bc"
+            "iconcolorreturns": "#000000"
           }
         },
         "collapsible_tab_AUafHX": {
