@@ -102,9 +102,9 @@
         "c11bfb2f-901d-4b03-90cf-b6b766353d13": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Información de Envío",
-            "icon": "truck",
-            "content": "<p>Escribe aquí, tus condiciones de envío y tiempos de entrega reales.</p>",
+            "heading": "INFORMACIÓN DE ENVÍO",
+            "icon": "none",
+            "content": "<p>Recibe tus plantillas viscoelasticas en <strong>3 a 7 días hábiles</strong> desde que realizas tu pedido. Hacemos envíos a todo el país con rastreo en tiempo real. ¡Compra hoy y lo tienes esta semana!</p>",
             "page": ""
           }
         },
