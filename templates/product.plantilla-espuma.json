@@ -437,14 +437,14 @@
         "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Prueba Social - Foto",
+            "heading": "",
             "heading_size": "h1"
           }
         },
         "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Y este texto es para una recomendación del producto</p>",
+            "text": "<p>Más de 560 clientes en Colombia ya dejaron de aguantar el dolor. Esta plantilla no es un accesorio — es la solución que tu cuerpo llevaba tiempo pidiendo.</p>",
             "text_style": "body"
           }
         }
@@ -463,8 +463,8 @@
         "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "435217f9-0491-4e04-93de-8fa3a5a996db": {
