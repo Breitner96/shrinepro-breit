@@ -381,8 +381,9 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1": {
           "type": "column",
           "settings": {
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "image": "shopify://shop_images/testimonioh_optimized.jpg",
+            "title": "Carlos R. (Medellín) ⭐⭐⭐⭐⭐",
+            "text": "<p>Las compré para mis zapatos de trabajo y la diferencia es brutal. Ya no siento los pies pesados a media jornada.</p>",
             "link_label": "",
             "link": ""
           }
@@ -390,8 +391,9 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-2": {
           "type": "column",
           "settings": {
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "image": "shopify://shop_images/testimonio2_optimized.jpg",
+            "title": "Valentina G. (Cali) ⭐⭐⭐⭐⭐",
+            "text": "<p>Probé mil plantillas y todas se aplanan al mes. Esta lleva 3 meses y sigue igual. Además el olor desapareció completamente.</p>",
             "link_label": "",
             "link": ""
           }
@@ -399,8 +401,8 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
           "type": "column",
           "settings": {
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "title": "Jhon A. (Barranquilla) ⭐⭐⭐⭐⭐",
+            "text": "<p>Las compré para toda la familia. Precio increíble por la cantidad que te mandan. Calidad premium.</p>",
             "link_label": "",
             "link": ""
           }
@@ -412,12 +414,12 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3"
       ],
       "settings": {
-        "title": "Nuestros Clientes",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
+        "title": "TESTIMONIOS DE CLIENTES",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "circle",
         "columns_desktop": 3,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
