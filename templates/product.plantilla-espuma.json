@@ -273,14 +273,14 @@
         "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-0": {
           "type": "heading",
           "settings": {
-            "heading": "Titulo llamativo de máximo 5 palabras (Tocar el dolor principal)",
-            "heading_size": "h2"
+            "heading": "Tus pies merecen descanso real",
+            "heading_size": "h1"
           }
         },
         "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Aquí, complementas y refuerzas el punto de dolor anterior</p>",
+            "text": "<p>Cada día que pasas de pie sin el soporte adecuado es un día acumulando tensión en tobillos, rodillas y espalda baja. No es normal que tus pies duelan. Es que la plantilla original de tu zapato simplemente no fue diseñada para ti.</p>",
             "text_style": "body"
           }
         },
