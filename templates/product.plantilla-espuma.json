@@ -265,8 +265,8 @@
     "086a98ac-209d-4db2-9d62-5b0fe9663693": {
       "type": "compare-image",
       "settings": {
-        "title": "Beneficios del producto",
-        "text": "<p>Descripción de los beneficios del producto con Imagen Antes/despúes </p>",
+        "title": "¿Qué cambia cuando usas la plantilla correcta?",
+        "text": "<p>De aguantar el dolor todo el día… a olvidarte de que tienes pies</p>",
         "before": "ANTES",
         "after": "DESPUES"
       }
