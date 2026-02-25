@@ -95,30 +95,21 @@
             "page": ""
           }
         },
-        "collapsible_tab_NKgDKr": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Cómo se usa",
-            "icon": "check_mark",
-            "content": "",
-            "page": ""
-          }
-        },
         "c11bfb2f-901d-4b03-90cf-b6b766353d13": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Información de Envío",
-            "icon": "truck",
-            "content": "<p>Escribe aquí, tus condiciones de envío y tiempos de entrega reales.</p>",
+            "heading": "INFORMACIÓN DE ENVÍO",
+            "icon": "none",
+            "content": "<p>Recibe tus plantillas viscoelasticas en <strong>3 a 7 días hábiles</strong> desde que realizas tu pedido. Hacemos envíos a todo el país con rastreo en tiempo real. ¡Compra hoy y lo tienes esta semana!</p>",
             "page": ""
           }
         },
         "e6778313-45ad-4d6d-8260-2498242a6df0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Devoluciones",
-            "icon": "return",
-            "content": "<p>Escribe aquí tus condiciones para devoluciones faciles y aumentar la confianza en los clientes</p>",
+            "heading": "DEVOLUCIONES",
+            "icon": "none",
+            "content": "<p>Si por alguna razón no estás 100% satisfecho con tu compra, tienes 5<strong> días de retracto para devolverlo sin complicaciones y 30 días de garantía por funcionamiento y/o daños del producto que no estén relacionados a su mal uso</strong>. Te hacemos el reembolso completo. Así de simple, porque confiamos en nuestro producto.</p>",
             "page": ""
           }
         },
@@ -166,7 +157,6 @@
         "1c393517-7c5c-4915-ba22-5dbd8ede91e5",
         "2c100155-1d2d-4504-a37e-f2abd070099f",
         "collapsible_tab_AUafHX",
-        "collapsible_tab_NKgDKr",
         "c11bfb2f-901d-4b03-90cf-b6b766353d13",
         "e6778313-45ad-4d6d-8260-2498242a6df0",
         "5b41d5c2-f95c-45c9-8b01-8d3aaf8e300f",
