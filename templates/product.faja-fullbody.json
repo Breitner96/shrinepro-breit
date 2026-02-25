@@ -398,7 +398,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-1": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 1",
+            "benefit": "Nuestra FajaOtras marcasMoldeado cintura + abdomen + glúteos",
             "us": true,
             "others": false
           }
@@ -406,7 +406,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio  2",
+            "benefit": "Brasier integrado",
             "us": true,
             "others": false
           }
@@ -414,7 +414,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-3": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 3",
+            "benefit": "Calidad colombiana certificada",
             "us": true,
             "others": false
           }
@@ -422,7 +422,7 @@
         "6a12410f-0263-49d1-941c-4d61208408bb": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 4",
+            "benefit": "Tallas XS a 3XL",
             "us": true,
             "others": false
           }
@@ -430,7 +430,7 @@
         "7ea5db61-7af3-4f5f-a41e-30f037ccf10e": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 5",
+            "benefit": "Envío gratis",
             "us": true,
             "others": false
           }
@@ -444,16 +444,16 @@
         "7ea5db61-7af3-4f5f-a41e-30f037ccf10e"
       ],
       "settings": {
-        "title": "Exalta tu producto frente a la competencia",
+        "title": "No todas las fajas son iguales",
         "heading_size": "h1",
-        "text": "<p>Menciona porque tu producto es mejor que el de la ocmpetencia</p>",
+        "text": "<p>Esto es lo que nos diferencia.</p>",
         "button_label": "",
         "link": "",
         "button_style_secondary": false,
         "layout": "table_second",
         "color_scheme": "background-1",
         "logo_width": 75,
-        "us_label": "Producto X",
+        "us_label": "Nuestra Faja",
         "others_label": "Otros",
         "benefit_color_scheme": "accent-1",
         "checkmark_color": "#53af01",
