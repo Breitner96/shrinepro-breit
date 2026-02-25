@@ -112,37 +112,6 @@
             "content": "<p>Si por alguna razón no estás 100% satisfecho con tu compra, tienes 5<strong> días de retracto para devolverlo sin complicaciones y 30 días de garantía por funcionamiento y/o daños del producto que no estén relacionados a su mal uso</strong>. Te hacemos el reembolso completo. Así de simple, porque confiamos en nuestro producto.</p>",
             "page": ""
           }
-        },
-        "5b41d5c2-f95c-45c9-8b01-8d3aaf8e300f": {
-          "type": "salespoint",
-          "disabled": true,
-          "settings": {
-            "salespointtext": "5 Unidades en Stock"
-          }
-        },
-        "1088bb43-2931-4cb5-b642-6c5e04e45224": {
-          "type": "clocktext",
-          "disabled": true,
-          "settings": {
-            "clocktext": "Últimos días de oferta."
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {}
-        },
-        "3122dfde-b867-4a3c-9e0f-cf61bd664e99": {
-          "type": "moneybackguarantee",
-          "disabled": true,
-          "settings": {
-            "moneybackguarantee": "30 DÍAS PARA DEVOLUCIONES"
-          }
-        },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {}
         }
       },
       "block_order": [
@@ -158,12 +127,7 @@
         "2c100155-1d2d-4504-a37e-f2abd070099f",
         "collapsible_tab_AUafHX",
         "c11bfb2f-901d-4b03-90cf-b6b766353d13",
-        "e6778313-45ad-4d6d-8260-2498242a6df0",
-        "5b41d5c2-f95c-45c9-8b01-8d3aaf8e300f",
-        "1088bb43-2931-4cb5-b642-6c5e04e45224",
-        "quantity_selector",
-        "3122dfde-b867-4a3c-9e0f-cf61bd664e99",
-        "description"
+        "e6778313-45ad-4d6d-8260-2498242a6df0"
       ],
       "custom_css": [
         "div.product__title > h1 {font-size: 17px !important;}",
@@ -222,42 +186,11 @@
         "padding_bottom": 68
       }
     },
-    "7401e664-d026-4a46-bd1f-bc32c9f0558a": {
-      "type": "rich-text",
-      "blocks": {
-        "template--19239854407957__7401e664-d026-4a46-bd1f-bc32c9f0558a-1685852128f579606c-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Desired outcome",
-            "heading_size": "h2"
-          }
-        },
-        "11abbd1c-ea50-4aca-a4aa-563a76d850b5": {
-          "type": "text",
-          "settings": {
-            "text": "<p>How this product meets their desired outcome</p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--19239854407957__7401e664-d026-4a46-bd1f-bc32c9f0558a-1685852128f579606c-0",
-        "11abbd1c-ea50-4aca-a4aa-563a76d850b5"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "086a98ac-209d-4db2-9d62-5b0fe9663693": {
       "type": "compare-image",
       "settings": {
-        "title": "Beneficios del producto",
-        "text": "<p>Descripción de los beneficios del producto con Imagen Antes/despúes </p>",
+        "title": "Tu cuerpo, transformado en segundos",
+        "text": "<p>Sin dieta. Sin gym. Sin esperar. Solo póntela y sal con confianza.</p>",
         "before": "ANTES",
         "after": "DESPUES"
       }
@@ -313,8 +246,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-1": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 1",
-            "text": "<p>Ampliar el beneficio 1</p>",
+            "title": "Cintura de avispa al instante",
+            "text": "<p>Compresión graduada que define tu cintura desde el primer uso. No tienes que esperar semanas para ver resultados.</p>",
             "link_label": "",
             "link": ""
           }
@@ -322,8 +255,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-2": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 2",
-            "text": "<p>Ampliar el beneficio 2</p>",
+            "title": "Abdomen plano bajo cualquier ropa",
+            "text": "<p>Olvídate de esconder el abdomen. Esta faja lo aplana y lo sostiene durante todo el día, sin incomodidad.</p>",
             "link_label": "",
             "link": ""
           }
@@ -331,8 +264,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-3": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 3",
-            "text": "<p>Ampliar el beneficio 3</p>",
+            "title": "Levanta y moldea tus glúteos",
+            "text": "<p>Diseñada para realzar tu figura de forma natural. Más curvas, más confianza, sin cirugía.</p>",
             "link_label": "",
             "link": ""
           }
@@ -340,8 +273,8 @@
         "8f4c5208-c742-4fe0-9e42-8cc758a77b8c": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 4",
-            "text": "<p>Ampliar el beneficio 4</p>",
+            "title": "Calidad colombiana que dura",
+            "text": "<p>Fabricada con los estándares de la fajas colombianas, reconocidas mundialmente por su compresión, durabilidad y comodidad todo el día.</p>",
             "link_label": "",
             "link": ""
           }
@@ -354,12 +287,12 @@
         "8f4c5208-c742-4fe0-9e42-8cc758a77b8c"
       ],
       "settings": {
-        "title": "(NO USAR TITULO)",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
@@ -710,7 +643,6 @@
   "order": [
     "main",
     "related-products",
-    "7401e664-d026-4a46-bd1f-bc32c9f0558a",
     "086a98ac-209d-4db2-9d62-5b0fe9663693",
     "3bc3f381-5c12-4e1e-9f92-289fb87d308d",
     "50f8db15-9a00-4bfb-8176-786845498504",
