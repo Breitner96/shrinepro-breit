@@ -83,15 +83,15 @@
           "settings": {
             "text1": "Pagos Contraentrega",
             "text2": "Envíos Gratis",
-            "iconcolorreturns": "#7069bc"
+            "iconcolorreturns": "#000000"
           }
         },
         "collapsible_tab_AUafHX": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Que Incluye:",
-            "icon": "check_mark",
-            "content": "",
+            "heading": "QUÉ INCLUYE",
+            "icon": "none",
+            "content": "<p><strong>1x Faja Colombiana Lipo con Brasier Integrado</strong></p><ul><li>Cierre frontal de broches ajustables</li><li>Soporte de brasier incorporado</li><li>Borde inferior con encaje</li><li>Disponible en Negro y Beige / Tallas XS a 3XL</li></ul>",
             "page": ""
           }
         },
