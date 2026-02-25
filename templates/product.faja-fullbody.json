@@ -309,8 +309,8 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1": {
           "type": "column",
           "settings": {
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "title": "Juliana M. — Bogotá 🇨🇴 ⭐⭐⭐⭐⭐",
+            "text": "<p>Llevo años buscando una faja que realmente funcione. Esta me marcó la cintura, aplanó el abdomen y se siente increíblemente cómoda. La uso todos los días.</p>",
             "link_label": "",
             "link": ""
           }
@@ -318,8 +318,8 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-2": {
           "type": "column",
           "settings": {
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "title": "Camila V. — Cali 🇨🇴 ⭐⭐⭐⭐⭐",
+            "text": "<p>Me la puse para una reunión importante y recibí más piropos en un día que en meses. No lo podía creer. Ya pedí la segunda.</p>",
             "link_label": "",
             "link": ""
           }
@@ -327,8 +327,8 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
           "type": "column",
           "settings": {
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "title": "Paola R. — Medellín 🇨🇴 ⭐⭐⭐⭐⭐",
+            "text": "<p>Pensé que era exagerado lo que decían. En serio, desde el primer minuto noté la diferencia. La calidad colombiana se siente en cada detalle.</p>",
             "link_label": "",
             "link": ""
           }
@@ -340,7 +340,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3"
       ],
       "settings": {
-        "title": "Nuestros Clientes",
+        "title": "RESEÑAS DE CLIENTES",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
