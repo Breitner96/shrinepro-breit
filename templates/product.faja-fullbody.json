@@ -33,19 +33,19 @@
             "text_style": "body"
           }
         },
-        "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d": {
-          "type": "price",
-          "settings": {}
-        },
         "daa0e452-23d5-4bd1-afb3-35d7babab88c": {
           "type": "keybenefit",
           "settings": {
-            "key1": "Beneficio Rapido 1",
-            "key2": "Beneficio Rapido 2",
-            "key3": "Beneficio Rapido 3",
-            "checkmarkcolor": "#000000",
+            "key1": "Cintura marcada desde el primer uso",
+            "key2": "Abdomen plano + glúteos levantados",
+            "key3": "Envío GRATIS — llega en días",
+            "checkmarkcolor": "#53af01",
             "checkmarkcolorbackground": "#fafafa"
           }
+        },
+        "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d": {
+          "type": "price",
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -155,8 +155,8 @@
         "custom_liquid_GipUEP",
         "custom_liquid_3RAKDe",
         "text_gazJkx",
-        "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d",
         "daa0e452-23d5-4bd1-afb3-35d7babab88c",
+        "d57f30db-f1f3-4fd5-a089-2c2e9533ba3d",
         "variant_picker",
         "buy_buttons",
         "eed7bb10-67b9-4655-8c71-ca64ed54fb48",
