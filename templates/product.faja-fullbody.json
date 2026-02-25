@@ -66,15 +66,16 @@
           "type": "shippingarrow",
           "settings": {
             "preshipsby": "Se envía en máximo",
-            "shippingarrow": "3",
+            "shippingarrow": "1",
             "postshipsby": "días si compras hoy!"
           }
         },
         "1c393517-7c5c-4915-ba22-5dbd8ede91e5": {
           "type": "featuredreview",
           "settings": {
-            "reviewtext": "(FOTO DE UN CLIENTE FELIZ) Escribe aquí una review de un cliente, entorno al producto que estas vendiendo",
-            "reviewname": "Nombre (Ciudad, País)"
+            "reviewimage": "shopify://shop_images/testimonio1_optimized.jpg",
+            "reviewtext": "Llevaba meses evitando ponerme ropa ajustada. Me puse esta faja y en literalmente 5 minutos tenía la figura que quería. No lo podía creer.",
+            "reviewname": "Valentina R. (Medellín, Colombia)"
           }
         },
         "2c100155-1d2d-4504-a37e-f2abd070099f": {
