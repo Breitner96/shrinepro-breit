@@ -229,9 +229,10 @@
         "fb814fee-541b-418f-a1f8-b03b37c368ce"
       ],
       "settings": {
+        "image": "shopify://shop_images/ChatGPT-Image-25-feb-2026_-09_36_31-p.m..webp",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "text_first",
+        "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
