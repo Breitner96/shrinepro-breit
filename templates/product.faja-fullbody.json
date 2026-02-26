@@ -189,6 +189,8 @@
     "086a98ac-209d-4db2-9d62-5b0fe9663693": {
       "type": "compare-image",
       "settings": {
+        "image1": "shopify://shop_images/Latin_woman_in_black_underwear_1328ad5005.webp",
+        "image2": "shopify://shop_images/Realistic_photo_of_the_same_latin_woman_curvy_body_6bf0a21749.webp",
         "title": "Tu cuerpo, transformado en segundos",
         "text": "<p>Sin dieta. Sin gym. Sin esperar. Solo póntela y sal con confianza.</p>",
         "before": "ANTES",
