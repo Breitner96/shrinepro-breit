@@ -260,8 +260,9 @@
     "086a98ac-209d-4db2-9d62-5b0fe9663693": {
       "type": "compare-image",
       "settings": {
-        "title": "Beneficios del producto",
-        "text": "<p>Descripción de los beneficios del producto con Imagen Antes/despúes </p>",
+        "image1": "shopify://shop_images/Messy_travel_bag_with_products_c6608ac660_1.webp",
+        "title": "Lo que cambia cuando viajas con la nueva BeautyKit360",
+        "text": "<p>Antes de tenerla, viajar significaba elegir entre tu rutina y el espacio en la maleta. Eso se acabó.</p>",
         "before": "ANTES",
         "after": "DESPUES"
       }
