@@ -317,6 +317,7 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-1": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Skincare_bottle_with_heart_838bd6ead5.webp",
             "title": "<strong>Tu rutina, sin compromisos</strong>",
             "text": "<p>No más elegir entre llevar tu sérum favorito o el espacio en la maleta. La Botella Viajera te da los dos.</p>",
             "link_label": "",
@@ -326,6 +327,7 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-2": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Minimalist_flat_icon_white_background_soft_pastel__ec8c2d160d.webp",
             "title": "<strong> Diseño pensado para el aeropuerto</strong>",
             "text": "<p>Frascos de 30ml que cumplen con las normas internacionales de seguridad. Sin dramas en el control de líquidos.</p>",
             "link_label": "",
@@ -335,6 +337,7 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-3": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Compact_travel_case_with_bottles_ea826e7785.webp",
             "title": "<strong>Compacta, pero no le falta nada</strong>",
             "text": "<p>16.5cm de alto y cabe en cualquier bolso. Lleva shampoo, acondicionador, crema y lo que necesites, todo junto.</p>",
             "link_label": "",
@@ -344,6 +347,7 @@
         "8f4c5208-c742-4fe0-9e42-8cc758a77b8c": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Refillable_bottle_with_leaf_symbol_a257a9ba2e.webp",
             "title": "Ahorra y cuida el planeta",
             "text": "<p>Rellena una y otra vez. Olvídate de los minis desechables de plástico y de gastar de más en el aeropuerto.</p>",
             "link_label": "",
