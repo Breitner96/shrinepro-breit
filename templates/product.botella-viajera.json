@@ -380,6 +380,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Woman_holding_travel_organizer_0da5e340d4.webp",
             "title": "María C. — Medellín ⭐⭐⭐⭐⭐",
             "text": "<p>La llevo a cada viaje de negocios. Mi piel ya no sufre por usar productos del hotel.</p>",
             "link_label": "",
@@ -389,6 +390,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-2": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Woman_sitting_on_suitcase_bed_3ea0a74df9.webp",
             "title": "Valentina R. — Cali ⭐⭐⭐⭐⭐",
             "text": "<p>La maleta me quedó más ligera y llegué con todos mis productos intactos. ¡La recomiendo 100%!</p>",
             "link_label": "",
@@ -398,6 +400,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Woman_standing_at_airport_gate_6cd9382f2d.webp",
             "title": "Sofía T. — Barranquilla ⭐⭐⭐⭐⭐",
             "text": "<p>Pensé que era un gasto innecesario hasta que la usé. Ahora no viajo sin ella.</p>",
             "link_label": "",
@@ -413,10 +416,10 @@
       "settings": {
         "title": "🌟 TESTIMONIOS CLIENTES",
         "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "square",
+        "image_width": "half",
+        "image_ratio": "circle",
         "columns_desktop": 3,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
