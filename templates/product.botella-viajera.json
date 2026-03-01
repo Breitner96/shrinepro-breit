@@ -450,11 +450,12 @@
         "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-text-1"
       ],
       "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_1_mar_2026_05_51_36_p.m..webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
+        "desktop_content_alignment": "center",
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
         "image_behavior": "none",
