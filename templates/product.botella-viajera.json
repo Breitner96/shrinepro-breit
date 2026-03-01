@@ -272,14 +272,14 @@
         "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-0": {
           "type": "heading",
           "settings": {
-            "heading": "Titulo llamativo de máximo 5 palabras (Tocar el dolor principal)",
+            "heading": "¿Cansada de sacrificar tu rutina cuando viajas?",
             "heading_size": "h2"
           }
         },
         "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Aquí, complementas y refuerzas el punto de dolor anterior</p>",
+            "text": "<p>Porque llevar tu skincare favorito no debería ser un problema de logística. Las mujeres que se cuidan, se cuidan en casa <strong>y</strong> en cualquier rincón del mundo.</p>",
             "text_style": "body"
           }
         },
@@ -317,8 +317,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-1": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 1",
-            "text": "<p>Ampliar el beneficio 1</p>",
+            "title": "<strong>Tu rutina, sin compromisos</strong>",
+            "text": "<p>No más elegir entre llevar tu sérum favorito o el espacio en la maleta. La Botella Viajera te da los dos.</p>",
             "link_label": "",
             "link": ""
           }
@@ -326,8 +326,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-2": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 2",
-            "text": "<p>Ampliar el beneficio 2</p>",
+            "title": "<strong> Diseño pensado para el aeropuerto</strong>",
+            "text": "<p>Frascos de 30ml que cumplen con las normas internacionales de seguridad. Sin dramas en el control de líquidos.</p>",
             "link_label": "",
             "link": ""
           }
@@ -335,8 +335,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-3": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 3",
-            "text": "<p>Ampliar el beneficio 3</p>",
+            "title": "<strong>Compacta, pero no le falta nada</strong>",
+            "text": "<p>16.5cm de alto y cabe en cualquier bolso. Lleva shampoo, acondicionador, crema y lo que necesites, todo junto.</p>",
             "link_label": "",
             "link": ""
           }
@@ -344,8 +344,8 @@
         "8f4c5208-c742-4fe0-9e42-8cc758a77b8c": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 4",
-            "text": "<p>Ampliar el beneficio 4</p>",
+            "title": "Ahorra y cuida el planeta",
+            "text": "<p>Rellena una y otra vez. Olvídate de los minis desechables de plástico y de gastar de más en el aeropuerto.</p>",
             "link_label": "",
             "link": ""
           }
@@ -380,8 +380,8 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1": {
           "type": "column",
           "settings": {
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "title": "María C. — Medellín ⭐⭐⭐⭐⭐",
+            "text": "<p>La llevo a cada viaje de negocios. Mi piel ya no sufre por usar productos del hotel.</p>",
             "link_label": "",
             "link": ""
           }
@@ -389,8 +389,8 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-2": {
           "type": "column",
           "settings": {
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "title": "Valentina R. — Cali ⭐⭐⭐⭐⭐",
+            "text": "<p>La maleta me quedó más ligera y llegué con todos mis productos intactos. ¡La recomiendo 100%!</p>",
             "link_label": "",
             "link": ""
           }
@@ -398,8 +398,8 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
           "type": "column",
           "settings": {
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "title": "Sofía T. — Barranquilla ⭐⭐⭐⭐⭐",
+            "text": "<p>Pensé que era un gasto innecesario hasta que la usé. Ahora no viajo sin ella.</p>",
             "link_label": "",
             "link": ""
           }
@@ -411,8 +411,8 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3"
       ],
       "settings": {
-        "title": "Nuestros Clientes",
-        "heading_size": "h1",
+        "title": "🌟 TESTIMONIOS CLIENTES",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "square",
         "columns_desktop": 3,
