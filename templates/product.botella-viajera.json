@@ -358,12 +358,12 @@
         "8f4c5208-c742-4fe0-9e42-8cc758a77b8c"
       ],
       "settings": {
-        "title": "(NO USAR TITULO)",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
@@ -469,7 +469,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-1": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 1",
+            "benefit": "Frascos incluidos con medidor",
             "us": true,
             "others": false
           }
@@ -477,7 +477,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio  2",
+            "benefit": "Cierre hermético anti-derrames",
             "us": true,
             "others": false
           }
@@ -485,7 +485,7 @@
         "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-3": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 3",
+            "benefit": "Compatible normas equipaje de mano",
             "us": true,
             "others": false
           }
@@ -493,7 +493,7 @@
         "6a12410f-0263-49d1-941c-4d61208408bb": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 4",
+            "benefit": "Diseño compacto todo en uno",
             "us": true,
             "others": false
           }
@@ -501,7 +501,7 @@
         "7ea5db61-7af3-4f5f-a41e-30f037ccf10e": {
           "type": "row",
           "settings": {
-            "benefit": "Beneficio 5",
+            "benefit": "Reutilizable y eco-friendly",
             "us": true,
             "others": false
           }
@@ -515,16 +515,16 @@
         "7ea5db61-7af3-4f5f-a41e-30f037ccf10e"
       ],
       "settings": {
-        "title": "Exalta tu producto frente a la competencia",
-        "heading_size": "h1",
-        "text": "<p>Menciona porque tu producto es mejor que el de la ocmpetencia</p>",
+        "title": "🏆 NOSOTROS VS LA COMPETENCIA",
+        "heading_size": "h2",
+        "text": "",
         "button_label": "",
         "link": "",
         "button_style_secondary": false,
         "layout": "table_second",
         "color_scheme": "background-1",
         "logo_width": 75,
-        "us_label": "Producto X",
+        "us_label": "Botella Viajera Pro",
         "others_label": "Otros",
         "benefit_color_scheme": "accent-1",
         "checkmark_color": "#53af01",
@@ -539,22 +539,22 @@
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-1": {
           "type": "row",
           "settings": {
-            "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
+            "percentage": 97,
+            "row_text": "<p>de clientas dice que ya no compra productos genéricos cuando viaja</p>"
           }
         },
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-2": {
           "type": "row",
           "settings": {
-            "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
+            "percentage": 94,
+            "row_text": "<p>afirma que su rutina de cuidado mejoró incluso en sus viajes</p>"
           }
         },
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3": {
           "type": "row",
           "settings": {
-            "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
+            "percentage": 99,
+            "row_text": "<p><strong>+560 mujeres</strong> ya llevan su rutina completa a donde van</p>"
           }
         }
       },
@@ -564,15 +564,15 @@
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3"
       ],
       "settings": {
-        "title": "Recomendación",
-        "heading_size": "h1",
-        "text": "<p>Habla del porcentaje de clientes que estan felices con uno de los beneficios puntuales del producto</p>",
+        "title": "ESTADÍSTICAS DE CONFIANZA",
+        "heading_size": "h2",
+        "text": "",
         "color_scheme": "background-1",
         "layout": "percentages_second",
         "percentages_headline": "",
         "percentages_headline_size": "h2",
         "percentages_headline_alignment": "left",
-        "caption": "<p>*aquí puedes decir que estos porcentajes son comprobados.</p>",
+        "caption": "",
         "button_label": "",
         "link": "",
         "button_style_secondary": false,
