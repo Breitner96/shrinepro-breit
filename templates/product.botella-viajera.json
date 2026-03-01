@@ -78,33 +78,33 @@
           "settings": {
             "text1": "Pagos Contraentrega",
             "text2": "Envíos Gratis",
-            "iconcolorreturns": "#7069bc"
+            "iconcolorreturns": "#53af01"
           }
         },
         "collapsible_tab_AUafHX": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Que Incluye:",
-            "icon": "check_mark",
-            "content": "",
+            "heading": "📦 QUÉ INCLUYE",
+            "icon": "none",
+            "content": "<h3></h3><ul><li>1 estuche principal compacto (16.5cm)</li><li>4 frascos rellenables con medidor de ml</li><li>Diseño a prueba de derrames</li><li>Apto para líquidos, cremas y geles</li></ul>",
             "page": ""
           }
         },
         "collapsible_tab_NKgDKr": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Cómo se usa",
-            "icon": "check_mark",
-            "content": "",
+            "heading": "📖 CÓMO SE USA",
+            "icon": "none",
+            "content": "<h3></h3><ol><li>Destapa los frascos y llénalos con tus productos favoritos</li><li>Ciérralos herméticamente y acomódalos dentro del estuche</li><li>Guárdalo en tu bolso o maleta de mano</li><li>¡Listo! Tu rutina completa te acompaña a donde vayas</li></ol>",
             "page": ""
           }
         },
         "c11bfb2f-901d-4b03-90cf-b6b766353d13": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Información de Envío",
+            "heading": "INFORMACIÓN DE ENVÍO",
             "icon": "truck",
-            "content": "<p>Escribe aquí, tus condiciones de envío y tiempos de entrega reales.</p>",
+            "content": "<p>Recibe tus plantillas viscoelasticas en <strong>3 a 7 días hábiles</strong> desde que realizas tu pedido. Hacemos envíos a todo el país con rastreo en tiempo real. ¡Compra hoy y lo tienes esta semana!</p>",
             "page": ""
           }
         },
@@ -113,7 +113,7 @@
           "settings": {
             "heading": "Devoluciones",
             "icon": "return",
-            "content": "<p>Escribe aquí tus condiciones para devoluciones faciles y aumentar la confianza en los clientes</p>",
+            "content": "<p>Si por alguna razón no estás 100% satisfecho con tu compra, tienes 5<strong> días de retracto para devolverlo sin complicaciones y 30 días de garantía por funcionamiento y/o daños del producto que no estén relacionados a su mal uso</strong>. Te hacemos el reembolso completo. Así de simple, porque confiamos en nuestro producto.</p>",
             "page": ""
           }
         },
