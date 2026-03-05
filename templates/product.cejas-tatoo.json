@@ -14,12 +14,14 @@
       "blocks": {
         "custom_liquid_9XDG7p": {
           "type": "custom_liquid",
+          "name": "reviews",
           "settings": {
             "custom_liquid": "<div class=\"review-container\">\n  <div class=\"stars\">\n    {% for i in (1..5) %}\n      <span class=\"star\">★</span>\n    {% endfor %}\n  </div>\n  <span class=\"review-text\"> 4.8 |+360 Clientes Satisfechos</span>\n</div>\n\n<style>\n  .review-container {\n    display: flex;\n    align-items: center;\n    font-family: Arial, sans-serif;\nfont-size: 18px;                      font-style: italic;\n    font-weight: normal;\n    margin-top: 0;\n    margin-bottom: 0;\n  }\n\n  .stars {\n    color: #FFD700;\n    font-size: 17px;\n    display: flex;\n    align-items: center;\n  }\n  .star {\n    margin-right: 1px;\n  }\n\n  .review-text {\n    margin-left: 8px;\n    color: #000;\n    font-size: 14px;\n    font-weight: normal;\n  }\n</style>"
           }
         },
         "custom_liquid_HN378U": {
           "type": "custom_liquid",
+          "name": "titulo",
           "settings": {
             "custom_liquid": "<div class=\"product-verified-wrapper\">\n    <h1 class=\"product-title-inline\">\n        {{ product.title }}\n        <img class=\"inline-check-icon\" src=\"https://cdn-icons-png.flaticon.com/512/1828/1828640.png\" alt=\"Verificado\">\n    </h1>\n</div>\n\n<style>\n    .product-verified-wrapper {\n        margin: 0 0 10px 0 !important; /* Ajusta el espacio con lo que sigue abajo */\n        padding: 0;\n        line-height: 1.2;\n    }\n\n    .product-title-inline {\n        /* Hereda la fuente de tu título de Shopify */\n        font-family: var(--font-heading-family), sans-serif;\n        font-weight: var(--font-heading-weight, bold);\n        font-size: 25px;\n        color: #1A1A1A; /* Tu color negro profundo */\n        \n        /* IMPORTANTE: Permite que el contenido fluya como texto */\n        display: inline; \n        margin: 0;\n        padding: 0;\n        word-wrap: break-word;\n    }\n\n    .inline-check-icon {\n        /* Se comporta como una letra más */\n        display: inline-block;\n        vertical-align: middle; \n        width: 24px; \n        height: 24px;\n        margin-left: 4px; /* Espacio pequeño tras la última palabra */\n        object-fit: contain;\n    }\n\n    /* Ajuste para móviles */\n    @media (max-width: 749px) {\n        .product-title-inline {\n            font-size: 20px;\n        }\n        .inline-check-icon {\n            width: 18px;\n            height: 18px;\n        }\n    }\n</style>"
           }
@@ -56,16 +58,17 @@
         "eed7bb10-67b9-4655-8c71-ca64ed54fb48": {
           "type": "shippingarrow",
           "settings": {
-            "preshipsby": "Se envía en máximo",
-            "shippingarrow": "3",
+            "preshipsby": "Se envía en máximo 1",
+            "shippingarrow": "",
             "postshipsby": "días si compras hoy!"
           }
         },
         "1c393517-7c5c-4915-ba22-5dbd8ede91e5": {
           "type": "featuredreview",
           "settings": {
-            "reviewtext": "(FOTO DE UN CLIENTE FELIZ) Escribe aquí una review de un cliente, entorno al producto que estas vendiendo",
-            "reviewname": "Nombre (Ciudad, País)"
+            "reviewimage": "shopify://shop_images/unnamed_97e24deb-12b9-4184-9376-ec8f486f15c5.jpg",
+            "reviewtext": "Llevo meses usando esto y ya no puedo vivir sin él. Me lo aplico el domingo en la noche y mis cejas duran perfectas toda la semana. ¡Nunca más el lápiz diario!",
+            "reviewname": "Valentina R. (Bogotá, Colombia)"
           }
         },
         "2c100155-1d2d-4504-a37e-f2abd070099f": {
