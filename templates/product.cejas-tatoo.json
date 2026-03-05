@@ -85,7 +85,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "📖 CÓMO SE USA",
-            "icon": "check_mark",
+            "icon": "none",
             "content": "<ul><li><strong>Aplica</strong> el gel uniformemente sobre tus cejas con el aplicador</li><li><strong>Espera 2 horas</strong> a que seque completamente</li><li><strong>Despégalo</strong> con cuidado — ¡tus cejas quedan perfectas!</li><li><strong>Evita mojar</strong> la zona las primeras 24 horas para mayor duración</li></ul>",
             "page": ""
           }
@@ -93,18 +93,18 @@
         "c11bfb2f-901d-4b03-90cf-b6b766353d13": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Información de Envío",
+            "heading": "INFORMACIÓN DE ENVÍO",
             "icon": "truck",
-            "content": "<p>Escribe aquí, tus condiciones de envío y tiempos de entrega reales.</p>",
+            "content": "<p>Recibe tus plantillas viscoelasticas en <strong>3 a 7 días hábiles</strong> desde que realizas tu pedido. Hacemos envíos a todo el país con rastreo en tiempo real. ¡Compra hoy y lo tienes esta semana!</p>",
             "page": ""
           }
         },
         "e6778313-45ad-4d6d-8260-2498242a6df0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Devoluciones",
+            "heading": "DEVOLUCIONES",
             "icon": "return",
-            "content": "<p>Escribe aquí tus condiciones para devoluciones faciles y aumentar la confianza en los clientes</p>",
+            "content": "<p>Si por alguna razón no estás 100% satisfecho con tu compra, tienes 5<strong> días de retracto para devolverlo sin complicaciones y 30 días de garantía por funcionamiento y/o daños del producto que no estén relacionados a su mal uso</strong>. Te hacemos el reembolso completo. Así de simple, porque confiamos en nuestro producto.</p>",
             "page": ""
           }
         },
