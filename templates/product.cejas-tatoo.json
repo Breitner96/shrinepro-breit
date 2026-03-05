@@ -75,18 +75,18 @@
         "collapsible_tab_AUafHX": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Que Incluye:",
-            "icon": "check_mark",
-            "content": "",
+            "heading": "📦 QUÉ INCLUYE",
+            "icon": "none",
+            "content": "<ul><li>1 Gel Tattoo Peel-Off para cejas (10g)</li><li>Aplicador de precisión incluido</li><li>Disponible en 3 tonos: Marrón Claro, Marrón y Marrón Oscuro</li></ul>",
             "page": ""
           }
         },
         "collapsible_tab_NKgDKr": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Cómo se usa",
+            "heading": "📖 CÓMO SE USA",
             "icon": "check_mark",
-            "content": "",
+            "content": "<ul><li><strong>Aplica</strong> el gel uniformemente sobre tus cejas con el aplicador</li><li><strong>Espera 2 horas</strong> a que seque completamente</li><li><strong>Despégalo</strong> con cuidado — ¡tus cejas quedan perfectas!</li><li><strong>Evita mojar</strong> la zona las primeras 24 horas para mayor duración</li></ul>",
             "page": ""
           }
         },
