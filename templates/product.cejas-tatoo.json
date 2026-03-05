@@ -250,8 +250,8 @@
     "086a98ac-209d-4db2-9d62-5b0fe9663693": {
       "type": "compare-image",
       "settings": {
-        "title": "Beneficios del producto",
-        "text": "<p>Descripción de los beneficios del producto con Imagen Antes/despúes </p>",
+        "title": "Cejas perfectas. Sin esfuerzo diario",
+        "text": "<p>Imagina levantarte cada mañana con las cejas ya listas. Sin espejo, sin lápiz, sin ese momento de pánico cuando una ceja no te quedó igual que la otra. Con Cejas Tattoo Fácil, te las haces una sola vez y olvidas el tema por días enteros.</p>",
         "before": "ANTES",
         "after": "DESPUES"
       }
@@ -307,8 +307,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-1": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 1",
-            "text": "<p>Ampliar el beneficio 1</p>",
+            "title": "Dura hasta 5 días",
+            "text": "<p>Di adiós al ritual diario. Una sola aplicación te da cejas impecables de lunes a viernes, aguante lluvia, sudor y lo que venga.</p>",
             "link_label": "",
             "link": ""
           }
@@ -316,8 +316,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-2": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 2",
-            "text": "<p>Ampliar el beneficio 2</p>",
+            "title": "<strong>Aplicación sin complicaciones</strong>",
+            "text": "<p>No necesitas ser maquilladora profesional. El aplicador de precisión hace todo el trabajo. Aplica, espera, despega — así de simple.</p>",
             "link_label": "",
             "link": ""
           }
@@ -325,8 +325,8 @@
         "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-3": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 3",
-            "text": "<p>Ampliar el beneficio 3</p>",
+            "title": "<strong>100% Waterproof</strong>",
+            "text": "<p>Gym, playa, lluvia o un día larguísimo. El color se mantiene brillante sin correrse ni mancharte. Comprobado.</p>",
             "link_label": "",
             "link": ""
           }
@@ -334,8 +334,8 @@
         "8f4c5208-c742-4fe0-9e42-8cc758a77b8c": {
           "type": "column",
           "settings": {
-            "title": "Beneficio 4",
-            "text": "<p>Ampliar el beneficio 4</p>",
+            "title": "Se despega sin dolor ni residuos",
+            "text": "<p>Como una segunda piel. Cuando quieras retirarlo, se desprende limpio en segundos. Sin jalar, sin irritar, sin drama.</p>",
             "link_label": "",
             "link": ""
           }
@@ -348,12 +348,12 @@
         "8f4c5208-c742-4fe0-9e42-8cc758a77b8c"
       ],
       "settings": {
-        "title": "(NO USAR TITULO)",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
