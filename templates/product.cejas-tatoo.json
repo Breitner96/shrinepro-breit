@@ -370,8 +370,8 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1": {
           "type": "column",
           "settings": {
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "title": "Daniela M. — Medellín ⭐⭐⭐⭐⭐",
+            "text": "<p>Lo apliqué un viernes antes de salir de viaje y mis cejas aguantaron TODO el fin de semana. Piscina incluida. No lo puedo creer.</p>",
             "link_label": "",
             "link": ""
           }
@@ -379,8 +379,8 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-2": {
           "type": "column",
           "settings": {
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "title": "Mariana C. — Cali ⭐⭐⭐⭐⭐",
+            "text": "<p>Antes me demoraba 20 minutos solo en las cejas. Ahora me lo pongo el domingo y listo. Me cambió la rutina completa.</p>",
             "link_label": "",
             "link": ""
           }
@@ -388,8 +388,8 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
           "type": "column",
           "settings": {
-            "title": "( FOTO CLIENTE SATISFECHO) Nombre del Cliente (Emoji 5 Estrellas)",
-            "text": "<p>Review o testimonio del cliente</p>",
+            "title": "Laura V. — Barranquilla ⭐⭐⭐⭐⭐",
+            "text": "<p>Al principio no le creí. Pensé que era otro producto que promete mucho. Pero lo intenté y llevo 3 meses comprándolo cada mes.</p>",
             "link_label": "",
             "link": ""
           }
@@ -406,7 +406,7 @@
         "image_width": "full",
         "image_ratio": "square",
         "columns_desktop": 3,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
