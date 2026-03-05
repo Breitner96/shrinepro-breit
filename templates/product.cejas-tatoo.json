@@ -420,23 +420,15 @@
     "78161370-bfb0-428e-adf1-f106aca5123b": {
       "type": "image-with-text",
       "blocks": {
-        "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Prueba Social - Foto",
-            "heading_size": "h1"
-          }
-        },
         "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Y este texto es para una recomendación del producto</p>",
+            "text": "<p>Más de 560 mujeres ya tienen sus cejas perfectas sin esfuerzo. Esto no es maquillaje — es tu nueva rutina.</p>",
             "text_style": "body"
           }
         }
       },
       "block_order": [
-        "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-heading-1",
         "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-text-1"
       ],
       "settings": {
@@ -529,22 +521,22 @@
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-1": {
           "type": "row",
           "settings": {
-            "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
+            "percentage": 96,
+            "row_text": "<p>Más de 560 mujeres ya tienen sus cejas perfectas sin esfuerzo. Esto no es maquillaje — es tu nueva rutina.</p>"
           }
         },
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-2": {
           "type": "row",
           "settings": {
-            "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
+            "percentage": 94,
+            "row_text": "<p>lo recomendarían a una amiga sin dudarlo</p>"
           }
         },
         "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3": {
           "type": "row",
           "settings": {
-            "percentage": 90,
-            "row_text": "<p>Cliente Feliz respecto a algo...</p>"
+            "percentage": 98,
+            "row_text": "<p>afirma que es el producto más fácil de aplicar que han probado</p>"
           }
         }
       },
@@ -556,13 +548,13 @@
       "settings": {
         "title": "Recomendación",
         "heading_size": "h1",
-        "text": "<p>Habla del porcentaje de clientes que estan felices con uno de los beneficios puntuales del producto</p>",
+        "text": "",
         "color_scheme": "background-1",
         "layout": "percentages_second",
         "percentages_headline": "",
         "percentages_headline_size": "h2",
         "percentages_headline_alignment": "left",
-        "caption": "<p>*aquí puedes decir que estos porcentajes son comprobados.</p>",
+        "caption": "",
         "button_label": "",
         "link": "",
         "button_style_secondary": false,
