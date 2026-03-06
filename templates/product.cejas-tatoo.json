@@ -258,6 +258,8 @@
     "086a98ac-209d-4db2-9d62-5b0fe9663693": {
       "type": "compare-image",
       "settings": {
+        "image1": "shopify://shop_images/ChatGPT_Image_5_mar_2026_06_57_34_p.m..webp",
+        "image2": "shopify://shop_images/ChatGPT_Image_5_mar_2026_06_57_36_p.m..webp",
         "title": "Cejas perfectas. Sin esfuerzo diario",
         "text": "<p>Imagina levantarte cada mañana con las cejas ya listas. Sin espejo, sin lápiz, sin ese momento de pánico cuando una ceja no te quedó igual que la otra. Con Cejas Tattoo Fácil, te las haces una sola vez y olvidas el tema por días enteros.</p>",
         "before": "ANTES",
