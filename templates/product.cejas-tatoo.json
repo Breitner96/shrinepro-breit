@@ -381,6 +381,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT-Image-5-mar-2026_-07_14_43-p.m..webp",
             "title": "Daniela M. — Medellín ⭐⭐⭐⭐⭐",
             "text": "<p>Lo apliqué un viernes antes de salir de viaje y mis cejas aguantaron TODO el fin de semana. Piscina incluida. No lo puedo creer.</p>",
             "link_label": "",
@@ -390,6 +391,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-2": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT-Image-5-mar-2026_-07_14_38-p.m..webp",
             "title": "Mariana C. — Cali ⭐⭐⭐⭐⭐",
             "text": "<p>Antes me demoraba 20 minutos solo en las cejas. Ahora me lo pongo el domingo y listo. Me cambió la rutina completa.</p>",
             "link_label": "",
@@ -399,6 +401,7 @@
         "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT-Image-5-mar-2026_-07_14_36-p.m..webp",
             "title": "Laura V. — Barranquilla ⭐⭐⭐⭐⭐",
             "text": "<p>Al principio no le creí. Pensé que era otro producto que promete mucho. Pero lo intenté y llevo 3 meses comprándolo cada mes.</p>",
             "link_label": "",
@@ -414,8 +417,8 @@
       "settings": {
         "title": "Nuestros Clientes",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
+        "image_width": "half",
+        "image_ratio": "circle",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "primary",
