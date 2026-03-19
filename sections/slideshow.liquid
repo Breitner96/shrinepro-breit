@@ -151,12 +151,19 @@
                 assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
               endif
             -%}
+            {%- if forloop.index0 == 0 -%}
+              {%- assign loading_attr = 'eager' -%}
+              {%- assign fetchpriority_attr = 'high' -%}
+            {%- else -%}
+              {%- assign loading_attr = 'lazy' -%}
+              {%- assign fetchpriority_attr = 'low' -%}
+            {%- endif -%}
             {{
               block.settings.image
               | image_url: width: 3840
               | image_tag:
-                loading: forloop.index0 == 0 ? 'eager' : 'lazy',
-                fetchpriority: forloop.index0 == 0 ? 'high' : 'low',
+                loading: loading_attr,
+                fetchpriority: fetchpriority_attr,
                 decoding: 'async',
                 height: height,
                 sizes: sizes,
