@@ -1,0 +1,85 @@
+<div class="aura-reviews">
+  <div class="aura-reviews__header">
+    <div class="aura-reviews__aggregate">
+      <span class="aura-reviews__score">4.8</span>
+      <div class="aura-reviews__aggregate-right">
+        <div class="aura-reviews__stars-row">
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+        </div>
+        <div class="aura-reviews__count">+247 clientes verificados</div>
+      </div>
+    </div>
+    <div class="aura-reviews__title">Lo que dicen<br>nuestros clientes</div>
+  </div>
+  <div class="aura-reviews__track" id="auraReviewsTrack-tenis-retro-suela-caramelo-clasico">
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"Compré la talla que uso normalmente según la tabla y quedaron perfectos. La plantilla es muy acolchada, ideal para estar parado mucho tiempo en el trabajo."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/hombre-11_27ae9d28-e4d2-41a6-8e61-631fbdc22ef1.jpg?v=1774299163" alt="Sandra L." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Sandra L.</div>
+          <div class="aura-review-card__city">Manizales, Colombia</div>
+        </div>
+      </div>
+    </div>
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"Me los puse el mismo día que llegaron y no me los quité en todo el fin de semana. Combinan con todo y son muy cómodos para caminar largas distancias."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/mujer-1_db50f6df-1226-43e1-b720-bac7b6d41883.jpg?v=1774299180" alt="Valentina S." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Valentina S.</div>
+          <div class="aura-review-card__city">Barranquilla, Colombia</div>
+        </div>
+      </div>
+    </div>
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"Súper livianos y la talla es exacta según la guía. El envío gratis es un ahorro real. Ya pedí el segundo par, esta vez para mi mamá."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/mujer-5_7de68922-db21-4519-991c-c72152715f99.jpg?v=1774299193" alt="Andrés G." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Andrés G.</div>
+          <div class="aura-review-card__city">Cali, Colombia</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="aura-reviews__dots" id="auraReviewsDots-tenis-retro-suela-caramelo-clasico">
+    <button class="aura-reviews__dot aura-reviews__dot--active" data-index="0" aria-label="Reseña 1"></button>
+    <button class="aura-reviews__dot" data-index="1" aria-label="Reseña 2"></button>
+    <button class="aura-reviews__dot" data-index="2" aria-label="Reseña 3"></button>
+  </div>
+</div>
+<script>
+(function() {
+  var track = document.getElementById('auraReviewsTrack-tenis-retro-suela-caramelo-clasico');
+  var dots  = document.querySelectorAll('#auraReviewsDots-tenis-retro-suela-caramelo-clasico .aura-reviews__dot');
+  if (!track || !dots.length) return;
+  dots.forEach(function(dot) {
+    dot.addEventListener('click', function() {
+      var card = track.children[parseInt(this.getAttribute('data-index'))];
+      if (card) track.scrollTo({ left: card.offsetLeft - 4, behavior: 'smooth' });
+    });
+  });
+  track.addEventListener('scroll', function() {
+    var w = track.children[0] ? track.children[0].offsetWidth + 12 : 1;
+    var idx = Math.round(track.scrollLeft / w);
+    dots.forEach(function(d, i) { d.classList.toggle('aura-reviews__dot--active', i === idx); });
+  }, { passive: true });
+})();
+</script>
