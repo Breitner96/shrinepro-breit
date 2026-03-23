@@ -106,16 +106,16 @@
         "title",
         "84ac8f11-1197-4941-829b-d0b8a2d9bbc5",
         "price",
-        "1088bb43-2931-4cb5-b642-6c5e04e45224",
-        "daa0e452-23d5-4bd1-afb3-35d7babab88c",
         "variant_picker",
         "buy_buttons",
-        "002377c5-dbfb-43cf-83a8-4fa9d6dd0747",
+        "1088bb43-2931-4cb5-b642-6c5e04e45224",
         "5764bc81-1745-41e5-a819-452aeff97c30",
-        "2d3f6e7f-6a34-4642-9897-6d7d3a47bfe2",
-        "description",
         "c11bfb2f-901d-4b03-90cf-b6b766353d13",
-        "e6778313-45ad-4d6d-8260-2498242a6df0"
+        "e6778313-45ad-4d6d-8260-2498242a6df0",
+        "description",
+        "daa0e452-23d5-4bd1-afb3-35d7babab88c",
+        "002377c5-dbfb-43cf-83a8-4fa9d6dd0747",
+        "2d3f6e7f-6a34-4642-9897-6d7d3a47bfe2"
       ],
       "custom_css": [
         "div.product__title > h1 {font-size: 17px !important;}",

@@ -1,0 +1,55 @@
+<script>
+(function() {
+  var desc = document.querySelector('.product__description.rte');
+  if (!desc) return;
+
+  // Ejecutar tras paint inicial para no bloquear render
+  requestAnimationFrame(function() {
+    // 1. Eliminar <meta> sueltos
+    desc.querySelectorAll('meta').forEach(function(el) { el.remove(); });
+
+    // 2. Reemplazar <h1> por <h3> dentro de la descripción
+    desc.querySelectorAll('h1').forEach(function(h1) {
+      var h3 = document.createElement('h3');
+      h3.innerHTML = h1.innerHTML;
+      h1.parentNode.replaceChild(h3, h1);
+    });
+
+    // 3. Limpiar clases Tailwind (Set para lookup O(1))
+    var tailwindSet = new Set([
+      'standard-markdown','grid','grid-cols-1','gap-3',
+      'text-text-100','mt-3','-mb-1','font-bold','min-w-0'
+    ]);
+    desc.querySelectorAll('*').forEach(function(el) {
+      var toRemove = [];
+      el.classList.forEach(function(cls) {
+        if (tailwindSet.has(cls) || cls.includes('[') || cls.includes('&')) {
+          toRemove.push(cls);
+        }
+      });
+      if (toRemove.length) el.classList.remove.apply(el.classList, toRemove);
+    });
+
+    // 4. Eliminar imágenes no deseadas
+    var removePatterns = ['banner_800x200_hq', 'Diseno_sin_titulo_2'];
+    desc.querySelectorAll('img').forEach(function(img) {
+      var src = img.src;
+      for (var i = 0; i < removePatterns.length; i++) {
+        if (src.includes(removePatterns[i])) {
+          var parent = img.parentNode;
+          img.remove();
+          if (parent && !parent.children.length && !parent.textContent.trim()) parent.remove();
+          break;
+        }
+      }
+    });
+
+    // 5. Cambiar alineación centrada a justificada en texto
+    desc.querySelectorAll('[style*="text-align"]').forEach(function(el) {
+      if (el.tagName !== 'IMG' && el.style.textAlign === 'center') {
+        el.style.textAlign = 'justify';
+      }
+    });
+  });
+})();
+</script>

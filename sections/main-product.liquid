@@ -14,6 +14,8 @@
  {% if section.settings.othergallerystyle %}
   {{ 'custom-productpage.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
+  {{ 'aura-product.css' | asset_url | stylesheet_tag }}
+  {{ 'aura-2x1.css' | asset_url | stylesheet_tag }}
 
 
 
@@ -87,6 +89,9 @@
               </p>
             {%- when 'title' -%}
               <div class="product__title" {{ block.shopify_attributes }} id="stickybutton">
+                {%- if product.type != blank -%}
+                  <span class="aura-product-type">{{ product.type }}</span>
+                {%- endif -%}
                 <h1>{{ product.title | escape }}</h1>
                 <a href="{{ product.url }}" class="product__title">
                   <h2 class="h1">
@@ -172,6 +177,7 @@
                 <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                   {{ product.description }}
                 </div>
+                {%- render 'aura-description-fix' -%}
               {%- endif -%}
             {%- when 'sku' -%}
               <p
@@ -183,7 +189,11 @@
                 <span class="visually-hidden">{{ 'products.product.sku' | t }}:</span> {{- product.selected_or_first_available_variant.sku -}}
               </p>
             {%- when 'custom_liquid' -%}
-              {{ block.settings.custom_liquid }}
+              {%- if block.settings.custom_liquid contains 'aura-testimonials' or block.settings.custom_liquid contains 'testimonials-carousel' -%}
+                {%- render 'aura-testimonials' -%}
+              {%- else -%}
+                {{ block.settings.custom_liquid }}
+              {%- endif -%}
             {%- when 'collapsible_tab' -%}
               <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}">
@@ -360,6 +370,24 @@
 
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
+              <div class="aura-trust-strip" aria-label="Beneficios de compra">
+                <div class="aura-trust-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  <span>Envío<br>gratis</span>
+                </div>
+                <div class="aura-trust-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                  <span>Contra<br>entrega</span>
+                </div>
+                <div class="aura-trust-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <span>Compra<br>segura</span>
+                </div>
+                <div class="aura-trust-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+                  <span>Devolución<br>fácil</span>
+                </div>
+              </div>
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
@@ -562,6 +590,98 @@
         hiddenInput.value = event.currentTarget.value;
       });
     });
+  </script>
+
+  {% comment %} AURA: Gallery dots indicator (mobile) — disabled {% endcomment %}
+
+  {% comment %} AURA: Sticky buy bar (mobile only) {% endcomment %}
+  <div class="aura-sticky-bar" id="AuraStickyBar" aria-hidden="true">
+    <div class="aura-sticky-bar__info">
+      <div class="aura-sticky-bar__name">{{ product.title | escape }}</div>
+      <div class="aura-sticky-bar__price">
+        {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+          {{ product.selected_or_first_available_variant.price | money }}
+        {%- else -%}
+          {{ product.selected_or_first_available_variant.price | money }}
+        {%- endif -%}
+      </div>
+    </div>
+    <button class="aura-sticky-bar__cta" type="button" id="AuraStickyBtn">
+      Pedir ahora
+    </button>
+  </div>
+
+  <script>
+    (function() {
+      var bar = document.getElementById('AuraStickyBar');
+      var stickyBtn = document.getElementById('AuraStickyBtn');
+      var anchor = document.getElementById('stickybutton');
+
+      if (!bar || !anchor) return;
+
+      document.body.classList.add('aura-has-sticky');
+
+      // Show/hide sticky bar based on title visibility
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            bar.classList.remove('aura-sticky-visible');
+            bar.setAttribute('aria-hidden', 'true');
+          } else {
+            bar.classList.add('aura-sticky-visible');
+            bar.setAttribute('aria-hidden', 'false');
+          }
+        });
+      }, { threshold: 0, rootMargin: '-60px 0px 0px 0px' });
+
+      observer.observe(anchor);
+
+      // Click: find and trigger the Releasit/buy button
+      stickyBtn.addEventListener('click', function() {
+        var releasitBtn = document.querySelector('[data-releasit-btn], .releasit-button, .cod-btn, [id*="releasit"] button, [class*="releasit"] button');
+        if (releasitBtn) {
+          releasitBtn.click();
+        } else {
+          // Fallback: scroll to buy buttons area
+          var buyArea = document.querySelector('.product-form, [data-type="buy_buttons"]');
+          if (buyArea) buyArea.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+
+      // Gallery dots sync
+      var dotsContainer = document.getElementById('AuraGalleryDots-{{ section.id }}');
+      if (dotsContainer) {
+        var slider = document.getElementById('Slider-Gallery-{{ section.id }}');
+        var dots = dotsContainer.querySelectorAll('.aura-dot');
+
+        if (slider && dots.length) {
+          var slides = slider.querySelectorAll('.slider__slide');
+
+          function updateDots(activeIndex) {
+            dots.forEach(function(d, i) {
+              d.classList.toggle('is-active', i === activeIndex);
+            });
+          }
+
+          // Sync with slider scroll
+          slider.addEventListener('scroll', function() {
+            var slideWidth = slider.clientWidth;
+            var index = Math.round(slider.scrollLeft / slideWidth);
+            updateDots(index);
+          }, { passive: true });
+
+          // Dots click to scroll to slide
+          dots.forEach(function(dot, i) {
+            dot.addEventListener('click', function() {
+              var targetSlide = slides[i];
+              if (targetSlide) {
+                targetSlide.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+              }
+            });
+          });
+        }
+      }
+    })();
   </script>
 
   {%- liquid

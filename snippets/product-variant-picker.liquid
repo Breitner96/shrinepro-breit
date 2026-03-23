@@ -1,6 +1,15 @@
 {% comment %}
   Renders product variant-picker con detección de color para círculos
 {% endcomment %}
+{{ 'aura-2x1.css' | asset_url | stylesheet_tag }}
+
+<div class="aura-step aura-step--active">
+  <div class="aura-step__number">1</div>
+  <div class="aura-step__content">
+    <div class="aura-step__title">Talla del 1er par</div>
+  </div>
+</div>
+
 {%- unless product.has_only_default_variant -%}
   {%- if block.settings.picker_type == 'button' -%}
     <variant-radios

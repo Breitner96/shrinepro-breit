@@ -1,53 +1,62 @@
-<div class="pro-iwt-wrap">
-    <div class="innr">
-        <div class="inner-icon">
-            <img
-                src="{{block.settings.image1 | img_url: 'master'}}">
-        </div>
-        <p>{{block.settings.title1}}</p>
+<div class="aura-icon-row">
+  {%- if block.settings.image1 != blank -%}
+  <div class="aura-icon-item">
+    <div class="aura-icon-img">
+      <img src="{{ block.settings.image1 | img_url: '80x80' }}" alt="{{ block.settings.title1 }}" width="40" height="40">
     </div>
-    <div class="innr">
-        <div class="inner-icon">
-            <img src="{{block.settings.image2 | img_url: 'master'}}">
-        </div>
-        <p>{{block.settings.title2}}</p>
+    <p class="aura-icon-label">{{ block.settings.title1 }}</p>
+  </div>
+  {%- endif -%}
+  {%- if block.settings.image2 != blank -%}
+  <div class="aura-icon-item">
+    <div class="aura-icon-img">
+      <img src="{{ block.settings.image2 | img_url: '80x80' }}" alt="{{ block.settings.title2 }}" width="40" height="40">
     </div>
-    {% if block.settings.image3 != blank %}
-    <div class="innr">
-        <div class="inner-icon">
-            <img
-                src="{{block.settings.image3 | img_url: 'master'}}">
-        </div>
-        <p>{{block.settings.title3}}</p>
+    <p class="aura-icon-label">{{ block.settings.title2 }}</p>
+  </div>
+  {%- endif -%}
+  {%- if block.settings.image3 != blank -%}
+  <div class="aura-icon-item">
+    <div class="aura-icon-img">
+      <img src="{{ block.settings.image3 | img_url: '80x80' }}" alt="{{ block.settings.title3 }}" width="40" height="40">
     </div>
-  {% endif %}
+    <p class="aura-icon-label">{{ block.settings.title3 }}</p>
+  </div>
+  {%- endif -%}
 </div>
 
-
-
 <style>
-
-.pro-iwt-wrap{
-    justify-content: space-evenly;
-        margin-top: 30px!important;
-    margin-bottom: 0 !important;
+.aura-icon-row {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 12px;
+  padding: 20px 0 8px;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  margin: 16px 0;
 }
-
-
-.pro-iwt-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
+.aura-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  gap: 8px;
 }
-.pro-iwt-wrap .innr {
-    width: 33.33%;
-    text-align: center;
-}.pro-iwt-wrap .inner-icon img {
-    width: 65px;
-    height: 65px;
-    margin: 0 auto;
+.aura-icon-img img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.85;
 }
-
-
+.aura-icon-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin: 0;
+}
 </style>

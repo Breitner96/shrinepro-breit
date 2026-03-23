@@ -1,0 +1,100 @@
+<div class="aura-reviews">
+
+  <!-- Header: aggregate rating -->
+  <div class="aura-reviews__header">
+    <div class="aura-reviews__aggregate">
+      <span class="aura-reviews__score">4.8</span>
+      <div class="aura-reviews__aggregate-right">
+        <div class="aura-reviews__stars-row">
+          <span class="aura-reviews__star filled">★</span><span class="aura-reviews__star filled">★</span><span class="aura-reviews__star filled">★</span><span class="aura-reviews__star filled">★</span><span class="aura-reviews__star half">★</span>
+        </div>
+        <div class="aura-reviews__count">+200 clientes verificados</div>
+      </div>
+    </div>
+    <div class="aura-reviews__title">Lo que dicen<br>nuestros clientes</div>
+  </div>
+
+  <!-- Track -->
+  <div class="aura-reviews__track" id="auraReviewsTrack">
+
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"La calidad de los materiales superó mis expectativas. Son increíblemente cómodos para el día a día y el color es idéntico a la foto."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/unnamed_f815abaf-3f45-402e-a24c-9c41aea3727e.jpg?v=1769351420" alt="Carlos R." loading="lazy">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Carlos R.</div>
+          <div class="aura-review-card__city">Bogotá, Colombia</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"Llegaron en 2 días a Medellín. El pago contra entrega me dio mucha seguridad. Excelente atención y el producto es de primera."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/unnamed_97e24deb-12b9-4184-9376-ec8f486f15c5.jpg?v=1769351380" alt="Luisa M." loading="lazy">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Luisa M.</div>
+          <div class="aura-review-card__city">Medellín, Colombia</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"Súper livianos y la talla es exacta según la guía. El envío gratis es un ahorro real. Ya pedí el segundo par para mi hermana."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/unnamed.jpg?v=1769351341" alt="Andrés G." loading="lazy">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Andrés G.</div>
+          <div class="aura-review-card__city">Cali, Colombia</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Dots -->
+  <div class="aura-reviews__dots" id="auraReviewsDots">
+    <button class="aura-reviews__dot aura-reviews__dot--active" data-index="0" aria-label="Reseña 1"></button>
+    <button class="aura-reviews__dot" data-index="1" aria-label="Reseña 2"></button>
+    <button class="aura-reviews__dot" data-index="2" aria-label="Reseña 3"></button>
+  </div>
+
+</div>
+
+{% comment %}Estilos en aura-global.css{% endcomment %}
+
+<script>
+(function() {
+  var track = document.getElementById('auraReviewsTrack');
+  var dots = document.querySelectorAll('#auraReviewsDots .aura-reviews__dot');
+  if (!track || !dots.length) return;
+
+  dots.forEach(function(dot) {
+    dot.addEventListener('click', function() {
+      var index = parseInt(this.getAttribute('data-index'));
+      var card = track.children[index];
+      if (card) track.scrollTo({ left: card.offsetLeft - 4, behavior: 'smooth' });
+    });
+  });
+
+  track.addEventListener('scroll', function() {
+    var cardWidth = track.children[0] ? track.children[0].offsetWidth + 12 : 1;
+    var index = Math.round(track.scrollLeft / cardWidth);
+    dots.forEach(function(d, i) {
+      d.classList.toggle('aura-reviews__dot--active', i === index);
+    });
+  }, { passive: true });
+})();
+</script>

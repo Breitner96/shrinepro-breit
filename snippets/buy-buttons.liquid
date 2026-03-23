@@ -12,6 +12,13 @@
 {% endcomment %}
 <div {{ block.shopify_attributes }}>
   {%- if product != blank -%}
+
+  <div class="aura-step aura-step--next" id="aura-step2">
+    <div class="aura-step__number">2</div>
+    <div class="aura-step__content">
+      <div class="aura-step__title">Elige ambos pares en el formulario →</div>
+    </div>
+  </div>
     {%- liquid
       assign gift_card_recipient_feature_active = false
       if block.settings.show_gift_card_recipient and product.gift_card?
@@ -138,6 +145,26 @@
         </div>
       {%- endform -%}
     </product-form>
+
+    <div class="aura-urgency">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <span>{{ section.blocks | where: 'type', 'clocktext' | map: 'settings' | map: 'clocktext' | first | default: 'Oferta por tiempo limitado' }}</span>
+    </div>
+
+    <script>
+      (function() {
+        var step2 = document.getElementById('aura-step2');
+        if (!step2) return;
+        var variantInputs = document.querySelectorAll('.variant-input-wrapper input');
+        function activateStep2() {
+          step2.classList.remove('aura-step--next');
+          step2.classList.add('aura-step--active');
+        }
+        variantInputs.forEach(function(input) {
+          input.addEventListener('change', activateStep2);
+        });
+      })();
+    </script>
   {%- else -%}
     <div class="product-form">
       <div class="product-form__buttons form">
