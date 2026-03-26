@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;0,9..40,800;0,9..40,900&display=swap');
+
+/* ============================================================
+   AURA — Product Page — Bold Minimal
+   ============================================================ */
+
+/* ---- Product type label ---- */
+.aura-product-type {
+  display: block !important;
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: #888 !important;
+  margin-bottom: 0.6rem !important;
+}
+
+/* ---- Title ---- */
+.product__title h1,
+.product__title h2.h1,
+.product__title .h1 {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: clamp(2.8rem, 6vw, 4.4rem) !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.0 !important;
+  text-transform: uppercase !important;
+  color: #0A0A0A !important;
+  margin-bottom: 0.4rem !important;
+}
+
+.product__title > h1:not(.h1) {
+  display: none !important;
+}
+
+/* ---- Price ---- */
+.price--large .price-item--regular,
+.price--large .price__regular .price-item,
+.price--large .price__sale .price-item--sale {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 3.2rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.02em !important;
+  color: #0A0A0A !important;
+}
+
+.price--large .price__sale .price-item--regular {
+  font-size: 2rem !important;
+  color: #aaa !important;
+  font-weight: 400 !important;
+  text-decoration: line-through !important;
+}
+
+/* Savings badge */
+.price__badge-sale,
+.badge.badge--sale,
+.price__badge {
+  background: #C8FF00 !important;
+  color: #0A0A0A !important;
+  border-radius: 0 !important;
+  font-weight: 900 !important;
+  font-size: 1.1rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  padding: 4px 10px !important;
+}
+
+/* ---- Option label ---- */
+.product-form__input .form__label {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 1.2rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 1rem !important;
+  color: #0A0A0A !important;
+}
+
+/* ---- Size pills: Nike squared style ---- */
+.variant-input-wrapper label {
+  min-width: 56px !important;
+  min-height: 56px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 800 !important;
+  border: 2px solid #0A0A0A !important;
+  border-radius: 0 !important;
+  cursor: pointer !important;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease !important;
+  padding: 0 1.6rem !important;
+  background: #fff !important;
+  color: #0A0A0A !important;
+}
+
+/* Selected size: lime accent */
+.variant-input-wrapper input:checked + label {
+  background: #C8FF00 !important;
+  color: #0A0A0A !important;
+  border-color: #C8FF00 !important;
+}
+
+/* Unavailable size */
+.variant-input-wrapper input.disabled + label {
+  opacity: 0.25 !important;
+  text-decoration: line-through !important;
+  cursor: not-allowed !important;
+  border-color: #ddd !important;
+  background: #f5f5f5 !important;
+}
+
+/* ---- Buy button ---- */
+.product-form__submit,
+.btn--add-to-cart,
+button[name="add"] {
+  border-radius: 0 !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 1.6rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  min-height: 62px !important;
+  background: #0A0A0A !important;
+  color: #fff !important;
+  border: 2px solid #0A0A0A !important;
+  transition: background 0.2s, color 0.2s !important;
+}
+
+.product-form__submit:hover,
+button[name="add"]:hover {
+  background: #C8FF00 !important;
+  color: #0A0A0A !important;
+  border-color: #C8FF00 !important;
+}
+
+/* ---- Trust badges ---- */
+.aura-trust-strip {
+  display: flex !important;
+  gap: 0 !important;
+  border-top: 2px solid #0A0A0A !important;
+  border-bottom: 2px solid #0A0A0A !important;
+  margin: 2.4rem 0 !important;
+  background: #F4F4F4 !important;
+}
+
+.aura-trust-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  flex: 1 !important;
+  padding: 1.6rem 0.4rem !important;
+  gap: 8px !important;
+  border-right: 1px solid #ddd !important;
+}
+
+.aura-trust-item:last-child {
+  border-right: none !important;
+}
+
+.aura-trust-item svg {
+  width: 24px !important;
+  height: 24px !important;
+  stroke: #0A0A0A !important;
+}
+
+.aura-trust-item span {
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  color: #0A0A0A !important;
+}
+
+/* ---- Gallery dots ---- */
+.aura-gallery-dots {
+  display: none;
+}
+
+@media screen and (max-width: 749px) {
+  .aura-gallery-dots {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 12px 0 4px !important;
+  }
+
+  .aura-dot {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+    background: #d0d0d0 !important;
+    border: none !important;
+    padding: 0 !important;
+    cursor: pointer !important;
+    transition: background 0.2s, transform 0.2s !important;
+  }
+
+  .aura-dot.is-active {
+    background: #0A0A0A !important;
+    transform: scale(1.4) !important;
+  }
+
+  .slider-buttons .slider-counter {
+    display: none !important;
+  }
+}
+
+/* ---- Mobile gallery: full width sin overflow ---- */
+@media screen and (max-width: 749px) {
+  .product__media-wrapper {
+    width: 100vw !important;
+    margin-left: -1.5rem !important;
+    max-width: 100vw !important;
+    overflow: hidden !important;
+  }
+
+  .slider.slider--mobile .slider__slide {
+    width: 100vw !important;
+    padding: 0 !important;
+    flex-shrink: 0 !important;
+  }
+
+  .slider.slider--mobile {
+    scroll-padding-left: 0 !important;
+    overflow-x: scroll !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+
+  .slider.slider--mobile::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .product__media img {
+    border-radius: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  .product__media-list {
+    column-gap: 0 !important;
+  }
+
+  .product__media-item {
+    scroll-snap-align: start !important;
+  }
+
+  .MainProduct_C,
+  .section-main-product {
+    padding-top: 0 !important;
+  }
+
+  .product__info-wrapper {
+    padding: 2rem 1.6rem 0 !important;
+  }
+}
+
+/* ---- Desktop: product info tighter, better spacing ---- */
+@media screen and (min-width: 990px) {
+  .product__info-wrapper {
+    padding: 0 0 0 5rem !important;
+  }
+
+  .product__info-container > * + * {
+    margin-top: 2rem !important;
+  }
+}
+
+/* ---- Accordion tabs ---- */
+.product__accordion summary {
+  padding: 1.6rem 0 !important;
+  border-top: 1px solid #e0e0e0 !important;
+}
+
+.product__accordion .accordion__title {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 1.3rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #0A0A0A !important;
+}
+
+/* ---- Description ---- */
+.product__description {
+  font-size: 1.5rem !important;
+  line-height: 1.7 !important;
+  color: #555 !important;
+}
+
+/* ---- Sticky bar (mobile) ---- */
+.aura-sticky-bar {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9999 !important;
+  background: #fff !important;
+  border-top: 3px solid #0A0A0A !important;
+  padding: 12px 16px !important;
+  box-shadow: 0 -8px 32px rgba(0,0,0,0.15) !important;
+  display: none;
+  align-items: center !important;
+  gap: 14px !important;
+  transform: translateY(100%) !important;
+  transition: transform 0.3s ease !important;
+}
+
+.aura-sticky-bar.aura-sticky-visible {
+  transform: translateY(0) !important;
+}
+
+@media screen and (max-width: 749px) {
+  .aura-sticky-bar {
+    display: flex !important;
+  }
+
+  body.aura-has-sticky {
+    padding-bottom: 80px !important;
+  }
+}
+
+.aura-sticky-bar__info {
+  flex: 1 !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+}
+
+.aura-sticky-bar__name {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 1.2rem !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.02em !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  color: #0A0A0A !important;
+}
+
+.aura-sticky-bar__price {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 1.8rem !important;
+  font-weight: 900 !important;
+  color: #0A0A0A !important;
+  margin-top: 2px !important;
+}
+
+.aura-sticky-bar__cta {
+  background: #0A0A0A !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 14px 22px !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 1.4rem !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  border-radius: 0 !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  transition: background 0.2s !important;
+}
+
+.aura-sticky-bar__cta:active {
+  background: #C8FF00 !important;
+  color: #0A0A0A !important;
+}

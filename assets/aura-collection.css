@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;0,9..40,800;0,9..40,900&display=swap');
+
+/* ============================================================
+   AURA — Collection Page
+   ============================================================ */
+
+/* ---- Collection header ---- */
+.collection-hero,
+.section-collection-banner {
+  background: #0A0A0A !important;
+  padding: 5rem 2rem !important;
+  text-align: center !important;
+  margin-bottom: 0 !important;
+}
+
+/* ---- Breadcrumb / collection title area ---- */
+.collection .title {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: clamp(3rem, 8vw, 7rem) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1 !important;
+  color: #0A0A0A !important;
+  margin: 3rem 0 1.5rem !important;
+}
+
+/* ---- Product count ---- */
+.product-count__text,
+.product-count-vertical {
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: #888 !important;
+}
+
+/* ---- Filter bar ---- */
+.facets__wrapper {
+  border-bottom: 2px solid #0A0A0A !important;
+  padding-bottom: 1.2rem !important;
+}
+
+.facets__heading {
+  font-size: 1.1rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+}
+
+.facet-filters__sort {
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+  border: 2px solid #0A0A0A !important;
+  border-radius: 0 !important;
+  padding: 0.8rem 1.2rem !important;
+}
+
+/* ---- Product grid: 2 cols mobile, 3 cols tablet, 3 desktop ---- */
+@media screen and (max-width: 749px) {
+  .product-grid {
+    gap: 12px !important;
+    padding: 0 12px !important;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .product-grid {
+    gap: 20px !important;
+  }
+}
+
+/* ============================================================
+   AURA PRODUCT CARD
+   ============================================================ */
+
+/* Reset card wrapper */
+.card-wrapper.product-card-wrapper {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Card container */
+.aura-card {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image container */
+.aura-card__media {
+  position: relative;
+  overflow: hidden;
+  background: #F4F4F4;
+  aspect-ratio: 1 / 1;
+}
+
+/* Primary image */
+.aura-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.4s ease, transform 0.5s ease;
+}
+
+/* Secondary image (hover) */
+.aura-card__img--secondary {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 0.4s ease, transform 0.5s ease;
+}
+
+/* Hover: swap images */
+@media (hover: hover) {
+  .aura-card:hover .aura-card__img--primary {
+    opacity: 0;
+  }
+
+  .aura-card:hover .aura-card__img--secondary {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .aura-card:hover .aura-card__img--primary.is-only {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+/* Badge: NEW / SALE */
+.aura-card__badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #C8FF00;
+  color: #0A0A0A;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  line-height: 1.4;
+  z-index: 2;
+}
+
+.aura-card__badge--sold-out {
+  background: #0A0A0A;
+  color: #fff;
+}
+
+/* Info area below image */
+.aura-card__info {
+  padding: 1.2rem 0.4rem 1.6rem;
+  background: #fff;
+}
+
+.aura-card__name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: #0A0A0A;
+  margin-bottom: 0.6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.aura-card__price-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.aura-card__price {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #0A0A0A;
+  line-height: 1;
+}
+
+.aura-card__price--compare {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.aura-card__price--sale {
+  color: #e00;
+}
+
+/* Mobile: tighter padding */
+@media screen and (max-width: 749px) {
+  .aura-card__info {
+    padding: 0.8rem 0.2rem 1.2rem;
+  }
+
+  .aura-card__name {
+    font-size: 1.2rem;
+  }
+
+  .aura-card__price {
+    font-size: 1.4rem;
+  }
+}
+
+/* ---- "Ver producto" overlay on hover (desktop) ---- */
+.aura-card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(10, 10, 10, 0.85);
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transform: translateY(100%);
+  transition: transform 0.25s ease;
+  z-index: 3;
+}
+
+@media (hover: hover) {
+  .aura-card:hover .aura-card__overlay {
+    transform: translateY(0);
+  }
+}

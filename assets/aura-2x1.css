@@ -1,0 +1,200 @@
+/* ============================================================
+   AURA — Zona 2x1 + Flujo de pasos
+   ============================================================ */
+
+/* ---- Override badge-oferta existente: de naranja genérico a lima profesional ---- */
+.badge-oferta {
+  background: #C8FF00 !important;
+  color: #0A0A0A !important;
+  border-radius: 0 !important;
+  font-size: 1.1rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  padding: 4px 12px !important;
+}
+
+/* ---- Línea "2 PARES · 1 PRECIO" encima del precio ---- */
+.custom-price-container::before {
+  content: "2 PARES · 1 PRECIO · ENVÍO GRATIS";
+  display: block;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  color: #888;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+/* ---- Precio principal más grande ---- */
+.price-item--sale {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 3.6rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.02em !important;
+  color: #0A0A0A !important;
+  line-height: 1 !important;
+}
+
+.currency-code {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #0A0A0A !important;
+}
+
+.price-item--regular {
+  font-size: 1.6rem !important;
+  color: #aaa !important;
+  text-decoration: line-through !important;
+}
+
+/* Envío gratis en verde sutil */
+.shipping-tag {
+  color: #1a1a1a !important;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+}
+
+.shipping-tag strong {
+  color: #2d8000 !important;
+}
+
+/* ---- Pasos ---- */
+.aura-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  margin-bottom: 6px;
+}
+
+.aura-step--active {
+  background: #f7f7f7;
+  border-left: 4px solid #0A0A0A;
+}
+
+.aura-step--next {
+  background: #fff;
+  border-left: 4px solid #e0e0e0;
+  opacity: 0.75;
+}
+
+.aura-step__number {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 900;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.aura-step--active .aura-step__number {
+  background: #0A0A0A;
+  color: #C8FF00;
+}
+
+.aura-step--next .aura-step__number {
+  background: #e0e0e0;
+  color: #888;
+}
+
+.aura-step__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.aura-step__title {
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #0A0A0A;
+  margin-bottom: 2px;
+  line-height: 1.2;
+}
+
+.aura-step--next .aura-step__title {
+  color: #888;
+}
+
+.aura-step__desc {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ---- Botón 2x1 con flecha animada ---- */
+.aura-cta-wrapper {
+  position: relative;
+}
+
+.aura-cta-label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+/* ---- Info debajo del botón ---- */
+.aura-cta-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.aura-cta-info svg {
+  flex-shrink: 0;
+  stroke: #555;
+}
+
+/* ---- Resumen 2x1 al final ---- */
+.aura-deal-summary {
+  background: #0A0A0A;
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.aura-deal-summary__text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.aura-deal-summary__price {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #C8FF00;
+  white-space: nowrap;
+}
+
+/* ---- Mobile adjustments ---- */
+@media screen and (max-width: 749px) {
+  .aura-deal-banner__tag {
+    font-size: 1.8rem;
+  }
+
+  .aura-deal-summary {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}
