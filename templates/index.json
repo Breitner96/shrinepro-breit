@@ -9,6 +9,26 @@
  */
 {
   "sections": {
+    "aura-hero": {
+      "type": "aura-hero",
+      "settings": {
+        "overlay_opacity": 60,
+        "eyebrow": "Calzado Premium · Top Quality 1.1",
+        "heading": "Estilo que habla por ti",
+        "subheading": "Calzado exclusivo con envío gratis a todo Colombia",
+        "button_label": "Ver Colección",
+        "button_link": "shopify://collections/all"
+      }
+    },
+    "aura-categories": {
+      "type": "aura-categories",
+      "settings": {
+        "label_fem": "Para ella",
+        "title_fem": "Calzado Femenino",
+        "label_mas": "Para él",
+        "title_mas": "Calzado Masculino"
+      }
+    },
     "c8b3c1e5-1c7f-454e-a20d-b5d59424986d": {
       "type": "rich-text",
       "blocks": {
@@ -284,6 +304,8 @@
     }
   },
   "order": [
+    "aura-hero",
+    "aura-categories",
     "c8b3c1e5-1c7f-454e-a20d-b5d59424986d",
     "image-with-text",
     "85737c2a-678d-45f4-9cb2-9a4a311a30f6",

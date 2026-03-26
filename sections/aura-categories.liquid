@@ -1,0 +1,102 @@
+{{ 'aura-home.css' | asset_url | stylesheet_tag }}
+
+<div class="aura-cats">
+  <div class="aura-cats__inner page-width">
+
+    <div class="aura-cats__card"
+      {% if section.settings.image_fem %}
+        style="background-image: url('{{ section.settings.image_fem | image_url: width: 1200 }}');"
+      {% else %}
+        style="background: #1a1a1a;"
+      {% endif %}
+    >
+      <div class="aura-cats__overlay"></div>
+      <div class="aura-cats__content">
+        <p class="aura-cats__label">{{ section.settings.label_fem }}</p>
+        <h2 class="aura-cats__title">{{ section.settings.title_fem }}</h2>
+        <a href="{{ section.settings.link_fem }}" class="aura-cats__btn">Ver más →</a>
+      </div>
+    </div>
+
+    <div class="aura-cats__card"
+      {% if section.settings.image_mas %}
+        style="background-image: url('{{ section.settings.image_mas | image_url: width: 1200 }}');"
+      {% else %}
+        style="background: #111;"
+      {% endif %}
+    >
+      <div class="aura-cats__overlay"></div>
+      <div class="aura-cats__content">
+        <p class="aura-cats__label">{{ section.settings.label_mas }}</p>
+        <h2 class="aura-cats__title">{{ section.settings.title_mas }}</h2>
+        <a href="{{ section.settings.link_mas }}" class="aura-cats__btn">Ver más →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Categorías Género",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Calzado Femenino"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_fem",
+      "label": "Imagen femenino"
+    },
+    {
+      "type": "text",
+      "id": "label_fem",
+      "label": "Etiqueta",
+      "default": "Para ella"
+    },
+    {
+      "type": "text",
+      "id": "title_fem",
+      "label": "Título",
+      "default": "Calzado Femenino"
+    },
+    {
+      "type": "url",
+      "id": "link_fem",
+      "label": "Enlace"
+    },
+    {
+      "type": "header",
+      "content": "Calzado Masculino"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mas",
+      "label": "Imagen masculino"
+    },
+    {
+      "type": "text",
+      "id": "label_mas",
+      "label": "Etiqueta",
+      "default": "Para él"
+    },
+    {
+      "type": "text",
+      "id": "title_mas",
+      "label": "Título",
+      "default": "Calzado Masculino"
+    },
+    {
+      "type": "url",
+      "id": "link_mas",
+      "label": "Enlace"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Categorías Género"
+    }
+  ]
+}
+{% endschema %}

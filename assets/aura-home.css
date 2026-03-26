@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;0,9..40,900&display=swap');
+
+/* ============================================================
+   AURA — Homepage
+   ============================================================ */
+
+/* ---- HERO ---- */
+.aura-hero {
+  position: relative;
+  background-color: #0A0A0A;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.aura-hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.aura-hero__inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 6rem 2rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.aura-hero__eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #0A0A0A;
+  background: #C8FF00;
+  display: inline-block;
+  padding: 0.3rem 1.2rem;
+  margin: 0 0 1.6rem;
+}
+
+.aura-hero__title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(4rem, 9vw, 8rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  color: #fff;
+  margin: 0 0 1.6rem;
+}
+
+.aura-hero__sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+  color: rgba(255,255,255,0.75);
+  margin: 0 auto 2.8rem;
+  max-width: 540px;
+  line-height: 1.5;
+}
+
+/* Botones */
+.aura-hero__actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.aura-hero__btn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.4rem 3.2rem;
+  display: inline-block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.aura-hero__btn--primary {
+  background: #C8FF00;
+  color: #0A0A0A;
+}
+
+.aura-hero__btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(200,255,0,0.3);
+}
+
+.aura-hero__btn--secondary {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+.aura-hero__btn--secondary:hover {
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Trust badges */
+.aura-hero__trust {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem 2rem;
+}
+
+.aura-hero__trust span {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+}
+
+/* Mobile */
+@media screen and (max-width: 749px) {
+  .aura-hero {
+    min-height: 70vh;
+  }
+  .aura-hero__inner {
+    padding: 4rem 1.6rem;
+  }
+  .aura-hero__btn {
+    font-size: 1.3rem;
+    padding: 1.2rem 2.4rem;
+  }
+}
+
+/* ============================================================
+   AURA — Categorías Género
+   ============================================================ */
+
+.aura-cats {
+  padding: 4rem 0;
+  background: #0A0A0A;
+}
+
+.aura-cats__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media screen and (max-width: 749px) {
+  .aura-cats__inner {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .aura-cats {
+    padding: 2rem 0;
+  }
+}
+
+.aura-cats__card {
+  position: relative;
+  min-height: 480px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 749px) {
+  .aura-cats__card {
+    min-height: 320px;
+  }
+}
+
+.aura-cats__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0) 100%);
+  transition: background 0.3s ease;
+}
+
+.aura-cats__card:hover .aura-cats__overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.1) 100%);
+}
+
+.aura-cats__content {
+  position: relative;
+  z-index: 1;
+  padding: 2.4rem;
+  width: 100%;
+}
+
+.aura-cats__label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #C8FF00;
+  margin: 0 0 0.6rem;
+}
+
+.aura-cats__title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(2.8rem, 4vw, 4.2rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: #fff;
+  margin: 0 0 1.6rem;
+}
+
+.aura-cats__btn {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0A0A0A;
+  background: #C8FF00;
+  padding: 1rem 2.4rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.aura-cats__card:hover .aura-cats__btn {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(200,255,0,0.35);
+}
+
+/* ============================================================
+   HOMEPAGE — Secciones existentes mejoradas
+   ============================================================ */
+
+/* Rich text "Productos Exclusivos" */
+.rich-text .rich-text__wrapper h2,
+.rich-text__heading {
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Compare chart */
+.compare-chart {
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+/* Multicolumn trust */
+.multicolumn .multicolumn-card__title {
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+}

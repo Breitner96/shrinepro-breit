@@ -27,7 +27,6 @@
 
     <div class="aura-card__media">
 
-      {%- comment %} Primary image {%- endcomment %}
       {%- if card_product.featured_media -%}
         <img
           class="aura-card__img aura-card__img--primary{% unless has_secondary %} is-only{% endunless %}"
@@ -45,7 +44,6 @@
         >
       {%- endif -%}
 
-      {%- comment %} Secondary image (hover) {%- endcomment %}
       {%- if has_secondary -%}
         <img
           class="aura-card__img aura-card__img--secondary"
@@ -63,36 +61,41 @@
         >
       {%- endif -%}
 
-      {%- comment %} Badge {%- endcomment %}
       {%- if card_product.available == false -%}
         <span class="aura-card__badge aura-card__badge--sold-out">Agotado</span>
       {%- elsif is_sale -%}
-        <span class="aura-card__badge">Oferta</span>
+        <span class="aura-card__badge aura-card__badge--sale">2x1 Oferta</span>
       {%- elsif is_new -%}
-        <span class="aura-card__badge">Nuevo</span>
+        <span class="aura-card__badge aura-card__badge--new">Nuevo</span>
       {%- endif -%}
 
-      {%- comment %} Hover overlay {%- endcomment %}
       <div class="aura-card__overlay">Ver producto →</div>
 
     </div>
 
     <div class="aura-card__info">
       <div class="aura-card__name">{{ card_product.title | escape }}</div>
+
+      <div class="aura-card__stars">
+        <span class="aura-card__stars-icons">★★★★★</span>
+        <span class="aura-card__stars-score">4.8</span>
+      </div>
+
       <div class="aura-card__price-row">
         {%- if is_sale -%}
-          <span class="aura-card__price aura-card__price--sale">{{ card_product.price | money }}</span>
-          <span class="aura-card__price aura-card__price--compare">{{ card_product.compare_at_price | money }}</span>
+          <span class="aura-card__price aura-card__price--sale">{{ card_product.price | money_without_trailing_zeros }}</span>
+          <span class="aura-card__price aura-card__price--compare">{{ card_product.compare_at_price | money_without_trailing_zeros }}</span>
         {%- else -%}
-          <span class="aura-card__price">{{ card_product.price | money }}</span>
+          <span class="aura-card__price">{{ card_product.price | money_without_trailing_zeros }}</span>
         {%- endif -%}
       </div>
+
+      <span class="aura-card__shipping">✓ Envío GRATIS</span>
     </div>
 
   </a>
 
 {%- else -%}
-  {%- comment %} Placeholder card {%- endcomment %}
   <div class="aura-card">
     <div class="aura-card__media" style="background:#f4f4f4; aspect-ratio:1;"></div>
     <div class="aura-card__info">
