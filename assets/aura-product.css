@@ -4,6 +4,11 @@
    AURA — Product Page — Bold Minimal
    ============================================================ */
 
+/* ---- Carrusel móvil: solo movimiento horizontal ---- */
+.product__media-list {
+  touch-action: pan-x !important;
+}
+
 /* ---- Product type label ---- */
 .aura-product-type {
   display: block !important;
