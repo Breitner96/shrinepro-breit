@@ -1,0 +1,85 @@
+<div class="aura-reviews">
+  <div class="aura-reviews__header">
+    <div class="aura-reviews__aggregate">
+      <span class="aura-reviews__score">4.9</span>
+      <div class="aura-reviews__aggregate-right">
+        <div class="aura-reviews__stars-row">
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+        </div>
+        <div class="aura-reviews__count">+360 clientes verificados</div>
+      </div>
+    </div>
+    <div class="aura-reviews__title">Lo que dicen<br>nuestros clientes</div>
+  </div>
+  <div class="aura-reviews__track" id="auraReviewsTrack-zapatilla-running-nube-impermeable">
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"Pedí con algo de desconfianza porque nunca había comprado online calzado, pero llegaron perfectos. La caja estaba impecable y el material es resistente."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/hombre-9_86f1c5b3-cdcf-4865-a7de-43d0107cbb80.jpg?v=1774299177" alt="Juan P." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Juan P.</div>
+          <div class="aura-review-card__city">Bucaramanga, Colombia</div>
+        </div>
+      </div>
+    </div>
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"Los compré para un viaje y fueron los mejores compañeros. Ligeros, cómodos y estilosos. Varias personas me preguntaron dónde los había comprado."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/hombre-12_85e2db53-c91e-4b2d-bb38-17418fe29e6b.jpg?v=1774299166" alt="Sebastián V." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Sebastián V.</div>
+          <div class="aura-review-card__city">Santa Marta, Colombia</div>
+        </div>
+      </div>
+    </div>
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"Compré la talla que uso normalmente según la tabla y quedaron perfectos. La plantilla es muy acolchada, ideal para estar parado mucho tiempo en el trabajo."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/hombre-7_fe55b2da-dd3b-45c2-89e0-f99f0165695a.jpg?v=1774299170" alt="Sandra L." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Sandra L.</div>
+          <div class="aura-review-card__city">Manizales, Colombia</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="aura-reviews__dots" id="auraReviewsDots-zapatilla-running-nube-impermeable">
+    <button class="aura-reviews__dot aura-reviews__dot--active" data-index="0" aria-label="Reseña 1"></button>
+    <button class="aura-reviews__dot" data-index="1" aria-label="Reseña 2"></button>
+    <button class="aura-reviews__dot" data-index="2" aria-label="Reseña 3"></button>
+  </div>
+</div>
+<script>
+(function() {
+  var track = document.getElementById('auraReviewsTrack-zapatilla-running-nube-impermeable');
+  var dots  = document.querySelectorAll('#auraReviewsDots-zapatilla-running-nube-impermeable .aura-reviews__dot');
+  if (!track || !dots.length) return;
+  dots.forEach(function(dot) {
+    dot.addEventListener('click', function() {
+      var card = track.children[parseInt(this.getAttribute('data-index'))];
+      if (card) track.scrollTo({ left: card.offsetLeft - 4, behavior: 'smooth' });
+    });
+  });
+  track.addEventListener('scroll', function() {
+    var w = track.children[0] ? track.children[0].offsetWidth + 12 : 1;
+    var idx = Math.round(track.scrollLeft / w);
+    dots.forEach(function(d, i) { d.classList.toggle('aura-reviews__dot--active', i === idx); });
+  }, { passive: true });
+})();
+</script>
