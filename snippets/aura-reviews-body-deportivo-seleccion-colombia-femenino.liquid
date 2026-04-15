@@ -1,0 +1,85 @@
+<div class="aura-reviews">
+  <div class="aura-reviews__header">
+    <div class="aura-reviews__aggregate">
+      <span class="aura-reviews__score">4.9</span>
+      <div class="aura-reviews__aggregate-right">
+        <div class="aura-reviews__stars-row">
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+        </div>
+        <div class="aura-reviews__count">+1202 clientas verificadas</div>
+      </div>
+    </div>
+    <div class="aura-reviews__title">Lo que dicen<br>nuestras clientas</div>
+  </div>
+  <div class="aura-reviews__track" id="auraReviewsTrack-body-deportivo-seleccion-colombia-femenino">
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"La tela tiene una compresión ligera que estiliza sin incomodar. Lo lavé a mano siguiendo las instrucciones y quedó como nuevo. Muy buena calidad para el precio."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/mujer-2_46e6a8c7-658b-41fb-bf78-0943f7bd42cf.jpg?v=1774299183" alt="Carolina V." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Carolina V.</div>
+          <div class="aura-review-card__city">Santa Marta, Colombia</div>
+        </div>
+      </div>
+    </div>
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"Me lo compré para ver el partido de Colombia y recibí más de diez piropos. El diseño es perfecto para apoyar a la selección con estilo. Super cómodo para estar sentada horas."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/mujer-4_0c69295c-43e0-4cfe-9b61-4a0b56e40c6c.jpg?v=1774299190" alt="Mariana T." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Mariana T.</div>
+          <div class="aura-review-card__city">Bogotá, Colombia</div>
+        </div>
+      </div>
+    </div>
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"Soy instructora de fitness y lo usé en clase. Mis alumnas me preguntaron por el body toda la sesión. Aguantó perfectamente el movimiento sin subirse ni incomodar. Excelente."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/mujer-5_7de68922-db21-4519-991c-c72152715f99.jpg?v=1774299193" alt="Tatiana R." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Tatiana R.</div>
+          <div class="aura-review-card__city">Medellín, Colombia</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="aura-reviews__dots" id="auraReviewsDots-body-deportivo-seleccion-colombia-femenino">
+    <button class="aura-reviews__dot aura-reviews__dot--active" data-index="0" aria-label="Reseña 1"></button>
+    <button class="aura-reviews__dot" data-index="1" aria-label="Reseña 2"></button>
+    <button class="aura-reviews__dot" data-index="2" aria-label="Reseña 3"></button>
+  </div>
+</div>
+<script>
+(function() {
+  var track = document.getElementById('auraReviewsTrack-body-deportivo-seleccion-colombia-femenino');
+  var dots  = document.querySelectorAll('#auraReviewsDots-body-deportivo-seleccion-colombia-femenino .aura-reviews__dot');
+  if (!track || !dots.length) return;
+  dots.forEach(function(dot) {
+    dot.addEventListener('click', function() {
+      var card = track.children[parseInt(this.getAttribute('data-index'))];
+      if (card) track.scrollTo({ left: card.offsetLeft - 4, behavior: 'smooth' });
+    });
+  });
+  track.addEventListener('scroll', function() {
+    var w = track.children[0] ? track.children[0].offsetWidth + 12 : 1;
+    var idx = Math.round(track.scrollLeft / w);
+    dots.forEach(function(d, i) { d.classList.toggle('aura-reviews__dot--active', i === idx); });
+  }, { passive: true });
+})();
+</script>
