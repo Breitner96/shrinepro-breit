@@ -1,0 +1,374 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_liquid_xe8VYT": {
+          "type": "custom_liquid",
+          "name": "Titulo Verificado",
+          "settings": {
+            "custom_liquid": "<div class=\"product-verified-wrapper\">\n    <h1 class=\"product-title-inline\">\n        {{ product.title }}\n        <img class=\"inline-check-icon\" src=\"https://cdn-icons-png.flaticon.com/512/1828/1828640.png\" alt=\"Verificado\">\n    </h1>\n</div>\n\n<style>\n    .product-verified-wrapper {\n        margin: 0 0 10px 0 !important;\n        padding: 0;\n        line-height: 1.2;\n    }\n\n    .product-title-inline {\n        font-family: var(--font-heading-family), sans-serif;\n        font-weight: var(--font-heading-weight, bold);\n        font-size: 25px;\n        color: #1A1A1A;\n        display: inline; \n        margin: 0;\n        padding: 0;\n        word-wrap: break-word;\n    }\n\n    .inline-check-icon {\n        display: inline-block;\n        vertical-align: middle; \n        width: 24px; \n        height: 24px;\n        margin-left: 4px;\n        object-fit: contain;\n    }\n\n    @media (max-width: 749px) {\n        .product-title-inline {\n            font-size: 20px;\n        }\n        .inline-check-icon {\n            width: 18px;\n            height: 18px;\n        }\n    }\n</style>"
+          }
+        },
+        "custom_liquid_9XDG7p": {
+          "type": "custom_liquid",
+          "name": "Reviews",
+          "settings": {
+            "custom_liquid": "<div class=\"review-container\">\n  <div class=\"stars\">\n    {% for i in (1..5) %}\n      <span class=\"star\">★</span>\n    {% endfor %}\n  </div>\n  <span class=\"review-text\"> 4.9 | +1.000 Mujeres lo Aman</span>\n</div>\n\n<style>\n  .review-container {\n    display: flex;\n    align-items: center;\n    font-family: Arial, sans-serif;\n    font-size: 18px;\n    font-style: italic;\n    font-weight: normal;\n    margin-top: 0;\n    margin-bottom: 0;\n  }\n\n  .stars {\n    color: #FFD700;\n    font-size: 17px;\n    display: flex;\n    align-items: center;\n  }\n  .star {\n    margin-right: 1px;\n  }\n\n  .review-text {\n    margin-left: 8px;\n    color: #000;\n    font-size: 14px;\n    font-weight: normal;\n  }\n</style>"
+          }
+        },
+        "custom_liquid_KX6Vd4": {
+          "type": "custom_liquid",
+          "name": "Precio",
+          "settings": {
+            "custom_liquid": "<div class=\"custom-price-container\">\n  {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}\n    <div class=\"price-header\">\n      <span class=\"price-item price-item--regular\">\n        {{ product.selected_or_first_available_variant.compare_at_price | money }}\n      </span>\n      <span class=\"badge-oferta\">Precio Especial</span>\n    </div>\n  {%- endif -%}\n\n  <div class=\"price-row-inline\">\n    <div class=\"price-main\">\n      <span class=\"price-item price-item--sale\">\n        {{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}\n      </span>\n      <span class=\"currency-code\">COP</span>\n    </div>\n    \n    <div class=\"shipping-tag\">\n      <span class=\"shipping-text\">+ Envíos <strong>GRATIS</strong></span>\n    </div>\n  </div>\n</div>\n\n<style>\n  .custom-price-container {\n    margin: 15px 0;\n    font-family: var(--font-body-family), sans-serif;\n  }\n\n  .price-header {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    margin-bottom: 5px;\n  }\n\n  .price-item--regular {\n    color: #8c8c8c;\n    text-decoration: line-through;\n    font-size: 1.6rem;\n  }\n\n  .badge-oferta {\n    background-color: #FCD116;\n    color: #1A1A1A;\n    padding: 2px 12px;\n    border-radius: 20px;\n    font-size: 1.2rem;\n    font-weight: bold;\n    text-transform: uppercase;\n  }\n\n  .price-row-inline {\n    display: flex;\n    align-items: baseline;\n    flex-wrap: wrap;\n    gap: 10px;\n  }\n\n  .price-main {\n    display: flex;\n    align-items: baseline;\n    gap: 6px;\n  }\n\n  .price-item--sale {\n    color: #1A1A1A;\n    font-size: 3.2rem;\n    font-weight: 900;\n    line-height: 1;\n  }\n\n  .currency-code {\n    font-size: 1.8rem;\n    font-weight: 700;\n    color: #1A1A1A;\n  }\n\n  .shipping-tag {\n    color: #1A1A1A;\n    font-size: 1.8rem;\n    font-weight: 700;\n  }\n\n  .shipping-tag strong {\n    font-weight: 900;\n  }\n\n  @media (max-width: 480px) {\n    .price-item--sale {\n      font-size: 2.8rem;\n    }\n  }\n</style>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "inventory_PaVqzG": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "uppercase",
+            "inventory_threshold": 0,
+            "show_inventory_quantity": false
+          }
+        },
+        "custom_liquid_talla_body": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"size-guide-trigger-container\">\n  <p class=\"size-guide-note\">\n    📏 <strong>Importante:</strong> revisa la <strong>guía de tallas</strong> antes de comprar para elegir tu talla correcta.\n  </p>\n\n  <button type=\"button\" class=\"size-guide-button\" id=\"openSizeGuideBody\">\n    <span class=\"icon-ruler\"></span> Guía de tallas\n  </button>\n</div>\n\n<div id=\"sizeGuideModalBody\" class=\"size-modal\" aria-hidden=\"true\">\n  <div class=\"size-modal-content\" role=\"dialog\" aria-modal=\"true\" aria-label=\"Guía de tallas body\">\n    <div class=\"size-modal-header\">\n      <h3 class=\"size-modal-title\">Guía de tallas — Body</h3>\n      <button type=\"button\" class=\"close-size-modal\" id=\"closeSizeGuideBody\" aria-label=\"Cerrar\">&times;</button>\n    </div>\n\n    <div class=\"size-modal-body\">\n      <table class=\"body-size-table\">\n        <thead>\n          <tr><th>Talla</th><th>Busto (cm)</th><th>Cintura (cm)</th><th>Cadera (cm)</th></tr>\n        </thead>\n        <tbody>\n          <tr><td>S</td><td>82–86</td><td>62–66</td><td>88–92</td></tr>\n          <tr><td>M</td><td>87–91</td><td>67–71</td><td>93–97</td></tr>\n          <tr><td>L</td><td>92–96</td><td>72–76</td><td>98–102</td></tr>\n          <tr><td>XL</td><td>97–102</td><td>77–82</td><td>103–108</td></tr>\n          <tr><td>2XL</td><td>103–109</td><td>83–89</td><td>109–115</td></tr>\n          <tr><td>3XL</td><td>110–117</td><td>90–97</td><td>116–123</td></tr>\n        </tbody>\n      </table>\n      <p style=\"margin-top:12px;font-size:1.3rem;color:#555;\">Si estás entre dos tallas, elige la más grande.</p>\n    </div>\n  </div>\n</div>\n\n<style>\n  .size-guide-trigger-container { margin: 10px 0; }\n  .size-guide-note { margin: 0 0 8px 0; font-size: 1.35rem; line-height: 1.35; color: #1A1A1A; opacity: 0.9; }\n  .size-guide-button { background: none; border: none; color: #1A1A1A; text-decoration: underline; font-size: 1.4rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; padding: 0; font-weight: 600; }\n  .size-modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); backdrop-filter: blur(3px); }\n  .size-modal-content { background-color: #fff; margin: 5% auto; padding: 0; width: 90%; max-width: 560px; border-radius: 10px; position: relative; box-shadow: 0 4px 20px rgba(0,0,0,0.2); animation: slideIn 0.25s ease-out; overflow: hidden; }\n  @keyframes slideIn { from { transform: translateY(-25px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }\n  .size-modal-header { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid #eee; }\n  .size-modal-title { margin: 0; font-size: 1.7rem; color: #1A1A1A; font-weight: 700; }\n  .close-size-modal { background: none; border: none; font-size: 3rem; line-height: 1; cursor: pointer; color: #888; }\n  .size-modal-body { padding: 18px; max-height: 80vh; overflow-y: auto; }\n  .body-size-table { width: 100%; border-collapse: collapse; font-size: 1.4rem; }\n  .body-size-table th, .body-size-table td { border: 1px solid #ddd; padding: 8px 12px; text-align: center; }\n  .body-size-table thead { background: #FCD116; color: #1A1A1A; font-weight: 700; }\n  .body-size-table tbody tr:nth-child(even) { background: #f9f9f9; }\n  @media (max-width: 480px) { .size-modal-content { margin: 18% auto; width: 95%; } }\n</style>\n\n<script>\n  (function() {\n    var modal = document.getElementById('sizeGuideModalBody');\n    var btn = document.getElementById('openSizeGuideBody');\n    var closeBtn = document.getElementById('closeSizeGuideBody');\n    if (!modal || !btn) return;\n    btn.onclick = function() { modal.style.display = 'block'; modal.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; };\n    closeBtn.onclick = function() { modal.style.display = 'none'; modal.setAttribute('aria-hidden','true'); document.body.style.overflow='auto'; };\n    window.addEventListener('click', function(e) { if (e.target === modal) { modal.style.display='none'; modal.setAttribute('aria-hidden','true'); document.body.style.overflow='auto'; } });\n  })();\n</script>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "1088bb43-2931-4cb5-b642-6c5e04e45224": {
+          "type": "clocktext",
+          "settings": {
+            "clocktext": "Stock limitado — últimas unidades disponibles."
+          }
+        },
+        "eed7bb10-67b9-4655-8c71-ca64ed54fb48": {
+          "type": "shippingarrow",
+          "settings": {
+            "preshipsby": "Se envía en máximo 1",
+            "shippingarrow": "",
+            "postshipsby": "día si confirmas hoy!"
+          }
+        },
+        "3122dfde-b867-4a3c-9e0f-cf61bd664e99": {
+          "type": "moneybackguarantee",
+          "settings": {
+            "moneybackguarantee": "30 DÍAS PARA CAMBIOS Y DEVOLUCIONES"
+          }
+        },
+        "2c100155-1d2d-4504-a37e-f2abd070099f": {
+          "type": "iconss",
+          "settings": {
+            "text1": "Garantía Satisfacción",
+            "text2": "Pagos Contraentrega",
+            "iconcolorreturns": "#1a1a1a"
+          }
+        },
+        "custom_liquid_TJNJiE": {
+          "type": "custom_liquid",
+          "name": "Prueba social",
+          "settings": {
+            "custom_liquid": "{% render 'aura-testimonials' %}"
+          }
+        },
+        "collapsible_tab_body_incluye": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Qué Incluye",
+            "icon": "clipboard",
+            "content": "<h5>• <em><strong>Body Femenino Selección Colombia:</strong></em> Prenda en tela de alta calidad con diseño oficial de los colores de la Selección Colombia, lista para usar.</h5><h5>• <em><strong>Empaque Seguro:</strong></em> Despachamos en bolsa sellada para que tu body llegue impecable, sin arrugas ni daños durante el transporte.</h5>",
+            "page": ""
+          }
+        },
+        "c11bfb2f-901d-4b03-90cf-b6b766353d13": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Información de Envío",
+            "icon": "truck",
+            "content": "<h5>• <em><strong>Envío Totalmente Gratis:</strong></em> No pagues ni un peso más por el transporte; cubrimos el envío a cualquier rincón del país.</h5><h5>• <em><strong>Tiempos de Entrega:</strong></em> Procesamos tu pedido en 24 horas. Recibe tu body en la puerta de tu casa en 3 a 8 días hábiles.</h5><h5>• <em><strong>Rastreo en Tiempo Real:</strong></em> Una vez despachado, te enviamos número de guía para seguir tu paquete.</h5><h5>• <em><strong>Pago Contra Entrega:</strong></em> Pide hoy y paga en efectivo únicamente cuando recibas el producto en tus manos.</h5>",
+            "page": ""
+          }
+        },
+        "e6778313-45ad-4d6d-8260-2498242a6df0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Cambios y Devoluciones",
+            "icon": "return",
+            "content": "<h5>• <em><strong>Satisfacción Garantizada:</strong></em> Si el producto llega con algún defecto de confección, gestionamos el cambio de inmediato sin ningún costo adicional para ti.</h5><h5>• <em><strong>Compra Sin Riesgos:</strong></em> Tu dinero y tu pedido están protegidos. Si no recibes lo que pediste, te hacemos la reposición o el cambio sin complicaciones.</h5><h5>• <em><strong>Proceso Sencillo:</strong></em> Solo escríbenos por WhatsApp y un asesor te guiará paso a paso en todo el proceso.</h5>",
+            "page": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "custom_liquid_xe8VYT",
+        "custom_liquid_9XDG7p",
+        "custom_liquid_KX6Vd4",
+        "variant_picker",
+        "inventory_PaVqzG",
+        "custom_liquid_talla_body",
+        "buy_buttons",
+        "1088bb43-2931-4cb5-b642-6c5e04e45224",
+        "eed7bb10-67b9-4655-8c71-ca64ed54fb48",
+        "3122dfde-b867-4a3c-9e0f-cf61bd664e99",
+        "2c100155-1d2d-4504-a37e-f2abd070099f",
+        "custom_liquid_TJNJiE",
+        "collapsible_tab_body_incluye",
+        "c11bfb2f-901d-4b03-90cf-b6b766353d13",
+        "e6778313-45ad-4d6d-8260-2498242a6df0",
+        "description"
+      ],
+      "custom_css": [
+        "div.product__title > h1 {font-size: 17px !important;}",
+        ".button--secondary {background-color: #FCD116; color: #1A1A1A;}"
+      ],
+      "settings": {
+        "new_product_page_media": true,
+        "othergallerystyle": false,
+        "salebadge": true,
+        "freeshipprice": true,
+        "shiptextnexttoprice": "+ Envíos GRATIS",
+        "enable_gallerybadge": true,
+        "productgalleryimage": "Producto Exclusivo",
+        "badge_background": "#FCD116",
+        "textbadge_background": "#1A1A1A",
+        "badge_text": "capitalize",
+        "stickybutton": true,
+        "stickybuttontext": "Seleccionar Talla",
+        "atcicon": true,
+        "atcsavings": false,
+        "mostpopularcolor": "#1a1a1a",
+        "enable_shipping_calculate": false,
+        "shipping_calculator_label": "Entrega estimada:",
+        "days_to_start_shipping": 1,
+        "approximate_days_for_delivery": 8,
+        "delivery_align": "center",
+        "enable_sticky_info": true,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "También te puede gustar",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 68
+      }
+    },
+    "b6fc2703-body-multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "body-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Camila H. (Medellín)</strong>",
+            "text": "<h5>⭐️⭐️⭐️⭐️⭐️</h5><h5><em>Llegó en 3 días y lo pagué en efectivo al recibirlo. La talla M me quedó perfecta según la guía. La tela es suave y de muy buena calidad.</em></h5>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "body-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Valentina R. (Bogotá)</strong>",
+            "text": "<h5>⭐️⭐️⭐️⭐️⭐️</h5><h5><em>Los colores de la selección son idénticos a la foto. Ya pedí el segundo para mi hermana. Excelente calidad para el precio, super recomendado.</em></h5>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "body-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Mariana T. (Bogotá)</strong>",
+            "text": "<h5>⭐️⭐️⭐️⭐️⭐️</h5><h5><em>Me lo compré para ver el partido de Colombia y recibí más de diez piropos. El diseño es perfecto para apoyar a la selección con estilo.</em></h5>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "body-column-4": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Paola S. (Armenia)</strong>",
+            "text": "<h5>⭐️⭐️⭐️⭐️⭐️</h5><h5><em>Tengo busto grande y normalmente la ropa ajustada no me funciona, pero este body tiene muy buen soporte. La tela no se estira de más y mantiene la forma todo el día.</em></h5>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "body-column-5": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Tatiana R. (Medellín)</strong>",
+            "text": "<h5>⭐️⭐️⭐️⭐️⭐️</h5><h5><em>Soy instructora de fitness y lo usé en clase. Mis alumnas me preguntaron por el body toda la sesión. Aguantó perfectamente el movimiento sin subirse ni incomodar.</em></h5>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "body-column-1",
+        "body-column-2",
+        "body-column-3",
+        "body-column-4",
+        "body-column-5"
+      ],
+      "settings": {
+        "title": "Nuestras Clientas",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "inverse",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "ffa79f40-body-faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "body-faq-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cómo sé cuál es mi talla correcta?",
+            "icon": "question_mark",
+            "row_content": "<p>Contamos con una <strong>Guía de Tallas</strong> exacta en la página del producto. Mide tu busto, cintura y cadera en centímetros y compara con nuestra tabla. Si estás entre dos tallas, elige siempre la más grande para mayor comodidad.</p>",
+            "page": ""
+          }
+        },
+        "body-faq-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Qué pasa si el body me queda mal o llega con un defecto?",
+            "icon": "question_mark",
+            "row_content": "<p><strong>Si escogiste una talla incorrecta:</strong> podemos hacer el cambio, pero los costos de envío del producto de regreso y del nuevo despacho corren por tu cuenta. Por eso te recomendamos revisar muy bien la guía de tallas antes de pedir.</p><p><strong>Si el error fue nuestro</strong> (talla equivocada despachada, defecto de confección u otro problema atribuible a la tienda): gestionamos el cambio de inmediato sin ningún cobro adicional para ti. Solo escríbenos por WhatsApp con fotos del producto y lo resolvemos.</p>",
+            "page": ""
+          }
+        },
+        "body-faq-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Realizan envíos a zonas rurales o veredas?",
+            "icon": "question_mark",
+            "row_content": "<p>Llegamos a casi cualquier lugar de Colombia. En algunas veredas o zonas de difícil acceso, la transportadora podría dejar el paquete en la oficina principal del municipio más cercano. Si tienes dudas sobre tu cobertura, pregúntanos por WhatsApp antes de pedir.</p>",
+            "page": ""
+          }
+        },
+        "body-faq-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Puedo abrir el paquete antes de pagarle al repartidor?",
+            "icon": "question_mark",
+            "row_content": "<p>Por políticas de las empresas de mensajería en modalidad Pago Contra Entrega no se permite abrir antes de pagar. Sin embargo, cuentas con nuestra garantía de satisfacción para cualquier cambio posterior.</p>",
+            "page": ""
+          }
+        },
+        "body-faq-5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cómo debo lavar el body para mantener su forma y color?",
+            "icon": "question_mark",
+            "row_content": "<p>Recomendamos lavar a mano con agua fría y jabón suave, o en lavadora en ciclo delicado a máximo 30°C. No usar secadora ni planchado directo. Guardar doblado, no colgado, para conservar la elasticidad de la tela.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "body-faq-1",
+        "body-faq-2",
+        "body-faq-3",
+        "body-faq-4",
+        "body-faq-5"
+      ],
+      "name": "Preguntas Frecuentes",
+      "settings": {
+        "caption": "Todo lo que necesitas saber antes de comprar",
+        "heading": "<strong>RESOLVEMOS TUS DUDAS</strong>",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 4,
+        "padding_bottom": 4
+      }
+    },
+    "ce002b21-body-apps": {
+      "type": "apps",
+      "blocks": {
+        "ce002b21-body-apps-block": {
+          "type": "shopify://apps/audien-reviews/blocks/review_list/ce002b21-24e0-4d65-87ca-18c9770b24d4",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "ce002b21-body-apps-block"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "b6fc2703-body-multicolumn",
+    "ffa79f40-body-faq",
+    "ce002b21-body-apps"
+  ]
+}
