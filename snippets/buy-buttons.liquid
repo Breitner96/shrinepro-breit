@@ -16,7 +16,13 @@
   <div class="aura-step aura-step--next" id="aura-step2">
     <div class="aura-step__number">2</div>
     <div class="aura-step__content">
-      <div class="aura-step__title">Elige ambos pares en el formulario →</div>
+      <div class="aura-step__title">
+        {%- if template.suffix contains 'body' -%}
+          Confirma y elige ambos bodies en el formulario →
+        {%- else -%}
+          Elige ambos pares en el formulario →
+        {%- endif -%}
+      </div>
     </div>
   </div>
     {%- liquid
