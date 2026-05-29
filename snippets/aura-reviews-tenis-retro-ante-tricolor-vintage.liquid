@@ -1,0 +1,85 @@
+<div class="aura-reviews">
+  <div class="aura-reviews__header">
+    <div class="aura-reviews__aggregate">
+      <span class="aura-reviews__score">4.8</span>
+      <div class="aura-reviews__aggregate-right">
+        <div class="aura-reviews__stars-row">
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+        </div>
+        <div class="aura-reviews__count">+234 clientes verificados</div>
+      </div>
+    </div>
+    <div class="aura-reviews__title">Lo que dicen<br>nuestros clientes</div>
+  </div>
+  <div class="aura-reviews__track" id="auraReviewsTrack-tenis-retro-ante-tricolor-vintage">
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"No esperaba recibir algo de tan buena calidad a ese precio. El cuero sintético se siente premium y los acabados son impecables. Definitivamente volvería a comprar."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/hombre-10_8a098c50-328e-48e9-99b3-8cbcbf1cf6b3.jpg?v=1774299160" alt="Felipe O." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Felipe O.</div>
+          <div class="aura-review-card__city">Ibagué, Colombia</div>
+        </div>
+      </div>
+    </div>
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"Vendedor confiable, producto de calidad y envío rápido. ¿Qué más se puede pedir? La guía de tallas es muy precisa, no tengas miedo de comprar."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/hombre-8_aab4e975-4b84-4437-a258-8adb0203151c.jpg?v=1774299173" alt="Esteban Q." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Esteban Q.</div>
+          <div class="aura-review-card__city">Medellín, Colombia</div>
+        </div>
+      </div>
+    </div>
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"Me los regaló mi hermana y quedé enamorada. Son exactamente lo que buscaba: elegantes, cómodos y resistentes. El pago contraentrega le dio confianza a mi familia."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/mujer-1_db50f6df-1226-43e1-b720-bac7b6d41883.jpg?v=1774299180" alt="Laura E." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Laura E.</div>
+          <div class="aura-review-card__city">Neiva, Colombia</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="aura-reviews__dots" id="auraReviewsDots-tenis-retro-ante-tricolor-vintage">
+    <button class="aura-reviews__dot aura-reviews__dot--active" data-index="0" aria-label="Reseña 1"></button>
+    <button class="aura-reviews__dot" data-index="1" aria-label="Reseña 2"></button>
+    <button class="aura-reviews__dot" data-index="2" aria-label="Reseña 3"></button>
+  </div>
+</div>
+<script>
+(function() {
+  var track = document.getElementById('auraReviewsTrack-tenis-retro-ante-tricolor-vintage');
+  var dots  = document.querySelectorAll('#auraReviewsDots-tenis-retro-ante-tricolor-vintage .aura-reviews__dot');
+  if (!track || !dots.length) return;
+  dots.forEach(function(dot) {
+    dot.addEventListener('click', function() {
+      var card = track.children[parseInt(this.getAttribute('data-index'))];
+      if (card) track.scrollTo({ left: card.offsetLeft - 4, behavior: 'smooth' });
+    });
+  });
+  track.addEventListener('scroll', function() {
+    var w = track.children[0] ? track.children[0].offsetWidth + 12 : 1;
+    var idx = Math.round(track.scrollLeft / w);
+    dots.forEach(function(d, i) { d.classList.toggle('aura-reviews__dot--active', i === idx); });
+  }, { passive: true });
+})();
+</script>
