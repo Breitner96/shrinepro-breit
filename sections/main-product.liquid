@@ -15,7 +15,9 @@
   {{ 'custom-productpage.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
   {{ 'aura-product.css' | asset_url | stylesheet_tag }}
-  {{ 'aura-2x1.css' | asset_url | stylesheet_tag }}
+  {%- unless template.suffix contains 'perfume' or template.suffix contains 'fragancia' -%}
+    {{ 'aura-2x1.css' | asset_url | stylesheet_tag }}
+  {%- endunless -%}
 
 
 

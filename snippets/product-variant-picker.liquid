@@ -1,20 +1,26 @@
 {% comment %}
   Renders product variant-picker con detección de color para círculos
 {% endcomment %}
-{{ 'aura-2x1.css' | asset_url | stylesheet_tag }}
+{%- unless template.suffix contains 'perfume' or template.suffix contains 'fragancia' -%}
+  {{ 'aura-2x1.css' | asset_url | stylesheet_tag }}
+{%- endunless -%}
 
-<div class="aura-step aura-step--active">
-  <div class="aura-step__number">1</div>
-  <div class="aura-step__content">
-    <div class="aura-step__title">
-      {%- if template.suffix contains 'body' -%}
-        Elige tu talla
-      {%- else -%}
-        Elige Color y Talla del 1er par
-      {%- endif -%}
+{%- if template.suffix contains 'perfume' or template.suffix contains 'fragancia' -%}
+  {%- comment -%} Perfumes: sin pasos numerados {%- endcomment -%}
+{%- else -%}
+  <div class="aura-step aura-step--active">
+    <div class="aura-step__number">1</div>
+    <div class="aura-step__content">
+      <div class="aura-step__title">
+        {%- if template.suffix contains 'body' -%}
+          Elige tu talla
+        {%- else -%}
+          Elige Color y Talla del 1er par
+        {%- endif -%}
+      </div>
     </div>
   </div>
-</div>
+{%- endif -%}
 
 {%- unless product.has_only_default_variant -%}
   {%- if block.settings.picker_type == 'button' -%}
