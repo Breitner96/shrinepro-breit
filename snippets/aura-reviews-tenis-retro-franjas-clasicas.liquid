@@ -1,0 +1,85 @@
+<div class="aura-reviews">
+  <div class="aura-reviews__header">
+    <div class="aura-reviews__aggregate">
+      <span class="aura-reviews__score">4.7</span>
+      <div class="aura-reviews__aggregate-right">
+        <div class="aura-reviews__stars-row">
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star filled">★</span>
+          <span class="aura-reviews__star half">★</span>
+        </div>
+        <div class="aura-reviews__count">+235 clientes verificados</div>
+      </div>
+    </div>
+    <div class="aura-reviews__title">Lo que dicen<br>nuestros clientes</div>
+  </div>
+  <div class="aura-reviews__track" id="auraReviewsTrack-tenis-retro-franjas-clasicas">
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"Compré la talla que uso normalmente según la tabla y quedaron perfectos. La plantilla es muy acolchada, ideal para estar parado mucho tiempo en el trabajo."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/hombre-10_8a098c50-328e-48e9-99b3-8cbcbf1cf6b3.jpg?v=1774299160" alt="Sandra L." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Sandra L.</div>
+          <div class="aura-review-card__city">Manizales, Colombia</div>
+        </div>
+      </div>
+    </div>
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"La suela es antideslizante de verdad, los uso hasta en piso mojado sin problema. Ya se los recomendé a mis compañeros de trabajo y dos ya compraron."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/mujer-4_0c69295c-43e0-4cfe-9b61-4a0b56e40c6c.jpg?v=1774299190" alt="Camila H." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Camila H.</div>
+          <div class="aura-review-card__city">Pereira, Colombia</div>
+        </div>
+      </div>
+    </div>
+    <div class="aura-review-card">
+      <div class="aura-review-card__top">
+        <div class="aura-review-card__stars">★★★★★</div>
+        <span class="aura-review-card__badge">Compra verificada ✓</span>
+      </div>
+      <p class="aura-review-card__text">"Compré dos pares de diferentes colores y los dos llegaron perfectos. El servicio al cliente respondió mis preguntas rápido por WhatsApp. Muy buena experiencia."</p>
+      <div class="aura-review-card__footer">
+        <img class="aura-review-card__avatar" src="https://cdn.shopify.com/s/files/1/0983/0213/2505/files/hombre-9_86f1c5b3-cdcf-4865-a7de-43d0107cbb80.jpg?v=1774299177" alt="Alejandro N." loading="lazy" width="40" height="40">
+        <div class="aura-review-card__info">
+          <div class="aura-review-card__name">Alejandro N.</div>
+          <div class="aura-review-card__city">Buenaventura, Colombia</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="aura-reviews__dots" id="auraReviewsDots-tenis-retro-franjas-clasicas">
+    <button class="aura-reviews__dot aura-reviews__dot--active" data-index="0" aria-label="Reseña 1"></button>
+    <button class="aura-reviews__dot" data-index="1" aria-label="Reseña 2"></button>
+    <button class="aura-reviews__dot" data-index="2" aria-label="Reseña 3"></button>
+  </div>
+</div>
+<script>
+(function() {
+  var track = document.getElementById('auraReviewsTrack-tenis-retro-franjas-clasicas');
+  var dots  = document.querySelectorAll('#auraReviewsDots-tenis-retro-franjas-clasicas .aura-reviews__dot');
+  if (!track || !dots.length) return;
+  dots.forEach(function(dot) {
+    dot.addEventListener('click', function() {
+      var card = track.children[parseInt(this.getAttribute('data-index'))];
+      if (card) track.scrollTo({ left: card.offsetLeft - 4, behavior: 'smooth' });
+    });
+  });
+  track.addEventListener('scroll', function() {
+    var w = track.children[0] ? track.children[0].offsetWidth + 12 : 1;
+    var idx = Math.round(track.scrollLeft / w);
+    dots.forEach(function(d, i) { d.classList.toggle('aura-reviews__dot--active', i === idx); });
+  }, { passive: true });
+})();
+</script>
