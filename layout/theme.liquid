@@ -253,7 +253,8 @@
       }
     {% endstyle %}
 
-    {{ 'base.css' | asset_url | stylesheet_tag }}
+    <link rel="preload" as="style" href="{{ 'base.css' | asset_url }}" onload="this.rel='stylesheet'">
+    <noscript>{{ 'base.css' | asset_url | stylesheet_tag }}</noscript>
 
     <link rel="stylesheet" href="{{ 'custom.css' | asset_url }}" media="print" onload="this.media='all'">
     <noscript>{{ 'custom.css' | asset_url | stylesheet_tag }}</noscript>
