@@ -40,21 +40,10 @@
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
      <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
-     <script>
-      (function(){
-        var loadFA = function(){
-          var s = document.createElement('script');
-          s.src = '{{ 'kit-fontawesome.js' | asset_url }}';
-          s.defer = true;
-          document.head.appendChild(s);
-        };
-        if (window.requestIdleCallback) {
-          requestIdleCallback(loadFA, {timeout: 3000});
-        } else {
-          window.addEventListener('load', loadFA);
-        }
-      })();
-     </script>
+     <!-- Font Awesome removed: icons replaced with inline SVGs -->
+    {% if template.name == 'product' %}
+      <link rel="preload" as="style" href="{{ 'section-main-product.css' | asset_url }}">
+    {% endif %}
     {% if template.name == 'product' and product and product.selected_or_first_available_variant and product.selected_or_first_available_variant.featured_media %}
       {%- assign _pimg = product.selected_or_first_available_variant.featured_media.preview_image -%}
       <link rel="preload" as="image" fetchpriority="high" imagesrcset="{{ _pimg | image_url: width: 600 }} 600w, {{ _pimg | image_url: width: 823 }} 823w, {{ _pimg | image_url: width: 1100 }} 1100w, {{ _pimg | image_url: width: 1500 }} 1500w" imagesizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: 0.55 | round }}px, (min-width: 990px) calc(55vw - 10rem), (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)" href="{{ _pimg | image_url: width: 600 }}">
