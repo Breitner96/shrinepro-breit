@@ -3,7 +3,9 @@
   class="page-width section-{{ section.id }}-padding"
   data-section="{{ section.id }}"
 >
-  {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+  <link rel="stylesheet" href="{{ 'section-main-product.css' | asset_url }}" media="print" onload="this.media='all'">
+  <noscript>{{ 'section-main-product.css' | asset_url | stylesheet_tag }}</noscript>
+  <style>.product{margin:0}.product.grid{gap:0}.product__media-wrapper{padding-left:0}.product-media-container{position:relative;overflow:hidden}.product__media-item{scroll-snap-align:start}.product__media.media{overflow:hidden;position:relative}@media(min-width:990px){.product--medium:not(.product--no-media) .product__media-wrapper,.product--small:not(.product--no-media) .product__info-wrapper{max-width:55%;width:calc(55% - var(--grid-desktop-horizontal-spacing)/2)}.product--medium:not(.product--no-media) .product__info-wrapper,.product--small:not(.product--no-media) .product__media-wrapper{max-width:45%;width:calc(45% - var(--grid-desktop-horizontal-spacing)/2)}}</style>
   <link rel="stylesheet" href="{{ 'component-accordion.css' | asset_url }}" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
