@@ -7,15 +7,12 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&display=swap" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&display=swap"></noscript>
-    <link rel="preconnect" href="https://loox.io" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="https://loox.io">
-    <link rel="preconnect" href="https://static.loox.io" crossorigin>
     <link rel="dns-prefetch" href="https://static.loox.io">
 
     {%- if settings.favicon != blank -%}
@@ -61,7 +58,9 @@
     {% if template.name == 'product' and product and product.selected_or_first_available_variant and product.selected_or_first_available_variant.featured_media %}
       <link rel="preload" as="image" imagesrcset="{{ product.selected_or_first_available_variant.featured_media.preview_image | image_url: width: 1100 }} 1100w, {{ product.selected_or_first_available_variant.featured_media.preview_image | image_url: width: 1500 }} 1500w" imagesizes="(min-width: 750px) 50vw, 100vw" href="{{ product.selected_or_first_available_variant.featured_media.preview_image | image_url: width: 1100 }}" fetchpriority="high">
     {% endif %}
-    {{ 'aura-global.css' | asset_url | stylesheet_tag }}
+    <link rel="preload" as="style" href="{{ 'aura-global.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'aura-global.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript>{{ 'aura-global.css' | asset_url | stylesheet_tag }}</noscript>
     {{ content_for_header }}
 
     {%- liquid
@@ -256,11 +255,8 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
-    {{ 'custom.css' | asset_url | stylesheet_tag }}
-    <link rel="preload" as="style" href="{{ 'custom2.css' | asset_url }}">
-    {% if template.name == 'product' %}
-    <link rel="preload" as="style" href="{{ 'a2reviews-custom.css' | asset_url }}">
-    {% endif %}
+    <link rel="stylesheet" href="{{ 'custom.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript>{{ 'custom.css' | asset_url | stylesheet_tag }}</noscript>
     <link rel="stylesheet" href="{{ 'custom2.css' | asset_url }}" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="{{ 'custom2.css' | asset_url }}"></noscript>
     {% if template.name == 'product' %}
@@ -278,7 +274,6 @@
     {%- endunless -%}
 
     {%- if settings.predictive_search_enabled -%}
-      <link rel="preload" as="style" href="{{ 'component-predictive-search.css' | asset_url }}">
       <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
       <noscript><link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}"></noscript>
     {%- endif -%}

@@ -4,19 +4,18 @@
   data-section="{{ section.id }}"
 >
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
-  {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
-  {{ 'component-price.css' | asset_url | stylesheet_tag }}
-  {{ 'component-slider.css' | asset_url | stylesheet_tag }}
-  {{ 'component-rating.css' | asset_url | stylesheet_tag }}
-  {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
-  {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
-
- {% if section.settings.othergallerystyle %}
-  {{ 'custom-productpage.css' | asset_url | stylesheet_tag }}
-{%- endif -%}
-  {{ 'aura-product.css' | asset_url | stylesheet_tag }}
+  <link rel="stylesheet" href="{{ 'component-accordion.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-rating.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-loading-overlay.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
+  {% if section.settings.othergallerystyle %}
+    <link rel="stylesheet" href="{{ 'custom-productpage.css' | asset_url }}" media="print" onload="this.media='all'">
+  {%- endif -%}
+  <link rel="stylesheet" href="{{ 'aura-product.css' | asset_url }}" media="print" onload="this.media='all'">
   {%- unless template.suffix contains 'perfume' or template.suffix contains 'fragancia' -%}
-    {{ 'aura-2x1.css' | asset_url | stylesheet_tag }}
+    <link rel="stylesheet" href="{{ 'aura-2x1.css' | asset_url }}" media="print" onload="this.media='all'">
   {%- endunless -%}
 
 
