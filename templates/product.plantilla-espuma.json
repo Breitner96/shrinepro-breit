@@ -1,0 +1,741 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_liquid_9XDG7p": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"review-container\">\n  <div class=\"stars\">\n    {% for i in (1..5) %}\n      <span class=\"star\">★</span>\n    {% endfor %}\n  </div>\n  <span class=\"review-text\"> 4.8 |+360 Clientes Satisfechos</span>\n</div>\n\n<style>\n  .review-container {\n    display: flex;\n    align-items: center;\n    font-family: Arial, sans-serif;\nfont-size: 18px;                      font-style: italic;\n    font-weight: normal;\n    margin-top: 0;\n    margin-bottom: 0;\n  }\n\n  .stars {\n    color: #FFD700;\n    font-size: 17px;\n    display: flex;\n    align-items: center;\n  }\n  .star {\n    margin-right: 1px;\n  }\n\n  .review-text {\n    margin-left: 8px;\n    color: #000;\n    font-size: 14px;\n    font-weight: normal;\n  }\n</style>"
+          }
+        },
+        "custom_liquid_ypCzVg": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"product-verified-wrapper\">\n    <h1 class=\"product-title-inline\">\n        {{ product.title }}\n        <svg class=\"inline-check-icon\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"12\" cy=\"12\" r=\"12\" fill=\"#4CAF50\"/><path d=\"M9.5 16.5L5 12l1.4-1.4 3.1 3.1 7.1-7.1L18 8l-8.5 8.5z\" fill=\"#fff\"/></svg>\n    </h1>\n</div>\n\n<style>\n    .product-verified-wrapper {\n        margin: 0 0 10px 0 !important; /* Ajusta el espacio con lo que sigue abajo */\n        padding: 0;\n        line-height: 1.2;\n    }\n\n    .product-title-inline {\n        /* Hereda la fuente de tu título de Shopify */\n        font-family: var(--font-heading-family), sans-serif;\n        font-weight: var(--font-heading-weight, bold);\n        font-size: 25px;\n        color: #1A1A1A; /* Tu color negro profundo */\n        \n        /* IMPORTANTE: Permite que el contenido fluya como texto */\n        display: inline; \n        margin: 0;\n        padding: 0;\n        word-wrap: break-word;\n    }\n\n    .inline-check-icon {\n        /* Se comporta como una letra más */\n        display: inline-block;\n        vertical-align: middle; \n        width: 24px; \n        height: 24px;\n        margin-left: 4px; /* Espacio pequeño tras la última palabra */\n        object-fit: contain;\n    }\n\n    /* Ajuste para móviles */\n    @media (max-width: 749px) {\n        .product-title-inline {\n            font-size: 20px;\n        }\n        .inline-check-icon {\n            width: 18px;\n            height: 18px;\n        }\n    }\n</style>"
+          }
+        },
+        "custom_liquid_4qdJxq": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"custom-price-container\">\n  {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}\n    <div class=\"price-header\">\n      <span class=\"price-item price-item--regular\">\n        {{ product.selected_or_first_available_variant.compare_at_price | money }}\n      </span>\n      <span class=\"badge-oferta\">Pague 2, lleve 4</span>\n    </div>\n  {%- endif -%}\n\n  <div class=\"price-row-inline\">\n    <div class=\"price-main\">\n      <span class=\"price-item price-item--sale\">\n        {{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}\n      </span>\n      <span class=\"currency-code\">COP</span>\n    </div>\n    \n    <div class=\"shipping-tag\">\n      <span class=\"shipping-text\">+ Envíos <strong>GRATIS</strong></span>\n    </div>\n  </div>\n</div>\n\n<style>\n  .custom-price-container {\n    margin: 15px 0;\n    font-family: var(--font-body-family), sans-serif;\n  }\n\n  /* Precio Original Tachado */\n  .price-header {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    margin-bottom: 5px;\n  }\n\n  .price-item--regular {\n    color: #8c8c8c;\n    text-decoration: line-through;\n    font-size: 1.6rem; /* Tamaño original */\n  }\n\n  /* Badge de Oferta con tu color naranja */\n  .badge-oferta {\n    background-color: #FF6B35; \n    color: #1A1A1A;\n    padding: 2px 12px;\n    border-radius: 20px;\n    font-size: 1.2rem;\n    font-weight: bold;\n    text-transform: uppercase;\n  }\n\n  /* Fila de Precio y Envío */\n  .price-row-inline {\n    display: flex;\n    align-items: baseline;\n    flex-wrap: wrap;\n    gap: 10px;\n  }\n\n  .price-main {\n    display: flex;\n    align-items: baseline;\n    gap: 6px;\n  }\n\n  .price-item--sale {\n    color: #1A1A1A;\n    font-size: 3.2rem; /* Tamaño grande original */\n    font-weight: 900;\n    line-height: 1;\n  }\n\n  .currency-code {\n    font-size: 1.8rem; /* Tamaño original */\n    font-weight: 700;\n    color: #1A1A1A;\n  }\n\n  /* Envío Gratis en la misma línea */\n  .shipping-tag {\n    color: #1A1A1A;\n    font-size: 1.8rem; /* Ajustado para que combine con el COP */\n    font-weight: 700;\n  }\n\n  .shipping-tag strong {\n    font-weight: 900;\n  }\n\n  /* Responsivo */\n  @media (max-width: 480px) {\n    .price-item--sale {\n      font-size: 2.8rem;\n    }\n  }\n</style>"
+          }
+        },
+        "text_gazJkx": {
+          "type": "text",
+          "settings": {
+            "text": "Alivio Total Paso a Paso",
+            "text_style": "body"
+          }
+        },
+        "daa0e452-23d5-4bd1-afb3-35d7babab88c": {
+          "type": "keybenefit",
+          "settings": {
+            "key1": "Amortigua cada paso y elimina el dolor de pies desde la primera hora",
+            "key2": "Microperforaciones que ventilan y eliminan el mal olor todo el día",
+            "key3": "Se adapta a cualquier talla: córtala a tu medida en segundos",
+            "checkmarkcolor": "#000000",
+            "checkmarkcolorbackground": "#fafafa"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "eed7bb10-67b9-4655-8c71-ca64ed54fb48": {
+          "type": "shippingarrow",
+          "settings": {
+            "preshipsby": "Se envía en máximo",
+            "shippingarrow": "1",
+            "postshipsby": "días si compras hoy!"
+          }
+        },
+        "1c393517-7c5c-4915-ba22-5dbd8ede91e5": {
+          "type": "featuredreview",
+          "settings": {
+            "reviewimage": "shopify://shop_images/testimonio_optimized.jpg",
+            "reviewtext": "Llevaba años con los pies destruidos al final del día. Desde que uso estas plantillas camino más de 8 horas en el trabajo y llego a casa sin ese dolor horrible en los talones. Y lo mejor: mis zapatos ya no huelen mal . Mi familia me lo agradeció.",
+            "reviewname": "Laura M. (Bogotá, Colombia)"
+          }
+        },
+        "2c100155-1d2d-4504-a37e-f2abd070099f": {
+          "type": "iconss",
+          "settings": {
+            "text1": "Pagos Contraentrega",
+            "text2": "Envíos Gratis",
+            "iconcolorreturns": "#000000"
+          }
+        },
+        "collapsible_tab_AUafHX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "QUÉ INCLUYE",
+            "icon": "none",
+            "content": "<p>Tu pedido incluye:</p><ul><li>📦 <strong>2 pares de Plantillas</strong> (4 plantillas en total) — Pague 2 Lleve 4</li><li>✂️ Línea guía impresa para cortar a tu talla exacta en segundos</li><li>🌬️ Doble cara: espuma viscoelástica antiimpacto + malla transpirable antiolor</li><li>👟 Compatible con zapatos de trabajo, deportivos, casuales y de vestir</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_NKgDKr": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "CÓMO SE USA",
+            "icon": "none",
+            "content": "<p><strong>3 pasos y listo 👇</strong></p><p><strong>Paso 1 →</strong> Coloca la plantilla sobre tu zapato y marca tu talla<br/><strong>Paso 2 →</strong> Recórtala con tijeras siguiendo la línea guía impresa<br/><strong>Paso 3 →</strong> Insértala con la malla hacia arriba (contacto con el pie) y listo</p><p><em>Funciona en cualquier zapato. Sin instalación complicada.</em></p>",
+            "page": ""
+          }
+        },
+        "c11bfb2f-901d-4b03-90cf-b6b766353d13": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "INFORMACIÓN DE ENVÍO",
+            "icon": "none",
+            "content": "<p>Recibe tus plantillas viscoelasticas en <strong>3 a 7 días hábiles</strong> desde que realizas tu pedido. Hacemos envíos a todo el país con rastreo en tiempo real. ¡Compra hoy y lo tienes esta semana!</p>",
+            "page": ""
+          }
+        },
+        "e6778313-45ad-4d6d-8260-2498242a6df0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "DEVOLUCIONES",
+            "icon": "none",
+            "content": "<p>Si por alguna razón no estás 100% satisfecho con tu compra, tienes 5<strong> días de retracto para devolverlo sin complicaciones y 30 días de garantía por funcionamiento y/o daños del producto que no estén relacionados a su mal uso</strong>. Te hacemos el reembolso completo. Así de simple, porque confiamos en nuestro producto.</p>",
+            "page": ""
+          }
+        },
+        "5b41d5c2-f95c-45c9-8b01-8d3aaf8e300f": {
+          "type": "salespoint",
+          "disabled": true,
+          "settings": {
+            "salespointtext": "5 Unidades en Stock"
+          }
+        },
+        "1088bb43-2931-4cb5-b642-6c5e04e45224": {
+          "type": "clocktext",
+          "disabled": true,
+          "settings": {
+            "clocktext": "Últimos días de oferta."
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "3122dfde-b867-4a3c-9e0f-cf61bd664e99": {
+          "type": "moneybackguarantee",
+          "disabled": true,
+          "settings": {
+            "moneybackguarantee": "30 DÍAS PARA DEVOLUCIONES"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "custom_liquid_9XDG7p",
+        "custom_liquid_ypCzVg",
+        "custom_liquid_4qdJxq",
+        "text_gazJkx",
+        "daa0e452-23d5-4bd1-afb3-35d7babab88c",
+        "variant_picker",
+        "buy_buttons",
+        "eed7bb10-67b9-4655-8c71-ca64ed54fb48",
+        "1c393517-7c5c-4915-ba22-5dbd8ede91e5",
+        "2c100155-1d2d-4504-a37e-f2abd070099f",
+        "collapsible_tab_AUafHX",
+        "collapsible_tab_NKgDKr",
+        "c11bfb2f-901d-4b03-90cf-b6b766353d13",
+        "e6778313-45ad-4d6d-8260-2498242a6df0",
+        "5b41d5c2-f95c-45c9-8b01-8d3aaf8e300f",
+        "1088bb43-2931-4cb5-b642-6c5e04e45224",
+        "quantity_selector",
+        "3122dfde-b867-4a3c-9e0f-cf61bd664e99",
+        "description"
+      ],
+      "custom_css": [
+        "div.product__title > h1 {font-size: 17px !important;}",
+        ".button--secondary {background-color: #7069bc; color: white;}"
+      ],
+      "settings": {
+        "new_product_page_media": true,
+        "othergallerystyle": false,
+        "salebadge": true,
+        "freeshipprice": true,
+        "shiptextnexttoprice": "+ Envíos GRATIS",
+        "enable_gallerybadge": true,
+        "productgalleryimage": "Producto Exclusivo",
+        "badge_background": "#ffffff",
+        "textbadge_background": "#000000",
+        "badge_text": "capitalize",
+        "stickybutton": true,
+        "stickybuttontext": "Select Colors",
+        "atcicon": true,
+        "atcsavings": false,
+        "mostpopularcolor": "#000000",
+        "enable_shipping_calculate": false,
+        "shipping_calculator_label": "Expected Delivery:",
+        "days_to_start_shipping": 5,
+        "approximate_days_for_delivery": 10,
+        "delivery_align": "center",
+        "enable_sticky_info": true,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 68
+      }
+    },
+    "7401e664-d026-4a46-bd1f-bc32c9f0558a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19239854407957__7401e664-d026-4a46-bd1f-bc32c9f0558a-1685852128f579606c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Desired outcome",
+            "heading_size": "h2"
+          }
+        },
+        "11abbd1c-ea50-4aca-a4aa-563a76d850b5": {
+          "type": "text",
+          "settings": {
+            "text": "<p>How this product meets their desired outcome</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19239854407957__7401e664-d026-4a46-bd1f-bc32c9f0558a-1685852128f579606c-0",
+        "11abbd1c-ea50-4aca-a4aa-563a76d850b5"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "086a98ac-209d-4db2-9d62-5b0fe9663693": {
+      "type": "compare-image",
+      "settings": {
+        "image1": "shopify://shop_images/3_e16698ae-fe50-42a2-803a-37e401b12e36.webp",
+        "image2": "shopify://shop_images/2_46ae9a34-9b4d-4f7e-b909-c7cfc4291963.webp",
+        "title": "¿Qué cambia cuando usas la plantilla correcta?",
+        "text": "<p>De aguantar el dolor todo el día… a olvidarte de que tienes pies</p>",
+        "before": "ANTES",
+        "after": "DESPUES"
+      }
+    },
+    "3bc3f381-5c12-4e1e-9f92-289fb87d308d": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tus pies merecen descanso real",
+            "heading_size": "h1"
+          }
+        },
+        "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cada día que pasas de pie sin el soporte adecuado es un día acumulando tensión en tobillos, rodillas y espalda baja. No es normal que tus pies duelan. Es que la plantilla original de tu zapato simplemente no fue diseñada para ti.</p>",
+            "text_style": "body"
+          }
+        },
+        "fb814fee-541b-418f-a1f8-b03b37c368ce": {
+          "type": "caption",
+          "settings": {
+            "caption": "",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-0",
+        "template--19239854407957__3bc3f381-5c12-4e1e-9f92-289fb87d308d-168585216294cb3c48-1",
+        "fb814fee-541b-418f-a1f8-b03b37c368ce"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/0222.gif",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "50f8db15-9a00-4bfb-8176-786845498504": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "🫧 Amortiguación que sientes desde el primer paso",
+            "text": "<p>Las burbujas viscoelásticas absorben el impacto en cada zancada, distribuyendo el peso de forma uniforme. Adiós al dolor en talón, arco y metatarso.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "🌬️ Pies frescos. Zapatos sin olor.",
+            "text": "<p>Las microperforaciones generan circulación de aire constante que evita la acumulación de humedad y bacterias. El resultado: pies secos y zapatos que no huelen, todo el día.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "✂️ Una talla para todos",
+            "text": "<p>Diseñada con línea guía cortable. Se adapta perfectamente a cualquier zapato de talla 35 a 45. Sin excusas para no usarla.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "8f4c5208-c742-4fe0-9e42-8cc758a77b8c": {
+          "type": "column",
+          "settings": {
+            "title": "💪 No se deforma. No se aplana.",
+            "text": "<p>La espuma viscoelástica recupera su forma tras cada paso. A diferencia de las plantillas genéricas que se aplastan al primer día, esta mantiene su soporte semana tras semana.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-1",
+        "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-2",
+        "template--16985062932724__50f8db15-9a00-4bfb-8176-786845498504-column-3",
+        "8f4c5208-c742-4fe0-9e42-8cc758a77b8c"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b6fc2703-d30b-40d4-b2cb-fcc2eade4e34": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/testimonioh_optimized.jpg",
+            "title": "Carlos R. (Medellín) ⭐⭐⭐⭐⭐",
+            "text": "<p>Las compré para mis zapatos de trabajo y la diferencia es brutal. Ya no siento los pies pesados a media jornada.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/testimonio2_optimized.jpg",
+            "title": "Valentina G. (Cali) ⭐⭐⭐⭐⭐",
+            "text": "<p>Probé mil plantillas y todas se aplanan al mes. Esta lleva 3 meses y sigue igual. Además el olor desapareció completamente.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/unnamed.jpg",
+            "title": "Jhon A. (Barranquilla) ⭐⭐⭐⭐⭐",
+            "text": "<p>Las compré para toda la familia. Precio increíble por la cantidad que te mandan. Calidad premium.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-1",
+        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-2",
+        "template--16985062932724__b6fc2703-d30b-40d4-b2cb-fcc2eade4e34-column-3"
+      ],
+      "settings": {
+        "title": "TESTIMONIOS DE CLIENTES",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "circle",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "inverse",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "78161370-bfb0-428e-adf1-f106aca5123b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Más de 560 clientes en Colombia ya dejaron de aguantar el dolor. Esta plantilla no es un accesorio — es la solución que tu cuerpo llevaba tiempo pidiendo.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-heading-1",
+        "template--16985062932724__78161370-bfb0-428e-adf1-f106aca5123b-text-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/1_0edf1127-af9c-441a-9cfe-538590125efd.webp",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "435217f9-0491-4e04-93de-8fa3a5a996db": {
+      "type": "compare-chart",
+      "blocks": {
+        "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-1": {
+          "type": "row",
+          "settings": {
+            "benefit": "Amortiguación viscoelástica",
+            "us": true,
+            "others": false
+          }
+        },
+        "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2": {
+          "type": "row",
+          "settings": {
+            "benefit": "Ventilación antiolor",
+            "us": true,
+            "others": false
+          }
+        },
+        "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-3": {
+          "type": "row",
+          "settings": {
+            "benefit": "Cortable a cualquier talla",
+            "us": true,
+            "others": false
+          }
+        },
+        "6a12410f-0263-49d1-941c-4d61208408bb": {
+          "type": "row",
+          "settings": {
+            "benefit": "Dura más de 3 meses",
+            "us": true,
+            "others": false
+          }
+        },
+        "7ea5db61-7af3-4f5f-a41e-30f037ccf10e": {
+          "type": "row",
+          "settings": {
+            "benefit": "Oferta Pague 2 Lleve 4",
+            "us": true,
+            "others": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-1",
+        "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-2",
+        "template--16985062932724__435217f9-0491-4e04-93de-8fa3a5a996db-row-3",
+        "6a12410f-0263-49d1-941c-4d61208408bb",
+        "7ea5db61-7af3-4f5f-a41e-30f037ccf10e"
+      ],
+      "settings": {
+        "title": "TABLA COMPARATIVA VS. COMPETENCIA",
+        "heading_size": "h2",
+        "text": "",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "layout": "table_second",
+        "color_scheme": "background-1",
+        "logo_width": 75,
+        "us_label": "Nuestra Plantilla",
+        "others_label": "Plantillas genéricas",
+        "benefit_color_scheme": "accent-1",
+        "checkmark_color": "#53af01",
+        "icon_cells_color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3d28e77d-b7ce-4326-99e5-6a739a02727b": {
+      "type": "percentage",
+      "blocks": {
+        "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-1": {
+          "type": "row",
+          "settings": {
+            "percentage": 96,
+            "row_text": "<p>de clientes reportan menos dolor de pies desde la primera semana</p>"
+          }
+        },
+        "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-2": {
+          "type": "row",
+          "settings": {
+            "percentage": 91,
+            "row_text": "<p>nota reducción del mal olor desde el primer día de uso</p>"
+          }
+        },
+        "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3": {
+          "type": "row",
+          "settings": {
+            "percentage": 96,
+            "row_text": "<p>volvería a comprarla y la recomendaría a un familiar</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-1",
+        "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-2",
+        "template--16985062932724__3d28e77d-b7ce-4326-99e5-6a739a02727b-row-3"
+      ],
+      "settings": {
+        "title": "PORCENTAJES DE SATISFACCIÓN",
+        "heading_size": "h1",
+        "text": "",
+        "color_scheme": "background-1",
+        "layout": "percentages_second",
+        "percentages_headline": "",
+        "percentages_headline_size": "h2",
+        "percentages_headline_alignment": "left",
+        "caption": "<p>*Basado en reseñas verificadas de clientes reales.</p>",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ffa79f40-3ca5-4c0f-842b-5fa404007924": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--19239854407957__ffa79f40-3ca5-4c0f-842b-5fa404007924-1685852323c73bd29d-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Para qué tipo de zapato sirve?",
+            "icon": "none",
+            "row_content": "<p>Para cualquier zapato: de trabajo, deportivo, casual, escolar o de vestir. Si tiene espacio para una plantilla, funciona.</p>",
+            "page": ""
+          }
+        },
+        "40c59e33-8ce9-492f-ad4d-9d0fddb2fb10": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cómo la corto a mi talla?",
+            "icon": "none",
+            "row_content": "<p>Fácil: coloca la plantilla sobre tu zapato actual, marca con un lápiz siguiendo el contorno y recorta con tijeras normales. La línea guía impresa ya te indica dónde cortar.</p>",
+            "page": ""
+          }
+        },
+        "f68ace48-4162-4c3e-bc8c-5518a8de0427": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Realmente elimina el mal olor?",
+            "icon": "none",
+            "row_content": "<p>Sí. Las microperforaciones permiten que el aire circule constantemente, lo que impide que la humedad y las bacterias se acumulen — que son la causa real del olor.</p>",
+            "page": ""
+          }
+        },
+        "524169b2-9412-4aeb-b45b-7c0e4edd9cba": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cuánto dura la plantilla?",
+            "icon": "none",
+            "row_content": "<p>Con uso diario normal dura entre 4 y 6 meses. Mucho más que una plantilla genérica que se aplana en semanas.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7LpCrG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cuándo llega mi pedido?",
+            "icon": "none",
+            "row_content": "<p>Despachamos en máximo 2 días hábiles. El tiempo de entrega depende de tu ciudad, pero generalmente llega entre 3 y 7 días hábiles.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19239854407957__ffa79f40-3ca5-4c0f-842b-5fa404007924-1685852323c73bd29d-0",
+        "40c59e33-8ce9-492f-ad4d-9d0fddb2fb10",
+        "f68ace48-4162-4c3e-bc8c-5518a8de0427",
+        "524169b2-9412-4aeb-b45b-7c0e4edd9cba",
+        "collapsible_row_7LpCrG"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "PREGUNTAS FRECUENTES",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 4,
+        "padding_bottom": 36
+      }
+    },
+    "13348d96-1a54-4009-b416-60d21a04c302": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19239854407957__13348d96-1a54-4009-b416-60d21a04c302-1685852213f10cc2f8-0": {
+          "type": "column",
+          "settings": {
+            "title": "Nombre del cliente",
+            "text": "<p>Texto del testimonio</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19239854407957__13348d96-1a54-4009-b416-60d21a04c302-1685852213f10cc2f8-1": {
+          "type": "column",
+          "settings": {
+            "title": "Nombre del cliente",
+            "text": "<p>texto del testimonio</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19239854407957__13348d96-1a54-4009-b416-60d21a04c302-1685852213f10cc2f8-2": {
+          "type": "column",
+          "settings": {
+            "title": "Nombre del cliente",
+            "text": "<p>testo del testimonio</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19239854407957__13348d96-1a54-4009-b416-60d21a04c302-1685852213f10cc2f8-0",
+        "template--19239854407957__13348d96-1a54-4009-b416-60d21a04c302-1685852213f10cc2f8-1",
+        "template--19239854407957__13348d96-1a54-4009-b416-60d21a04c302-1685852213f10cc2f8-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "TESTIMONIOS EN TEXTO",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 0
+      }
+    },
+    "ce002b21-24e0-4d65-87ca-18c9770b24d4": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "7401e664-d026-4a46-bd1f-bc32c9f0558a",
+    "086a98ac-209d-4db2-9d62-5b0fe9663693",
+    "3bc3f381-5c12-4e1e-9f92-289fb87d308d",
+    "50f8db15-9a00-4bfb-8176-786845498504",
+    "b6fc2703-d30b-40d4-b2cb-fcc2eade4e34",
+    "78161370-bfb0-428e-adf1-f106aca5123b",
+    "435217f9-0491-4e04-93de-8fa3a5a996db",
+    "3d28e77d-b7ce-4326-99e5-6a739a02727b",
+    "ffa79f40-3ca5-4c0f-842b-5fa404007924",
+    "13348d96-1a54-4009-b416-60d21a04c302",
+    "ce002b21-24e0-4d65-87ca-18c9770b24d4"
+  ]
+}

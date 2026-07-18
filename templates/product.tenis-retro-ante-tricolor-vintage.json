@@ -92,7 +92,7 @@
           "type": "custom_liquid",
           "name": "Prueba social",
           "settings": {
-            "custom_liquid": "{% render 'aura-testimonials' %}"
+            "custom_liquid": "{%- render 'aura-reviews-tenis-retro-ante-tricolor-vintage' -%}"
           }
         },
         "collapsible_tab_AUafHX": {
@@ -263,6 +263,7 @@
         "column_38AXm4",
         "column_3tk8Gw"
       ],
+      "disabled": true,
       "settings": {
         "title": "Nuestros Clientes",
         "heading_size": "h1",
@@ -358,11 +359,21 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "aura-clientes-tenis-retro-ante-tricolor-vintage": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- render 'aura-clientes-tenis-retro-ante-tricolor-vintage' -%}",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "related-products",
+    "aura-clientes-tenis-retro-ante-tricolor-vintage",
     "b6fc2703-d30b-40d4-b2cb-fcc2eade4e34",
     "ffa79f40-3ca5-4c0f-842b-5fa404007924",
     "ce002b21-24e0-4d65-87ca-18c9770b24d4"

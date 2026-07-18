@@ -92,7 +92,7 @@
           "type": "custom_liquid",
           "name": "Prueba social",
           "settings": {
-            "custom_liquid": "{% render 'aura-testimonials' %}"
+            "custom_liquid": "{%- render 'aura-reviews-tenis-running-amortiguacion-maxima' -%}"
           }
         },
         "collapsible_tab_AUafHX": {
@@ -202,6 +202,15 @@
         "padding_bottom": 68
       }
     },
+    "aura-clientes-tenis-running-amortiguacion-maxima": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- render 'aura-clientes-tenis-running-amortiguacion-maxima' -%}",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "b6fc2703-d30b-40d4-b2cb-fcc2eade4e34": {
       "type": "multicolumn",
       "blocks": {
@@ -263,6 +272,7 @@
         "column_38AXm4",
         "column_3tk8Gw"
       ],
+      "disabled": true,
       "settings": {
         "title": "Nuestros Clientes",
         "heading_size": "h1",
@@ -363,6 +373,7 @@
   "order": [
     "main",
     "related-products",
+    "aura-clientes-tenis-running-amortiguacion-maxima",
     "b6fc2703-d30b-40d4-b2cb-fcc2eade4e34",
     "ffa79f40-3ca5-4c0f-842b-5fa404007924",
     "ce002b21-24e0-4d65-87ca-18c9770b24d4"

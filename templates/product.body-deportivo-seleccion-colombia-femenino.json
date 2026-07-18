@@ -16,7 +16,7 @@
           "type": "custom_liquid",
           "name": "Titulo Verificado",
           "settings": {
-            "custom_liquid": "<div class=\"product-verified-wrapper\">\n    <h1 class=\"product-title-inline\">\n        {{ product.title }}\n        <img class=\"inline-check-icon\" src=\"https://cdn-icons-png.flaticon.com/512/1828/1828640.png\" alt=\"Verificado\">\n    </h1>\n</div>\n\n<style>\n    .product-verified-wrapper {\n        margin: 0 0 10px 0 !important;\n        padding: 0;\n        line-height: 1.2;\n    }\n\n    .product-title-inline {\n        font-family: var(--font-heading-family), sans-serif;\n        font-weight: var(--font-heading-weight, bold);\n        font-size: 25px;\n        color: #1A1A1A;\n        display: inline; \n        margin: 0;\n        padding: 0;\n        word-wrap: break-word;\n    }\n\n    .inline-check-icon {\n        display: inline-block;\n        vertical-align: middle; \n        width: 24px; \n        height: 24px;\n        margin-left: 4px;\n        object-fit: contain;\n    }\n\n    @media (max-width: 749px) {\n        .product-title-inline {\n            font-size: 20px;\n        }\n        .inline-check-icon {\n            width: 18px;\n            height: 18px;\n        }\n    }\n</style>"
+            "custom_liquid": "<div class=\"product-verified-wrapper\">\n    <h1 class=\"product-title-inline\">\n        {{ product.title }}\n        <svg class=\"inline-check-icon\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"12\" cy=\"12\" r=\"12\" fill=\"#4CAF50\"/><path d=\"M9.5 16.5L5 12l1.4-1.4 3.1 3.1 7.1-7.1L18 8l-8.5 8.5z\" fill=\"#fff\"/></svg>\n    </h1>\n</div>\n\n<style>\n    .product-verified-wrapper {\n        margin: 0 0 10px 0 !important;\n        padding: 0;\n        line-height: 1.2;\n    }\n\n    .product-title-inline {\n        font-family: var(--font-heading-family), sans-serif;\n        font-weight: var(--font-heading-weight, bold);\n        font-size: 25px;\n        color: #1A1A1A;\n        display: inline; \n        margin: 0;\n        padding: 0;\n        word-wrap: break-word;\n    }\n\n    .inline-check-icon {\n        display: inline-block;\n        vertical-align: middle; \n        width: 24px; \n        height: 24px;\n        margin-left: 4px;\n        object-fit: contain;\n    }\n\n    @media (max-width: 749px) {\n        .product-title-inline {\n            font-size: 20px;\n        }\n        .inline-check-icon {\n            width: 18px;\n            height: 18px;\n        }\n    }\n</style>"
           }
         },
         "custom_liquid_9XDG7p": {
@@ -266,6 +266,7 @@
         "body-column-4",
         "body-column-5"
       ],
+      "disabled": true,
       "settings": {
         "title": "Nuestras Clientas",
         "heading_size": "h1",
@@ -281,8 +282,7 @@
         "swipe_on_mobile": true,
         "padding_top": 8,
         "padding_bottom": 8
-      },
-      "disabled": true
+      }
     },
     "ffa79f40-body-faq": {
       "type": "collapsible-content",
@@ -358,15 +358,6 @@
     },
     "ce002b21-body-apps": {
       "type": "apps",
-      "blocks": {
-        "ce002b21-body-apps-block": {
-          "type": "shopify://apps/audien-reviews/blocks/review_list/ce002b21-24e0-4d65-87ca-18c9770b24d4",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "ce002b21-body-apps-block"
-      ],
       "disabled": true,
       "settings": {
         "include_margins": true
